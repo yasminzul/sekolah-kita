@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Archer Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Archer Bold'), url('ArcherBoldPro.woff') format('woff');
+    }
+
+@font-face {
+    font-family: 'Archer Book';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Archer Book'), url('ArcherBookPro.woff') format('woff');
+    }
+
+
+@font-face {
+    font-family: 'Archer Book Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Archer Book Italic'), url('ArcherBookItalPro.woff') format('woff');
+    }
