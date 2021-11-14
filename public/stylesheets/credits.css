@@ -10,7 +10,7 @@
 .flex-item-left {
 	flex: 0%;
   	border: solid 1px #000;
-  	height: 100vh;
+  	/*height: 100vh;*/
   	align-items: center;
   	justify-content: center;
   	display: flex;
@@ -31,7 +31,7 @@
 }
 
 .credit-desc {
-	padding: 6em;
+	padding: 8em;
 }
 
 .credit-col-left {
@@ -41,4 +41,28 @@
 .credit-col-right {
 	width: 25%;
 	margin: 8em 2em;
+}
+
+.img-top{
+	display: flex;
+	justify-content: center;
+}
+
+.img-top img {
+	width: 25%;
+	margin-bottom: 1.5em;
+}
+
+.img-bottom {
+	display: flex;
+    justify-content: center;
+}
+
+.img-bottom img {
+	width: 18%;
+    margin: 0.5em;
+}
+
+.img-bottom img:last-child {
+	transform: scale(0.75);
 }
