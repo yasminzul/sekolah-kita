@@ -7,6 +7,7 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var oaRouter = require('./routes/orang-asli');
+var actionRouter = require('./routes/take-action');
 
 var app = express();
 
@@ -23,6 +24,15 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/orang-asli', oaRouter);
+app.use('/take-action', actionRouter);
+
+app.get('/credits', function (req, res) {
+  res.render('/static/credits')
+})
+
+app.get('/resources', function (req, res) {
+  res.render('/static/resources')
+})
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
