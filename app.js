@@ -27,11 +27,11 @@ app.use('/orang-asli', oaRouter);
 app.use('/take-action', actionRouter);
 
 app.get('/credits', function (req, res) {
-  res.render('/static/credits')
+  res.render('credits')
 })
 
 app.get('/resources', function (req, res) {
-  res.render('/static/resources')
+  res.render('resources')
 })
 
 // catch 404 and forward to error handler
