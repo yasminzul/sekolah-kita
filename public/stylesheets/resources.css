@@ -3,9 +3,11 @@
 @import url('style.css');
 
 
-.wrapper {
+.resources-wrapper {
 	display: flex;
 	flex-wrap: wrap;
+	background-image: url("/images/chapter-bg/chapter-page.psd@2x.png");
+	background-size: cover;
 }
 .flex-item-left {
 	flex: 0%;
@@ -36,6 +38,9 @@
 
 
 @media (max-width: 800px) {
+	.resources-wrapper {
+		background-size: contain;
+	}
 	.flex-item-right, .flex-item-left {
     	flex: 100%;
 	}

@@ -3,9 +3,11 @@
 @import url('style.css');
 
 
-.wrapper {
+.credits-wrapper {
 	display: flex;
 	flex-wrap: wrap;
+	background-image: url("/images/chapter-bg/chapter-page.psd@2x.png");
+	background-size: cover;
 }
 .flex-item-left {
 	flex: 0%;
@@ -54,6 +56,9 @@
 }
 
 @media (max-width: 800px) {
+	.credits-wrapper {
+		background-size: contain;
+	}
 	.flex-item-left {
     	flex: 100%;
 	}
