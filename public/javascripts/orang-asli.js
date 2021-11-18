@@ -51,6 +51,7 @@ function(){ ease.add(
 
 var clickstate = -1;
 
+//click prev + next button
 $(document).ready(function(){
 
     $('#timeline-next').click( function (){
