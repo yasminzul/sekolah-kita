@@ -16,12 +16,31 @@ elemTimeline.position.set(pixiapp.screen.width / 2, pixiapp.screen.height / 2)
 
 
 //text elements
-const basicText = new PIXI.Text("Hello World");
+const textStyle = new PIXI.TextStyle({
+    fontFamily: 'Montserrat',
+    fontSize: 48,
+    fill: 'deepskyblue',
+});
+
+let textArr = [
+  'text 1', 
+  'text 2', 
+  'text 3', 
+  'text 4',
+  'text 5',
+  'text 6',
+]
+
+textCounter = 0;
+
+let basicText = new PIXI.Text(textArr[0], textStyle);
+
 
 basicText.x = 50;
 basicText.y = 250;
 
 pixiapp.stage.addChild(basicText);
+
 
 //timeline animation
 const ease = new Ease.Ease();
@@ -60,21 +79,35 @@ function(){ ease.add(
 
 var clickstate = -1;
 
+
 $(document).ready(function(){
 
-    $('#timeline-next').click( function (){
+    $('#timeline-next').click( function (){  
+
+      textCounter = (textCounter + 1) % textArr.length;
+
+        // console.log(textArr[textCounter]);
+        basicText.text = textArr[textCounter];
+
       if ( clickstate >= -1 && clickstate < animationTimeline.length-1)
       {
         clickstate += 1;
         animationTimeline[clickstate]();
+
       }
       else if (clickstate >= animationTimeline.length-1 && clickstate < 11)
       {
         clickstate += 1;
+       
       }
     });
 
     $('#timeline-prev').click( function (){
+
+      textCounter = (textCounter - 1) % textArr.length;
+      
+        basicText.text = textArr[textCounter];
+
       if ( clickstate > 0 && clickstate < animationTimeline.length)
       {
         clickstate -= 1;
