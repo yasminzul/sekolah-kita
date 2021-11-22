@@ -29,6 +29,12 @@ let textArr = [
   'text 4',
   'text 5',
   'text 6',
+  'text 7',
+  'text 8',
+  'text 9',
+  'text 10',
+  'text 11',
+  'text 12',
 ]
 
 textCounter = 0;
@@ -99,7 +105,7 @@ $(document).ready(function(){
       {
         clickstate += 1;
        
-      }
+      } 
     });
 
     $('#timeline-prev').click( function (){
@@ -116,6 +122,7 @@ $(document).ready(function(){
       else if (clickstate >= animationTimeline.length && clickstate <= 11)
       {
         clickstate -= 1;
+
       }
       else if (clickstate == 0)
       {
