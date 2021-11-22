@@ -3,8 +3,8 @@ const pixiapp = new window.PIXI.Application({backgroundColor: 0xffffff});
 $('#timeline').append(pixiapp.view);
 
 pixiapp.renderer.resize(window.innerWidth/2, (window.innerHeight/100)*45);
-pixiapp.renderer.view.style.position = 'absolute';
-pixiapp.renderer.view.style.zIndex = '-10';
+// pixiapp.renderer.view.style.position = 'absolute';
+// pixiapp.renderer.view.style.zIndex = '-10';
 
 //elements
 const elemTimeline = PIXI.Sprite.from('images/Chapter1Timeline.PNG');
@@ -13,6 +13,15 @@ pixiapp.stage.addChild(elemTimeline);
 
 elemTimeline.anchor.set(0.5);
 elemTimeline.position.set(pixiapp.screen.width / 2, pixiapp.screen.height / 2)
+
+
+//text elements
+const basicText = new PIXI.Text("Hello World");
+
+basicText.x = 50;
+basicText.y = 250;
+
+pixiapp.stage.addChild(basicText);
 
 //timeline animation
 const ease = new Ease.Ease();
