@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title><%= title %></title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/6.2.0/browser/pixi.min.js"></script>
+    <script src="https://unpkg.com/fabric@4.6.0/dist/fabric.min.js"></script>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/take-action.css' />
   </head>
   <body>
 
+    <canvas id="customize-area" width="600" height="750"></canvas>
+
+    <button><img src="/images/ins-start.svg"></button>
 
 
     <script src="/javascripts/take-action.js"></script>
