@@ -3,9 +3,11 @@
 @import url('style.css');
 
 
-.wrapper {
+.credits-wrapper {
 	display: flex;
 	flex-wrap: wrap;
+	background-image: url("/images/chapter-bg/chapter-page.psd@2x.png");
+	background-size: cover;
 }
 .flex-item-left {
 	flex: 0%;
@@ -54,13 +56,21 @@
 }
 
 @media (max-width: 800px) {
-	.flex-item-right, .flex-item-left {
+	.credits-wrapper {
+		background-size: contain;
+	}
+	.flex-item-left {
     	flex: 100%;
+	}
+	.flex-item-right {
+		display: contents;
+		/*text-align: center;*/
 	}
 	.credit-desc {
 		padding: 2em;
 	}
 	.credit-col-left, .credit-col-right {
+		width: 100%;
 		margin: 2em 2em;
 	}
 }

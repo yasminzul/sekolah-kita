@@ -1,4 +1,77 @@
-#timeline
-{
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('font/font.css');
+@import url('style.css');
 
+
+.oa-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	background-image: url("/images/chapter-bg/chapter-page.psd@2x.png");
+	background-size: contain;
+}
+
+.flex-item-left {
+	flex: 0%;
+  	align-items: center;
+  	justify-content: center;
+  	display: flex;
+}
+.flex-item-right {
+	flex: 0%;
+  	align-items: flex-start;
+  	justify-content: center;
+  	display: flex;
+  	overflow: scroll;
+    height: 95vh;
+    overflow-x: hidden;
+}
+
+.flex-item-left img {
+	width: 100%;
+}
+
+.credit-col {
+	width: 70%;
+	margin: 2em 0 0 0;
+}
+
+.credit-col h3 {
+	text-align: center;
+}
+#brinjal {
+	display: inline-block;
+    float: right;
+    width: 25%;
+}
+
+#brinjal img {
+	width: 100%;
+    float: right;
+}
+
+#timeline {
+	width:100%;
+	margin-top: 4em;
+}
+
+#timeline canvas {
+	/*position: absolute;*/
+    width: 100%;
+}
+
+#timeline-prev, #timeline-next {
+	margin-bottom: 4em;
+}
+
+@media (max-width: 800px) {
+	.oa-wrapper {
+		background-size: contain;
+	}
+	.flex-item-right, .flex-item-left {
+    	flex: 100%;
+	}
+	.credit-col {
+		width: 100%;
+		margin: 2em 2em;
+	}
 }

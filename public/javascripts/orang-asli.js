@@ -3,8 +3,8 @@ const pixiapp = new window.PIXI.Application({backgroundColor: 0xffffff});
 $('#timeline').append(pixiapp.view);
 
 pixiapp.renderer.resize(window.innerWidth/2, (window.innerHeight/100)*45);
-pixiapp.renderer.view.style.position = 'absolute';
-pixiapp.renderer.view.style.zIndex = '-10';
+// pixiapp.renderer.view.style.position = 'absolute';
+// pixiapp.renderer.view.style.zIndex = '-10';
 
 //elements
 const elemTimeline = PIXI.Sprite.from('images/Chapter1Timeline.PNG');
@@ -13,6 +13,40 @@ pixiapp.stage.addChild(elemTimeline);
 
 elemTimeline.anchor.set(0.5);
 elemTimeline.position.set(pixiapp.screen.width / 2, pixiapp.screen.height / 2)
+
+
+//text elements
+const textStyle = new PIXI.TextStyle({
+    fontFamily: 'Montserrat',
+    fontSize: 48,
+    fill: 'deepskyblue',
+});
+
+let textArr = [
+  'text 1',
+  'text 2',
+  'text 3',
+  'text 4',
+  'text 5',
+  'text 6',
+  'text 7',
+  'text 8',
+  'text 9',
+  'text 10',
+  'text 11',
+  'text 12',
+]
+
+textCounter = 0;
+
+let basicText = new PIXI.Text(textArr[0], textStyle);
+
+
+basicText.x = 50;
+basicText.y = 250;
+
+pixiapp.stage.addChild(basicText);
+
 
 //timeline animation
 const ease = new Ease.Ease();
@@ -55,18 +89,31 @@ var clickstate = -1;
 $(document).ready(function(){
 
     $('#timeline-next').click( function (){
+
+      textCounter = (textCounter + 1) % textArr.length;
+
+        // console.log(textArr[textCounter]);
+        basicText.text = textArr[textCounter];
+
       if ( clickstate >= -1 && clickstate < animationTimeline.length-1)
       {
         clickstate += 1;
         animationTimeline[clickstate]();
+
       }
       else if (clickstate >= animationTimeline.length-1 && clickstate < 11)
       {
         clickstate += 1;
+
       }
     });
 
     $('#timeline-prev').click( function (){
+
+      textCounter = (textCounter - 1) % textArr.length;
+
+        basicText.text = textArr[textCounter];
+
       if ( clickstate > 0 && clickstate < animationTimeline.length)
       {
         clickstate -= 1;
@@ -75,6 +122,7 @@ $(document).ready(function(){
       else if (clickstate >= animationTimeline.length && clickstate <= 11)
       {
         clickstate -= 1;
+
       }
       else if (clickstate == 0)
       {
