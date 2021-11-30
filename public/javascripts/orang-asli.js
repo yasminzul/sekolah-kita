@@ -2,7 +2,7 @@ const pixiapp = new window.PIXI.Application({backgroundColor: 0xffffff});
 //$('body').append(pixiapp.view);
 $('#timeline').append(pixiapp.view);
 
-pixiapp.renderer.resize(window.innerWidth/2, (window.innerHeight/100)*45);
+pixiapp.renderer.resize(window.innerWidth/2, (window.innerHeight/100)*100);
 // pixiapp.renderer.view.style.position = 'absolute';
 // pixiapp.renderer.view.style.zIndex = '-10';
 
@@ -12,38 +12,42 @@ elemTimeline.scale.set(0.15);
 pixiapp.stage.addChild(elemTimeline);
 
 elemTimeline.anchor.set(0.5);
-elemTimeline.position.set(pixiapp.screen.width / 2, pixiapp.screen.height / 2)
+elemTimeline.position.set(pixiapp.screen.width / 2, pixiapp.screen.height / 4)
 
 
 //text elements
 const textStyle = new PIXI.TextStyle({
-    fontFamily: 'Montserrat',
-    fontSize: 48,
-    fill: 'deepskyblue',
+    fontFamily: 'DM Sans, sans-serif',
+    fontSize: 20,
+    fill: '#000',
+    align: 'center', 
+    wordWrap : true,
+    wordWrapWidth: 350
 });
 
 let textArr = [
-  'text 1', 
-  'text 2', 
-  'text 3', 
-  'text 4',
-  'text 5',
-  'text 6',
-  'text 7',
-  'text 8',
-  'text 9',
-  'text 10',
-  'text 11',
-  'text 12',
+  'A brief history of the Malay Peninsula', 
+  '≈100,000 years ago: Modern humans start migrating out of Africa', 
+  '≈10,000-2,000 years ago: Earliest settlers arrive in the peninsula', 
+  '≈200CE: Emergence of Hindu and Buddhist kingdoms',
+  '≈1200CE: Rise of Muslim Malay sultanates, including Melaka which was founded in 1402CE',
+  '1511: Portuguese colonise Melaka',
+  '1641: Dutch colonise Melaka',
+  'Late 1700s-1957: British colonial period',
+  '1941-1945: Japanese occupation during World War II',
+  '1950s: Term “Orang Asli” first widely used',
+  '1957: Malayan independence',
+  '1963: Formation of Malaysia',
 ]
 
 textCounter = 0;
 
 let basicText = new PIXI.Text(textArr[0], textStyle);
 
+basicText.position.set(pixiapp.screen.width / 2 - 155, pixiapp.screen.height/ 2)
 
-basicText.x = 50;
-basicText.y = 250;
+// basicText.x = 50;
+// basicText.y = 500;
 
 pixiapp.stage.addChild(basicText);
 
