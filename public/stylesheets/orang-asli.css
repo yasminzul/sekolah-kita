@@ -63,6 +63,14 @@
 	margin-bottom: 4em;
 }
 
+.btn-container {
+	width: 100%;
+}
+
+#timeline-next {
+	float: right;
+}
+
 @media (max-width: 800px) {
 	.oa-wrapper {
 		background-size: contain;

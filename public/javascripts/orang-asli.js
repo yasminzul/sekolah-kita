@@ -88,18 +88,29 @@ var clickstate = -1;
 
 $(document).ready(function(){
 
+     document.getElementById("timeline-prev").disabled = true;
+
     $('#timeline-next').click( function (){  
 
       textCounter = (textCounter + 1) % textArr.length;
 
-        // console.log(textArr[textCounter]);
         basicText.text = textArr[textCounter];
+        
+      if (textCounter == 0) {
+        document.getElementById("timeline-prev").disabled = true;
+      } else if (textCounter >= 0) {
+        document.getElementById("timeline-prev").disabled = false;
+      }
 
       if ( clickstate >= -1 && clickstate < animationTimeline.length-1)
       {
         clickstate += 1;
         animationTimeline[clickstate]();
 
+      } 
+      else if (textCounter == 11) 
+      {
+         document.getElementById("timeline-next").disabled = true;
       }
       else if (clickstate >= animationTimeline.length-1 && clickstate < 11)
       {
@@ -113,17 +124,25 @@ $(document).ready(function(){
       textCounter = (textCounter - 1) % textArr.length;
       
         basicText.text = textArr[textCounter];
+        console.log(textCounter);
+
+      document.getElementById("timeline-next").disabled = false;
+
+      if (textCounter <= 0) {
+        document.getElementById("timeline-prev").disabled = true;
+      }
 
       if ( clickstate > 0 && clickstate < animationTimeline.length)
       {
         clickstate -= 1;
         animationTimeline[clickstate]();
+
       }
       else if (clickstate >= animationTimeline.length && clickstate <= 11)
       {
         clickstate -= 1;
 
-      }
+      }  
       else if (clickstate == 0)
       {
         ease.add(
