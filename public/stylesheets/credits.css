@@ -9,18 +9,6 @@
 	background-image: url("/images/chapter-bg/chapter-page.psd@2x.png");
 	background-size: cover;
 }
-.flex-item-left {
-	flex: 0%;
-  	align-items: center;
-  	justify-content: center;
-  	display: flex;
-}
-.flex-item-right {
-	flex: 0%;
-  	align-items: flex-start;
-  	justify-content: center;
-  	display: flex;
-}
 
 .credit-desc {
 	padding: 8em;

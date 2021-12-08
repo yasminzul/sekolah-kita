@@ -1,4 +1,4 @@
-const pixiapp = new window.PIXI.Application({backgroundColor: 0xffffff});
+const pixiapp = new window.PIXI.Application({ transparent: true });
 //$('body').append(pixiapp.view);
 $('#timeline').append(pixiapp.view);
 
@@ -81,7 +81,7 @@ function(){ ease.add(
 },
 function(){ ease.add(
     elemTimeline,
-    { x: -120, y: pixiapp.screen.height - 170, scale: 0.35},
+    { x: -120, scale: 0.35},
     { reverse: false, duration: 1500, ease: 'easeInOutQuad' }
   );
 }
@@ -151,7 +151,7 @@ $(document).ready(function(){
       {
         ease.add(
             elemTimeline,
-            { x: pixiapp.screen.width/2, y:pixiapp.screen.height/2, scale: 0.15},
+            { x: pixiapp.screen.width/2, y:pixiapp.screen.height/4, scale: 0.15},
             { reverse: false, duration: 1500, ease: 'easeInOutQuad' }
           );
           clickstate -= 1;

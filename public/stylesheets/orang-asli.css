@@ -10,17 +10,7 @@
 	background-size: contain;
 }
 
-.flex-item-left {
-	flex: 0%;
-  	align-items: center;
-  	justify-content: center;
-  	display: flex;
-}
 .flex-item-right {
-	flex: 0%;
-  	align-items: flex-start;
-  	justify-content: center;
-  	display: flex;
   	overflow: scroll;
     height: 95vh;
     overflow-x: hidden;

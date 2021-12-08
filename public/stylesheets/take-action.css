@@ -1,5 +1,16 @@
 #customize-area
 {
-   width: 40vw;
-   height: 60vh;
+
+}
+
+button
+{
+  height: 70px;
+  width: 70px;
+}
+
+button img
+{
+  max-width: 100%;
+  max-height: 100%;
 }
