@@ -1,16 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('font/font.css');
+@import url('style.css');
+
+.oa-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	background-image: url("/images/chapter-bg/chapter-page.psd@2x.png");
+	background-size: contain;
+}
+
+.oa-col {
+	width: 80%;
+	margin: 2em 0 0 0;
+}
+
+.oa-col h3 {
+	text-align: left;
+}
+
+.oa-col h4 {
+	font-family: 'Archer Book', serif;
+	font-size: 20px;
+	font-weight: 300;
+}
+
+.mobile-btns button {
+	display: none;
+	background-color: #D1C7BA;
+	border-radius: 6px;
+	border: none;
+	width: 24px;
+	height: 24px;
+}
+
 #customize-area
 {
-
+	border: 1px solid lightblue;
 }
 
 button
 {
   height: 70px;
   width: 70px;
+  vertical-align: top;
 }
 
 button img
 {
   max-width: 100%;
   max-height: 100%;
+}
+
+@media (max-width: 800px) {
+	.oa-wrapper {
+		background-size: contain;
+		max-width: 100%;
+	}
+	.flex-item-right, .flex-item-left {
+    	flex: 100%;
+	}
+	.oa-col {
+		width: 100%;
+		margin: 2em 2em;
+	}
+	.mobile-btns {
+		display: flex;
+	}
+	.mobile-btns button {
+		flex: 0%;
+	  	align-items: center;
+	  	justify-content: center;
+	  	display: inline-flex;
+	  	margin: 2%;
+   		height: 54px;
+	}
 }
