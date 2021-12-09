@@ -111,6 +111,11 @@ elemHeadpiece.on ('pointerout', function()
     elemHeadpiece.position.y -= 20;
 } );
 
+elemHeadpiece.on ('mousedown', function()
+{
+    window.open("orang-asli","_self")
+} );
+
 
 elemSeruling.interactive = true;
 elemSeruling.buttonMode = true;
@@ -123,5 +128,14 @@ elemSeruling.on ('pointerout', function()
 {
     elemSeruling.position.y += 20;
 } );
+
+elemPhone.interactive = true;
+elemPhone.buttonMode = true;
+
+elemPhone.on ('mousedown', function()
+{
+    window.open("resources","_self")
+} );
+
 
 }
