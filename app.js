@@ -36,10 +36,6 @@ app.get('/resources', function (req, res) {
   res.render('resources')
 })
 
-app.get('/popup', function (req, res) {
-  res.render('popup')
-})
-
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

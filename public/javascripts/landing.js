@@ -14,6 +14,9 @@ bg.height = window.innerHeight;
 pixiapp.stage.addChild(bg);
 
 //load elements for both views
+const elemNotebook = PIXI.Sprite.from('images/elem-notebook/elem-notebook@2x.png');
+pixiapp.stage.addChild(elemNotebook);
+
 const elemWeaving = PIXI.Sprite.from('images/weaving/weaving@2x.png');
 pixiapp.stage.addChild(elemWeaving);
 
@@ -22,6 +25,8 @@ pixiapp.stage.addChild(elemSeruling);
 
 const elemStationery = PIXI.Sprite.from('images/stationery/stationery@2x.png');
 pixiapp.stage.addChild(elemStationery);
+
+
 
 //mobile
 var x = window.matchMedia("(orientation: portrait)")
@@ -42,6 +47,17 @@ if (x.matches)
   elemWeaving.rotation = 3.14;
   elemWeaving.position.set(130,pixiapp.screen.height-120);
 
+  elemNotebook.scale.set(1.05);
+  elemNotebook.position.set(-180, pixiapp.screen.height/10);
+
+  //interactions
+  elemNotebook.interactive = true;
+  elemNotebook.buttonMode = true;
+  elemNotebook.on ('touchstart', function()
+  {
+      $('.pop-up').toggleClass("menu-open");
+  } );
+
 }
 
 //desktop
@@ -57,10 +73,6 @@ pixiapp.stage.addChild(elemPhone);
 // const containerNotebook = new PIXI.Container();
 // pixiapp.stage.addChild(containerNotebook);
 
-const elemNotebook = PIXI.Sprite.from('images/elem-notebook/elem-notebook@2x.png');
-elemNotebook.scale.set(0.7);
-pixiapp.stage.addChild(elemNotebook);
-
 const insStart = PIXI.Sprite.from('images/ins-start.svg');
 insStart.scale.set(0.7);
 //containerNotebook.addChild(insStart);
@@ -71,6 +83,7 @@ elemHeadpiece.scale.set(0.7);
 elemHeadpiece.anchor.set(0.5);
 elemHeadpiece.position.set(5,5);
 
+elemNotebook.scale.set(0.7);
 elemNotebook.anchor.set(0.5);
 elemNotebook.x = pixiapp.screen.width / 2;
 elemNotebook.y = (pixiapp.screen.height / 2) + 125;
@@ -97,6 +110,13 @@ elemStationery.position.set(pixiapp.screen.width - 300,pixiapp.screen.height - 1
 
 
 //interactions
+elemNotebook.interactive = true;
+elemNotebook.buttonMode = true;
+elemNotebook.on ('mousedown', function()
+{
+    $('.pop-up').toggleClass("menu-open");
+} );
+
 elemHeadpiece.interactive = true;
 elemHeadpiece.buttonMode = true;
 elemHeadpiece.on ('pointerover', function()
