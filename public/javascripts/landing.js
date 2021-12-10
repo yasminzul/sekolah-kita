@@ -34,20 +34,20 @@ var x = window.matchMedia("(orientation: portrait)")
 if (x.matches)
 {
   //resize and position elements
-  elemSeruling.scale.set(1);
+  elemSeruling.scale.set(0.7);
   elemSeruling.anchor.set(1,0);
   elemSeruling.position.set(pixiapp.screen.width-75,(pixiapp.screen.height/2)+150);
 
-  elemStationery.scale.set(1);
+  elemStationery.scale.set(0.7);
   elemStationery.anchor.set(1,0);
   elemStationery.position.set(pixiapp.screen.width+25,pixiapp.screen.height-350);
 
-  elemWeaving.scale.set(1.5);
+  elemWeaving.scale.set(0.7);
   elemWeaving.anchor.set(0.5);
   elemWeaving.rotation = 3.14;
   elemWeaving.position.set(130,pixiapp.screen.height-120);
 
-  elemNotebook.scale.set(1.05);
+  elemNotebook.scale.set(0.7);
   elemNotebook.position.set(-180, pixiapp.screen.height/10);
 
   //interactions
