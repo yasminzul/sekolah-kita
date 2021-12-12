@@ -27,3 +27,6 @@ function changeText(id){
     $('.on').css("color", "#000");
   }
 }
+
+
+

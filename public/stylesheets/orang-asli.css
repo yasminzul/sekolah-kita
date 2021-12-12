@@ -49,17 +49,17 @@
 
 #timeline {
 	width:100%;
-	margin-top: 6em;
+	margin-top: 8em;
 }
 
 #timeline canvas {
 	/*position: absolute;*/
     width: 100%;
-    margin-top: -11em;
+    margin-top: -13em;
 }
 
 #timeline-prev, #timeline-next {
-	margin-bottom: 4em;
+	margin-bottom: 2em;
 	border:none;
 	background-repeat: no-repeat;
 	height: 43px;
@@ -88,6 +88,7 @@
 @media (max-width: 800px) {
 	.oa-wrapper {
 		background-size: contain;
+		height: auto;
 	}
 	.flex-item-right, .flex-item-left {
     	flex: 100%;
@@ -101,5 +102,18 @@
 	.credit-col {
 		width: 100%;
 		margin: 2em 2em;
+	}
+
+	#timeline {
+		width: 90%;
+		margin: 6em auto;
+	}
+	#timeline-prev {
+		margin-left: -3em;
+		transform: scale(0.7);
+	}
+	#timeline-next {
+		margin-right: -3rem;
+		transform: scale(0.7);
 	}
 }
