@@ -293,9 +293,9 @@ input:checked + .slider:before {
 }
 
 .menu-open{
-  display: block;
-}
-
-/* .menu-close{
+  display: flex;
+} 
+/*
+.menu-close{
   display: none;
 } */
