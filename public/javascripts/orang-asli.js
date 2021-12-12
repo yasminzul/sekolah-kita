@@ -44,7 +44,7 @@ textCounter = 0;
 
 let basicText = new PIXI.Text(textArr[0], textStyle);
 
-basicText.position.set(pixiapp.screen.width / 2 - 155, pixiapp.screen.height/ 2)
+basicText.position.set(pixiapp.screen.width / 2 - 155, pixiapp.screen.height/ 2 + 100)
 
 // basicText.x = 50;
 // basicText.y = 500;

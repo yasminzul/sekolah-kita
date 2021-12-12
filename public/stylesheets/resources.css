@@ -10,8 +10,9 @@
 	background-size: contain;
 }
 
-.flex-item-left img {
+.resources-wrapper .flex-item-left img {
 	width: 80%;
+	height: 100vh;
 }
 
 .credit-col {
@@ -26,6 +27,7 @@
 .resource-link {
 	display: flex;
 	justify-content: flex-start;
+	align-items: center;
 }
 
 .resource-link a
@@ -40,6 +42,10 @@
     margin-right: 1em;
 }
 
+.resources-wrapper .flex-item-right {
+	height: 95vh;
+    overflow-y: scroll;
+}
 
 @media (max-width: 800px) {
 	.resources-wrapper {
@@ -48,6 +54,10 @@
 	.flex-item-right, .flex-item-left {
     	flex: 100%;
 	}
+	.resources-wrapper .flex-item-left img {
+		height: auto;
+	}
+
 	.credit-col {
 		width: 100%;
 		margin: 2em 2em;

@@ -8,6 +8,7 @@
 	flex-wrap: wrap;
 	background-image: url("/images/chapter-bg/chapter-page.psd@2x.png");
 	background-size: contain;
+	height: 100vh;
 }
 
 .flex-item-right {
@@ -20,13 +21,20 @@
 	width: 100%;
 }
 
+.oa-wrapper .flex-item-left {
+	background-image: url("/images/orang-asli/mask-group-4@2x.png");
+	background-size: cover;
+	background-repeat: round;
+}
+
 .credit-col {
 	width: 70%;
 	margin: 2em 0 0 0;
 }
 
-.credit-col h3 {
-	text-align: center;
+.oa-wrapper .credit-col h3 {
+	text-align: left;
+	width:55%;
 }
 #brinjal {
 	display: inline-block;
@@ -41,24 +49,40 @@
 
 #timeline {
 	width:100%;
-	margin-top: 4em;
+	margin-top: 6em;
 }
 
 #timeline canvas {
 	/*position: absolute;*/
     width: 100%;
+    margin-top: -11em;
 }
 
 #timeline-prev, #timeline-next {
 	margin-bottom: 4em;
+	border:none;
+	background-repeat: no-repeat;
+	height: 43px;
+    width: 43px;
+    cursor: pointer;
 }
 
 .btn-container {
-	width: 100%;
+/*	top: 50%;
+    width: 42%;
+    left: 53%;
+    position: absolute;*/
 }
 
 #timeline-next {
 	float: right;
+	margin-right: -4em;
+	background-image: url("/images/orang-asli/group-305.svg");
+}
+
+#timeline-prev {
+	margin-left: -4em;
+	background-image: url("/images/orang-asli/group-306.svg");
 }
 
 @media (max-width: 800px) {
@@ -67,6 +91,12 @@
 	}
 	.flex-item-right, .flex-item-left {
     	flex: 100%;
+	}
+	.oa-wrapper .flex-item-left {
+		height: 64vh;
+	}
+	.oa-wrapper .credit-col h3 {
+		width: 100%;
 	}
 	.credit-col {
 		width: 100%;
