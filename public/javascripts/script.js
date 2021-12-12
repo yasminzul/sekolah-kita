@@ -16,3 +16,17 @@ $(document).ready(function(id) {
   });
 
 });
+
+function changeText(id){
+  
+  if ($('#'+id).is(':checked')) {
+    $('.off').css("color", "#000");
+    $('.on').css("color", "#D1C7BA");
+  }else{
+    $('.off').css("color", "#D1C7BA");
+    $('.on').css("color", "#000");
+  }
+}
+
+
+

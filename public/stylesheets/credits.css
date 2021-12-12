@@ -8,16 +8,22 @@
 	flex-wrap: wrap;
 	background-image: url("/images/chapter-bg/chapter-page.psd@2x.png");
 	background-size: cover;
+	height: 100vh;
 }
 
 .credit-desc {
-	padding: 8em;
+	padding: 0 8em 0;
 }
 
 .credit-col-left, .credit-col-right {
-	width: 25%;
-	margin: 8em 2em;
+    width: 35%;
+    margin: 5em 2em 0;
 }
+
+.credit-col-left p, .credit-col-right p {
+	 line-height: 22px;
+}
+
 
 .img-top{
 	display: flex;
@@ -46,6 +52,7 @@
 @media (max-width: 800px) {
 	.credits-wrapper {
 		background-size: contain;
+		height: auto;
 	}
 	.flex-item-left {
     	flex: 100%;
@@ -55,10 +62,14 @@
 		/*text-align: center;*/
 	}
 	.credit-desc {
-		padding: 2em;
+		padding: 8em 2em;
 	}
 	.credit-col-left, .credit-col-right {
 		width: 100%;
 		margin: 2em 2em;
 	}
+	.credit-col-left p, .credit-col-right p {
+	 line-height: 25px;
+	}
+
 }

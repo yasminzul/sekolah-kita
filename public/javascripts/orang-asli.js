@@ -8,11 +8,11 @@ pixiapp.stage.addChild(elemTimeline);
 //text elements
 const textStyle = new PIXI.TextStyle({
     fontFamily: 'DM Sans, sans-serif',
-    fontSize: 20,
+    fontSize: 18,
     fill: '#000',
     align: 'center',
     wordWrap : true,
-    wordWrapWidth: pixiapp.screen.width - 100
+    wordWrapWidth: pixiapp.screen.width - 500
 });
 
 let textArr = [
