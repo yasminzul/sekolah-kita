@@ -81,7 +81,7 @@ function(){ ease.add(
 },
 function(){ ease.add(
     elemTimeline,
-    { x: -120, scale: 0.35},
+    { x: -120, scale: 0.5},
     { reverse: false, duration: 1500, ease: 'easeInOutQuad' }
   );
 }
