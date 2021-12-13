@@ -1,7 +1,7 @@
 const pixiapp = new window.PIXI.Application({ transparent: true });
 $('#landingView').append(pixiapp.view);
 
-pixiapp.renderer.resize(window.innerWidth, window.innerHeight);
+pixiapp.renderer.resize(window.innerWidth, (window.innerHeight/100)*100);
 
 //load elements for both views
 const elemWeaving = PIXI.Sprite.from('images/weaving/weaving@2x.png');
