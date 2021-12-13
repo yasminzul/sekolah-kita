@@ -1,0 +1,155 @@
+{
+	"frames": {
+		"NOTEBOOK_00000.png": {
+			"frame": {
+				"x": 751,
+				"y": 1,
+				"w": 750,
+				"h": 1350
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 1500,
+				"h": 1350
+			},
+			"sourceSize": {
+				"w": 1500,
+				"h": 1350
+			}
+		},
+		"NOTEBOOK_00001.png": {
+			"frame": {
+				"x": 2254,
+				"y": 1,
+				"w": 750,
+				"h": 1350
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 1500,
+				"h": 1350
+			},
+			"sourceSize": {
+				"w": 1500,
+				"h": 1350
+			}
+		},
+		"NOTEBOOK_00002.png": {
+			"frame": {
+				"x": 751,
+				"y": 1353,
+				"w": 750,
+				"h": 1350
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 1500,
+				"h": 1350
+			},
+			"sourceSize": {
+				"w": 1500,
+				"h": 1350
+			}
+		},
+		"NOTEBOOK_00003.png": {
+			"frame": {
+				"x": 2254,
+				"y": 1353,
+				"w": 750,
+				"h": 1350
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 1500,
+				"h": 1350
+			},
+			"sourceSize": {
+				"w": 1500,
+				"h": 1350
+			}
+		},
+		"NOTEBOOK_00004.png": {
+			"frame": {
+				"x": 3755,
+				"y": 1,
+				"w": 750,
+				"h": 1350
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 1500,
+				"h": 1350
+			},
+			"sourceSize": {
+				"w": 1500,
+				"h": 1350
+			}
+		},
+		"NOTEBOOK_00005.png": {
+			"frame": {
+				"x": 3755,
+				"y": 1353,
+				"w": 750,
+				"h": 1350
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 1500,
+				"h": 1350
+			},
+			"sourceSize": {
+				"w": 1500,
+				"h": 1350
+			}
+		},
+		"NOTEBOOK_00006.png": {
+			"frame": {
+				"x": 751,
+				"y": 2705,
+				"w": 750,
+				"h": 1350
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 1500,
+				"h": 1350
+			},
+			"sourceSize": {
+				"w": 1500,
+				"h": 1350
+			}
+		}
+	},
+	"meta": {
+		"app": "http://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"image": "spritesheet-notebookHover.png",
+		"format": "RGBA8888",
+		"size": {
+			"w": 4506,
+			"h": 4056
+		},
+		"scale": "1"
+	}
+}

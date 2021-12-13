@@ -25,7 +25,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/orang-asli', oaRouter);
-app.use('/bab1', c1Router);
+app.use('/chapter1', c1Router);
 app.use('/take-action', actionRouter);
 
 app.get('/credits', function (req, res) {
