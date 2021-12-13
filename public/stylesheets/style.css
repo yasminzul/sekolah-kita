@@ -352,6 +352,12 @@ input:checked + .slider:before {
 }
 
 @media (max-width: 800px) {
+
+  nav{
+    top: 4vh;
+    right: 3vw;
+  }
+
   .menu-wrapper {
     height: auto;
   }

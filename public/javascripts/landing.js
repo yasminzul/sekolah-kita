@@ -3,17 +3,11 @@ const pixiapp = new window.PIXI.Application({
   resizeTo: window});
 $('#landingView').append(pixiapp.view);
 
-// pixiapp.renderer.resize(window.innerWidth, (window.innerHeight/100)*100);
 
 //load elements for both views
 const elemWeaving = PIXI.Sprite.from('images/weaving/weaving@2x.png');
-pixiapp.stage.addChild(elemWeaving);
-
 const elemSeruling = PIXI.Sprite.from('images/elem-seruling/elem-seruling@2x.png');
-pixiapp.stage.addChild(elemSeruling);
-
 const elemStationery = PIXI.Sprite.from('images/stationery/stationery@2x.png');
-pixiapp.stage.addChild(elemStationery);
 
 var x = window.matchMedia("(orientation: portrait)")
 
@@ -21,23 +15,27 @@ var x = window.matchMedia("(orientation: portrait)")
 if (x.matches)
 {
   //resize and position elements
-  elemSeruling.scale.set(0.45);
-  elemSeruling.anchor.set(1,0);
-  elemSeruling.position.set(pixiapp.screen.width-20,(pixiapp.screen.height/2)+150);
-
-  elemStationery.scale.set(0.45);
-  elemStationery.anchor.set(1,0);
-  elemStationery.position.set(pixiapp.screen.width+25,pixiapp.screen.height-350);
-
-  elemWeaving.scale.set(0.45);
-  elemWeaving.anchor.set(0.5);
-  elemWeaving.rotation = 3.14;
-  elemWeaving.position.set(130,pixiapp.screen.height-120);
-
   const elemNotebook = PIXI.Sprite.from('images/elem-notebook/elem-notebook@2x.png');
   pixiapp.stage.addChild(elemNotebook);
-  elemNotebook.scale.set(0.45);
-  elemNotebook.position.set(-180, pixiapp.screen.height/10);
+  elemNotebook.scale.set(0.48);
+  elemNotebook.position.set(-100, pixiapp.screen.height/10.25);
+
+  pixiapp.stage.addChild(elemWeaving);
+  elemWeaving.scale.set(0.5);
+  elemWeaving.anchor.set(0.5);
+  elemWeaving.rotation = 3.14;
+  elemWeaving.position.set(130,pixiapp.screen.height-20);
+
+  pixiapp.stage.addChild(elemSeruling);
+  elemSeruling.scale.set(0.5);
+  elemSeruling.anchor.set(1,0);
+  elemSeruling.position.set(pixiapp.screen.width-50,(pixiapp.screen.height/2)+80);
+
+  pixiapp.stage.addChild(elemStationery);
+  elemStationery.scale.set(0.5);
+  elemStationery.anchor.set(0.5);
+  elemStationery.position.set(pixiapp.screen.width-45,pixiapp.screen.height+20);
+
 
   //interactions
   elemNotebook.interactive = true;
@@ -54,11 +52,7 @@ else {
 
 //load landscape only elements
 const elemHeadpiece = PIXI.Sprite.from('images/elem-headpiece/elem-headpiece@2x.png');
-pixiapp.stage.addChild(elemHeadpiece);
-
-// const elemPhone = PIXI.Sprite.from('images/elem-phone/elem-phone@2x.png');
-// pixiapp.stage.addChild(elemPhone);
-
+const insStart = PIXI.Sprite.from('images/ins-start.svg');
 
 const loader = PIXI.Loader.shared;
 loader.add('phone','images/Animated-sprites/spritesheet-phone.json');
@@ -67,42 +61,6 @@ loader.load(setup);
 
 function setup(loader, resources)
 {
-  //phone animation
-  const elemPhoneTextures = [];
-  for (let i=0; i < 74; i++)
-  {
-    const phoneTexture = PIXI.Texture.from(`SMARTPHONE_${i}.png`);
-    elemPhoneTextures.push(phoneTexture);
-  }
-
-  const elemPhoneSprite = new PIXI.AnimatedSprite(elemPhoneTextures);
-  elemPhoneSprite.scale.set(0.7);
-  elemPhoneSprite.anchor.set(0,1);
-  elemPhoneSprite.angle = -3.5;
-  elemPhoneSprite.position.set(100,pixiapp.screen.height + 100);
-  pixiapp.stage.addChild(elemPhoneSprite);
-  elemPhoneSprite.loop = false;
-
-  elemPhoneSprite.interactive = true;
-  elemPhoneSprite.buttonMode = true;
-
-  elemPhoneSprite.on ('mousedown', function()
-  {
-      window.open("resources","_self")
-  } );
-
-  elemPhoneSprite.on ('pointerover', function()
-  {
-      elemPhoneSprite.animationSpeed = 1;
-      elemPhoneSprite.play();
-  } );
-
-  elemPhoneSprite.on ('pointerout', function()
-  {
-      elemPhoneSprite.animationSpeed = -2;
-      elemPhoneSprite.play();
-  } );
-
   //notebook animation
   const notebookHTextures = [];
   for (let i=0; i < 7; i++)
@@ -139,19 +97,50 @@ function setup(loader, resources)
       notebookHSprite.play();
   } );
 
+  //phone animation
+  const elemPhoneTextures = [];
+  for (let i=0; i < 74; i++)
+  {
+    const phoneTexture = PIXI.Texture.from(`SMARTPHONE_${i}.png`);
+    elemPhoneTextures.push(phoneTexture);
+  }
+
+  const elemPhoneSprite = new PIXI.AnimatedSprite(elemPhoneTextures);
+  elemPhoneSprite.scale.set(0.7);
+  elemPhoneSprite.anchor.set(0,1);
+  elemPhoneSprite.angle = -3.5;
+  elemPhoneSprite.position.set(100,pixiapp.screen.height + 100);
+  pixiapp.stage.addChild(elemPhoneSprite);
+  elemPhoneSprite.loop = false;
+
+  elemPhoneSprite.interactive = true;
+  elemPhoneSprite.buttonMode = true;
+
+  elemPhoneSprite.on ('mousedown', function()
+  {
+      window.open("resources","_self")
+  } );
+
+  elemPhoneSprite.on ('pointerover', function()
+  {
+      elemPhoneSprite.animationSpeed = 1;
+      elemPhoneSprite.play();
+  } );
+
+  elemPhoneSprite.on ('pointerout', function()
+  {
+      elemPhoneSprite.animationSpeed = -2;
+      elemPhoneSprite.play();
+  } );
+
 }
 
+pixiapp.stage.addChild(elemHeadpiece);
+pixiapp.stage.addChild(elemWeaving);
+pixiapp.stage.addChild(elemSeruling);
+pixiapp.stage.addChild(elemStationery);
+//pixiapp.stage.addChild(insStart);
 
-// insStart.anchor.set(0.5);
-// insStart.position.set(elemNotebook.width,0);
-// const containerNotebook = new PIXI.Container();
-// pixiapp.stage.addChild(containerNotebook);
-// elemNotebook.scale.set(0.7);
-// elemNotebook.anchor.set(0.5);
-// elemNotebook.x = pixiapp.screen.width / 2;
-// elemNotebook.y = (pixiapp.screen.height / 2) + 125;
-
-const insStart = PIXI.Sprite.from('images/ins-start.svg');
 insStart.scale.set(0.7);
 
 //positions and scale
@@ -170,6 +159,7 @@ elemSeruling.position.set(pixiapp.screen.width - 150,pixiapp.screen.height - 230
 elemStationery.scale.set(0.7);
 elemStationery.anchor.set(0.5);
 elemStationery.position.set(pixiapp.screen.width - 300,pixiapp.screen.height - 100);
+elemStationery.zIndex = 100;
 
 
 //interactions
