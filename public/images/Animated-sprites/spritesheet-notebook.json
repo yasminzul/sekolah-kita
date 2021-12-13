@@ -1,6 +1,6 @@
 {
 	"frames": {
-		"NOTEBOOK_00000.png": {
+		"NOTEBOOK_0.png": {
 			"frame": {
 				"x": 1,
 				"y": 1,
@@ -20,7 +20,7 @@
 				"h": 1350
 			}
 		},
-		"NOTEBOOK_00001.png": {
+		"NOTEBOOK_1.png": {
 			"frame": {
 				"x": 1503,
 				"y": 1,
@@ -40,7 +40,7 @@
 				"h": 1350
 			}
 		},
-		"NOTEBOOK_00002.png": {
+		"NOTEBOOK_2.png": {
 			"frame": {
 				"x": 3005,
 				"y": 1,
@@ -60,7 +60,7 @@
 				"h": 1350
 			}
 		},
-		"NOTEBOOK_00003.png": {
+		"NOTEBOOK_3.png": {
 			"frame": {
 				"x": 4507,
 				"y": 1,
@@ -80,7 +80,7 @@
 				"h": 1350
 			}
 		},
-		"NOTEBOOK_00004.png": {
+		"NOTEBOOK_4.png": {
 			"frame": {
 				"x": 1,
 				"y": 1353,
@@ -100,7 +100,7 @@
 				"h": 1350
 			}
 		},
-		"NOTEBOOK_00005.png": {
+		"NOTEBOOK_5.png": {
 			"frame": {
 				"x": 1503,
 				"y": 1353,
@@ -120,7 +120,7 @@
 				"h": 1350
 			}
 		},
-		"NOTEBOOK_00006.png": {
+		"NOTEBOOK_6.png": {
 			"frame": {
 				"x": 3005,
 				"y": 1353,
@@ -140,7 +140,7 @@
 				"h": 1350
 			}
 		},
-		"NOTEBOOK_00007.png": {
+		"NOTEBOOK_7.png": {
 			"frame": {
 				"x": 4507,
 				"y": 1353,
@@ -160,7 +160,7 @@
 				"h": 1350
 			}
 		},
-		"NOTEBOOK_00008.png": {
+		"NOTEBOOK_8.png": {
 			"frame": {
 				"x": 1,
 				"y": 2705,
@@ -180,7 +180,7 @@
 				"h": 1350
 			}
 		},
-		"NOTEBOOK_00009.png": {
+		"NOTEBOOK_9.png": {
 			"frame": {
 				"x": 1503,
 				"y": 2705,
@@ -200,7 +200,7 @@
 				"h": 1350
 			}
 		},
-		"NOTEBOOK_00010.png": {
+		"NOTEBOOK_10.png": {
 			"frame": {
 				"x": 3005,
 				"y": 2705,
@@ -220,7 +220,7 @@
 				"h": 1350
 			}
 		},
-		"NOTEBOOK_00011.png": {
+		"NOTEBOOK_11.png": {
 			"frame": {
 				"x": 4507,
 				"y": 2705,
@@ -240,7 +240,7 @@
 				"h": 1350
 			}
 		},
-		"NOTEBOOK_00012.png": {
+		"NOTEBOOK_12.png": {
 			"frame": {
 				"x": 1,
 				"y": 4057,
@@ -260,7 +260,7 @@
 				"h": 1350
 			}
 		},
-		"NOTEBOOK_00013.png": {
+		"NOTEBOOK_13.png": {
 			"frame": {
 				"x": 1503,
 				"y": 4057,
@@ -280,7 +280,7 @@
 				"h": 1350
 			}
 		},
-		"NOTEBOOK_00014.png": {
+		"NOTEBOOK_14.png": {
 			"frame": {
 				"x": 3005,
 				"y": 4057,
@@ -300,7 +300,7 @@
 				"h": 1350
 			}
 		},
-		"NOTEBOOK_00015.png": {
+		"NOTEBOOK_15.png": {
 			"frame": {
 				"x": 4507,
 				"y": 4057,
@@ -320,7 +320,7 @@
 				"h": 1350
 			}
 		},
-		"NOTEBOOK_00016.png": {
+		"NOTEBOOK_16.png": {
 			"frame": {
 				"x": 6009,
 				"y": 1,
@@ -340,7 +340,7 @@
 				"h": 1350
 			}
 		},
-		"NOTEBOOK_00017.png": {
+		"NOTEBOOK_17.png": {
 			"frame": {
 				"x": 6009,
 				"y": 1353,
@@ -360,7 +360,7 @@
 				"h": 1350
 			}
 		},
-		"NOTEBOOK_00050.png": {
+		"NOTEBOOK_18.png": {
 			"frame": {
 				"x": 6009,
 				"y": 2705,
@@ -384,7 +384,7 @@
 	"meta": {
 		"app": "http://www.codeandweb.com/texturepacker",
 		"version": "1.0",
-		"image": "spritesheet.png",
+		"image": "spritesheet-notebook.png",
 		"format": "RGBA8888",
 		"size": {
 			"w": 7510,
