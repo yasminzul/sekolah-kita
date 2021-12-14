@@ -11,13 +11,14 @@
 	height: 100vh;
 }
 
-.flex-item-right {
+.oa-wrapper  .flex-item-right {
   	overflow: scroll;
-    height: 95vh;
+    height: 90vh;
     overflow-x: hidden;
+    margin-top: 10vh;
 }
 
-.flex-item-left img {
+.oa-wrapper .flex-item-left img {
 	width: 100%;
 }
 
@@ -29,7 +30,7 @@
 
 .credit-col {
 	width: 70%;
-	margin: 2em 0 0 0;
+	margin: 0 auto;
 }
 
 .oa-wrapper .credit-col h3 {
@@ -77,12 +78,12 @@
 
 #timeline-next {
 	float: right;
-	margin-right: -8em;
+	margin-right: -5em;
 	background-image: url("/images/orang-asli/group-305.svg");
 }
 
 #timeline-prev {
-	margin-left: -8em;
+	margin-left: -5em;
 	background-image: url("/images/orang-asli/group-306.svg");
 }
 
@@ -135,11 +136,17 @@
 		margin: 12em auto 0 auto;
 	}
 	#timeline-prev {
-		margin-left: -4em;
+		margin-left: -3em;
+   		margin-top: -2em;
 		transform: scale(0.7);
 	}
 	#timeline-next {
-		margin-right: -4em;
+		margin-right: -3em;
+		margin-top: -2em;
 		transform: scale(0.7);
+	}
+
+	.video-container, .footnote {
+		width: 100% !important;
 	}
 }

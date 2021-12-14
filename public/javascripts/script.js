@@ -15,18 +15,28 @@ $(document).ready(function(id) {
     $('.pop-up').toggleClass("menu-open");
   });
 
-});
+  $('#switch').click(function() {
+    if ($(this).is(':checked')) {
+      $('.off').css("color", "#000");
+      $('.on').css("color", "#D1C7BA");
+    } else {
+      $('.off').css("color", "#D1C7BA");
+      $('.on').css("color", "#000");
+    }
+  });
 
-function changeText(id){
-  
-  if ($('#'+id).is(':checked')) {
-    $('.off').css("color", "#000");
-    $('.on').css("color", "#D1C7BA");
-  }else{
-    $('.off').css("color", "#D1C7BA");
-    $('.on').css("color", "#000");
-  }
-}
+  $('#menu-switch').click(function() {
+    if ($(this).is(':checked')) {
+      $('.off').css("color", "#000");
+      $('.on').css("color", "#D1C7BA");
+    } else {
+      $('.off').css("color", "#D1C7BA");
+      $('.on').css("color", "#000");
+    }
+  });
+
+
+});
 
 
 

@@ -18,6 +18,8 @@
 .credit-col-left, .credit-col-right {
     width: 35%;
     margin: 5em 2em 0;
+    display: inline-block;
+    vertical-align: text-top;
 }
 
 .credit-col-left p, .credit-col-right p {
