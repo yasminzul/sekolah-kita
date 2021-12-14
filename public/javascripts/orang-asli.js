@@ -59,61 +59,61 @@ if (x.matches)
   animationTimeline = [
   function(){ ease.add(
       elemTimeline,
-      { x: (pixiapp.screen.width*2) + 20, scale: 0.25},
+      { x: (pixiapp.screen.width/100)*260, scale: 0.25},
       { reverse: false, duration: 1500, ease: 'easeInOutQuad' }
     );
   },
   function(){ ease.add(
       elemTimeline,
-      { x: (pixiapp.screen.width*2) - 250, scale: 0.25},
+      { x: (pixiapp.screen.width/100)*210, scale: 0.25},
       { reverse: false, duration: 1500, ease: 'easeInOutQuad' }
     );
   },
   function(){ ease.add(
       elemTimeline,
-      { x: (pixiapp.screen.width*2) - 525, scale: 0.25},
+      { x: (pixiapp.screen.width/100)*158, scale: 0.25},
       { reverse: false, duration: 1500, ease: 'easeInOutQuad' }
     );
   },
   function(){ ease.add(
       elemTimeline,
-      { x: pixiapp.screen.width - 30, scale: 0.25},
+      { x: (pixiapp.screen.width/100)*115, scale: 0.25},
       { reverse: false, duration: 1500, ease: 'easeInOutQuad' }
     );
   },
   function(){ ease.add(
       elemTimeline,
-      { x: 275, scale: 0.35},
+      { x: (pixiapp.screen.width/100)*40, scale: 0.32},
       { reverse: false, duration: 1500, ease: 'easeInOutQuad' }
     );
   },
   function(){ ease.add(
       elemTimeline,
-      { x: 25, scale: 0.5},
+      { x: -(pixiapp.screen.width/100)*3, scale: 0.32},
       { reverse: false, duration: 1500, ease: 'easeInOutQuad' }
     );
   },
   function(){ ease.add(
       elemTimeline,
-      { x: -220, scale: 0.5},
+      { x: -(pixiapp.screen.width/100)*45, scale: 0.32},
       { reverse: false, duration: 1500, ease: 'easeInOutQuad' }
     );
   },
   function(){ ease.add(
       elemTimeline,
-      { x: -pixiapp.screen.width + 220, scale: 0.5},
+      { x: -(pixiapp.screen.width/100)*95, scale: 0.32},
       { reverse: false, duration: 1500, ease: 'easeInOutQuad' }
     );
   },
   function(){ ease.add(
       elemTimeline,
-      { x: -pixiapp.screen.width + 50, scale: 0.5},
+      { x: -(pixiapp.screen.width/100)*125, scale: 0.32},
       { reverse: false, duration: 1500, ease: 'easeInOutQuad' }
     );
   },
   function(){ ease.add(
       elemTimeline,
-      { x: -pixiapp.screen.width - 235, scale: 0.5},
+      { x: -(pixiapp.screen.width/100)*170, scale: 0.32},
       { reverse: false, duration: 1500, ease: 'easeInOutQuad' }
     );
   }
@@ -125,13 +125,13 @@ if (x.matches)
 //desktop
 else {
 
-pixiapp.renderer.resize(window.innerWidth/2, (window.innerHeight/100)*100);
+pixiapp.renderer.resize(window.innerWidth/2, (window.innerHeight/100)*65);
 
 elemTimeline.scale.set(0.1);
 elemTimeline.anchor.set(0.5);
-elemTimeline.position.set(pixiapp.screen.width / 2, pixiapp.screen.height / 4)
+elemTimeline.position.set(pixiapp.screen.width / 2, pixiapp.screen.height / 3)
 
-basicText.position.set(pixiapp.screen.width/ 2, pixiapp.screen.height/ 2 + 100);
+basicText.position.set(pixiapp.screen.width/ 2, pixiapp.screen.height/ 2 + 150);
 
 //timeline animation
 animationTimeline = [

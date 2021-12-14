@@ -5,3 +5,12 @@
   background-image: url(/images/BG-header/BG-header@2x.png);
   background-size: cover;
 }
+
+.home-btn{
+  display: none;
+}
+
+.switch-nav
+{
+  display: inline-block;
+}

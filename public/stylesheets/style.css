@@ -74,7 +74,7 @@ h3 {
   margin-top: 4em !important;
   background-image: url("/images/chapters/group-82.svg");
   background-repeat: no-repeat;
-  font-family:'Archer Bold', serif; 
+  font-family:'Archer Bold', serif;
 }
 
 .ch-label > div {
@@ -85,7 +85,7 @@ h3 {
 }
 
 .ch-finished {
-  font-family:'Archer Bold', serif; 
+  font-family:'Archer Bold', serif;
   display: flex;
   align-items: end;
 }
@@ -116,9 +116,13 @@ nav button img{
   height: 100%;
 }
 
+.switch-nav
+{
+  display: none;
+}
+
 .switch {
   position: relative;
-  display: inline-block;
   width: 80px;
   height: 36px;
 }
@@ -218,7 +222,6 @@ input:checked + .slider:before {
     height: 100%;
     padding: 0;
     margin: 0;
-    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -416,11 +419,11 @@ input:checked + .slider:before {
 
 .menu-open{
   display: flex;
-} 
+}
 
 /*.menu-close{
   display: none;
-} 
+}
 */
 @media (max-width: 1200px) and (min-width: 801px) {
   .menu-container {
@@ -457,7 +460,7 @@ input:checked + .slider:before {
   }
   .menu-title.main {
     font-size: 20px;
-  }  
+  }
   .menu-outer img {
     margin-top: -1.5em;
   }

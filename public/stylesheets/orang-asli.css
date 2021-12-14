@@ -55,11 +55,10 @@
 #timeline canvas {
 	/*position: absolute;*/
     width: 100%;
-    margin-top: -13em;
+    margin-top: -10em;
 }
 
 #timeline-prev, #timeline-next {
-	margin-bottom: 2em;
 	border:none;
 	background-repeat: no-repeat;
 	height: 43px;
@@ -133,14 +132,14 @@
 
 	#timeline {
 		width: 90%;
-		margin: 6em auto;
+		margin: 12em auto 0 auto;
 	}
 	#timeline-prev {
 		margin-left: -4em;
 		transform: scale(0.7);
 	}
 	#timeline-next {
-		margin-right: -4rem;
+		margin-right: -4em;
 		transform: scale(0.7);
 	}
 }
