@@ -88,14 +88,41 @@ h3 {
 }
 
 .ch-finished {
-  font-family:'Archer Bold', serif;
   display: flex;
   align-items: end;
+  justify-content: center;
+}
+
+.ch-finished span {
+  font-family:'Archer Bold', serif;
 }
 
 .ch-finished img {
   margin-right: 1em;
   width: 5%;
+}
+
+.ch-next, .ch-prev {
+  background-repeat: no-repeat;
+  font-family:'Archer Bold', serif;
+  border: none;
+  height: 36px;
+  margin: 0 0.5em;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.ch-next {
+  background-image: url("/images/chapters/group-82.svg"); 
+  color: #000; 
+  width: 85px;
+  margin-left: 1em;
+}
+
+.ch-prev {
+  background-image: url("/images/menu/group-88.svg");
+  color: #fff;
+  margin-left: 9em;
 }
 
 /* navigation */
@@ -190,6 +217,21 @@ input:checked + .slider:before {
   top: 26%;
 }
 
+.score-wrapper {
+  background: url("/images/menu/group-88.svg");
+  background-repeat: no-repeat;
+  width: 75px;
+  padding: 0.5em 0em 0em 0.5em;
+}
+
+.score-wrapper img {
+  padding-right: 2px;
+}
+
+.score-number, .score-total {
+  color: #fff;
+  vertical-align: top;
+}
 
 /* popups */
 .pop-up{
@@ -546,5 +588,9 @@ input:checked + .slider:before {
   }
   .ch-label > div {
     margin: 0 !important;
+  }
+
+  .ch-next, .ch-prev {
+    margin-left: 0;
   }
 }
