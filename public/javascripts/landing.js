@@ -3,10 +3,11 @@ const pixiapp = new window.PIXI.Application({
   resizeTo: window});
 $('#landingView').append(pixiapp.view);
 
+const bg = PIXI.Texture.fromImage('images/BG-header/BG-header@2x.png');
+pixiapp.stage.addChild(bg);
+
 
 //load elements for both views
-const elemWeaving = PIXI.Sprite.from('images/weaving/weaving@2x.png');
-const elemSeruling = PIXI.Sprite.from('images/elem-seruling/elem-seruling@2x.png');
 const elemStationery = PIXI.Sprite.from('images/stationery/stationery@2x.png');
 
 var x = window.matchMedia("(orientation: portrait)")
@@ -16,6 +17,9 @@ if (x.matches)
 {
   //resize and position elements
   const elemNotebook = PIXI.Sprite.from('images/elem-notebook/elem-notebook@2x.png');
+  const elemWeaving = PIXI.Sprite.from('images/weaving/weaving@2x.png');
+  const elemSeruling = PIXI.Sprite.from('images/elem-seruling/elem-seruling@2x.png');
+
   pixiapp.stage.addChild(elemNotebook);
   elemNotebook.scale.set(0.48);
   elemNotebook.position.set(-100, pixiapp.screen.height/10.25);
@@ -57,6 +61,8 @@ const insStart = PIXI.Sprite.from('images/ins-start.svg');
 const loader = PIXI.Loader.shared;
 loader.add('phone','images/Animated-sprites/spritesheet-phone.json');
 loader.add('notebook','images/Animated-sprites/spritesheet-notebookHover.json')
+loader.add('headpiece','images/Animated-sprites/spritesheet-headpiece.json');
+loader.add('flute','images/Animated-sprites/spritesheet-flute.json')
 loader.load(setup);
 
 function setup(loader, resources)
@@ -97,6 +103,9 @@ function setup(loader, resources)
       notebookHSprite.play();
   } );
 
+  //headpiece animation
+
+
   //phone animation
   const elemPhoneTextures = [];
   for (let i=0; i < 74; i++)
@@ -132,6 +141,9 @@ function setup(loader, resources)
       elemPhoneSprite.animationSpeed = -2;
       elemPhoneSprite.play();
   } );
+
+  //flute animation
+
 
 }
 

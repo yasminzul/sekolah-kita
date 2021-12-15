@@ -1,0 +1,1515 @@
+{
+	"frames": {
+		"NOSEFLUTE_0000.png": {
+			"frame": {
+				"x": 1,
+				"y": 1,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_0001.png": {
+			"frame": {
+				"x": 296,
+				"y": 1,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00010.png": {
+			"frame": {
+				"x": 591,
+				"y": 1,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00011.png": {
+			"frame": {
+				"x": 886,
+				"y": 1,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00012.png": {
+			"frame": {
+				"x": 1181,
+				"y": 1,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00013.png": {
+			"frame": {
+				"x": 1476,
+				"y": 1,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00014.png": {
+			"frame": {
+				"x": 1771,
+				"y": 1,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00015.png": {
+			"frame": {
+				"x": 2066,
+				"y": 1,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00016.png": {
+			"frame": {
+				"x": 2361,
+				"y": 1,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00017.png": {
+			"frame": {
+				"x": 2656,
+				"y": 1,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00018.png": {
+			"frame": {
+				"x": 2951,
+				"y": 1,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00019.png": {
+			"frame": {
+				"x": 3246,
+				"y": 1,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_0002.png": {
+			"frame": {
+				"x": 3541,
+				"y": 1,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00020.png": {
+			"frame": {
+				"x": 3836,
+				"y": 1,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00021.png": {
+			"frame": {
+				"x": 4131,
+				"y": 1,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00022.png": {
+			"frame": {
+				"x": 1,
+				"y": 973,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00023.png": {
+			"frame": {
+				"x": 296,
+				"y": 973,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00024.png": {
+			"frame": {
+				"x": 591,
+				"y": 973,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00025.png": {
+			"frame": {
+				"x": 886,
+				"y": 973,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00026.png": {
+			"frame": {
+				"x": 1181,
+				"y": 973,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00027.png": {
+			"frame": {
+				"x": 1476,
+				"y": 973,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00028.png": {
+			"frame": {
+				"x": 1771,
+				"y": 973,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00029.png": {
+			"frame": {
+				"x": 2066,
+				"y": 973,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_0003.png": {
+			"frame": {
+				"x": 2361,
+				"y": 973,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00030.png": {
+			"frame": {
+				"x": 2656,
+				"y": 973,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00031.png": {
+			"frame": {
+				"x": 2951,
+				"y": 973,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00032.png": {
+			"frame": {
+				"x": 3246,
+				"y": 973,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00033.png": {
+			"frame": {
+				"x": 3541,
+				"y": 973,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00034.png": {
+			"frame": {
+				"x": 3836,
+				"y": 973,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00035.png": {
+			"frame": {
+				"x": 4131,
+				"y": 973,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00036.png": {
+			"frame": {
+				"x": 1,
+				"y": 1945,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00037.png": {
+			"frame": {
+				"x": 296,
+				"y": 1945,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00038.png": {
+			"frame": {
+				"x": 591,
+				"y": 1945,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00039.png": {
+			"frame": {
+				"x": 886,
+				"y": 1945,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_0004.png": {
+			"frame": {
+				"x": 1181,
+				"y": 1945,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00040.png": {
+			"frame": {
+				"x": 1476,
+				"y": 1945,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00041.png": {
+			"frame": {
+				"x": 1771,
+				"y": 1945,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00042.png": {
+			"frame": {
+				"x": 2066,
+				"y": 1945,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00043.png": {
+			"frame": {
+				"x": 2361,
+				"y": 1945,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00044.png": {
+			"frame": {
+				"x": 2656,
+				"y": 1945,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00045.png": {
+			"frame": {
+				"x": 2951,
+				"y": 1945,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00046.png": {
+			"frame": {
+				"x": 3246,
+				"y": 1945,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00047.png": {
+			"frame": {
+				"x": 3541,
+				"y": 1945,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00048.png": {
+			"frame": {
+				"x": 3836,
+				"y": 1945,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00049.png": {
+			"frame": {
+				"x": 4131,
+				"y": 1945,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_0005.png": {
+			"frame": {
+				"x": 1,
+				"y": 2917,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00050.png": {
+			"frame": {
+				"x": 296,
+				"y": 2917,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00051.png": {
+			"frame": {
+				"x": 591,
+				"y": 2917,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00052.png": {
+			"frame": {
+				"x": 886,
+				"y": 2917,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00053.png": {
+			"frame": {
+				"x": 1181,
+				"y": 2917,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00054.png": {
+			"frame": {
+				"x": 1476,
+				"y": 2917,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00055.png": {
+			"frame": {
+				"x": 1771,
+				"y": 2917,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00056.png": {
+			"frame": {
+				"x": 2066,
+				"y": 2917,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00057.png": {
+			"frame": {
+				"x": 2361,
+				"y": 2917,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00058.png": {
+			"frame": {
+				"x": 2656,
+				"y": 2917,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00059.png": {
+			"frame": {
+				"x": 2951,
+				"y": 2917,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_0006.png": {
+			"frame": {
+				"x": 3246,
+				"y": 2917,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00060.png": {
+			"frame": {
+				"x": 3541,
+				"y": 2917,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00061.png": {
+			"frame": {
+				"x": 3836,
+				"y": 2917,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00062.png": {
+			"frame": {
+				"x": 4131,
+				"y": 2917,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00063.png": {
+			"frame": {
+				"x": 4426,
+				"y": 1,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00064.png": {
+			"frame": {
+				"x": 4426,
+				"y": 973,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00065.png": {
+			"frame": {
+				"x": 4426,
+				"y": 1945,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00066.png": {
+			"frame": {
+				"x": 4426,
+				"y": 2917,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00067.png": {
+			"frame": {
+				"x": 1,
+				"y": 3889,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00068.png": {
+			"frame": {
+				"x": 296,
+				"y": 3889,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00069.png": {
+			"frame": {
+				"x": 591,
+				"y": 3889,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_0007.png": {
+			"frame": {
+				"x": 886,
+				"y": 3889,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00070.png": {
+			"frame": {
+				"x": 1181,
+				"y": 3889,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00071.png": {
+			"frame": {
+				"x": 1476,
+				"y": 3889,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00072.png": {
+			"frame": {
+				"x": 1771,
+				"y": 3889,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00073.png": {
+			"frame": {
+				"x": 2066,
+				"y": 3889,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_00074.png": {
+			"frame": {
+				"x": 2361,
+				"y": 3889,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_0008.png": {
+			"frame": {
+				"x": 2656,
+				"y": 3889,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		},
+		"NOSEFLUTE_0009.png": {
+			"frame": {
+				"x": 2951,
+				"y": 3889,
+				"w": 293,
+				"h": 970
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 293,
+				"h": 970
+			},
+			"sourceSize": {
+				"w": 293,
+				"h": 970
+			}
+		}
+	},
+	"meta": {
+		"app": "http://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"image": "spritesheet-flute.png",
+		"format": "RGBA8888",
+		"size": {
+			"w": 4720,
+			"h": 4860
+		},
+		"scale": "1"
+	}
+}
