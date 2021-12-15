@@ -16,7 +16,7 @@ const textStyle = new PIXI.TextStyle({
 });
 
 let textArr = [
-  'A brief history of the Malay Peninsula',
+  'Tap on the left and right arrows to journey through history',
   '≈100,000 years ago: Modern humans start migrating out of Africa',
   '≈10,000-2,000 years ago: Earliest settlers arrive in the peninsula',
   '≈200CE: Emergence of Hindu and Buddhist kingdoms',
@@ -26,8 +26,7 @@ let textArr = [
   'Late 1700s-1957: British colonial period',
   '1941-1945: Japanese occupation during World War II',
   '1950s: Term “Orang Asli” first widely used',
-  '1957: Malayan independence',
-  '1963: Formation of Malaysia',
+  '1957: Malayan independence          1963: Formation of Malaysia',
 ]
 
 textCounter = 0;
@@ -224,12 +223,12 @@ $(document).ready(function(){
         animationTimeline[clickstate]();
 
       }
-      else if (clickstate >= animationTimeline.length-1 && clickstate < 11)
+      else if (clickstate >= animationTimeline.length-1 && clickstate < 10)
       {
         clickstate += 1;
       }
 
-      if (textCounter == 11)
+      if (textCounter == 10)
       {
          document.getElementById("timeline-next").disabled = true;
       }
@@ -254,7 +253,7 @@ $(document).ready(function(){
         animationTimeline[clickstate]();
 
       }
-      else if (clickstate >= animationTimeline.length && clickstate <= 11)
+      else if (clickstate >= animationTimeline.length && clickstate <= 10)
       {
         clickstate -= 1;
 
