@@ -1,18 +1,14 @@
 $(document).ready(function(id) {
-  $('button.menu-btn').click(function() {
+  $('button.menu-btn, button.close-btn').click(function() {
     $('.menu-nav').toggleClass("menu-open");
   });
 
-  $('button.close-btn').click(function() {
-    $('.menu-nav').toggleClass("menu-open");
+  $('div.not-available, #coming-soon-close').click(function() {
+    $('#coming-soon').toggleClass("menu-open");
   });
 
-  $('div.not-available').click(function() {
-    $('.pop-up').toggleClass("menu-open");
-  });
-
-  $('.pop-btn').click(function() {
-    $('.pop-up').toggleClass("menu-open");
+  $('#share-close, #share-open').click(function() {
+    $('#share').toggleClass("menu-open");
   });
 
   $('#switch').click(function() {
@@ -35,8 +31,23 @@ $(document).ready(function(id) {
     }
   });
 
-
 });
 
+function copytoclipboard() {
+/* Get the text field */
+var copyText = document.getElementById("myInput");
 
+/* Select the text field */
+copyText.select();
+copyText.setSelectionRange(0, 99999); /* For mobile devices */
+ /* Copy the text inside the text field */
+navigator.clipboard.writeText(copyText.value);
 
+var tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "Copied!";
+}
+
+function outFunc() {
+  var tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "Copy to clipboard";
+}

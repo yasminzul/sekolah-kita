@@ -3,6 +3,8 @@ const pixiapp = new window.PIXI.Application({
   resizeTo: window});
 $('#landingView').append(pixiapp.view);
 
+const loader = PIXI.Loader.shared;
+
 const bg = PIXI.Texture.from('images/BG-header/BG-header@2x.png');
 bg.width = window.innerWidth;
 bg.height = window.innerHeight;
@@ -16,7 +18,7 @@ const elemWeaving = PIXI.Sprite.from('images/weaving/weaving@2x.png');
 pixiapp.stage.addChild(elemWeaving);
 pixiapp.stage.addChild(elemStationery);
 
-var x = window.matchMedia("(orientation: portrait)")
+var x = window.matchMedia("(max-width: 500px)")
 
 //mobile
 if (x.matches)
@@ -51,7 +53,7 @@ if (x.matches)
   elemNotebook.buttonMode = true;
   elemNotebook.on ('touchstart', function()
   {
-      $('.pop-up').toggleClass("menu-open");
+      $('#coming-soon').toggleClass("menu-open");
   } );
 
 }
@@ -59,11 +61,6 @@ if (x.matches)
 //desktop
 else {
 
-//load landscape only elements
-const elemHeadpiece = PIXI.Sprite.from('images/elem-headpiece/elem-headpiece@2x.png');
-const insStart = PIXI.Sprite.from('images/ins-start.svg');
-
-const loader = PIXI.Loader.shared;
 loader.add('phone','images/Animated-sprites/spritesheet-phone.json');
 loader.add('notebook','images/Animated-sprites/spritesheet-notebookHover.json')
 loader.add('headpiece','images/Animated-sprites/spritesheet-headpiece.json');
@@ -93,7 +90,12 @@ function setup(loader, resources)
 
   notebookHSprite.on ('mousedown', function()
   {
-      $('.pop-up').toggleClass("menu-open");
+      $('#coming-soon').toggleClass("menu-open");
+  } );
+
+  notebookHSprite.on ('touchstart', function()
+  {
+      $('#coming-soon').toggleClass("menu-open");
   } );
 
   notebookHSprite.on ('pointerover', function()
@@ -127,6 +129,11 @@ function setup(loader, resources)
   elemHeadpieceSprite.buttonMode = true;
 
   elemHeadpieceSprite.on ('mousedown', function()
+  {
+      window.open("orang-asli","_self")
+  } );
+
+  elemHeadpieceSprite.on ('touchstart', function()
   {
       window.open("orang-asli","_self")
   } );
@@ -167,6 +174,11 @@ function setup(loader, resources)
       window.open("resources","_self")
   } );
 
+  elemPhoneSprite.on ('touchstart', function()
+  {
+      window.open("resources","_self")
+  } );
+
   elemPhoneSprite.on ('pointerover', function()
   {
       elemPhoneSprite.animationSpeed = 1;
@@ -199,7 +211,12 @@ function setup(loader, resources)
 
   elemFluteSprite.on ('mousedown', function()
   {
-      $('.pop-up').toggleClass("menu-open");
+      $('#coming-soon').toggleClass("menu-open");
+  } );
+
+  elemFluteSprite.on ('touchstart', function()
+  {
+      $('#coming-soon').toggleClass("menu-open");
   } );
 
   elemFluteSprite.on ('pointerover', function()
@@ -218,7 +235,7 @@ function setup(loader, resources)
 
 
 //pixiapp.stage.addChild(insStart);
-insStart.scale.set(0.7);
+//insStart.scale.set(0.7);
 
 //positions and scale
 elemWeaving.scale.set(0.7);
@@ -231,4 +248,14 @@ elemStationery.position.set(pixiapp.screen.width - 300,pixiapp.screen.height - 1
 elemStationery.zIndex = 100;
 
 
+}
+
+loader.onProgress.add(showProgress);
+
+function showProgress(e)
+{
+  $('#loading').html(e.progress);
+  if (e.progress == 100) {
+    $('#loading').css("display", "none");
+  }
 }

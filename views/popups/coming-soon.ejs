@@ -1,7 +1,21 @@
-<div class="pop-container pop-up">
-	    <div class="pop" id="coming-soon">
+<div class="pop-container pop-up" id="coming-soon">
+	    <div class="pop">
 	    	<h5>Coming Soon!</h5>
 	    	<p> Sorry, class will only begin on 10th January.</p>
-	    	<button class="pop-btn">Got it!</button>
+	    	<button class="pop-btn" id="coming-soon-close">Got it!</button>
+	    </div>
+</div>
+
+<div class="pop-container pop-up" id="share">
+	    <div class="pop">
+	    	<h5>Share</h5>
+				<div class="tooltip">
+				<input type="text" value="https://sekolahkita.my" id="myInput">
+					<button onclick="copytoclipboard()" onmouseout="outFunc()">
+		  				<span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+		  				Copy link
+		  		</button>
+				</div>
+	    	<button class="pop-btn" id="share-close">Done!</button>
 	    </div>
 </div>
