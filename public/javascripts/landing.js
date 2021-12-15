@@ -128,7 +128,7 @@ function setup(loader, resources)
 
   elemHeadpieceSprite.on ('mousedown', function()
   {
-      $('.pop-up').toggleClass("menu-open");
+      window.open("orang-asli","_self")
   } );
 
   elemHeadpieceSprite.on ('pointerover', function()
@@ -143,10 +143,6 @@ function setup(loader, resources)
       elemHeadpieceSprite.play();
   } );
 
-  // elemHeadpiece.scale.set(0.7);
-  // elemHeadpiece.anchor.set(0.5);
-  // elemHeadpiece.position.set(5,5);
-
   //phone animation
   const elemPhoneTextures = [];
   for (let i=0; i < 74; i++)
@@ -159,7 +155,7 @@ function setup(loader, resources)
   elemPhoneSprite.scale.set(0.7);
   elemPhoneSprite.anchor.set(0,1);
   elemPhoneSprite.angle = -3.5;
-  elemPhoneSprite.position.set(100,pixiapp.screen.height + 100);
+  elemPhoneSprite.position.set(100,pixiapp.screen.height + 120);
   pixiapp.stage.addChild(elemPhoneSprite);
   elemPhoneSprite.loop = false;
 

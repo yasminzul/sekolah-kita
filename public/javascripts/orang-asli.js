@@ -2,7 +2,7 @@ const pixiapp = new window.PIXI.Application({ transparent: true });
 $('#timeline').append(pixiapp.view);
 
 //elements
-const elemTimeline = PIXI.Sprite.from('images/OATimeline.PNG');
+const elemTimeline = PIXI.Sprite.from('images/OAtimeline.PNG');
 pixiapp.stage.addChild(elemTimeline);
 
 //text elements
@@ -12,7 +12,7 @@ const textStyle = new PIXI.TextStyle({
     fill: '#000',
     align: 'center',
     wordWrap : true,
-    wordWrapWidth: pixiapp.screen.width - 500
+    wordWrapWidth: pixiapp.screen.width/2.5
 });
 
 let textArr = [
@@ -49,11 +49,11 @@ if (x.matches)
 
   pixiapp.renderer.resize(window.innerWidth, window.innerHeight/2);
 
-  elemTimeline.scale.set(0.07);
+  elemTimeline.scale.set(0.1);
   elemTimeline.anchor.set(0.5);
-  elemTimeline.position.set(pixiapp.screen.width / 2, pixiapp.screen.height / 4)
+  elemTimeline.position.set(pixiapp.screen.width / 2, pixiapp.screen.height / 3)
 
-  basicText.position.set(pixiapp.screen.width/ 2, pixiapp.screen.height/ 2 + 100);
+  basicText.position.set(pixiapp.screen.width/ 2, pixiapp.screen.height/ 2 + 125);
 
   //timeline animation
   animationTimeline = [
@@ -71,49 +71,49 @@ if (x.matches)
   },
   function(){ ease.add(
       elemTimeline,
-      { x: (pixiapp.screen.width/100)*158, scale: 0.25},
+      { x: (pixiapp.screen.width/100)*154, scale: 0.25},
       { reverse: false, duration: 1500, ease: 'easeInOutQuad' }
     );
   },
   function(){ ease.add(
       elemTimeline,
-      { x: (pixiapp.screen.width/100)*115, scale: 0.25},
+      { x: (pixiapp.screen.width/100)*110, scale: 0.25},
       { reverse: false, duration: 1500, ease: 'easeInOutQuad' }
     );
   },
   function(){ ease.add(
       elemTimeline,
-      { x: (pixiapp.screen.width/100)*40, scale: 0.32},
+      { x: (pixiapp.screen.width/100)*31, scale: 0.32},
       { reverse: false, duration: 1500, ease: 'easeInOutQuad' }
     );
   },
   function(){ ease.add(
       elemTimeline,
-      { x: -(pixiapp.screen.width/100)*3, scale: 0.32},
+      { x: -(pixiapp.screen.width/100)*6, scale: 0.32},
       { reverse: false, duration: 1500, ease: 'easeInOutQuad' }
     );
   },
   function(){ ease.add(
       elemTimeline,
-      { x: -(pixiapp.screen.width/100)*45, scale: 0.32},
+      { x: -(pixiapp.screen.width/100)*50, scale: 0.32},
       { reverse: false, duration: 1500, ease: 'easeInOutQuad' }
     );
   },
   function(){ ease.add(
       elemTimeline,
-      { x: -(pixiapp.screen.width/100)*95, scale: 0.32},
+      { x: -(pixiapp.screen.width/100)*98, scale: 0.32},
       { reverse: false, duration: 1500, ease: 'easeInOutQuad' }
     );
   },
   function(){ ease.add(
       elemTimeline,
-      { x: -(pixiapp.screen.width/100)*125, scale: 0.32},
+      { x: -(pixiapp.screen.width/100)*135, scale: 0.32},
       { reverse: false, duration: 1500, ease: 'easeInOutQuad' }
     );
   },
   function(){ ease.add(
       elemTimeline,
-      { x: -(pixiapp.screen.width/100)*170, scale: 0.32},
+      { x: -(pixiapp.screen.width/100)*175, scale: 0.32},
       { reverse: false, duration: 1500, ease: 'easeInOutQuad' }
     );
   }
@@ -127,71 +127,71 @@ else {
 
 pixiapp.renderer.resize(window.innerWidth/2, (window.innerHeight/100)*65);
 
-elemTimeline.scale.set(0.1);
+elemTimeline.scale.set(0.2);
 elemTimeline.anchor.set(0.5);
-elemTimeline.position.set(pixiapp.screen.width / 2, pixiapp.screen.height / 3)
+elemTimeline.position.set(pixiapp.screen.width, pixiapp.screen.height / 2.5)
 
-basicText.position.set(pixiapp.screen.width/ 2, pixiapp.screen.height/ 2 + 150);
+basicText.position.set(pixiapp.screen.width/ 2, pixiapp.screen.height/ 2 + 200);
 
 //timeline animation
 animationTimeline = [
 function(){ ease.add(
     elemTimeline,
-    { x: (pixiapp.screen.width*2) + 20, scale: 0.35},
+    { x: (pixiapp.screen.width/100)*200, scale: 0.35},
     { reverse: false, duration: 1500, ease: 'easeInOutQuad' }
   );
 },
 function(){ ease.add(
     elemTimeline,
-    { x: (pixiapp.screen.width*2) - 250, scale: 0.35},
+    { x: (pixiapp.screen.width/100)*165, scale: 0.35},
     { reverse: false, duration: 1500, ease: 'easeInOutQuad' }
   );
 },
 function(){ ease.add(
     elemTimeline,
-    { x: (pixiapp.screen.width*2) - 525, scale: 0.35},
+    { x: (pixiapp.screen.width/100)*123, scale: 0.35},
     { reverse: false, duration: 1500, ease: 'easeInOutQuad' }
   );
 },
 function(){ ease.add(
     elemTimeline,
-    { x: pixiapp.screen.width - 30, scale: 0.35},
+    { x: (pixiapp.screen.width/100)*93, scale: 0.35},
     { reverse: false, duration: 1500, ease: 'easeInOutQuad' }
   );
 },
 function(){ ease.add(
     elemTimeline,
-    { x: 275, scale: 0.5},
+    { x: (pixiapp.screen.width/100)*40, scale: 0.45},
     { reverse: false, duration: 1500, ease: 'easeInOutQuad' }
   );
 },
 function(){ ease.add(
     elemTimeline,
-    { x: 25, scale: 0.5},
+    { x: (pixiapp.screen.width/100)*8, scale: 0.45},
     { reverse: false, duration: 1500, ease: 'easeInOutQuad' }
   );
 },
 function(){ ease.add(
     elemTimeline,
-    { x: -220, scale: 0.5},
+    { x: -(pixiapp.screen.width/100)*20, scale: 0.45},
     { reverse: false, duration: 1500, ease: 'easeInOutQuad' }
   );
 },
 function(){ ease.add(
     elemTimeline,
-    { x: -pixiapp.screen.width + 220, scale: 0.5},
+    { x: -(pixiapp.screen.width/100)*60, scale: 0.45},
     { reverse: false, duration: 1500, ease: 'easeInOutQuad' }
   );
 },
 function(){ ease.add(
     elemTimeline,
-    { x: -pixiapp.screen.width + 50, scale: 0.5},
+    { x: -(pixiapp.screen.width/100)*85, scale: 0.45},
     { reverse: false, duration: 1500, ease: 'easeInOutQuad' }
   );
 },
 function(){ ease.add(
     elemTimeline,
-    { x: -pixiapp.screen.width - 235, scale: 0.5},
+    { x: -(pixiapp.screen.width/100)*115, scale: 0.45},
     { reverse: false, duration: 1500, ease: 'easeInOutQuad' }
   );
 }
@@ -263,7 +263,7 @@ $(document).ready(function(){
       {
         ease.add(
             elemTimeline,
-            { x: pixiapp.screen.width/2, y:pixiapp.screen.height/4, scale: 0.1},
+            { x: pixiapp.screen.width, y:pixiapp.screen.height/2.5, scale: 0.2},
             { reverse: false, duration: 1500, ease: 'easeInOutQuad' }
           );
           clickstate -= 1;
