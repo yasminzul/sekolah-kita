@@ -3,12 +3,18 @@ const pixiapp = new window.PIXI.Application({
   resizeTo: window});
 $('#landingView').append(pixiapp.view);
 
-const bg = PIXI.Texture.fromImage('images/BG-header/BG-header@2x.png');
-pixiapp.stage.addChild(bg);
-
+const bg = PIXI.Texture.from('images/BG-header/BG-header@2x.png');
+bg.width = window.innerWidth;
+bg.height = window.innerHeight;
+const background = new PIXI.Sprite(bg);
+pixiapp.stage.addChild(background);
 
 //load elements for both views
 const elemStationery = PIXI.Sprite.from('images/stationery/stationery@2x.png');
+const elemWeaving = PIXI.Sprite.from('images/weaving/weaving@2x.png');
+
+pixiapp.stage.addChild(elemWeaving);
+pixiapp.stage.addChild(elemStationery);
 
 var x = window.matchMedia("(orientation: portrait)")
 
@@ -17,7 +23,6 @@ if (x.matches)
 {
   //resize and position elements
   const elemNotebook = PIXI.Sprite.from('images/elem-notebook/elem-notebook@2x.png');
-  const elemWeaving = PIXI.Sprite.from('images/weaving/weaving@2x.png');
   const elemSeruling = PIXI.Sprite.from('images/elem-seruling/elem-seruling@2x.png');
 
   pixiapp.stage.addChild(elemNotebook);
@@ -104,13 +109,49 @@ function setup(loader, resources)
   } );
 
   //headpiece animation
+  const elemHeadpieceTextures = [];
+  for (let i=0; i < 74; i++)
+  {
+    const headpieceTexture = PIXI.Texture.from(`HEADDRESS_000${i}.png`);
+    elemHeadpieceTextures.push(headpieceTexture);
+  }
 
+  const elemHeadpieceSprite = new PIXI.AnimatedSprite(elemHeadpieceTextures);
+  elemHeadpieceSprite.scale.set(0.7);
+  elemHeadpieceSprite.anchor.set(0.5);
+  elemHeadpieceSprite.position.set(5,5);
+  pixiapp.stage.addChild(elemHeadpieceSprite);
+  elemHeadpieceSprite.loop = false;
+
+  elemHeadpieceSprite.interactive = true;
+  elemHeadpieceSprite.buttonMode = true;
+
+  elemHeadpieceSprite.on ('mousedown', function()
+  {
+      $('.pop-up').toggleClass("menu-open");
+  } );
+
+  elemHeadpieceSprite.on ('pointerover', function()
+  {
+      elemHeadpieceSprite.animationSpeed = 1;
+      elemHeadpieceSprite.play();
+  } );
+
+  elemHeadpieceSprite.on ('pointerout', function()
+  {
+      elemHeadpieceSprite.animationSpeed = -2;
+      elemHeadpieceSprite.play();
+  } );
+
+  // elemHeadpiece.scale.set(0.7);
+  // elemHeadpiece.anchor.set(0.5);
+  // elemHeadpiece.position.set(5,5);
 
   //phone animation
   const elemPhoneTextures = [];
   for (let i=0; i < 74; i++)
   {
-    const phoneTexture = PIXI.Texture.from(`SMARTPHONE_${i}.png`);
+    const phoneTexture = PIXI.Texture.from(`SMARTPHONE-NEW_000${i}.png`);
     elemPhoneTextures.push(phoneTexture);
   }
 
@@ -143,69 +184,55 @@ function setup(loader, resources)
   } );
 
   //flute animation
+  const elemFluteTextures = [];
+  for (let i=0; i < 74; i++)
+  {
+    const fluteTexture = PIXI.Texture.from(`NOSEFLUTE_000${i}.png`);
+    elemFluteTextures.push(fluteTexture);
+  }
 
+  const elemFluteSprite = new PIXI.AnimatedSprite(elemFluteTextures);
+  elemFluteSprite.scale.set(0.7);
+  elemFluteSprite.anchor.set(0.5);
+  elemFluteSprite.position.set(pixiapp.screen.width - 150,pixiapp.screen.height - 230);
+  pixiapp.stage.addChild(elemFluteSprite);
+  elemFluteSprite.loop = false;
+
+  elemFluteSprite.interactive = true;
+  elemFluteSprite.buttonMode = true;
+
+  elemFluteSprite.on ('mousedown', function()
+  {
+      $('.pop-up').toggleClass("menu-open");
+  } );
+
+  elemFluteSprite.on ('pointerover', function()
+  {
+      elemFluteSprite.animationSpeed = 1;
+      elemFluteSprite.play();
+  } );
+
+  elemFluteSprite.on ('pointerout', function()
+  {
+      elemFluteSprite.animationSpeed = -2;
+      elemFluteSprite.play();
+  } );
 
 }
 
-pixiapp.stage.addChild(elemHeadpiece);
-pixiapp.stage.addChild(elemWeaving);
-pixiapp.stage.addChild(elemSeruling);
-pixiapp.stage.addChild(elemStationery);
-//pixiapp.stage.addChild(insStart);
 
+//pixiapp.stage.addChild(insStart);
 insStart.scale.set(0.7);
 
 //positions and scale
-elemHeadpiece.scale.set(0.7);
-elemHeadpiece.anchor.set(0.5);
-elemHeadpiece.position.set(5,5);
-
 elemWeaving.scale.set(0.7);
 elemWeaving.anchor.set(0.5);
 elemWeaving.position.set(pixiapp.screen.width - 330,10);
-
-elemSeruling.scale.set(0.7);
-elemSeruling.anchor.set(0.5);
-elemSeruling.position.set(pixiapp.screen.width - 150,pixiapp.screen.height - 230);
 
 elemStationery.scale.set(0.7);
 elemStationery.anchor.set(0.5);
 elemStationery.position.set(pixiapp.screen.width - 300,pixiapp.screen.height - 100);
 elemStationery.zIndex = 100;
-
-
-//interactions
-elemHeadpiece.interactive = true;
-elemHeadpiece.buttonMode = true;
-elemHeadpiece.on ('pointerover', function()
-{
-    elemHeadpiece.position.x += 20;
-    elemHeadpiece.position.y += 20;
-} );
-
-elemHeadpiece.on ('pointerout', function()
-{
-    elemHeadpiece.position.x -= 20;
-    elemHeadpiece.position.y -= 20;
-} );
-
-elemHeadpiece.on ('mousedown', function()
-{
-    window.open("orang-asli","_self")
-} );
-
-
-elemSeruling.interactive = true;
-elemSeruling.buttonMode = true;
-elemSeruling.on ('pointerover', function()
-{
-    elemSeruling.position.y -= 20;
-} );
-
-elemSeruling.on ('pointerout', function()
-{
-    elemSeruling.position.y += 20;
-} );
 
 
 }
