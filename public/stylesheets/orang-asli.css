@@ -56,7 +56,7 @@
 #timeline canvas {
 	/*position: absolute;*/
     width: 100%;
-    margin-top: -8em;
+    margin-top: -12em;
 }
 
 #timeline-prev, #timeline-next {
@@ -134,7 +134,7 @@
 
 	#timeline {
 		width: 90%;
-		margin: 12em auto 0 auto;
+		margin: 10em auto 0 auto;
 	}
 	#timeline-prev {
 		margin-left: -3em;

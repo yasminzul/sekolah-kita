@@ -50,9 +50,9 @@ if (x.matches)
 
   elemTimeline.scale.set(0.1);
   elemTimeline.anchor.set(0.5);
-  elemTimeline.position.set(pixiapp.screen.width / 2, pixiapp.screen.height / 3)
+  elemTimeline.position.set(pixiapp.screen.width / 2, pixiapp.screen.height / 2.5)
 
-  basicText.position.set(pixiapp.screen.width/ 2, pixiapp.screen.height/ 2 + 125);
+  basicText.position.set(pixiapp.screen.width/ 2, pixiapp.screen.height - 50);
 
   //timeline animation
   animationTimeline = [

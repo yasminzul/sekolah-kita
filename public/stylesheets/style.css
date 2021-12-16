@@ -113,8 +113,8 @@ h3 {
 }
 
 .ch-next {
-  background-image: url("/images/chapters/group-82.svg"); 
-  color: #000; 
+  background-image: url("/images/chapters/group-82.svg");
+  color: #000;
   width: 85px;
   margin-left: 1em;
 }
@@ -348,7 +348,6 @@ input:checked + .slider:before {
   background-color: #E6E2DD;
   justify-content: center;
   padding: 2em 11em 0;
-
 }
 
 .menu-outer {
@@ -554,17 +553,30 @@ input:checked + .slider:before {
     margin-top: -1.5em;
   }
   .menu-btns {
+    display: block;
     margin-bottom: 2em;
-    align-items: flex-end;
+    align-items: center;
   }
-  .menu-btns > a > div {
+
+  .menu-btns img{
+  margin-right: 1em;
+  /* padding-bottom: 1em; */
+  }
+
+  .menu-btns div {
     margin: 0.4em;
+    text-align: center;
   }
+
   .menu-switch {
-    margin:0.4em 0.4em 0 0;
+  display: inline-flex;
+  position: absolute;
+  top: 1em;
+  right: 25vw;
   }
+
   .menu-btns a {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   /*layout*/

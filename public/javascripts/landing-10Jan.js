@@ -15,6 +15,8 @@ pixiapp.stage.addChild(background);
 const elemStationery = PIXI.Sprite.from('images/stationery/stationery@2x.png');
 const elemWeaving = PIXI.Sprite.from('images/weaving/weaving@2x.png');
 
+pixiapp.stage.addChild(elemWeaving);
+pixiapp.stage.addChild(elemStationery);
 
 var x = window.matchMedia("(max-width: 500px)")
 
@@ -24,31 +26,26 @@ if (x.matches)
   //resize and position elements
   const elemNotebook = PIXI.Sprite.from('images/elem-notebook/elem-notebook@2x.png');
   const elemSeruling = PIXI.Sprite.from('images/elem-seruling/elem-seruling@2x.png');
-  const elemHeadpiece = PIXI.Sprite.from('images/elem-headpiece/elem-headpiece@2x.png');
-  const elemPhone = PIXI.Sprite.from('images/elem-phone/elem-phone@2x.png');
 
   pixiapp.stage.addChild(elemNotebook);
-  elemNotebook.scale.set(0.45);
-  elemNotebook.position.set(-50, pixiapp.screen.height/5);
+  elemNotebook.scale.set(0.48);
+  elemNotebook.position.set(-100, pixiapp.screen.height/10.25);
 
-  pixiapp.stage.addChild(elemHeadpiece);
-  elemHeadpiece.scale.set(0.45);
-  elemHeadpiece.anchor.set(0.5);
-  elemHeadpiece.rotation = 0.3;
-  elemHeadpiece.position.set(90,10);
+  pixiapp.stage.addChild(elemWeaving);
+  elemWeaving.scale.set(0.5);
+  elemWeaving.anchor.set(0.5);
+  elemWeaving.rotation = 3.14;
+  elemWeaving.position.set(130,pixiapp.screen.height-20);
 
-  pixiapp.stage.addChild(elemPhone);
-  elemPhone.scale.set(0.45);
-  elemPhone.anchor.set(0.5);
-  elemPhone.position.set(pixiapp.screen.width/1.25,pixiapp.screen.height/1.1);
+  pixiapp.stage.addChild(elemSeruling);
+  elemSeruling.scale.set(0.5);
+  elemSeruling.anchor.set(1,0);
+  elemSeruling.position.set(pixiapp.screen.width-50,(pixiapp.screen.height/2)+80);
 
-
-  // pixiapp.stage.addChild(elemWeaving);
-  // elemWeaving.scale.set(0.5);
-  // elemWeaving.anchor.set(0.5);
-  // elemWeaving.rotation = 3.14;
-  // elemWeaving.position.set(130,pixiapp.screen.height-20);
-
+  pixiapp.stage.addChild(elemStationery);
+  elemStationery.scale.set(0.5);
+  elemStationery.anchor.set(0.5);
+  elemStationery.position.set(pixiapp.screen.width-45,pixiapp.screen.height+20);
 
 
   //interactions
@@ -236,8 +233,9 @@ function setup(loader, resources)
 
 }
 
-pixiapp.stage.addChild(elemWeaving);
-pixiapp.stage.addChild(elemStationery);
+
+//pixiapp.stage.addChild(insStart);
+//insStart.scale.set(0.7);
 
 //positions and scale
 elemWeaving.scale.set(0.7);
