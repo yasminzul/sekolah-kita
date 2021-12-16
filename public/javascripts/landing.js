@@ -43,20 +43,26 @@ if (x.matches)
   elemPhone.position.set(pixiapp.screen.width/1.25,pixiapp.screen.height/1.1);
 
 
-  // pixiapp.stage.addChild(elemWeaving);
-  // elemWeaving.scale.set(0.5);
-  // elemWeaving.anchor.set(0.5);
-  // elemWeaving.rotation = 3.14;
-  // elemWeaving.position.set(130,pixiapp.screen.height-20);
-
-
-
   //interactions
+  elemHeadpiece.interactive = true;
+  elemHeadpiece.buttonMode = true;
+  elemHeadpiece.on ('mousedown', function()
+  {
+      window.open("orang-asli","_self")
+  } );
+
   elemNotebook.interactive = true;
   elemNotebook.buttonMode = true;
   elemNotebook.on ('touchstart', function()
   {
       $('#coming-soon').toggleClass("menu-open");
+  } );
+
+  elemPhone.interactive = true;
+  elemPhone.buttonMode = true;
+  elemPhone.on ('touchstart', function()
+  {
+      window.open("resources","_self")
   } );
 
 }
