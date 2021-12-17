@@ -1,0 +1,1515 @@
+{
+	"frames": {
+		"SMARTPHONE-BM_0000.png": {
+			"frame": {
+				"x": 3,
+				"y": 3,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_0001.png": {
+			"frame": {
+				"x": 392,
+				"y": 3,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_0002.png": {
+			"frame": {
+				"x": 781,
+				"y": 3,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_0003.png": {
+			"frame": {
+				"x": 1170,
+				"y": 3,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_0004.png": {
+			"frame": {
+				"x": 1559,
+				"y": 3,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_0005.png": {
+			"frame": {
+				"x": 1948,
+				"y": 3,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_0006.png": {
+			"frame": {
+				"x": 2337,
+				"y": 3,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_0007.png": {
+			"frame": {
+				"x": 2726,
+				"y": 3,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_0008.png": {
+			"frame": {
+				"x": 3115,
+				"y": 3,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_0009.png": {
+			"frame": {
+				"x": 3504,
+				"y": 3,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00010.png": {
+			"frame": {
+				"x": 3893,
+				"y": 3,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00011.png": {
+			"frame": {
+				"x": 3,
+				"y": 719,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00012.png": {
+			"frame": {
+				"x": 392,
+				"y": 719,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00013.png": {
+			"frame": {
+				"x": 781,
+				"y": 719,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00014.png": {
+			"frame": {
+				"x": 1170,
+				"y": 719,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00015.png": {
+			"frame": {
+				"x": 1559,
+				"y": 719,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00016.png": {
+			"frame": {
+				"x": 1948,
+				"y": 719,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00017.png": {
+			"frame": {
+				"x": 2337,
+				"y": 719,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00018.png": {
+			"frame": {
+				"x": 2726,
+				"y": 719,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00019.png": {
+			"frame": {
+				"x": 3115,
+				"y": 719,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00020.png": {
+			"frame": {
+				"x": 3504,
+				"y": 719,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00021.png": {
+			"frame": {
+				"x": 3893,
+				"y": 719,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00022.png": {
+			"frame": {
+				"x": 3,
+				"y": 1435,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00023.png": {
+			"frame": {
+				"x": 392,
+				"y": 1435,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00024.png": {
+			"frame": {
+				"x": 781,
+				"y": 1435,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00025.png": {
+			"frame": {
+				"x": 1170,
+				"y": 1435,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00026.png": {
+			"frame": {
+				"x": 1559,
+				"y": 1435,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00027.png": {
+			"frame": {
+				"x": 1948,
+				"y": 1435,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00028.png": {
+			"frame": {
+				"x": 2337,
+				"y": 1435,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00029.png": {
+			"frame": {
+				"x": 2726,
+				"y": 1435,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00030.png": {
+			"frame": {
+				"x": 3115,
+				"y": 1435,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00031.png": {
+			"frame": {
+				"x": 3504,
+				"y": 1435,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00032.png": {
+			"frame": {
+				"x": 3893,
+				"y": 1435,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00033.png": {
+			"frame": {
+				"x": 3,
+				"y": 2151,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00034.png": {
+			"frame": {
+				"x": 392,
+				"y": 2151,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00035.png": {
+			"frame": {
+				"x": 781,
+				"y": 2151,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00036.png": {
+			"frame": {
+				"x": 1170,
+				"y": 2151,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00037.png": {
+			"frame": {
+				"x": 1559,
+				"y": 2151,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00038.png": {
+			"frame": {
+				"x": 1948,
+				"y": 2151,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00039.png": {
+			"frame": {
+				"x": 2337,
+				"y": 2151,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00040.png": {
+			"frame": {
+				"x": 2726,
+				"y": 2151,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00041.png": {
+			"frame": {
+				"x": 3115,
+				"y": 2151,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00042.png": {
+			"frame": {
+				"x": 3504,
+				"y": 2151,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00043.png": {
+			"frame": {
+				"x": 3893,
+				"y": 2151,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00044.png": {
+			"frame": {
+				"x": 3,
+				"y": 2867,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00045.png": {
+			"frame": {
+				"x": 392,
+				"y": 2867,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00046.png": {
+			"frame": {
+				"x": 781,
+				"y": 2867,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00047.png": {
+			"frame": {
+				"x": 1170,
+				"y": 2867,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00048.png": {
+			"frame": {
+				"x": 1559,
+				"y": 2867,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00049.png": {
+			"frame": {
+				"x": 1948,
+				"y": 2867,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00050.png": {
+			"frame": {
+				"x": 2337,
+				"y": 2867,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00051.png": {
+			"frame": {
+				"x": 2726,
+				"y": 2867,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00052.png": {
+			"frame": {
+				"x": 3115,
+				"y": 2867,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00053.png": {
+			"frame": {
+				"x": 3504,
+				"y": 2867,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00054.png": {
+			"frame": {
+				"x": 3893,
+				"y": 2867,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00055.png": {
+			"frame": {
+				"x": 3,
+				"y": 3583,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00056.png": {
+			"frame": {
+				"x": 392,
+				"y": 3583,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00057.png": {
+			"frame": {
+				"x": 781,
+				"y": 3583,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00058.png": {
+			"frame": {
+				"x": 1170,
+				"y": 3583,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00059.png": {
+			"frame": {
+				"x": 1559,
+				"y": 3583,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00060.png": {
+			"frame": {
+				"x": 1948,
+				"y": 3583,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00061.png": {
+			"frame": {
+				"x": 2337,
+				"y": 3583,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00062.png": {
+			"frame": {
+				"x": 2726,
+				"y": 3583,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00063.png": {
+			"frame": {
+				"x": 3115,
+				"y": 3583,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00064.png": {
+			"frame": {
+				"x": 3504,
+				"y": 3583,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00065.png": {
+			"frame": {
+				"x": 3893,
+				"y": 3583,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00066.png": {
+			"frame": {
+				"x": 4282,
+				"y": 3,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00067.png": {
+			"frame": {
+				"x": 4282,
+				"y": 719,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00068.png": {
+			"frame": {
+				"x": 4282,
+				"y": 1435,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00069.png": {
+			"frame": {
+				"x": 4282,
+				"y": 2151,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00070.png": {
+			"frame": {
+				"x": 4282,
+				"y": 2867,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00071.png": {
+			"frame": {
+				"x": 4282,
+				"y": 3583,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00072.png": {
+			"frame": {
+				"x": 3,
+				"y": 4299,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00073.png": {
+			"frame": {
+				"x": 392,
+				"y": 4299,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		},
+		"SMARTPHONE-BM_00074.png": {
+			"frame": {
+				"x": 781,
+				"y": 4299,
+				"w": 383,
+				"h": 710
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 383,
+				"h": 710
+			},
+			"sourceSize": {
+				"w": 383,
+				"h": 710
+			}
+		}
+	},
+	"meta": {
+		"app": "http://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"image": "spritesheet-PhoneBM.png",
+		"format": "RGBA8888",
+		"size": {
+			"w": 4668,
+			"h": 5012
+		},
+		"scale": "1"
+	}
+}

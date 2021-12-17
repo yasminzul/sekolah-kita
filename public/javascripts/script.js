@@ -15,9 +15,11 @@ $(document).ready(function(id) {
     if ($(this).is(':checked')) {
       $('.off').css("color", "#000");
       $('.on').css("color", "#D1C7BA");
+      window.open("/","_self");
     } else {
       $('.off').css("color", "#D1C7BA");
       $('.on').css("color", "#000");
+        window.open("en","_self")
     }
   });
 
@@ -40,4 +42,13 @@ var tooltip = document.getElementById("myTooltip");
 function outFunc() {
   var tooltip = document.getElementById("myTooltip");
   tooltip.innerHTML = "Copy to clipboard";
+}
+
+if ($('#switch, #menu-switch').is(':checked')) {
+  $('.off').css("color", "#000");
+  $('.on').css("color", "#D1C7BA");
+}
+else {
+  $('.off').css("color", "#D1C7BA");
+  $('.on').css("color", "#000");
 }

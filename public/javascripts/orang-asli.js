@@ -2,7 +2,7 @@ const pixiapp = new window.PIXI.Application({ transparent: true });
 $('#timeline').append(pixiapp.view);
 
 //elements
-const elemTimeline = PIXI.Sprite.from('images/OAtimeline.PNG');
+const elemTimeline = PIXI.Sprite.from('/images/OAtimeline.PNG');
 pixiapp.stage.addChild(elemTimeline);
 
 //text elements

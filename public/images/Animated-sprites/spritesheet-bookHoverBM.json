@@ -1,0 +1,175 @@
+{
+	"frames": {
+		"NOTEBOOK-BM_0000.png": {
+			"frame": {
+				"x": 753,
+				"y": 3,
+				"w": 750,
+				"h": 1350
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 750,
+				"h": 1350
+			},
+			"sourceSize": {
+				"w": 750,
+				"h": 1350
+			}
+		},
+		"NOTEBOOK-BM_0001.png": {
+			"frame": {
+				"x": 2259,
+				"y": 3,
+				"w": 750,
+				"h": 1350
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 750,
+				"h": 1350
+			},
+			"sourceSize": {
+				"w": 750,
+				"h": 1350
+			}
+		},
+		"NOTEBOOK-BM_0002.png": {
+			"frame": {
+				"x": 753,
+				"y": 1359,
+				"w": 750,
+				"h": 1350
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 750,
+				"h": 1350
+			},
+			"sourceSize": {
+				"w": 750,
+				"h": 1350
+			}
+		},
+		"NOTEBOOK-BM_0003.png": {
+			"frame": {
+				"x": 2259,
+				"y": 1359,
+				"w": 750,
+				"h": 1350
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 750,
+				"h": 1350
+			},
+			"sourceSize": {
+				"w": 750,
+				"h": 1350
+			}
+		},
+		"NOTEBOOK-BM_0004.png": {
+			"frame": {
+				"x": 3765,
+				"y": 3,
+				"w": 750,
+				"h": 1350
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 750,
+				"h": 1350
+			},
+			"sourceSize": {
+				"w": 750,
+				"h": 1350
+			}
+		},
+		"NOTEBOOK-BM_0005.png": {
+			"frame": {
+				"x": 3765,
+				"y": 1359,
+				"w": 750,
+				"h": 1350
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 750,
+				"h": 1350
+			},
+			"sourceSize": {
+				"w": 750,
+				"h": 1350
+			}
+		},
+		"NOTEBOOK-BM_0006.png": {
+			"frame": {
+				"x": 753,
+				"y": 2715,
+				"w": 750,
+				"h": 1350
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 750,
+				"h": 1350
+			},
+			"sourceSize": {
+				"w": 750,
+				"h": 1350
+			}
+		},
+		"NOTEBOOK-BM_0007.png": {
+			"frame": {
+				"x": 2259,
+				"y": 2715,
+				"w": 750,
+				"h": 1350
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 750,
+				"h": 1350
+			},
+			"sourceSize": {
+				"w": 750,
+				"h": 1350
+			}
+		}
+	},
+	"meta": {
+		"app": "http://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"image": "spritesheet-bookHoverBM.png",
+		"format": "RGBA8888",
+		"size": {
+			"w": 4518,
+			"h": 4068
+		},
+		"scale": "1"
+	}
+}

@@ -4,9 +4,11 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
-var oaRouter = require('./routes/orang-asli');
+var indexBMRouter = require('./routes/index-bm');
+var oaBMRouter = require('./routes/orang-asli-bm');
+var indexENRouter = require('./routes/index-en');
+var oaENRouter = require('./routes/orang-asli-en');
+
 var c1Router = require('./routes/chapter1');
 var actionRouter = require('./routes/take-action');
 
@@ -22,18 +24,27 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
-app.use('/orang-asli', oaRouter);
-app.use('/chapter1', c1Router);
-app.use('/take-action', actionRouter);
+app.use('/', indexBMRouter);
+app.use('/orang-asli', oaBMRouter);
+app.use('/en', indexENRouter);
+app.use('/en/orang-asli', oaENRouter);
+app.use('/en/chapter1', c1Router);
+app.use('/en/take-action', actionRouter);
 
-app.get('/credits', function (req, res) {
-  res.render('credits')
+app.get('/en/about', function (req, res) {
+  res.render('credits-en')
 })
 
-app.get('/resources', function (req, res) {
-  res.render('resources')
+app.get('/projek', function (req, res) {
+  res.render('credits-bm')
+})
+
+app.get('/en/resources', function (req, res) {
+  res.render('resources-en')
+})
+
+app.get('/pusat-sumber', function (req, res) {
+  res.render('resources-bm')
 })
 
 
