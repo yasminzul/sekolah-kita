@@ -69,7 +69,7 @@ loader.load(setup);
     //interactions
     elemHeadpiece.interactive = true;
     elemHeadpiece.buttonMode = true;
-    elemHeadpiece.on ('mousedown', function()
+    elemHeadpiece.on ('touchstart', function()
     {
         window.open("en/orang-asli","_self")
     } );

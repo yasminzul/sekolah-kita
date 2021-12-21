@@ -21,7 +21,7 @@ if (x.matches){
 else {
   loader.add('stationery','images/stationery/stationery@2x.png');
   loader.add('weaving','images/weaving/weaving@2x.png');
-  loader.add('phone','images/Animated-sprites/spritesheet-phoneBM.json');
+  loader.add('phone','images/Animated-sprites/spritesheet-PhoneBM.json');
   loader.add('notebook','images/Animated-sprites/spritesheet-bookHoverBM.json')
   loader.add('headpiece','images/Animated-sprites/spritesheet-headBM.json');
   loader.add('flute','images/Animated-sprites/spritesheet-FluteBM.json')
@@ -70,7 +70,7 @@ loader.load(setup);
     //interactions
     elemHeadpiece.interactive = true;
     elemHeadpiece.buttonMode = true;
-    elemHeadpiece.on ('mousedown', function()
+    elemHeadpiece.on ('touchstart', function()
     {
         window.open("orang-asli","_self")
     } );
