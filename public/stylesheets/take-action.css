@@ -35,14 +35,16 @@
 
 #customize-area
 {
-	border: 1px solid lightblue;
+	box-shadow: 0px 3px 8px #00000029;
 }
 
 button
 {
-  height: 70px;
-  width: 70px;
-  vertical-align: top;
+	vertical-align: top;
+	background-color: #D1C7BA;
+	border: none;
+	border-radius: 5px;
+	margin: 2px;
 }
 
 button img
@@ -50,6 +52,25 @@ button img
   max-width: 100%;
   max-height: 100%;
 }
+
+button:active
+{
+  border: solid #FFB806 2px;
+}
+
+.choose-badge button
+{
+  height: 75px;
+  width: 100px;
+	padding: 5px;
+}
+
+.add-stickers button
+{
+  height: 60px;
+  width: 60px;
+}
+
 
 @media (max-width: 800px) {
 	.oa-wrapper {
