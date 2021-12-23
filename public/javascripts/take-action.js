@@ -20,7 +20,7 @@ if (x.matches){
     cornerSize: 10,
     transparentCorners: false
   });
-  canvas.add(textbox).setActiveObject(textbox);
+  canvas.add(textbox);
 
 }
 //end mobile
@@ -45,7 +45,7 @@ else{
     cornerSize: 10,
     transparentCorners: false
   });
-  canvas.add(textbox).setActiveObject(textbox);
+  canvas.add(textbox);
 
 //load science class
   $.getJSON('/images/Science-assets/scienceClass.json', function(scienceClass){
@@ -100,6 +100,10 @@ $(document).ready(function(){
     $('#no-bg').click( function (){
       const image = new fabric.Image('');
       canvas.setBackgroundImage(image, canvas.renderAll.bind(canvas));
+    });
+
+    $('#add-text').click( function (){
+        canvas.add(textbox);
     });
 
 });
