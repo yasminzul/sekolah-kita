@@ -1,5 +1,6 @@
 var x = window.matchMedia("(max-width: 500px)")
 
+//INITIAL LOAD
 //start mobile
 if (x.matches){
 
@@ -73,13 +74,14 @@ else{
 }
 //end desktop
 
-
 fabric.Image.fromURL('/images/Science-assets/Science-classroom-background.png', function(img){
  img.scaleToWidth(canvas.width);
  img.scaleToHeight(canvas.height);
  canvas.setBackgroundImage(img,canvas.renderAll.bind(canvas));
 });
+//END INITIAL LOAD
 
+//WAITING FOR INTERACTIONS
 $(document).ready(function(){
 
     $('.sticker-bg').click( function (){
@@ -124,8 +126,9 @@ $(document).ready(function(){
     });
 
 });
+//END INTERACTIONS
 
-
+//FUNCTIONS FOR BOTH VIEWS
 function addImageToCanvas(imageNameURL)
 {
     fabric.Image.fromURL(imageNameURL, function(oImg) {
