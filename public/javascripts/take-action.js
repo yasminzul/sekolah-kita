@@ -70,7 +70,6 @@ else{
           });
 //end load science class
 
-
 }
 //end desktop
 
