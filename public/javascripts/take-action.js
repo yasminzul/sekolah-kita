@@ -1,5 +1,6 @@
 var x = window.matchMedia("(max-width: 500px)")
 
+//start mobile
 if (x.matches){
 
   var canvas = new fabric.Canvas('customize-area', {
@@ -22,7 +23,9 @@ if (x.matches){
   canvas.add(textbox).setActiveObject(textbox);
 
 }
+//end mobile
 
+//start desktop
 else{
 
   var canvas = new fabric.Canvas('customize-area', {
@@ -44,11 +47,35 @@ else{
   });
   canvas.add(textbox).setActiveObject(textbox);
 
+//load science class
+  $.getJSON('/images/Science-assets/scienceClass.json', function(scienceClass){
+    //loop through scienceClass.json
+    for (let i = 0; i < scienceClass.length; i++) {
+
+    fabric.Image.fromURL(scienceClass[i].imgURL, function(oImg) {
+      oImg.scaleX = 0.3;
+      oImg.scaleY = 0.3;
+      oImg.set({
+        'top': scienceClass[i].top,
+        'left': scienceClass[i].left,
+        borderColor: '#D1C7BA',
+        cornerColor: '#D1C7BA',
+        cornerSize: 10,
+        transparentCorners: false
+    });
+      canvas.add(oImg);
+    });
+  }
+  //end loop
+          });
+//end load science class
+
+
 }
+//end desktop
 
 
-
-fabric.Image.fromURL('/images/Bamboo-classroom.PNG', function(img){
+fabric.Image.fromURL('/images/Science-assets/Science-classroom-background.png', function(img){
  img.scaleToWidth(canvas.width);
  img.scaleToHeight(canvas.height);
  canvas.setBackgroundImage(img,canvas.renderAll.bind(canvas));
