@@ -102,7 +102,25 @@ $(document).ready(function(){
     });
 
     $('#add-text').click( function (){
-        canvas.add(textbox);
+      var newTextbox = new fabric.Textbox('Pendidikan tanpa batasan!\nKetahui bagaimana dengan layari sekolahkita.my', {
+        left: 65,
+        top: 28,
+        width: 200,
+        fontSize: 16,
+        fontFamily: 'Archer Book',
+        fontWeight: 'bold',
+        borderColor: '#D1C7BA',
+        cornerColor: '#D1C7BA',
+        cornerSize: 10,
+        transparentCorners: false
+      });
+      canvas.add(newTextbox);
+    });
+
+    $('#download-badge').click( function (){
+        $("#customize-area").get(0).toBlob(function(blob){
+		        saveAs(blob, "sekolahkita-badge.png");
+	         });
     });
 
 });
