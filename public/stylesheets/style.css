@@ -395,6 +395,11 @@ input:checked + .slider:before {
   height: -webkit-fill-available !important;
 }
 
+.take-action-menu {
+  height: 240px;
+  width: 206px;
+}
+
 .menu-title.main {
   font-size: 24px;
   padding: 1em;
