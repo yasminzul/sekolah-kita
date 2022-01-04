@@ -11,10 +11,10 @@ var indexENRouter = require('./routes/index-en');
 var oaENRouter = require('./routes/orang-asli-en');
 
 var c1Router = require('./routes/chapter1');
-var c1Router = require('./routes/chapter2');
-var c1Router = require('./routes/chapter3');
-var c1Router = require('./routes/chapter4');
-var c1Router = require('./routes/chapter5');
+var c2Router = require('./routes/chapter2');
+var c3Router = require('./routes/chapter3');
+var c4Router = require('./routes/chapter4');
+var c5Router = require('./routes/chapter5');
 var actionRouter = require('./routes/take-action');
 
 var app = express();
@@ -41,10 +41,10 @@ app.use('/orang-asli', oaBMRouter);
 app.use('/en', indexENRouter);
 app.use('/en/orang-asli', oaENRouter);
 app.use('/en/chapter1', c1Router);
-app.use('/en/chapter2', c1Router);
-app.use('/en/chapter3', c1Router);
-app.use('/en/chapter4', c1Router);
-app.use('/en/chapter5', c1Router);
+app.use('/en/chapter2', c2Router);
+app.use('/en/chapter3', c3Router);
+app.use('/en/chapter4', c4Router);
+app.use('/en/chapter5', c5Router);
 app.use('/en/take-action', actionRouter);
 
 app.get('/en/about', function (req, res) {
