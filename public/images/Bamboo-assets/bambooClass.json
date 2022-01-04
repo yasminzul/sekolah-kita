@@ -1,18 +1,77 @@
 [
   {
-    "imgURL": "/images/Science-assets/butterfly-taxidermy-cocoon.png",
-    "top": 412,
+    "imgURL": "/images/Bamboo-assets/Whiteboard.png",
+    "top": 246,
+    "left": 162
+  },
+  {
+    "imgURL": "/images/Bamboo-assets/Woven-mat.png",
+    "top": 506,
+    "left": 95
+  },
+  {
+    "imgURL": "/images/Bamboo-assets/Kolam-drawing.png",
+    "top": 449,
+    "left": 283
+  },
+  {
+    "imgURL": "/images/Bamboo-assets/White-board-doodle-map.png",
+    "top": 254,
+    "left": 194
+  },
+  {
+    "imgURL": "/images/Bamboo-assets/Sports.png",
+    "top": 471,
+    "left": -3
+  },
+  {
+    "imgURL": "/images/Bamboo-assets/Festive-items.png",
+    "top": 416,
+    "left": 2
+  },
+  {
+    "imgURL": "/images/Bamboo-assets/Encyclopaedias-books.png",
+    "top": 353,
+    "left": -2
+  },
+  {
+    "imgURL": "/images/Bamboo-assets/Wau-traditional-toys.png",
+    "top": 260,
     "left": 0
   },
   {
-    "imgURL": "/images/Science-assets/Robotic-hand.png",
-    "top": 270,
-    "left": 0
+    "imgURL": "/images/Bamboo-assets/Straw-hat.png",
+    "top": 248,
+    "left": 122
   },
   {
-    "imgURL": "/images/Science-assets/Test-tube.png",
-    "top": 345,
-    "left": 0
+    "imgURL": "/images/Bamboo-assets/Cangkul-spade.png",
+    "top": 349,
+    "left": 107
+  },
+  {
+    "imgURL": "/images/Bamboo-assets/Woven-basket.png",
+    "top": 465,
+    "left": 60
+  },
+  {
+    "imgURL": "/images/Bamboo-assets/Potted-plants.png",
+    "top": 374,
+    "left": 419
+  },
+  {
+    "imgURL": "/images/Bamboo-assets/Hanging-plant.png",
+    "top": 246,
+    "left": 434
+  },
+  {
+    "imgURL": "/images/Bamboo-assets/Mannequin.png",
+    "top": 269,
+    "left": 520
+  },
+  {
+    "imgURL": "/images/Bamboo-assets/Female-teacher.png",
+    "top": 258,
+    "left": 138
   }
-
 ]

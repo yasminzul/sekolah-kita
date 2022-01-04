@@ -21,7 +21,6 @@ if (x.matches){
     cornerSize: 10,
     transparentCorners: false
   });
-  canvas.add(textbox);
 
 }
 //end mobile
@@ -46,43 +45,71 @@ else{
     cornerSize: 10,
     transparentCorners: false
   });
-  canvas.add(textbox);
 
-//load science class
-  $.getJSON('/images/Science-assets/scienceClass.json', function(scienceClass){
-    //loop through scienceClass.json
-    for (let i = 0; i < scienceClass.length; i++) {
+function canvasChange(filename)
+{
+  //load science class
+    $.getJSON(filename, function(scienceClass){
+      //loop through scienceClass.json
+      for (let i = 0; i < scienceClass.length; i++) {
 
-    fabric.Image.fromURL(scienceClass[i].imgURL, function(oImg) {
-      oImg.scaleX = 0.3;
-      oImg.scaleY = 0.3;
-      oImg.set({
-        'top': scienceClass[i].top,
-        'left': scienceClass[i].left,
-        borderColor: '#D1C7BA',
-        cornerColor: '#D1C7BA',
-        cornerSize: 10,
-        transparentCorners: false
-    });
-      canvas.add(oImg);
-    });
-  }
-  //end loop
-          });
-//end load science class
+      fabric.Image.fromURL(scienceClass[i].imgURL, function(oImg) {
+        oImg.scaleX = 0.3;
+        oImg.scaleY = 0.3;
+        oImg.set({
+          'top': scienceClass[i].top,
+          'left': scienceClass[i].left,
+          borderColor: '#D1C7BA',
+          cornerColor: '#D1C7BA',
+          cornerSize: 10,
+          transparentCorners: false
+      });
+        canvas.add(oImg);
+      });
+    }
+    //end loop
+            });
+  //end load science class
+}
 
 }
 //end desktop
 
-fabric.Image.fromURL('/images/Science-assets/Science-classroom-background.png', function(img){
- img.scaleToWidth(canvas.width);
- img.scaleToHeight(canvas.height);
- canvas.setBackgroundImage(img,canvas.renderAll.bind(canvas));
-});
+changeCanvasBG('/images/Science-assets/Science-classroom-background.png')
+canvasChange('/images/Science-assets/scienceClass.json');
+canvas.add(textbox);
+
 //END INITIAL LOAD
 
 //WAITING FOR INTERACTIONS
 $(document).ready(function(){
+
+  $('#preload-science').click( function(){
+    canvas.clear();
+    const scienceJSON = '/images/Science-assets/scienceClass.json';
+    const scienceBG = '/images/Science-assets/Science-classroom-background.png';
+    changeCanvasBG(scienceBG)
+    canvasChange(scienceJSON);
+    canvas.add(textbox);
+  });
+
+  $('#preload-bamboo').click( function(){
+    canvas.clear();
+    const bambooJSON = '/images/Bamboo-assets/bambooClass.json';
+    const bambooBG = '/images/Bamboo-assets/Bamboo-class-background.PNG';
+    changeCanvasBG(bambooBG)
+    canvasChange(bambooJSON);
+    canvas.add(textbox);
+  });
+
+  $('#preload-nature').click( function(){
+    canvas.clear();
+    const natureJSON = '/images/Nature-assets/natureClass.json';
+    const natureBG = '/images/Nature-assets/Nature-classroom-background.PNG';
+    changeCanvasBG(natureBG)
+    canvasChange(natureJSON);
+    canvas.add(textbox);
+  });
 
     $('.sticker-bg').click( function (){
         var imageSource = $('img', $(this)).attr('src');

@@ -1,18 +1,67 @@
 [
   {
-    "imgURL": "/images/Science-assets/butterfly-taxidermy-cocoon.png",
-    "top": 412,
+    "imgURL": "/images/Nature-assets/speech.png",
+    "top": 185,
+    "left": 134
+  },
+  {
+    "imgURL": "/images/Science-assets/Gunung-ledang.png",
+    "top": 245,
+    "left": 163
+  },
+  {
+    "imgURL": "/images/Science-assets/river-doodle.png",
+    "top": 256,
+    "left": 295
+  },
+  {
+    "imgURL": "/images/Nature-assets/Orang-asli-elder.png",
+    "top": 308,
+    "left": 236
+  },
+  {
+    "imgURL": "/images/Nature-assets/Orang-asli-blowpipe.png",
+    "top": 297,
+    "left": 72
+  },
+  {
+    "imgURL": "/images/Nature-assets/Woven-basket-half-done.png",
+    "top": 300,
     "left": 0
   },
   {
-    "imgURL": "/images/Science-assets/Robotic-hand.png",
-    "top": 270,
-    "left": 0
+    "imgURL": "/images/Nature-assets/Woven-basket.png",
+    "top": 245,
+    "left": 472
   },
   {
-    "imgURL": "/images/Science-assets/Test-tube.png",
-    "top": 345,
-    "left": 0
+    "imgURL": "/images/Nature-assets/Sang-kancil-dlm-kelas.png",
+    "top": 294,
+    "left": 428
+  },
+  {
+    "imgURL": "/images/Nature-assets/Lotong-monkey.png",
+    "top": 376,
+    "left": 494
+  },
+  {
+    "imgURL": "/images/Nature-assets/Erhu.png",
+    "top": 329,
+    "left": 172
+  },
+  {
+    "imgURL": "/images/Nature-assets/Bamboo-percussions.png",
+    "top": 469,
+    "left": 84
+  },
+  {
+    "imgURL": "/images/Nature-assets/Kompang.png",
+    "top": 446,
+    "left": 372
+  },
+  {
+    "imgURL": "/images/Nature-assets/Indian-drums.png",
+    "top": 478,
+    "left": 423
   }
-
 ]

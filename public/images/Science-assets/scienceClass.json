@@ -1,7 +1,32 @@
 [
   {
+    "imgURL": "/images/Science-assets/Diagram.png",
+    "top": 300,
+    "left": 579
+  },
+  {
+    "imgURL": "/images/Science-assets/Science-anatomy-sculpture.png",
+    "top": 332,
+    "left": 493
+  },
+  {
+    "imgURL": "/images/Science-assets/Doctor-tool.png",
+    "top": 264,
+    "left": 477
+  },
+  {
+    "imgURL": "/images/Science-assets/Potted-plant-germination.png",
+    "top": 476,
+    "left": 0
+  },
+  {
     "imgURL": "/images/Science-assets/butterfly-taxidermy-cocoon.png",
     "top": 412,
+    "left": 0
+  },
+  {
+    "imgURL": "/images/Science-assets/Test-tube.png",
+    "top": 345,
     "left": 0
   },
   {
@@ -10,9 +35,34 @@
     "left": 0
   },
   {
-    "imgURL": "/images/Science-assets/Test-tube.png",
-    "top": 345,
-    "left": 0
+    "imgURL": "/images/Science-assets/Globe.png",
+    "top": 436,
+    "left": 37
+  },
+  {
+    "imgURL": "/images/Science-assets/Male-teacher.png",
+    "top": 261,
+    "left": 325
+  },
+  {
+    "imgURL": "/images/Science-assets/Desk.png",
+    "top": 509,
+    "left": 96
+  },
+  {
+    "imgURL": "/images/Science-assets/Doodles-notebook.png",
+    "top": 509,
+    "left": 261
+  },
+  {
+    "imgURL": "/images/Science-assets/Laptop-QR-code.png",
+    "top": 441,
+    "left": 144
+  },
+  {
+    "imgURL": "/images/Science-assets/Tools.png",
+    "top": 455,
+    "left": 379
   }
 
 ]
