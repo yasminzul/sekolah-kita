@@ -408,14 +408,15 @@ input:checked + .slider:before {
 }
 
 .menu-title.chapter {
-  font-size: 15px;
+  font-size: 12px;
   padding: 0 1em;
   margin-top: -0.7em;
   font-family: 'Archer Bold', serif;
   color: #4C1400;
   text-align: left;
   line-height: 1;
-  width: 65%;
+  width: 75%;
+  height: 60px;
 }
 
 .menu-title.chapter p {
@@ -427,8 +428,8 @@ input:checked + .slider:before {
   width: 14%;
   display: block;
   float: right;
-  margin-top: -1em;
-  margin-right: 0.5em;
+  margin-top: -1.5em;
+  margin-right: 0.3em;
 }
 
 .menu-outer:hover, .menu-outer:focus {
@@ -562,28 +563,82 @@ input:checked + .slider:before {
     padding: 5em 0 0 0;
 
   }
-  .menu-outer, .not-available {
-    width: auto;
+  .menu-container a {
+    width: 100%;
+  }
+  .not-available {
+    width: 100%;
+    margin: 0;
+    display: table;
+    position: relative;
     height: auto;
+  }
+  .not-available .menu-inner{
+    background-image: url("/images/menu/take-action-m.png");
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 86px;
+  }
+
+  .not-available .menu-inner img {
+    display: none;
+  }
+
+  .not-available .menu-title {
+    display: none !important;
+  }
+
+  .ch-locked {
+    width: 11%;
+    right: 77%;
+    top: 118%;
+  }
+
+  .menu-outer {
+    width: 90%;
+    /*height: auto;*/
     position: relative;
     display: table;
-
+    margin:0.3em auto;
   }
+
+  .menu-outer {
+    height: auto;
+  }
+
+  .menu-inner {
+    height: 101px;
+    width: 110px;
+    display: inline-flex;
+    margin: 0;
+    float: left;
+  }
+
   .menu-title.chapter{
     padding-bottom: 1em;
+    width: 50%;
+    float: right;
+    margin-right: 9%;
+    margin-top: 1.3em;
+    font-size: 14px;
   }
   .menu-title.main {
     font-size: 20px;
+    display: inline-flex;
+    align-items: flex-start;
+    width: 55%;
   }
   .menu-outer img {
-    margin-top: -1.5em;
+    margin-top: -2.5em;
   }
   .menu-btns {
-    display: block;
+    display: flex;
     margin-bottom: 2em;
     align-items: center;
   }
-
+  .ch-complete {
+    width: 9%;
+  }
   .menu-btns img{
   margin-right: 1em;
   /* padding-bottom: 1em; */
