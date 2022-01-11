@@ -287,4 +287,5 @@ function showProgress(e)
 
 function stopProgress() {
   $('#loading').css("display", "none");
+  $('#loading-bar').css("display", "none");
 }
