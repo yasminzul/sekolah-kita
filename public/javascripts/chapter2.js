@@ -72,6 +72,7 @@ function setup(loader, resources)
       { x: (pixiapp.screen.width/100)*70, y: (pixiapp.screen.height/100)*65, scale: 1.2},
       { reverse: false, duration: 1500, ease: 'easeInOutQuad' }
     );
+    pixiapp.stage.removeChild(elemSekolah2);
   },
   function(){
     pixiapp.stage.removeChild(elemSekolah1);
@@ -84,6 +85,7 @@ function setup(loader, resources)
       { x: (pixiapp.screen.width/100)*60, y: (pixiapp.screen.height/100)*95, scale: 1.2},
       { reverse: false, duration: 1500, ease: 'easeInOutQuad' }
     );
+    pixiapp.stage.removeChild(elemSekolah3);
   },
   function(){
     pixiapp.stage.removeChild(elemSekolah2);
