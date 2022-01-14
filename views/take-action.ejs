@@ -10,23 +10,27 @@
     <link rel='stylesheet' href='/stylesheets/take-action.css' />
   </head>
   <body>
-
+    <%- include menu/nav-btn-bm.ejs %>
     <section class="oa-wrapper">
         <section class="flex-item-left">
+             <h3>Take Action!</h3>
+              <p>Well done! You’ve learned about the six key ways we can improve education access for Orang Asli children. Now you can do your part by spreading the word! Create your own campaign badge and share it on your social media.</p>
           <canvas id="customize-area"></canvas>
         </section>
 
         <section class="flex-item-right">
           <div class="oa-col">
             <div class="mobile-btns">
-                <button><img src="/images/take-action/Aa.svg"></button>
-                <button><img src="/images/take-action/group-256.svg"></button>
-                <button><img src="/images/take-action/ic_file_download_24px.svg"></button>
-                <button><img src="/images/take-action/ic_insert_photo_24px.svg"></button>
-                <button><img src="/images/take-action/ic_share_24px.svg"></button>
+                <button><img src="/images/take-action/Group-365.svg"></button>
+                <button><img src="/images/take-action/Group-366.svg"></button>
+                <button><img src="/images/take-action/Group-367.svg"></button>
+                <button><img src="/images/take-action/Group-368.svg"></button>
             </div>
-            <h3>Take Action</h3>
-              <p>Well done! You’ve learned about the six key ways we can improve education access for Orang Asli children. Now you can do your part by spreading the word! Create your own campaign badge and share it on your social media.</p>
+            <div class="bottom-mobile-btn">
+                <button><img src="/images/take-action/ic_file_download_24px.svg">Download</button>
+                <button style="background-color: #FFB806;"><img src="/images/take-action/ic_share_24px.svg">Share</button>
+            </div>
+           
             <div class="choose-badge">
               <h4>Choose Badge</h4>
                 <button id="no-bg">No Background</button>
@@ -90,11 +94,12 @@
                 <button class="sticker"><img src="/images/Science-assets/Tools.png"></button>
                 <button class="sticker"><img src="/images/Science-assets/Whiteboard-science-classroom.png"></button>
             </div>
-
-            <button id="add-text">Add text</button>
-            <button id="delete-sticker">Remove Selected Sticker</button>
-            <button id="download-badge">Download</button>
-            <button>Share</button>
+            <div class="bottom-btn"> 
+                <button id="add-text">Add text</button>
+                <button id="delete-sticker">Remove Selected Sticker</button>
+                <button id="download-badge"><img src="/images/take-action/ic_file_download_24px.svg">Download</button>
+                <button id="share-item"><img src="/images/take-action/ic_share_24px.svg">Share</button>
+            </div>
 
            </div>
         </section>
