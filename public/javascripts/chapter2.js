@@ -56,7 +56,8 @@ function setup(loader, resources)
   const elemSekolah20 = PIXI.Sprite.from(resources.sekolahALL.texture);
 
   elemSekolah0.anchor.set(0.5);
-  elemSekolah0.position.set(pixiapp.screen.width / 2.05, pixiapp.screen.height / 1.8);
+  elemSekolah0.scale.set(0.9);
+  elemSekolah0.position.set(pixiapp.screen.width / 2.05, pixiapp.screen.height / 2);
   pixiapp.stage.addChild(elemSekolah0);
 
 
@@ -64,18 +65,20 @@ function setup(loader, resources)
   let sekolahAnimation = [
   function(){
     pixiapp.stage.removeChild(elemSekolah0);
+    pixiapp.stage.removeChild(elemSekolah2);
     elemSekolah1.anchor.set(0.5);
-    elemSekolah1.position.set(pixiapp.screen.width / 2.05, pixiapp.screen.height / 1.8);
+    elemSekolah1.scale.set(0.9);
+    elemSekolah1.position.set(pixiapp.screen.width / 2.05, pixiapp.screen.height / 2);
     pixiapp.stage.addChild(elemSekolah1);
     ease.add(
       elemSekolah1,
       { x: (pixiapp.screen.width/100)*70, y: (pixiapp.screen.height/100)*65, scale: 1.2},
       { reverse: false, duration: 1500, ease: 'easeInOutQuad' }
     );
-    pixiapp.stage.removeChild(elemSekolah2);
   },
   function(){
     pixiapp.stage.removeChild(elemSekolah1);
+    pixiapp.stage.removeChild(elemSekolah3);
     elemSekolah2.anchor.set(0.5);
     elemSekolah2.scale.set(1.2);
     elemSekolah2.position.set((pixiapp.screen.width/100)*70, (pixiapp.screen.height/100)*65);
@@ -85,10 +88,10 @@ function setup(loader, resources)
       { x: (pixiapp.screen.width/100)*60, y: (pixiapp.screen.height/100)*95, scale: 1.2},
       { reverse: false, duration: 1500, ease: 'easeInOutQuad' }
     );
-    pixiapp.stage.removeChild(elemSekolah3);
   },
   function(){
     pixiapp.stage.removeChild(elemSekolah2);
+    pixiapp.stage.removeChild(elemSekolah4);
     elemSekolah3.anchor.set(0.5);
     elemSekolah3.scale.set(1.2);
     elemSekolah3.position.set((pixiapp.screen.width/100)*60, (pixiapp.screen.height/100)*95);
@@ -101,6 +104,7 @@ function setup(loader, resources)
   },
   function(){
     pixiapp.stage.removeChild(elemSekolah3);
+    pixiapp.stage.removeChild(elemSekolah5);
     elemSekolah4.anchor.set(0.5);
     elemSekolah4.scale.set(1.2);
     elemSekolah4.position.set((pixiapp.screen.width/100)*75, (pixiapp.screen.height/100)*50);
@@ -113,6 +117,7 @@ function setup(loader, resources)
   },
   function(){
     pixiapp.stage.removeChild(elemSekolah4);
+    pixiapp.stage.removeChild(elemSekolah6);
     elemSekolah5.anchor.set(0.5);
     elemSekolah5.scale.set(1.2);
     elemSekolah5.position.set((pixiapp.screen.width/100)*60,(pixiapp.screen.height/100)*30);
@@ -125,6 +130,7 @@ function setup(loader, resources)
   },
   function(){
     pixiapp.stage.removeChild(elemSekolah5);
+    pixiapp.stage.removeChild(elemSekolah7);
     elemSekolah6.anchor.set(0.5);
     elemSekolah6.scale.set(1.2);
     elemSekolah6.position.set((pixiapp.screen.width/100)*60,(pixiapp.screen.height/100)*12);
@@ -137,6 +143,7 @@ function setup(loader, resources)
   },
   function(){
     pixiapp.stage.removeChild(elemSekolah6);
+    pixiapp.stage.removeChild(elemSekolah8);
     elemSekolah7.anchor.set(0.5);
     elemSekolah7.scale.set(1.2);
     elemSekolah7.position.set((pixiapp.screen.width/100)*25,(pixiapp.screen.height/100)*100);
@@ -211,97 +218,98 @@ function setup(loader, resources)
     pixiapp.stage.removeChild(elemSekolah12);
     elemSekolah13.anchor.set(0.5);
     elemSekolah13.scale.set(1.2);
-    elemSekolah13.position.set(-(pixiapp.screen.width/100)*15,(pixiapp.screen.height/100)*60);
-    pixiapp.stage.addChild(elemSekolah9);
+    elemSekolah13.position.set((pixiapp.screen.width/100)*15,(pixiapp.screen.height/100)*60);
+    pixiapp.stage.addChild(elemSekolah13);
     ease.add(
       elemSekolah13,
-      { x: (pixiapp.screen.width/100)*2, y: pixiapp.screen.height/100, scale: 1.2},
+      { x: (pixiapp.screen.width/100)*40, y: (pixiapp.screen.height/100)*60, scale: 1.2},
       { reverse: false, duration: 1500, ease: 'easeInOutQuad' }
     );
   },
   function(){
-    pixiapp.stage.removeChild(elemSekolah8);
-    elemSekolah9.anchor.set(0.5);
-    elemSekolah9.scale.set(1.2);
-    elemSekolah9.position.set(-(pixiapp.screen.width/100)*20,(pixiapp.screen.height/100)*80);
-    pixiapp.stage.addChild(elemSekolah9);
+    pixiapp.stage.removeChild(elemSekolah13);
+    elemSekolah14.anchor.set(0.5);
+    elemSekolah14.scale.set(1.2);
+    elemSekolah14.position.set((pixiapp.screen.width/100)*40,(pixiapp.screen.height/100)*60);
+    pixiapp.stage.addChild(elemSekolah14);
     ease.add(
-      elemSekolah9,
-      { x: (pixiapp.screen.width/100)*2, y: pixiapp.screen.height/100, scale: 1.2},
+      elemSekolah14,
+      { x: (pixiapp.screen.width/100)*25, y: (pixiapp.screen.height/100)*22, scale: 1.2},
       { reverse: false, duration: 1500, ease: 'easeInOutQuad' }
     );
   },
   function(){
-    pixiapp.stage.removeChild(elemSekolah8);
-    elemSekolah9.anchor.set(0.5);
-    elemSekolah9.scale.set(1.2);
-    elemSekolah9.position.set(-(pixiapp.screen.width/100)*20,(pixiapp.screen.height/100)*80);
-    pixiapp.stage.addChild(elemSekolah9);
+    pixiapp.stage.removeChild(elemSekolah14);
+    elemSekolah15.anchor.set(0.5);
+    elemSekolah15.scale.set(1.2);
+    elemSekolah15.position.set((pixiapp.screen.width/100)*25,(pixiapp.screen.height/100)*22);
+    pixiapp.stage.addChild(elemSekolah15);
     ease.add(
-      elemSekolah9,
-      { x: (pixiapp.screen.width/100)*2, y: pixiapp.screen.height/100, scale: 1.2},
+      elemSekolah15,
+      { x: (pixiapp.screen.width/100)*20, y: (pixiapp.screen.height/100)*40, scale: 1.2},
       { reverse: false, duration: 1500, ease: 'easeInOutQuad' }
     );
   },
   function(){
-    pixiapp.stage.removeChild(elemSekolah8);
-    elemSekolah9.anchor.set(0.5);
-    elemSekolah9.scale.set(1.2);
-    elemSekolah9.position.set(-(pixiapp.screen.width/100)*20,(pixiapp.screen.height/100)*80);
-    pixiapp.stage.addChild(elemSekolah9);
+    pixiapp.stage.removeChild(elemSekolah15);
+    elemSekolah16.anchor.set(0.5);
+    elemSekolah16.scale.set(1.2);
+    elemSekolah16.position.set((pixiapp.screen.width/100)*20,(pixiapp.screen.height/100)*40);
+    pixiapp.stage.addChild(elemSekolah16);
     ease.add(
-      elemSekolah9,
-      { x: (pixiapp.screen.width/100)*2, y: pixiapp.screen.height/100, scale: 1.2},
+      elemSekolah16,
+      { x: -(pixiapp.screen.width/100)*30, y: pixiapp.screen.height/100, scale: 1.2},
       { reverse: false, duration: 1500, ease: 'easeInOutQuad' }
     );
   },
   function(){
-    pixiapp.stage.removeChild(elemSekolah8);
-    elemSekolah9.anchor.set(0.5);
-    elemSekolah9.scale.set(1.2);
-    elemSekolah9.position.set(-(pixiapp.screen.width/100)*20,(pixiapp.screen.height/100)*80);
-    pixiapp.stage.addChild(elemSekolah9);
+    pixiapp.stage.removeChild(elemSekolah16);
+    elemSekolah17.anchor.set(0.5);
+    elemSekolah17.scale.set(1.2);
+    elemSekolah17.position.set(-(pixiapp.screen.width/100)*30,pixiapp.screen.height/100);
+    pixiapp.stage.addChild(elemSekolah17);
     ease.add(
-      elemSekolah9,
-      { x: (pixiapp.screen.width/100)*2, y: pixiapp.screen.height/100, scale: 1.2},
+      elemSekolah17,
+      { x: pixiapp.screen.width/100, y: (pixiapp.screen.height/100)*105, scale: 1.2},
       { reverse: false, duration: 1500, ease: 'easeInOutQuad' }
     );
   },
   function(){
-    pixiapp.stage.removeChild(elemSekolah8);
-    elemSekolah9.anchor.set(0.5);
-    elemSekolah9.scale.set(1.2);
-    elemSekolah9.position.set(-(pixiapp.screen.width/100)*20,(pixiapp.screen.height/100)*80);
-    pixiapp.stage.addChild(elemSekolah9);
+    pixiapp.stage.removeChild(elemSekolah17);
+    elemSekolah18.anchor.set(0.5);
+    elemSekolah18.scale.set(1.2);
+    elemSekolah18.position.set(pixiapp.screen.width/100,(pixiapp.screen.height/100)*105);
+    pixiapp.stage.addChild(elemSekolah18);
     ease.add(
-      elemSekolah9,
-      { x: (pixiapp.screen.width/100)*2, y: pixiapp.screen.height/100, scale: 1.2},
+      elemSekolah18,
+      { x: (pixiapp.screen.height/100)*100, y: (pixiapp.screen.height/100)*80, scale: 1.2},
       { reverse: false, duration: 1500, ease: 'easeInOutQuad' }
     );
   },
   function(){
-    pixiapp.stage.removeChild(elemSekolah8);
-    elemSekolah9.anchor.set(0.5);
-    elemSekolah9.scale.set(1.2);
-    elemSekolah9.position.set(-(pixiapp.screen.width/100)*20,(pixiapp.screen.height/100)*80);
-    pixiapp.stage.addChild(elemSekolah9);
+    pixiapp.stage.removeChild(elemSekolah18);
+    elemSekolah19.anchor.set(0.5);
+    elemSekolah19.scale.set(1.2);
+    elemSekolah19.position.set((pixiapp.screen.height/100)*100,(pixiapp.screen.height/100)*80);
+    pixiapp.stage.addChild(elemSekolah19);
     ease.add(
-      elemSekolah9,
-      { x: (pixiapp.screen.width/100)*2, y: pixiapp.screen.height/100, scale: 1.2},
+      elemSekolah19,
+      { x: (pixiapp.screen.height/100)*50, y: pixiapp.screen.height/100, scale: 1.2},
       { reverse: false, duration: 1500, ease: 'easeInOutQuad' }
     );
   },
   function(){
-    pixiapp.stage.removeChild(elemSekolah8);
-    elemSekolah9.anchor.set(0.5);
-    elemSekolah9.scale.set(1.2);
-    elemSekolah9.position.set(-(pixiapp.screen.width/100)*20,(pixiapp.screen.height/100)*80);
-    pixiapp.stage.addChild(elemSekolah9);
+    pixiapp.stage.removeChild(elemSekolah19);
+    elemSekolah20.anchor.set(0.5);
+    elemSekolah20.scale.set(1.2);
+    elemSekolah20.position.set((pixiapp.screen.height/100)*50,pixiapp.screen.height/100);
+    pixiapp.stage.addChild(elemSekolah20);
     ease.add(
-      elemSekolah9,
-      { x: (pixiapp.screen.width/100)*2, y: pixiapp.screen.height/100, scale: 1.2},
+      elemSekolah20,
+      { x: pixiapp.screen.width / 2.05, y: pixiapp.screen.height/2, scale: 0.9},
       { reverse: false, duration: 1500, ease: 'easeInOutQuad' }
     );
+    $('body').css({"background-color": "#fbf2d5"});
   }
   ];
 
@@ -316,8 +324,8 @@ function setup(loader, resources)
       });
 
       $('#school-prev').click( function (){
-        sekolahAnimation[clickstate]();
         clickstate -= 1;
+        sekolahAnimation[clickstate]();
       });
 
     });
