@@ -16,9 +16,35 @@
 span#loading
 {
   position: absolute;
-  left: 50%;
-  top: 50%;
+  left: -2%;
+  top: 48%;
+  width: 100%;
   z-index: 200;
   font-size: 45px;
   color: #FFB806;
+  text-align: center;
 }
+
+#landingView {
+  background-color: #EAE8E3;
+}
+
+#loading-bar {
+  position: absolute;
+  width: 100%;
+  top: 35%;
+  left: 0%;
+}
+
+#loading-bar img {
+  position: relative;
+  left: 35%;
+  width: 25%;
+}
+
+@media (max-width: 800px) {
+  span#loading {
+    top: 40%;
+    font-size: 35px;
+  }
+}  
