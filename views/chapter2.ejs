@@ -4,42 +4,32 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title><%= title %></title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <!--     <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/6.2.0/browser/pixi.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/6.2.0/browser/pixi.min.js"></script>
+  <script src="/javascripts/ease.js"></script>
    <link rel="icon" type="image/jpg" href="/images/favicon.png"/>
   <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link rel='stylesheet' href='/stylesheets/chapter2.css' />
   <link rel='stylesheet' href='/stylesheets/resources.css' />
 </head>
     <body>
       <%- include menu/nav-btn.ejs %>
       <%- include popups/coming-soon.ejs %>
-        <section class="chapter-wrapper">
-            <section class="flex-item-left">
-                <img src="/images/chapters/chapter-2.PNG" alt="">
-            </section>
 
-            <section class="flex-item-right">
-              <div class="ch-label"><div>CHAPTER 1</div></div>
-                 <h3>"I didn't understand a single word"</h3>
-                 <div class="ch-content">
-                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis dolorem quibusdam aliquid beatae nesciunt quidem amet a nulla reiciendis deserunt dolores assumenda, quam molestias maiores ratione. Ad quis obcaecati quae!</p>
-                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis dolorem quibusdam aliquid beatae nesciunt quidem amet a nulla reiciendis deserunt dolores assumenda, quam molestias maiores ratione. Ad quis obcaecati quae!</p>
-                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis dolorem quibusdam aliquid beatae nesciunt quidem amet a nulla reiciendis deserunt dolores assumenda, quam molestias maiores ratione. Ad quis obcaecati quae!</p>
-                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis dolorem quibusdam aliquid beatae nesciunt quidem amet a nulla reiciendis deserunt dolores assumenda, quam molestias maiores ratione. Ad quis obcaecati quae!</p>
-                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis dolorem quibusdam aliquid beatae nesciunt quidem amet a nulla reiciendis deserunt dolores assumenda, quam molestias maiores ratione. Ad quis obcaecati quae!</p>
-                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis dolorem quibusdam aliquid beatae nesciunt quidem amet a nulla reiciendis deserunt dolores assumenda, quam molestias maiores ratione. Ad quis obcaecati quae!</p>
-                 </div>
-             
+      <div id="view-chapter2">
+        <button id="school-start">START</button>
+        <button id="school-prev">< PREVIOUS</button>
+        <button id="school-next">NEXT ></button>
+      </div>
+
                 <div class="ch-finished">
                   <img src="images/menu/group-110.svg" alt="">
                   <span>You have completed this chapter</span>
                   <button class="ch-prev">< PREVIOUS</button>
                   <button class="ch-next">NEXT ></button>
-                </div> 
- 
-              
-            </section>
-        </section>
+                </div>
+
 
     <script src="/javascripts/script.js"></script>
+    <script src="/javascripts/chapter2.js"></script>
     </body>
 </html>
