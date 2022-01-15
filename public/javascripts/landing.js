@@ -78,7 +78,7 @@ loader.load(setup);
     elemNotebook.buttonMode = true;
     elemNotebook.on ('touchstart', function()
     {
-        $('#coming-soon').toggleClass("menu-open");
+        window.open("en/chapter1","_self")
     } );
 
     elemPhone.interactive = true;
@@ -114,12 +114,12 @@ loader.load(setup);
 
     notebookHSprite.on ('mousedown', function()
     {
-        $('#coming-soon').toggleClass("menu-open");
+        window.open("en/chapter1","_self")
     } );
 
     notebookHSprite.on ('touchstart', function()
     {
-        $('#coming-soon').toggleClass("menu-open");
+        window.open("en/chapter1","_self")
     } );
 
     notebookHSprite.on ('pointerover', function()

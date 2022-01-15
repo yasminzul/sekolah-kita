@@ -33,6 +33,7 @@ app.use(session(
     secret: 'secret-key',
     resave: false,
     saveUninitialized: false,
+    cookie: { maxAge: 1000 * 60 * 60 * 24 * 30 * 12 }
   }
 ));
 
