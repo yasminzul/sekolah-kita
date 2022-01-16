@@ -2,3 +2,42 @@ body
 {
   background-color: #49463f;
 }
+
+.ch-2 #school-prev, .ch-2 #school-next {
+	position: absolute;
+	top: 60%;
+	cursor: pointer;
+	font-family:'Archer Bold', serif;
+	padding: 0.5em;
+	font-size: 14px;
+	border: none;
+}
+.ch-2 #school-prev {
+	right: 21%;
+	background-color: #D1C7BA;
+
+}
+
+.ch-2 #school-next {
+	right: 12%;
+	width: 95px;
+	background-color: #FFB806;
+}
+
+.ch-2 .ch-prev, .ch-2 .ch-next {
+	display: none;
+}
+
+.ch-2 .ch-prev.final, .ch-2 .ch-next.final {
+	position: absolute;
+	top: 60%;
+	display: block;
+}
+.ch-2 .ch-prev.final {
+	right: 21%;
+}
+
+.ch-2 .ch-next.final {
+	right: 12%;
+}
+

@@ -3,6 +3,129 @@ const pixiapp = new window.PIXI.Application({
   resizeTo: window});
 $('#view-chapter2').append(pixiapp.view);
 
+const textStyle = new PIXI.TextStyle({
+  fontFamily: 'DM Sans, sans-serif',
+  fontSize: 14,
+  fill: '#efefe',
+  align: 'left',
+  wordWrap : true,
+  wordWrapWidth: pixiapp.screen.width/3.2
+});
+
+let textArr = [
+`The schools we attend`,
+`(Age 2-4)
+
+Taska KEMAS   
+
+Early childhood education and daycare services for working parents of young children, catering to rural communities. Under the purview of the Ministry of Rural Development.`,
+`(Age 4-6)
+
+Tabika KEMAS   
+
+Pre-school classes that prepare children for primary school, catering to rural communities. There are 268 Tabikas in Orang Asli villages and interior areas. Under the purview of the Ministry of Rural Development.`,
+`(Age 4-6)
+
+Prasekolah   
+
+Pre-school classes under the purview of the Ministry of Education. There are 6,185 Prasekolah institutions. Parents have noted that education at Prasekolah classes is usually of a higher quality compared to KEMAS classes, with better-trained teachers and better facilities. However, Orang Asli communities have limited access to Prasekolah, as they are usually located within Sekolah Kebangsaan schools in town centres.
+
+Research by IDEAS has noted access to quality pre-school as key to keeping Orang Asli students in school, as they would start school on level footing with their peers.`,
+`(Age 7-12)
+
+Sekolah Kebangsaan`,
+`(Age 7-12)
+
+Sekolah Jenis Kebangsaan   
+
+Vernacular primary schools, where the medium of instruction is either Mandarin or Tamil.`,
+`(Age 7-12)
+
+Sekolah Kebangsaan Orang Asli   
+
+Government primary schools located in or near significant Orang Asli populations. These schools will have an almost-exclusively Orang Asli student body. As of 2018, there are 94 such schools.`,
+`(Age 7-15)
+
+Sekolah Model Khas Komprehensif K9   
+
+Schools located near large Orang Asli populations in interior areas, where students are required to complete nine years’ syllabus, from Standard 1 to Form 3. These schools were instituted to address the high dropout rate among Orang Asli students when transitioning from primary to secondary school, by having that transition take place within the same school. There are currently five K9 schools in Peninsular Malaysia, and a further 11 in Sabah and Sarawak which cater to indigenous populations there.`,
+`(Age 7-17)
+
+Sekolah Pendidikan Khas   
+
+Primary and secondary schools for special needs children.`,
+`(Age 13-17)
+
+Sekolah Menengah Kebangsaan`,
+`(Age 13-17)
+
+Sekolah Menengah Jenis Kebangsaan   
+
+Vernacular secondary schools, where the medium of instruction is Mandarin. There are no Tamil-language secondary schools.`,
+`(Age 13-17)
+
+Sekolah Berasrama Penuh   
+
+Residential schools for high-achieving Malaysian students, focusing on science and technology subjects. There are 69 such schools.`,
+`(Age 13-17)
+
+Pusat Intelek Pelajar Orang Asli (PIPOA)  
+
+Special school for high-achieving Orang Asli students, for Form 1 to 3. There is only one PIPOA school, in Rompin, Pahang.`,
+`(Age 13-17)
+
+Sekolah Agama  
+
+There are religious Islamic schools at both primary and secondary level.`,
+`(Age 13-17)
+
+Sekolah Menengah Teknik 
+
+Vocational secondary schools with a strong focus on skills-based education and industry practices.`,
+`(Age 13-17)
+
+Sekolah Seni / Sekolah Sukan
+
+Schools catering to students who excel in arts or sports.`,
+`(Age 18+)
+
+Tertiary education`,
+`(Mature Age)
+
+Kelas Dewasa Ibu Bapa Orang Asli Dan Penan (KEDAP)
+
+Adult literacy classes for Orang Asli, conducted in schools. Adults who sign up for KEDAP classes are given an allowance to attend.`,
+`Community-based learning
+
+Some Orang Asli communities have started community-based classes, held within their village. These classes are usually less rigid and include indigenous culture and traditional knowledge as part of its syllabus. Parents and teachers have noted that these classes are an important form of supplementary education among Orang Asli communities, but require broader recognition and support from government agencies.`,
+`Private schools
+
+There are private education institutes for all levels of education. They range from expensive, paid schools, to not-for-profit institutions catering to marginalised communities, to homeschooling programmes.`,
+`You finished this chapter!`,
+]
+
+
+textCounter = 0;
+
+let basicText = new PIXI.Text(textArr[0], textStyle);
+
+    // basicText.anchor.set(-0.7, 15);
+    basicText.position.set(pixiapp.screen.width/ 2 + 200, pixiapp.screen.height/2 - 220);
+
+    const graficArea = new PIXI.Graphics()
+        // graficArea
+        .beginFill(0xE6E2DD)
+        .drawRect(0, 0, basicText.position.x/ 2 + 100, basicText.position.y/ 2 + 400)
+        .endFill();
+
+    const spriteArea = new PIXI.Sprite(pixiapp.renderer.generateTexture(graficArea));
+        spriteArea.position.set(pixiapp.screen.width / 2, pixiapp.screen.height / 1.4)
+        spriteArea.scale.set(0.9);
+        spriteArea.anchor.set(-0.35, 1);
+
+        spriteArea.addChild(basicText);
+
+
 const ease = new Ease.Ease();
 
 const loader = PIXI.Loader.shared;
@@ -55,8 +178,10 @@ function setup(loader, resources)
   const elemSekolah19 = PIXI.Sprite.from(resources.sekolah19.texture);
   const elemSekolah20 = PIXI.Sprite.from(resources.sekolahALL.texture);
 
+
   let sekolahAnimation = [];
   var x = window.matchMedia("(orientation: landscape)")
+
 
   //desktop
   if (x.matches)
@@ -65,11 +190,16 @@ function setup(loader, resources)
     elemSekolah0.anchor.set(0.5);
     elemSekolah0.scale.set(0.9);
     elemSekolah0.position.set(pixiapp.screen.width / 2.05, pixiapp.screen.height / 2);
-    pixiapp.stage.addChild(elemSekolah0);
+    pixiapp.stage.addChild(elemSekolah0); 
+    pixiapp.stage.addChild(spriteArea);
+    pixiapp.stage.addChild(basicText);
+
+
 
     var currentX = pixiapp.screen.width / 2.05;
     var currentY = pixiapp.screen.height / 2;
     var currentScale = 0.9;
+
 
     sekolahAnimation = [
     function(){
@@ -79,6 +209,8 @@ function setup(loader, resources)
       elemSekolah1.scale.set(currentScale);
       elemSekolah1.position.set(currentX, currentY);
       pixiapp.stage.addChild(elemSekolah1);
+      pixiapp.stage.addChild(spriteArea);
+      pixiapp.stage.addChild(basicText);
       ease.add(
         elemSekolah1,
         { x: (pixiapp.screen.width/100)*70, y: (pixiapp.screen.height/100)*65, scale: 1.2},
@@ -95,6 +227,8 @@ function setup(loader, resources)
       elemSekolah2.scale.set(1.2);
       elemSekolah2.position.set(currentX, currentY);
       pixiapp.stage.addChild(elemSekolah2);
+      pixiapp.stage.addChild(spriteArea);
+      pixiapp.stage.addChild(basicText);
       ease.add(
         elemSekolah2,
         { x: (pixiapp.screen.width/100)*60, y: (pixiapp.screen.height/100)*95, scale: 1.2},
@@ -110,6 +244,8 @@ function setup(loader, resources)
       elemSekolah3.scale.set(1.2);
       elemSekolah3.position.set(currentX, currentY);
       pixiapp.stage.addChild(elemSekolah3);
+      pixiapp.stage.addChild(spriteArea);
+      pixiapp.stage.addChild(basicText);
       ease.add(
         elemSekolah3,
         { x: (pixiapp.screen.width/100)*75, y: (pixiapp.screen.height/100)*50, scale: 1.2},
@@ -125,6 +261,8 @@ function setup(loader, resources)
       elemSekolah4.scale.set(1.2);
       elemSekolah4.position.set(currentX, currentY);
       pixiapp.stage.addChild(elemSekolah4);
+      pixiapp.stage.addChild(spriteArea);
+      pixiapp.stage.addChild(basicText);
       ease.add(
         elemSekolah4,
         { x: (pixiapp.screen.width/100)*60, y: (pixiapp.screen.height/100)*30, scale: 1.2},
@@ -140,6 +278,8 @@ function setup(loader, resources)
       elemSekolah5.scale.set(1.2);
       elemSekolah5.position.set(currentX, currentY);
       pixiapp.stage.addChild(elemSekolah5);
+      pixiapp.stage.addChild(spriteArea);
+      pixiapp.stage.addChild(basicText);
       ease.add(
         elemSekolah5,
         { x: (pixiapp.screen.width/100)*60, y: (pixiapp.screen.height/100)*12, scale: 1.2},
@@ -155,6 +295,8 @@ function setup(loader, resources)
       elemSekolah6.scale.set(1.2);
       elemSekolah6.position.set(currentX, currentY);
       pixiapp.stage.addChild(elemSekolah6);
+      pixiapp.stage.addChild(spriteArea);
+      pixiapp.stage.addChild(basicText);
       ease.add(
         elemSekolah6,
         { x: (pixiapp.screen.width/100)*25, y: (pixiapp.screen.height/100)*100, scale: 1.2},
@@ -170,6 +312,8 @@ function setup(loader, resources)
       elemSekolah7.scale.set(1.2);
       elemSekolah7.position.set(currentX, currentY);
       pixiapp.stage.addChild(elemSekolah7);
+      pixiapp.stage.addChild(spriteArea);
+      pixiapp.stage.addChild(basicText);
       ease.add(
         elemSekolah7,
         { x: (pixiapp.screen.width/100)*5, y: (pixiapp.screen.height/100)*80, scale: 1.2},
@@ -185,6 +329,8 @@ function setup(loader, resources)
       elemSekolah8.scale.set(1.2);
       elemSekolah8.position.set(currentX, currentY);
       pixiapp.stage.addChild(elemSekolah8);
+      pixiapp.stage.addChild(spriteArea);
+      pixiapp.stage.addChild(basicText);
       ease.add(
         elemSekolah8,
         { x: -(pixiapp.screen.width/100)*20, y: (pixiapp.screen.height/100)*80, scale: 1.2},
@@ -200,6 +346,8 @@ function setup(loader, resources)
       elemSekolah9.scale.set(1.2);
       elemSekolah9.position.set(currentX, currentY);
       pixiapp.stage.addChild(elemSekolah9);
+      pixiapp.stage.addChild(spriteArea);
+      pixiapp.stage.addChild(basicText);
       ease.add(
         elemSekolah9,
         { x: (pixiapp.screen.width/100)*2, y: pixiapp.screen.height/100, scale: 1.2},
@@ -215,6 +363,8 @@ function setup(loader, resources)
       elemSekolah10.scale.set(1.2);
       elemSekolah10.position.set(currentX, currentY);
       pixiapp.stage.addChild(elemSekolah10);
+      pixiapp.stage.addChild(spriteArea);
+      pixiapp.stage.addChild(basicText);
       ease.add(
         elemSekolah10,
         { x: (pixiapp.screen.width/100)*2, y: (pixiapp.screen.height/100)*30, scale: 1.2},
@@ -230,6 +380,8 @@ function setup(loader, resources)
       elemSekolah11.scale.set(1.2);
       elemSekolah11.position.set(currentX, currentY);
       pixiapp.stage.addChild(elemSekolah11);
+      pixiapp.stage.addChild(spriteArea);
+      pixiapp.stage.addChild(basicText);
       ease.add(
         elemSekolah11,
         { x: -(pixiapp.screen.width/100)*20, y: (pixiapp.screen.height/100)*20, scale: 1.2},
@@ -245,6 +397,8 @@ function setup(loader, resources)
       elemSekolah12.scale.set(1.2);
       elemSekolah12.position.set(currentX, currentY);
       pixiapp.stage.addChild(elemSekolah12);
+      pixiapp.stage.addChild(spriteArea);
+      pixiapp.stage.addChild(basicText);
       ease.add(
         elemSekolah12,
         { x: -(pixiapp.screen.width/100)*15, y: (pixiapp.screen.height/100)*60, scale: 1.2},
@@ -260,6 +414,8 @@ function setup(loader, resources)
       elemSekolah13.scale.set(1.2);
       elemSekolah13.position.set(currentX, currentY);
       pixiapp.stage.addChild(elemSekolah13);
+      pixiapp.stage.addChild(spriteArea);
+      pixiapp.stage.addChild(basicText);
       ease.add(
         elemSekolah13,
         { x: (pixiapp.screen.width/100)*40, y: (pixiapp.screen.height/100)*60, scale: 1.2},
@@ -275,6 +431,8 @@ function setup(loader, resources)
       elemSekolah14.scale.set(1.2);
       elemSekolah14.position.set(currentX, currentY);
       pixiapp.stage.addChild(elemSekolah14);
+      pixiapp.stage.addChild(spriteArea);
+      pixiapp.stage.addChild(basicText);
       ease.add(
         elemSekolah14,
         { x: (pixiapp.screen.width/100)*25, y: (pixiapp.screen.height/100)*22, scale: 1.2},
@@ -290,6 +448,8 @@ function setup(loader, resources)
       elemSekolah15.scale.set(1.2);
       elemSekolah15.position.set(currentX, currentY);
       pixiapp.stage.addChild(elemSekolah15);
+      pixiapp.stage.addChild(spriteArea);
+      pixiapp.stage.addChild(basicText);
       ease.add(
         elemSekolah15,
         { x: (pixiapp.screen.width/100)*20, y: (pixiapp.screen.height/100)*40, scale: 1.2},
@@ -305,6 +465,8 @@ function setup(loader, resources)
       elemSekolah16.scale.set(1.2);
       elemSekolah16.position.set(currentX, currentY);
       pixiapp.stage.addChild(elemSekolah16);
+      pixiapp.stage.addChild(spriteArea);
+      pixiapp.stage.addChild(basicText);
       ease.add(
         elemSekolah16,
         { x: -(pixiapp.screen.width/100)*30, y: pixiapp.screen.height/100, scale: 1.2},
@@ -320,6 +482,8 @@ function setup(loader, resources)
       elemSekolah17.scale.set(1.2);
       elemSekolah17.position.set(currentX, currentY);
       pixiapp.stage.addChild(elemSekolah17);
+      pixiapp.stage.addChild(spriteArea);
+      pixiapp.stage.addChild(basicText);
       ease.add(
         elemSekolah17,
         { x: pixiapp.screen.width/100, y: (pixiapp.screen.height/100)*105, scale: 1.2},
@@ -335,6 +499,8 @@ function setup(loader, resources)
       elemSekolah18.scale.set(1.2);
       elemSekolah18.position.set(currentX, currentY);
       pixiapp.stage.addChild(elemSekolah18);
+      pixiapp.stage.addChild(spriteArea);
+      pixiapp.stage.addChild(basicText);
       ease.add(
         elemSekolah18,
         { x: (pixiapp.screen.height/100)*100, y: (pixiapp.screen.height/100)*80, scale: 1.2},
@@ -351,6 +517,8 @@ function setup(loader, resources)
       elemSekolah19.scale.set(currentScale);
       elemSekolah19.position.set(currentX, currentY);
       pixiapp.stage.addChild(elemSekolah19);
+      pixiapp.stage.addChild(spriteArea);
+      pixiapp.stage.addChild(basicText);
       ease.add(
         elemSekolah19,
         { x: (pixiapp.screen.height/100)*50, y: pixiapp.screen.height/100, scale: 1.2},
@@ -365,6 +533,8 @@ function setup(loader, resources)
       elemSekolah20.scale.set(1.2);
       elemSekolah20.position.set(currentX, currentY);
       pixiapp.stage.addChild(elemSekolah20);
+      pixiapp.stage.addChild(spriteArea);
+      pixiapp.stage.addChild(basicText);
       ease.add(
         elemSekolah20,
         { x: pixiapp.screen.width / 2.05, y: pixiapp.screen.height/2, scale: 0.9},
@@ -704,14 +874,58 @@ function setup(loader, resources)
 
     $(document).ready(function(){
 
+      document.getElementById("school-prev").disabled = true;
+
       $('#school-next').click( function (){
-        clickstate += 1;
-        sekolahAnimation[clickstate]();
+        // clickstate += 1;
+        // sekolahAnimation[clickstate]();
+
+        textCounter = (textCounter + 1) % textArr.length;
+        basicText.text = textArr[textCounter];
+        console.log(textCounter);
+
+        if (textCounter == 0) {
+          document.getElementById("school-prev").disabled = true;
+        } else if (textCounter >= 0) {
+          document.getElementById("school-prev").disabled = false;
+        }
+
+        if ( clickstate >= -1 && clickstate < sekolahAnimation.length-1) {
+          clickstate += 1;
+          sekolahAnimation[clickstate]();
+        }
+        else if (clickstate >= sekolahAnimation.length-1 && clickstate < 20) {
+          clickstate += 1;
+        }
+        if (textCounter == 20) {
+           document.getElementById("school-next").disabled = true;
+           $('.ch-prev').addClass('final');
+           $('.ch-next').addClass('final');
+           $('#school-next').css('display', 'none');
+           $('#school-prev').css('display', 'none');
+        }
       });
 
       $('#school-prev').click( function (){
-        clickstate -= 1;
-        sekolahAnimation[clickstate]();
+        // clickstate -= 1;
+        // sekolahAnimation[clickstate]();
+
+        textCounter = (textCounter - 1) % textArr.length;
+        basicText.text = textArr[textCounter];
+ 
+        // console.log(textCounter);
+
+        if (clickstate > 0 && clickstate < sekolahAnimation.length) {
+          clickstate -= 1;
+          sekolahAnimation[clickstate]();
+        }
+        else if (clickstate >= sekolahAnimation.length && clickstate <= 20) {
+          clickstate -= 1;
+        } 
+
+        if (textCounter <= 0) {
+         document.getElementById("school-prev").disabled = true;
+        }
       });
 
     });
