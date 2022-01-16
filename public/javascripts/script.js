@@ -7,6 +7,22 @@ $(document).ready(function(id) {
     $('#coming-soon').toggleClass("menu-open");
   });
 
+  $('#hunt-complete-close').click(function() {
+    $('#hunt-complete').toggleClass("menu-open");
+  });
+
+  $('#hunt-incomplete-close').click(function() {
+    $('#hunt-incomplete').toggleClass("menu-open");
+  });
+
+  $('#class-start-close').click(function() {
+    $('#class-start').toggleClass("menu-open");
+  });
+
+  $('#score-total-close').click(function() {
+    $('#score-total').toggleClass("menu-open");
+  });
+
   $('#share-close, #share-open').click(function() {
     $('#share').toggleClass("menu-open");
   });
@@ -22,6 +38,8 @@ $(document).ready(function(id) {
         window.open("en","_self")
     }
   });
+
+
 
 });
 
