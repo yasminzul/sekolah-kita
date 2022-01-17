@@ -27,6 +27,21 @@ $(document).ready(function(id) {
     $('#share').toggleClass("menu-open");
   });
 
+  // $('.clue').click(function() {
+  //   if (currScore > 1 && currScore < 12)
+  //   {
+  //     $('#hunt-incomplete').toggleClass("menu-open");
+  //   }
+  //   else if (currScore == 1)
+  //   {
+  //     $('#hunt-complete').toggleClass("menu-open");
+  //   }
+  //   else (currScore == 12)
+  //   {
+  //     $('#score-total').toggleClass("menu-open");
+  //   }
+  // });
+
   $('#switch, #menu-switch').click(function() {
     if ($(this).is(':checked')) {
       $('.off').css("color", "#000");

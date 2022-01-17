@@ -1,71 +1,69 @@
 module.exports = function Scorecard(currScore) {
-  this.clue1 = currScore.clue1;
-  this.clue2 = currScore.clue2;
-  this.clue3 = currScore.clue3;
-  this.clue4 = currScore.clue4;
-  this.clue5 = currScore.clue5;
-  this.clue6 = currScore.clue6;
-  this.clue7 = currScore.clue7;
-  this.clue8 = currScore.clue8;
-  this.clue9 = currScore.clue9;
-  this.clue10 = currScore.clue10;
-  this.clue11 = currScore.clue11;
-  this.clue12 = currScore.clue12;
+  this.clue = currScore.clue;
   this.chapterAccess = currScore.chapterAccess;
+  this.cluesFound = currScore.cluesFound;
 
   this.found = function(id)
   {
     if (id == 'clue-1')
     {
-      this.clue1 = true;
+      this.clue[0] = true;
     }
     else if (id == 'clue-2')
     {
-      this.clue2 = true;
+      this.clue[1] = true;
     }
     else if (id == 'clue-3')
     {
-      this.clue3 = true;
+      this.clue[2] = true;
     }
     else if (id == 'clue-4')
     {
-      this.clue4 = true;
+      this.clue[3] = true;
     }
     else if (id == 'clue-5')
     {
-      this.clue5 = true;
+      this.clue[4] = true;
     }
     else if (id == 'clue-6')
     {
-      this.clue6 = true;
+      this.clue[5] = true;
     }
     else if (id == 'clue-7')
     {
-      this.clue7 = true;
+      this.clue[6] = true;
     }
     else if (id == 'clue-8')
     {
-      this.clue8 = true;
+      this.clue[7] = true;
     }
     else if (id == 'clue-9')
     {
-      this.clue9 = true;
+      this.clue[8] = true;
     }
     else if (id == 'clue-10')
     {
-      this.clue10 = true;
+      this.clue[9] = true;
     }
     else if (id == 'clue-11')
     {
-      this.clue11 = true;
+      this.clue[10] = true;
     }
     else if (id == 'clue-12')
     {
-      this.clue12 = true;
+      this.clue[11] = true;
     }
-    else
+
+    this.cluesFound = 0;
+
+    for (let i = 0; i < 12; i++)
     {
-      console.log("What?");
+      if (this.clue[i] == true)
+      {
+          this.cluesFound++;
+          console.log(this.cluesFound);
+      }
     }
+
   }
 }
