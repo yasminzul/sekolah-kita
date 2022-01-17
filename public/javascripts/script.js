@@ -7,9 +7,40 @@ $(document).ready(function(id) {
     $('#coming-soon').toggleClass("menu-open");
   });
 
+  $('#hunt-complete-close').click(function() {
+    $('#hunt-complete').toggleClass("menu-open");
+  });
+
+  $('#hunt-incomplete-close').click(function() {
+    $('#hunt-incomplete').toggleClass("menu-open");
+  });
+
+  $('#class-start-close').click(function() {
+    $('#class-start').toggleClass("menu-open");
+  });
+
+  $('#score-total-close').click(function() {
+    $('#score-total').toggleClass("menu-open");
+  });
+
   $('#share-close, #share-open').click(function() {
     $('#share').toggleClass("menu-open");
   });
+
+  // $('.clue').click(function() {
+  //   if (currScore > 1 && currScore < 12)
+  //   {
+  //     $('#hunt-incomplete').toggleClass("menu-open");
+  //   }
+  //   else if (currScore == 1)
+  //   {
+  //     $('#hunt-complete').toggleClass("menu-open");
+  //   }
+  //   else (currScore == 12)
+  //   {
+  //     $('#score-total').toggleClass("menu-open");
+  //   }
+  // });
 
   $('#switch, #menu-switch').click(function() {
     if ($(this).is(':checked')) {
@@ -22,6 +53,8 @@ $(document).ready(function(id) {
         window.open("en","_self")
     }
   });
+
+
 
 });
 

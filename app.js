@@ -4,6 +4,8 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const session = require('express-session');
+const mongoose = require('mongoose');
+var MongoStore = require('connect-mongo');
 
 var indexBMRouter = require('./routes/index-bm');
 var oaBMRouter = require('./routes/orang-asli-bm');
@@ -19,23 +21,47 @@ var actionRouter = require('./routes/take-action');
 
 var app = express();
 
+//database
+const { MongoClient } = require('mongodb');
+const uri = "mongodb+srv://sekolah-kita:sekolahkitaIDEAS1234567890@skcluster.3ah7z.mongodb.net/cookieTracker?retryWrites=true&w=majority";
+const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+client.connect(err => {
+  const collection = client.db("test").collection("devices");
+  // perform actions on the collection object
+  client.close();
+});
+
+mongoose.connect(uri);
+
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 app.use(logger('dev'));
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+
 app.use(session(
   {
     secret: 'secret-key',
     resave: false,
     saveUninitialized: false,
+    store: MongoStore.create({ mongoUrl: uri }) ,
     cookie: { maxAge: 1000 * 60 * 60 * 24 * 30 * 12 }
   }
 ));
+
+
+//session
+app.use(function(req, res, next) {
+  res.locals.session = req.session;
+  next();
+});
+
 
 app.use('/', indexBMRouter);
 app.use('/orang-asli', oaBMRouter);
@@ -48,8 +74,12 @@ app.use('/en/chapter4', c4Router);
 app.use('/en/chapter5', c5Router);
 app.use('/en/take-action', actionRouter);
 
+app.get('/en/hero-teachers', function (req, res) {
+  res.render('hero-teachers', { title: 'Meet Our Hero Teachers'});
+})
+
 app.get('/en/about', function (req, res) {
-  res.render('credits-en')
+  res.render('credits-en', { title: 'About'});
 })
 
 app.get('/projek', function (req, res) {
@@ -57,18 +87,21 @@ app.get('/projek', function (req, res) {
 })
 
 app.get('/en/resources', function (req, res) {
-  res.render('resources-en')
+  res.render('resources-en', { title: 'Resources'})
 })
 
 app.get('/pusat-sumber', function (req, res) {
   res.render('resources-bm')
 })
 
+app.get('/pusat-sumber', function (req, res) {
+  res.render('resources-bm')
+})
 
-// catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
 });
+
 
 // error handler
 app.use(function(err, req, res, next) {
