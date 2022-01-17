@@ -74,6 +74,10 @@ app.use('/en/chapter4', c4Router);
 app.use('/en/chapter5', c5Router);
 app.use('/en/take-action', actionRouter);
 
+app.get('/en/hero-teachers', function (req, res) {
+  res.render('hero-teachers', { title: 'Meet Our Hero Teachers'});
+})
+
 app.get('/en/about', function (req, res) {
   res.render('credits-en', { title: 'About'});
 })
@@ -84,6 +88,10 @@ app.get('/projek', function (req, res) {
 
 app.get('/en/resources', function (req, res) {
   res.render('resources-en', { title: 'Resources'})
+})
+
+app.get('/pusat-sumber', function (req, res) {
+  res.render('resources-bm')
 })
 
 app.get('/pusat-sumber', function (req, res) {
