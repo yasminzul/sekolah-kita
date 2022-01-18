@@ -1,7 +1,7 @@
 
 <div class="pop-container pop-up" id="hunt-incomplete">
       <div class="pop">
-        <p> You’ve done it! You’ve learned the X key ways we can improve education access for Orang Asli children! Your reward is now unlocked.</p>
+        <p> You’ve done it! You’ve learned the <%= currScore %> key ways we can improve education access for Orang Asli children! Your reward is now unlocked.</p>
         <button id="hunt-incomplete-close" class="pop-btn grey">Continue Reading</button>
       </div>
   </div>
@@ -10,7 +10,7 @@
 <div class="pop-container pop-up" id="hunt-complete">
     <div class="pop">
       <img src="/images/party-popper_1f389@2x.png" style="width:10%;" alt="">
-      <p> You’ve done it! You’ve learned the X key ways we can improve education access for Orang Asli children! Your reward is now unlocked.</p>
+      <p> You’ve done it! You’ve learned the <%= currScore %> key ways we can improve education access for Orang Asli children! Your reward is now unlocked.</p>
 
 
       <button id="hunt-complete-close" class="pop-btn grey">Continue Reading</button>
@@ -22,7 +22,7 @@
 
 <div class="pop-container pop-up left" id="score-total">
     <div class="pop">
-      <p>You've found X solution(s)! X more to go! Keep track of your progress with this scorecard here.</p>
+      <p>You've found <%= currScore %> solution(s)! X more to go! Keep track of your progress with this scorecard here.</p>
       <p>Find all the solutions to unlock your reward</p>
 
       <button id="score-total-close" class="pop-btn">Understood!</button>
