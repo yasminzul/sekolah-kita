@@ -34,7 +34,8 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   background-image: url("/images/chapters/chapter-page.psd@2x.png");
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .flex-item-left {
@@ -44,7 +45,7 @@ h3 {
   	display: flex;
 }
 .chapter-wrapper .flex-item-left img {
-  width: 85%;
+  width: 100%;
   height: 100vh;
 }
 
@@ -122,6 +123,18 @@ h3 {
   background-image: url("/images/menu/group-88.svg");
   color: #fff;
   margin-left: 9em;
+}
+
+.ch-prev a, .ch-next a {
+  text-decoration: none;
+}
+
+.ch-prev a {
+  color: #fff;
+}
+
+.ch-next a {
+  color: #000;
 }
 
 /* navigation */
@@ -539,6 +552,10 @@ input:checked + .slider:before {
   border: none;
   padding: 0;
   margin: 0;
+}
+
+.clue {
+  text-decoration: underline dotted;
 }
 
 @media (max-width: 1200px) and (min-width: 801px) {

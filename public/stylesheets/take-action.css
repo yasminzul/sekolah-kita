@@ -6,7 +6,8 @@
 	display: flex;
 	flex-wrap: wrap;
 	background-image: url("/images/chapters/chapter-page.psd@2x.png");
-	background-size: contain;
+	background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .oa-wrapper .flex-item-left {
