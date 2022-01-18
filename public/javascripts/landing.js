@@ -22,7 +22,8 @@ else {
   loader.add('stationery','images/stationery/stationery@2x.png');
   loader.add('weaving','images/weaving/weaving@2x.png');
   loader.add('phone','images/Animated-sprites/spritesheet-phone.json');
-  loader.add('notebook','images/Animated-sprites/spritesheet-notebookHover.json')
+  loader.add('notebookHover','images/Animated-sprites/spritesheet-notebookHover.json');
+  loader.add('notebook','images/Animated-sprites/spritesheet-notebook.json');
   loader.add('headpiece','images/Animated-sprites/spritesheet-headpiece.json');
   loader.add('flute','images/Animated-sprites/spritesheet-flute.json')
 }
@@ -112,14 +113,50 @@ loader.load(setup);
     notebookHSprite.interactive = true;
     notebookHSprite.buttonMode = true;
 
+    const notebookTextures = [];
+    for (let i=0; i < 19; i++)
+    {
+      const notebookTexture = PIXI.Texture.from(`NOTEBOOK_${i}.png`);
+      notebookTextures.push(notebookTexture);
+    }
+
+    const notebookSprite = new PIXI.AnimatedSprite(notebookTextures);
+    notebookSprite.scale.set(1);
+    notebookSprite.anchor.set(0.5);
+    notebookSprite.angle = 3.5;
+    notebookSprite.position.set(pixiapp.screen.width / 2, pixiapp.screen.height / 2);
+    notebookSprite.loop = false;
+
     notebookHSprite.on ('mousedown', function()
     {
-        window.open("en/chapter1","_self")
+      pixiapp.stage.addChild(notebookHSprite);
+        const ease = new Ease.Ease();
+        const bookAnim = ease.add(
+            notebookHSprite,
+            { x: (pixiapp.screen.width /4)*3 , y: pixiapp.screen.height / 2, scale: 1},
+            { reverse: false, duration: 1000, ease: 'easeInOutQuad' }
+          );
+
+        bookAnim.once('complete', () =>
+        pixiapp.stage.addChild(notebookSprite),
+        notebookSprite.animationSpeed = 0.15,
+        notebookSprite.play()
+      );
+
+        notebookSprite.onComplete = function () {
+          window.open("en/chapter1","_self")
+        };
+
     } );
 
     notebookHSprite.on ('touchstart', function()
     {
-        window.open("en/chapter1","_self")
+        pixiapp.stage.addChild(notebookSprite);
+        notebookSprite.animationSpeed = 1;
+        notebookSprite.play();
+        notebookSprite.onComplete = function () {
+          window.open("en/chapter1","_self")
+        };
     } );
 
     notebookHSprite.on ('pointerover', function()
