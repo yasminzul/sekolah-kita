@@ -1,9 +1,14 @@
 var express = require('express');
 var router = express.Router();
+var Scorecard = require ('../models/treasure-hunt');
 
-/* GET orang asli page. */
+/* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('orang-asli-en', { title: 'Who Are The Orang Asli' });
+  var scoreCard = new Scorecard(req.session.scoreCard ? req.session.scoreCard : {
+  clue: [false, false, false, false, false, false, false, false, false, false, false, false],
+  chapterAccess:1,
+  cluesFound:0 });
+  res.render('orang-asli-en', { title: 'Who Are The Orang Asli', currScore: scoreCard.cluesFound });
 });
 
 module.exports = router;

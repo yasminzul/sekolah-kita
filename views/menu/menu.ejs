@@ -87,18 +87,30 @@
           <!-- </div> -->
         </div>
       </a>
+
+
+      <% if (currScore == 12) {%>
       <a href="/en/take-action">
         <div class="menu-outer">
-          <div class="not-available">
-            <img class="ch-locked" src="/images/icon-lock.svg" alt="">
             <div class="menu-inner take-action-menu">
               <img src="/images/menu/take-action-d.png" alt="">
             </div>
               <!-- <div class="menu-title main"><p>Take Action</p></div> -->
             <!-- <img class="ch-complete" src="images/group-113.png" alt=""> -->
-          </div>
         </div>
       </a>
+      <%} else { %>
+          <div class="menu-outer">
+            <div class="not-available">
+              <img class="ch-locked" src="/images/icon-lock.svg" alt="">
+              <div class="menu-inner take-action-menu">
+                <img src="/images/menu/take-action-d.png" alt="">
+              </div>
+                <!-- <div class="menu-title main"><p>Take Action</p></div> -->
+              <!-- <img class="ch-complete" src="images/group-113.png" alt=""> -->
+            </div>
+          </div>
+      <% } %>
 
 
       <div class="menu-btns">

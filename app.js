@@ -18,6 +18,8 @@ var c3Router = require('./routes/chapter3');
 var c4Router = require('./routes/chapter4');
 var c5Router = require('./routes/chapter5');
 var actionRouter = require('./routes/take-action');
+var resourcesRouter = require('./routes/resources');
+var aboutRouter = require('./routes/about');
 
 var app = express();
 
@@ -62,7 +64,6 @@ app.use(function(req, res, next) {
   next();
 });
 
-
 app.use('/', indexBMRouter);
 app.use('/orang-asli', oaBMRouter);
 app.use('/en', indexENRouter);
@@ -73,21 +74,15 @@ app.use('/en/chapter3', c3Router);
 app.use('/en/chapter4', c4Router);
 app.use('/en/chapter5', c5Router);
 app.use('/en/take-action', actionRouter);
+app.use('/en/resources', resourcesRouter);
+app.use('/en/about', aboutRouter);
 
 app.get('/en/hero-teachers', function (req, res) {
   res.render('hero-teachers', { title: 'Meet Our Hero Teachers'});
 })
 
-app.get('/en/about', function (req, res) {
-  res.render('credits-en', { title: 'About'});
-})
-
 app.get('/projek', function (req, res) {
   res.render('credits-bm')
-})
-
-app.get('/en/resources', function (req, res) {
-  res.render('resources-en', { title: 'Resources'})
 })
 
 app.get('/pusat-sumber', function (req, res) {
