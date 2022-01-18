@@ -28,11 +28,22 @@ body
 	display: none;
 }
 
-.ch-2 .ch-prev.final, .ch-2 .ch-next.final {
+.info-box {
+  width: 30%;
+  height: 40%;
+  background-color: #E6E2DD;
+  padding: 1%;
+	position: absolute;
+	top: 20%;
+  right: 5%;
+	display: block;
+}
+
+/* .ch-2 .ch-prev.final, .ch-2 .ch-next.final {
 	position: absolute;
 	top: 60%;
 	display: block;
-}
+} */
 .ch-2 .ch-prev.final {
 	right: 21%;
 }
@@ -40,4 +51,3 @@ body
 .ch-2 .ch-next.final {
 	right: 12%;
 }
-

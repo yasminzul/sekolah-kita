@@ -16,17 +16,17 @@ let textArr = [
 `The schools we attend`,
 `(Age 2-4)
 
-Taska KEMAS   
+Taska KEMAS
 
 Early childhood education and daycare services for working parents of young children, catering to rural communities. Under the purview of the Ministry of Rural Development.`,
 `(Age 4-6)
 
-Tabika KEMAS   
+Tabika KEMAS
 
 Pre-school classes that prepare children for primary school, catering to rural communities. There are 268 Tabikas in Orang Asli villages and interior areas. Under the purview of the Ministry of Rural Development.`,
 `(Age 4-6)
 
-Prasekolah   
+Prasekolah
 
 Pre-school classes under the purview of the Ministry of Education. There are 6,185 Prasekolah institutions. Parents have noted that education at Prasekolah classes is usually of a higher quality compared to KEMAS classes, with better-trained teachers and better facilities. However, Orang Asli communities have limited access to Prasekolah, as they are usually located within Sekolah Kebangsaan schools in town centres.
 
@@ -36,22 +36,22 @@ Research by IDEAS has noted access to quality pre-school as key to keeping Orang
 Sekolah Kebangsaan`,
 `(Age 7-12)
 
-Sekolah Jenis Kebangsaan   
+Sekolah Jenis Kebangsaan
 
 Vernacular primary schools, where the medium of instruction is either Mandarin or Tamil.`,
 `(Age 7-12)
 
-Sekolah Kebangsaan Orang Asli   
+Sekolah Kebangsaan Orang Asli
 
 Government primary schools located in or near significant Orang Asli populations. These schools will have an almost-exclusively Orang Asli student body. As of 2018, there are 94 such schools.`,
 `(Age 7-15)
 
-Sekolah Model Khas Komprehensif K9   
+Sekolah Model Khas Komprehensif K9
 
 Schools located near large Orang Asli populations in interior areas, where students are required to complete nine years’ syllabus, from Standard 1 to Form 3. These schools were instituted to address the high dropout rate among Orang Asli students when transitioning from primary to secondary school, by having that transition take place within the same school. There are currently five K9 schools in Peninsular Malaysia, and a further 11 in Sabah and Sarawak which cater to indigenous populations there.`,
 `(Age 7-17)
 
-Sekolah Pendidikan Khas   
+Sekolah Pendidikan Khas
 
 Primary and secondary schools for special needs children.`,
 `(Age 13-17)
@@ -59,27 +59,27 @@ Primary and secondary schools for special needs children.`,
 Sekolah Menengah Kebangsaan`,
 `(Age 13-17)
 
-Sekolah Menengah Jenis Kebangsaan   
+Sekolah Menengah Jenis Kebangsaan
 
 Vernacular secondary schools, where the medium of instruction is Mandarin. There are no Tamil-language secondary schools.`,
 `(Age 13-17)
 
-Sekolah Berasrama Penuh   
+Sekolah Berasrama Penuh
 
 Residential schools for high-achieving Malaysian students, focusing on science and technology subjects. There are 69 such schools.`,
 `(Age 13-17)
 
-Pusat Intelek Pelajar Orang Asli (PIPOA)  
+Pusat Intelek Pelajar Orang Asli (PIPOA)
 
 Special school for high-achieving Orang Asli students, for Form 1 to 3. There is only one PIPOA school, in Rompin, Pahang.`,
 `(Age 13-17)
 
-Sekolah Agama  
+Sekolah Agama
 
 There are religious Islamic schools at both primary and secondary level.`,
 `(Age 13-17)
 
-Sekolah Menengah Teknik 
+Sekolah Menengah Teknik
 
 Vocational secondary schools with a strong focus on skills-based education and industry practices.`,
 `(Age 13-17)
@@ -190,7 +190,7 @@ function setup(loader, resources)
     elemSekolah0.anchor.set(0.5);
     elemSekolah0.scale.set(0.9);
     elemSekolah0.position.set(pixiapp.screen.width / 2.05, pixiapp.screen.height / 2);
-    pixiapp.stage.addChild(elemSekolah0); 
+    pixiapp.stage.addChild(elemSekolah0);
     pixiapp.stage.addChild(spriteArea);
     pixiapp.stage.addChild(basicText);
 
@@ -912,7 +912,7 @@ function setup(loader, resources)
 
         textCounter = (textCounter - 1) % textArr.length;
         basicText.text = textArr[textCounter];
- 
+
         // console.log(textCounter);
 
         if (clickstate > 0 && clickstate < sekolahAnimation.length) {
@@ -921,7 +921,7 @@ function setup(loader, resources)
         }
         else if (clickstate >= sekolahAnimation.length && clickstate <= 20) {
           clickstate -= 1;
-        } 
+        }
 
         if (textCounter <= 0) {
          document.getElementById("school-prev").disabled = true;
