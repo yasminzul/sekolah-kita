@@ -318,7 +318,7 @@ loader.onComplete.add(stopProgress);
 function showProgress(e)
 {
   var num = parseInt(e.progress);
-  $('#loading').html(num);
+  $('#loading').html(num+"%");
 
 }
 

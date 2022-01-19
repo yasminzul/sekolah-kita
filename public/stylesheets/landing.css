@@ -16,12 +16,13 @@
 span#loading
 {
   position: absolute;
-  left: -2%;
-  top: 48%;
+  left: 12%;
+  top: 38.5%;
   width: 100%;
   z-index: 200;
   font-size: 45px;
-  color: #FFB806;
+  font-family: 'Archer Bold', serif;
+  color: #4c1400;
   text-align: center;
 }
 
@@ -31,9 +32,9 @@ span#loading
 
 #loading-bar {
   position: absolute;
-  width: 100%;
-  top: 35%;
-  left: 0%;
+  width: 95%;
+  top: 38%;
+  left: 2%;
 }
 
 #loading-bar img {
@@ -47,4 +48,4 @@ span#loading
     top: 40%;
     font-size: 35px;
   }
-}  
+}
