@@ -290,14 +290,14 @@ input:checked + .slider:before {
 .pop-container.left {
     justify-content: right;
     align-items: flex-start;
-    margin-right: 3em;
-    margin-top: 3em;
+    margin-right: 5em;
+    margin-top: 0em;
 }
 
 .pop-container.left:before {
     content: '\25b2';
     position: absolute;
-    top: 4%;
+    top: -2%;
     right: 6%;
     color: #E6E2DD;
 }
@@ -329,12 +329,25 @@ input:checked + .slider:before {
     background-color: #FFB806;
     border: none;
     border-radius: 2px;
-    padding: 0.5em;
-    margin: 0.5em;
+    padding: 1em;
+    margin: 1em 0.5em;
     width: auto;
     font-family:'Archer Bold', serif;
     text-transform: uppercase;
     cursor: pointer;
+}
+
+.scorecard-display {
+  background-color: #fff;
+  padding: 1em;
+}
+
+#hunt-complete .scorecard-display p {
+  background-color: #fff;
+}
+
+#hunt-incomplete .scorecard-display p {
+  background-color: #fff;
 }
 
 @media (max-width: 800px) {
@@ -346,8 +359,9 @@ input:checked + .slider:before {
     justify-content: center !important;
   }
   .pop-container.left:before {
-    top: 3.5%;
-    right: 45%;
+    top: -2%;
+    right: 30%;
+    position: absolute;
   }
 }
 
@@ -587,6 +601,11 @@ input:checked + .slider:before {
 
 .clue {
   text-decoration: underline dotted;
+  color: #000;
+}
+
+.clue.found {
+  background-color: #FFB806;
 }
 
 @media (max-width: 1200px) and (min-width: 801px) {
