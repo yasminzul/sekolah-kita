@@ -139,7 +139,7 @@ loader.load(setup);
 
         bookAnim.once('complete', () =>
         pixiapp.stage.addChild(notebookSprite),
-        notebookSprite.animationSpeed = 0.15,
+        notebookSprite.animationSpeed = 0.25,
         notebookSprite.play()
       );
 
