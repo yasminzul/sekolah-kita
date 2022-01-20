@@ -44,9 +44,12 @@ h3 {
   	justify-content: center;
   	display: flex;
 }
-.chapter-wrapper .flex-item-left img {
-  width: 100%;
+.chapter-wrapper .flex-item-left img, .oa-wrapper .flex-item-left img, .resources-wrapper .flex-item-left img {
+  position: static;
+  width: auto;
   height: 100vh;
+  top: 0;
+  left: 0;
 }
 
 .flex-item-right {
@@ -185,7 +188,7 @@ nav button img{
   height: 36px;
 }
 .menu-switch {
-  margin: 1em;
+  margin: 0.3em 1em;
 }
 
 .menu-switch span
@@ -265,6 +268,7 @@ input:checked + .slider:before {
 
 .score-wrapper img {
   padding-right: 2px;
+  width: 28%;
 }
 
 .score-number, .score-total {
@@ -418,8 +422,8 @@ input:checked + .slider:before {
 
 .not-available {
   background-color: #00000080;
-  width: 210px;
-  height: 270px;
+  width: 220px;
+  height: 300px;
   position: absolute;
 }
 
@@ -490,8 +494,9 @@ input:checked + .slider:before {
   width: 14%;
   display: block;
   float: right;
-  margin-top: -1.5em;
-  margin-right: 0.3em;
+  position: absolute;
+  top: 55%;
+  right: 10%;
 }
 
 .menu-outer:hover, .menu-outer:focus {
@@ -503,10 +508,11 @@ input:checked + .slider:before {
   width: 100%;
   justify-content: center;
   margin: 1em 0 0.5em;
+  height: 45px;
 }
 
 .menu-btns > a > div {
-  margin: 1em;
+  margin: 0.5em 1em;
 }
 
 .menu-btns a {
@@ -649,6 +655,7 @@ input:checked + .slider:before {
     width: 100%;
     background-repeat: no-repeat;
     height: 86px;
+    background-position: center;
   }
 
   .not-available .menu-inner img {
@@ -683,6 +690,7 @@ input:checked + .slider:before {
     display: inline-flex;
     margin: 0;
     float: left;
+    background-color:#99744000;
   }
 
   .menu-title.chapter{
@@ -696,11 +704,12 @@ input:checked + .slider:before {
   .menu-title.main {
     font-size: 20px;
     display: inline-flex;
-    align-items: flex-start;
-    width: 55%;
+    align-items: center;
+    width: 46%;
   }
   .menu-outer img {
-    margin-top: -2.5em;
+    top: 50%;
+    right: 3%;
   }
   .menu-btns {
     display: flex;
@@ -723,7 +732,7 @@ input:checked + .slider:before {
   .menu-switch {
   display: inline-flex;
   position: absolute;
-  top: 1em;
+  top: 1.2em;
   right: 25vw;
   }
 
@@ -739,8 +748,10 @@ input:checked + .slider:before {
   .flex-item-right, .flex-item-left {
       flex: 100%;
   }
-  .chapter-wrapper .flex-item-left img {
+  .chapter-wrapper .flex-item-left img, .oa-wrapper .flex-item-left img, .resources-wrapper .flex-item-left img {
     height: auto;
+    width: 100%;
+    position: inherit;
   }
   .chapter-wrapper .flex-item-right h3 {
     width: 100%;

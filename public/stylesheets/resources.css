@@ -10,11 +10,11 @@
 	background-size: cover;
     background-repeat: no-repeat;
 }
-
+/*
 .resources-wrapper .flex-item-left img {
 	width: 80%;
 	height: 100vh;
-}
+}*/
 
 .credit-col {
 	width: 80%;
@@ -57,10 +57,10 @@
 	.flex-item-right, .flex-item-left {
     	flex: 100%;
 	}
-	.resources-wrapper .flex-item-left img {
+/*	.resources-wrapper .flex-item-left img {
 		height: auto;
 	}
-
+*/
 	.credit-col {
 		width: 100%;
 		margin: 2em 2em;

@@ -5,7 +5,7 @@ body
 
 .ch-2 #school-prev, .ch-2 #school-next {
 	position: absolute;
-	top: 60%;
+	top: 70%;
 	cursor: pointer;
 	font-family:'Archer Bold', serif;
 	padding: 0.5em;
@@ -13,7 +13,8 @@ body
 	border: none;
 }
 .ch-2 #school-prev {
-	right: 21%;
+	right: 28%;
+	width: 95px;
 	background-color: #D1C7BA;
 
 }
@@ -30,9 +31,9 @@ body
 
 .info-box {
   width: 30%;
-  height: 40%;
+  height: 45%;
   background-color: #E6E2DD;
-  padding: 1%;
+  padding: 4%;
 	position: absolute;
 	top: 20%;
   right: 5%;
