@@ -38,16 +38,6 @@
 	text-align: left;
 	width:55%;
 }
-#brinjal {
-	display: inline-block;
-    float: right;
-    width: 25%;
-}
-
-#brinjal img {
-	width: 100%;
-    float: right;
-}
 
 #timeline {
 	width:100%;
