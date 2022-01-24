@@ -752,9 +752,10 @@ input:checked + .slider:before {
   }
 
   /*layout*/
-  .chapter-wrapper {
+  .chapter-wrapper, .oa-wrapper, .resources-wrapper {
     background-size: contain;
     height: auto;
+    background-color: #EAE8E3;
   }
   .flex-item-right, .flex-item-left {
       flex: 100%;
