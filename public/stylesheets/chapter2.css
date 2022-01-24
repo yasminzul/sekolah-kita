@@ -3,26 +3,26 @@ body
   background-color: #49463f;
 }
 
+
 .ch-2 #school-prev, .ch-2 #school-next {
 	position: absolute;
 	top: 70%;
 	cursor: pointer;
 	font-family:'Archer Bold', serif;
-	padding: 0.5em;
-	font-size: 14px;
 	border: none;
+	background-color: #e6e2dd;
+}
+.ch-2 #school-prev img, .ch-2 #school-next img {
+	width: 45%;
 }
 .ch-2 #school-prev {
-	right: 28%;
+	right: 33%;
 	width: 95px;
-	background-color: #D1C7BA;
-
 }
 
 .ch-2 #school-next {
-	right: 12%;
+	right: 8%;
 	width: 95px;
-	background-color: #FFB806;
 }
 
 .ch-2 .ch-prev, .ch-2 .ch-next {
@@ -34,21 +34,41 @@ body
   height: 45%;
   background-color: #E6E2DD;
   padding: 4%;
-	position: absolute;
-	top: 20%;
+  position: absolute;
+  top: 20%;
   right: 5%;
-	display: block;
+  display: block;
+  font-size:14px;
 }
 
-/* .ch-2 .ch-prev.final, .ch-2 .ch-next.final {
-	position: absolute;
-	top: 60%;
-	display: block;
-} */
-.ch-2 .ch-prev.final {
-	right: 21%;
+
+.chtitle {
+	font-family: 'Archer Bold', serif;
+	font-size: 2em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
 }
 
-.ch-2 .ch-next.final {
-	right: 12%;
+.chcounter {
+	text-align: center;
+    bottom: 12%;
+    position: absolute;
+    right: 45%;
 }
+
+.ch-prev.final {
+  display: block;
+  right: 28%;
+  top: 70%;
+  position: absolute;
+  width: 11%;
+}
+
+.ch-next.final {
+  right: 9%;
+  display: block;
+  top: 70%;
+  position: absolute;
+  width: 7%;
+}
+
