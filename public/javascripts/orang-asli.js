@@ -27,6 +27,7 @@ let textArr = [
   '1941-1945: Japanese occupation during World War II',
   '1950s: Term “Orang Asli” first widely used',
   '1957: Malayan independence          1963: Formation of Malaysia',
+  '2021: Sekolah Kita was born!'
 ]
 
 textCounter = 0;
@@ -115,6 +116,12 @@ if (x.matches)
       { x: -(pixiapp.screen.width/100)*175, scale: 0.32},
       { reverse: false, duration: 1500, ease: 'easeInOutQuad' }
     );
+  },
+  function(){ ease.add(
+      elemTimeline,
+      { x: -(pixiapp.screen.width/100)*195, scale: 0.32},
+      { reverse: false, duration: 1500, ease: 'easeInOutQuad' }
+    );
   }
   ];
 
@@ -193,6 +200,12 @@ function(){ ease.add(
     { x: -(pixiapp.screen.width/100)*115, scale: 0.45},
     { reverse: false, duration: 1500, ease: 'easeInOutQuad' }
   );
+},
+function(){ ease.add(
+    elemTimeline,
+    { x: -(pixiapp.screen.width/100)*150, scale: 0.45},
+    { reverse: false, duration: 1500, ease: 'easeInOutQuad' }
+  );
 }
 ];
 
@@ -223,12 +236,12 @@ $(document).ready(function(){
         animationTimeline[clickstate]();
 
       }
-      else if (clickstate >= animationTimeline.length-1 && clickstate < 10)
+      else if (clickstate >= animationTimeline.length-1 && clickstate < 11)
       {
         clickstate += 1;
       }
 
-      if (textCounter == 10)
+      if (textCounter == 11)
       {
          document.getElementById("timeline-next").disabled = true;
       }
@@ -253,7 +266,7 @@ $(document).ready(function(){
         animationTimeline[clickstate]();
 
       }
-      else if (clickstate >= animationTimeline.length && clickstate <= 10)
+      else if (clickstate >= animationTimeline.length && clickstate <= 11)
       {
         clickstate -= 1;
 
