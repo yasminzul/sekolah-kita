@@ -1,11 +1,21 @@
-
 <div class="pop-container pop-up  left" id="hunt-incomplete">
       <div class="pop">
-        <p> You've found X solution(s)! X more to go! Keep track of your progress with this scorecard here.</p>
+        <p> You've found <%= currScore.cluesFound %> solution(s)! <%= currScore.cluesFound %> more to go! Keep track of your progress with this scorecard here.</p>
         <p>Find all the solutions to unlock your reward</p>
         <div class="scorecard-display">
           <p>YOUR SCORECARD:</p>
-          <img class="score-coin" src="/images/menu/group-369.svg" alt="">
+          <img class="<%= currScore.cluesFound > 0 ? 'score-coin show' : 'score-coin dim' %>" src="/images/menu/group-369.svg" alt="">
+          <img class="<%= currScore.cluesFound > 1 ? 'score-coin show' : 'score-coin dim' %>" src="/images/menu/group-369.svg" alt="">
+          <img class="<%= currScore.cluesFound > 2 ? 'score-coin show' : 'score-coin dim' %>" src="/images/menu/group-369.svg" alt="">
+          <img class="<%= currScore.cluesFound > 3 ? 'score-coin show' : 'score-coin dim' %>" src="/images/menu/group-369.svg" alt="">
+          <img class="<%= currScore.cluesFound > 4 ? 'score-coin show' : 'score-coin dim' %>" src="/images/menu/group-369.svg" alt="">
+          <img class="<%= currScore.cluesFound > 5 ? 'score-coin show' : 'score-coin dim' %>" src="/images/menu/group-369.svg" alt="">
+          <img class="<%= currScore.cluesFound > 6 ? 'score-coin show' : 'score-coin dim' %>" src="/images/menu/group-369.svg" alt="">
+          <img class="<%= currScore.cluesFound > 7 ? 'score-coin show' : 'score-coin dim' %>" src="/images/menu/group-369.svg" alt="">
+          <img class="<%= currScore.cluesFound > 8 ? 'score-coin show' : 'score-coin dim' %>" src="/images/menu/group-369.svg" alt="">
+          <img class="<%= currScore.cluesFound > 9 ? 'score-coin show' : 'score-coin dim' %>" src="/images/menu/group-369.svg" alt="">
+          <img class="<%= currScore.cluesFound > 10 ? 'score-coin show' : 'score-coin dim' %>" src="/images/menu/group-369.svg" alt="">
+          <img class="<%= currScore.cluesFound > 11 ? 'score-coin show' : 'score-coin dim' %>" src="/images/menu/group-369.svg" alt="">
       </div>
         <button id="hunt-incomplete-close" class="pop-btn">Understood!</button>
       </div>
@@ -19,7 +29,7 @@
         <p>YOUR SCORECARD:</p>
         <img class="score-coin" src="/images/menu/group-369.svg" alt="">
       </div>
-      <p> You’ve done it! You’ve learned the X key ways we can improve education access for Orang Asli children! Your reward is now unlocked.</p>
+      <p> You’ve done it! You’ve learned the 12 key ways we can improve education access for Orang Asli children! Your reward is now unlocked.</p>
 
 
       <button id="hunt-complete-close" class="pop-btn grey">Continue Reading</button>

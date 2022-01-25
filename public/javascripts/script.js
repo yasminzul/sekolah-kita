@@ -1,4 +1,4 @@
-$(document).ready(function(id) {
+$(document).ready(function() {
   $('button.menu-btn, button.close-btn').click(function() {
     $('.menu-nav').toggleClass("menu-open");
   });
@@ -9,6 +9,10 @@ $(document).ready(function(id) {
 
   $('#hunt-complete-close').click(function() {
     $('#hunt-complete').toggleClass("menu-open");
+  });
+
+  $('.score-wrapper').click(function() {
+    $('#hunt-incomplete').toggleClass("menu-open");
   });
 
   $('#hunt-incomplete-close').click(function() {
@@ -27,20 +31,92 @@ $(document).ready(function(id) {
     $('#share').toggleClass("menu-open");
   });
 
-  // $('.clue').click(function() {
-  //   if (currScore > 1 && currScore < 12)
-  //   {
-  //     $('#hunt-incomplete').toggleClass("menu-open");
-  //   }
-  //   else if (currScore == 1)
-  //   {
-  //     $('#hunt-complete').toggleClass("menu-open");
-  //   }
-  //   else (currScore == 12)
-  //   {
-  //     $('#score-total').toggleClass("menu-open");
-  //   }
-  // });
+  $('#rec-1 .pop-btn').click(function() {
+    $('#rec-1').toggleClass("menu-open");
+  });
+
+  $('#rec-2 .pop-btn').click(function() {
+    $('#rec-2').toggleClass("menu-open");
+  });
+
+  $('#rec-3 .pop-btn').click(function() {
+    $('#rec-3').toggleClass("menu-open");
+  });
+
+  $('#rec-4 .pop-btn').click(function() {
+    $('#rec-4').toggleClass("menu-open");
+  });
+
+  $('#rec-5 .pop-btn').click(function() {
+    $('#rec-5').toggleClass("menu-open");
+  });
+
+  $('#rec-6 .pop-btn').click(function() {
+    $('#rec-6').toggleClass("menu-open");
+  });
+
+  $('#rec-7 .pop-btn').click(function() {
+    $('#rec-7').toggleClass("menu-open");
+  });
+
+  $('#rec-8 .pop-btn').click(function() {
+    $('#rec-8').toggleClass("menu-open");
+  });
+
+  $('#rec-9 .pop-btn').click(function() {
+    $('#rec-9').toggleClass("menu-open");
+  });
+
+  $('#rec-10 .pop-btn').click(function() {
+    $('#rec-10').toggleClass("menu-open");
+  });
+
+  $('#rec-11 .pop-btn').click(function() {
+    $('#rec-11').toggleClass("menu-open");
+  });
+
+  $('#rec-12 .pop-btn').click(function() {
+    $('#rec-12').toggleClass("menu-open");
+  });
+
+  var clueFound = window.location.hash.substr(1);
+  if (clueFound == 'clue-1'){
+      $('#rec-1').toggleClass("menu-open");
+  }
+  else if (clueFound == 'clue-2'){
+      $('#rec-2').toggleClass("menu-open");
+  }
+  else if (clueFound == 'clue-3'){
+        $('#rec-3').toggleClass("menu-open");
+    }
+    else if (clueFound == 'clue-4'){
+        $('#rec-4').toggleClass("menu-open");
+    }
+    else if (clueFound == 'clue-5'){
+        $('#rec-5').toggleClass("menu-open");
+    }
+    else if (clueFound == 'clue-6'){
+        $('#rec-6').toggleClass("menu-open");
+    }
+    else if (clueFound == 'clue-7'){
+        $('#rec-7').toggleClass("menu-open");
+    }
+    else if (clueFound == 'clue-8'){
+        $('#rec-8').toggleClass("menu-open");
+    }
+    else if (clueFound == 'clue-9'){
+        $('#rec-9').toggleClass("menu-open");
+    }
+    else if (clueFound == 'clue-10'){
+        $('#rec-10').toggleClass("menu-open");
+    }
+    else if (clueFound == 'clue-11'){
+        $('#rec-11').toggleClass("menu-open");
+    }
+    else if (clueFound == 'clue-12'){
+        $('#rec-12').toggleClass("menu-open");
+    }
+
 
   $('#switch, #menu-switch').click(function() {
     if ($(this).is(':checked')) {

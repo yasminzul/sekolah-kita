@@ -267,6 +267,14 @@ input:checked + .slider:before {
   padding-right: 2px;
 }
 
+.score-coin.dim {
+  filter: brightness(50%);
+}
+
+.score-coin.show {
+  filter: brightness(100%);
+}
+
 .score-number, .score-total {
   color: #fff;
   vertical-align: top;
