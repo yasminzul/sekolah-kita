@@ -11,8 +11,7 @@ body
   margin: 0;
   padding: 0;
   height: 100%;
-
-/*  background-color: #00000077;*/
+  background-color: #EAE8E3;
 }
 
 a {
@@ -271,11 +270,11 @@ input:checked + .slider:before {
   width: 28%;
 }
 
-.score-coin.dim {
+.dim {
   filter: brightness(50%);
 }
 
-.score-coin.show {
+.show {
   filter: brightness(100%);
 }
 

@@ -15,8 +15,12 @@ $(document).ready(function() {
     $('#hunt-incomplete').toggleClass("menu-open");
   });
 
-  $('#hunt-incomplete-close').click(function() {
+  $('.hunt-incomplete-close').click(function() {
     $('#hunt-incomplete').toggleClass("menu-open");
+  });
+
+  $('#access-denied-close, .not-available').click(function() {
+    $('#access-denied').toggleClass("menu-open");
   });
 
   $('#class-start-close').click(function() {
