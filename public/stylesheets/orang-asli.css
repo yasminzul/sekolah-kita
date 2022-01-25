@@ -19,15 +19,15 @@
     margin-top: 10vh;
 }
 
-.oa-wrapper .flex-item-left img {
+/*.oa-wrapper .flex-item-left img {
 	width: 100%;
-}
+}*/
 
-.oa-wrapper .flex-item-left {
+/*.oa-wrapper .flex-item-left {
 	background-image: url("/images/orang-asli/mask-group-4@2x.png");
 	background-size: cover;
 	background-repeat: round;
-}
+}*/
 
 .credit-col {
 	width: 70%;
@@ -37,16 +37,6 @@
 .oa-wrapper .credit-col h3 {
 	text-align: left;
 	width:55%;
-}
-#brinjal {
-	display: inline-block;
-    float: right;
-    width: 25%;
-}
-
-#brinjal img {
-	width: 100%;
-    float: right;
 }
 
 #timeline {
@@ -122,9 +112,9 @@
 	.flex-item-right, .flex-item-left {
     	flex: 100%;
 	}
-	.oa-wrapper .flex-item-left {
+/*	.oa-wrapper .flex-item-left {
 		height: 64vh;
-	}
+	}*/
 	.oa-wrapper .credit-col h3 {
 		width: 100%;
 	}

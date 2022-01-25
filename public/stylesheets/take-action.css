@@ -2,7 +2,7 @@
 @import url('font/font.css');
 @import url('style.css');
 
-.oa-wrapper {
+.ta-wrapper {
 	display: flex;
 	flex-wrap: wrap;
 	background-image: url("/images/chapters/chapter-page.psd@2x.png");
@@ -10,11 +10,11 @@
     background-repeat: no-repeat;
 }
 
-.oa-wrapper .flex-item-left {
+.ta-wrapper .flex-item-left {
 	display: block;
 }
 
-.oa-wrapper .flex-item-left h3, .oa-wrapper .flex-item-left p {
+.ta-wrapper .flex-item-left h3, .ta-wrapper .flex-item-left p {
 	width: 86%;
     margin: 0.5em auto;
 }
@@ -117,7 +117,7 @@ button:active
 
 
 @media (max-width: 800px) {
-	.oa-wrapper {
+	.ta-wrapper {
 		background-size: contain;
 		max-width: 100%;
 	}
