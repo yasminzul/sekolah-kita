@@ -165,3 +165,21 @@ else {
   $('.off').css("color", "#D1C7BA");
   $('.on').css("color", "#000");
 }
+
+// Meet the teacher 
+
+// $('#teacher-01').click(function(){
+//   $('.hero-content').animate({scrollTop:$('#hero-1').position().top}, 'slow');
+//   // $('#teacher-01').toggleClass('focus'); 
+// });
+
+// $('#teacher-02').click(function(){
+//   $('.hero-content').animate({scrollTop:$('#hero-2').position().top}, 'slow');
+//   // $('#teacher-02').toggleClass('focus');
+// });
+
+// $('#teacher-03').click(function(){
+//   $('.hero-content').animate({scrollTop:$('#hero-3').position().top}, 'slow');
+//   // $('#teacher-03').toggleClass('focus');
+// });
+

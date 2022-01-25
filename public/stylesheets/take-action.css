@@ -37,6 +37,9 @@
 	font-size: 20px;
 	font-weight: 300;
 }
+.choose-badge {
+	margin-top: 5em;
+}
 
 .mobile-btns button {
 	display: none;
@@ -118,7 +121,7 @@ button:active
 
 @media (max-width: 800px) {
 	.ta-wrapper {
-		background-size: contain;
+		background-image: none;
 		max-width: 100%;
 	}
 	.flex-item-right, .flex-item-left {
@@ -130,6 +133,10 @@ button:active
 	}
 	.add-stickers, .choose-badge {
 		visibility: 0;
+	}
+
+	.choose-badge {
+		margin-top: 1em;
 	}
 
 	.choose-badge button {
