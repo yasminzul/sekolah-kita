@@ -705,6 +705,28 @@ input:checked + .slider:before {
   outline: inherit;
 }
 
+.teacher-btn {
+  background-color: #f7b844;
+  padding: 1em;
+  font-family: 'Archer Bold', serif;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  
+}
+
+.teacher-btn a {
+  color: #000; 
+  text-decoration: none;
+}
+
+.teacher-btn img {
+  display: inline-block;
+  width: 3%;
+  color: #000;
+  margin-left: 1%;
+}
+
 
 @media (max-width: 1200px) and (min-width: 801px) {
   .menu-container {
