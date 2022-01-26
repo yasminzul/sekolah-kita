@@ -106,8 +106,8 @@ Research by IDEAS has noted access to quality pre-school as key to keeping Orang
  There are private education institutes for all levels of education. They range from expensive, paid schools, to not-for-profit institutions catering to marginalised communities, to homeschooling programmes.
  <div class="chcounter">19/20</div>`,
  
-`<div class="chtitle">You finished this chapter!</div>
-<div class="chcounter">20/20</div>`,
+`<div class="chtitle finished">You finished this chapter!</div>
+  <button class="ch-startover">START AGAIN</button>`,
 ]
 
 
@@ -907,6 +907,7 @@ function setup(loader, resources)
            document.getElementById("school-next").disabled = true;
            $('.ch-prev').addClass('final');
            $('.ch-next').addClass('final');
+           $('.info-box').addClass('finished');
            $('#school-next').css('display', 'none');
            $('#school-prev').css('display', 'none');
         }
