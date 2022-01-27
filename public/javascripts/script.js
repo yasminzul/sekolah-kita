@@ -7,10 +7,6 @@ $(document).ready(function() {
     $('#coming-soon').toggleClass("menu-open");
   });
 
-  $('#hunt-complete-close').click(function() {
-    $('#hunt-complete').toggleClass("menu-open");
-  });
-
   $('.score-wrapper').click(function() {
     $('#hunt-incomplete').toggleClass("menu-open");
   });
@@ -105,12 +101,6 @@ $(document).ready(function() {
     else if (clueFound == 'clue-7'){
         $('#rec-7').toggleClass("menu-open");
     }
-    else if (clueFound == 'clue-8'){
-        $('#rec-8').toggleClass("menu-open");
-    }
-    else if (clueFound == 'clue-9'){
-        $('#rec-9').toggleClass("menu-open");
-    }
     else if (clueFound == 'clue-10'){
         $('#rec-10').toggleClass("menu-open");
     }
@@ -166,11 +156,11 @@ else {
   $('.on').css("color", "#000");
 }
 
-// Meet the teacher 
+// Meet the teacher
 
 // $('#teacher-01').click(function(){
 //   $('.hero-content').animate({scrollTop:$('#hero-1').position().top}, 'slow');
-//   // $('#teacher-01').toggleClass('focus'); 
+//   // $('#teacher-01').toggleClass('focus');
 // });
 
 // $('#teacher-02').click(function(){
@@ -182,4 +172,3 @@ else {
 //   $('.hero-content').animate({scrollTop:$('#hero-3').position().top}, 'slow');
 //   // $('#teacher-03').toggleClass('focus');
 // });
-

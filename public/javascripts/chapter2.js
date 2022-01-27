@@ -840,7 +840,6 @@ function setup(loader, resources)
       $('#school-start').click( function (){
           textCounter = (textCounter + 1) % textArr.length;
           $(".info-box").html(textArr[textCounter]);
-          console.log(textCounter);
           $(".info-box").css("display","block");
           $('#school-next').css('display', 'block');
           $('#school-prev').css('display', 'block');
@@ -916,5 +915,35 @@ function setup(loader, resources)
       });
 
     });
+
+    var clueFound = window.location.hash.substr(1);
+    if (clueFound == 'clue-9'){
+        $('#rec-9').toggleClass("menu-open");
+        pixiapp.stage.removeChild(elemSekolah0);
+        textCounter = 3;
+        clickstate = 2;
+        $('.info-box').css('display', 'block');
+        $('#school-next').css('display', 'block');
+        $('#school-prev').css('display', 'block');
+        sekolahAnimation[clickstate]();
+        $(".info-box").html(textArr[textCounter]);
+        document.getElementById("school-prev").disabled = false;
+        document.getElementById("school-next").disabled = false;
+        $('#school-start').css('display', 'none');
+    }
+    else if (clueFound == 'clue-8'){
+        $('#rec-8').toggleClass("menu-open");
+        pixiapp.stage.removeChild(elemSekolah0);
+        textCounter = 18;
+        clickstate = 17;
+        $('.info-box').css('display', 'block');
+        $('#school-next').css('display', 'block');
+        $('#school-prev').css('display', 'block');
+        sekolahAnimation[clickstate]();
+        $(".info-box").html(textArr[textCounter]);
+        document.getElementById("school-prev").disabled = false;
+        document.getElementById("school-next").disabled = false;
+        $('#school-start').css('display', 'none');
+    }
 
 }

@@ -1,4 +1,5 @@
 <div class="pop-container pop-up  left" id="hunt-incomplete">
+    <% if(currScore.cluesFound != 12){ %>
       <div class="pop">
         <p> You've found <%= currScore.cluesFound %> solution(s)! <%= currScore.cluesFound %> more to go! Keep track of your progress with this scorecard here.</p>
         <p>Find all the solutions to unlock your reward</p>
@@ -19,23 +20,34 @@
       </div>
         <button class="pop-btn hunt-incomplete-close">Understood!</button>
       </div>
+      <% } else { %>
+        <div class="pop">
+          <img src="/images/party-popper_1f389@2x.png" style="width:10%;" alt="">
+          <div class="scorecard-display">
+            <p>YOUR SCORECARD:</p>
+            <img class="score-coin" src="/images/menu/group-369.svg" alt="">
+            <img class="score-coin" src="/images/menu/group-369.svg" alt="">
+            <img class="score-coin" src="/images/menu/group-369.svg" alt="">
+            <img class="score-coin" src="/images/menu/group-369.svg" alt="">
+            <img class="score-coin" src="/images/menu/group-369.svg" alt="">
+            <img class="score-coin" src="/images/menu/group-369.svg" alt="">
+            <img class="score-coin" src="/images/menu/group-369.svg" alt="">
+            <img class="score-coin" src="/images/menu/group-369.svg" alt="">
+            <img class="score-coin" src="/images/menu/group-369.svg" alt="">
+            <img class="score-coin" src="/images/menu/group-369.svg" alt="">
+            <img class="score-coin" src="/images/menu/group-369.svg" alt="">
+            <img class="score-coin" src="/images/menu/group-369.svg" alt="">
+          </div>
+          <p> You’ve done it! You’ve learned the 12 key ways we can improve education access for Orang Asli children! Your reward is now unlocked.</p>
+
+          <button  class="pop-btn grey hunt-incomplete-close">Continue Reading</button>
+          <a href="/en/take-action"><button class="pop-btn">Take me to my reward</button></a>
+
+        </div>
+        <% } %>
   </div>
 
 
-<div class="pop-container pop-up" id="hunt-complete" >
-    <div class="pop">
-      <img src="/images/party-popper_1f389@2x.png" style="width:10%;" alt="">
-      <div class="scorecard-display">
-        <p>YOUR SCORECARD:</p>
-        <img class="score-coin" src="/images/menu/group-369.svg" alt="">
-      </div>
-      <p> You’ve done it! You’ve learned the 12 key ways we can improve education access for Orang Asli children! Your reward is now unlocked.</p>
-
-      <button id="hunt-complete-close" class="pop-btn grey">Continue Reading</button>
-      <button class="pop-btn">Take me to my reward</button>
-
-    </div>
-</div>
 
 <!-- Recommendation popups  -->
 <div class="pop-container pop-up" class="recommendation" id="rec-1">

@@ -52,12 +52,13 @@
 
 .bottom-mobile-btn {
 	display: none;
-	 
-}	
+
+}
 
 #customize-area
 {
 	box-shadow: 0px 3px 8px #00000029;
+	margin-top: 5em;
 }
 
 #no-bg {
@@ -116,7 +117,7 @@ button:active
 
 #download-badge img, #share-item img {
 	margin-right: 11px;
-} 
+}
 
 
 @media (max-width: 800px) {
@@ -154,8 +155,8 @@ button:active
 	    width: 100%;
 	    left: 0;
 	    transform: translateY(-1%);
-	    transition: transform 0.2s ease-in, visibility 0s 0.4s;  
-  		
+	    transition: transform 0.2s ease-in, visibility 0s 0.4s;
+
 	}
 
 	.choose-badge.overlay {
@@ -168,7 +169,7 @@ button:active
 	    left: 0;
 	    transform: translateY(-1%);
 	    transition: transform 0.2s ease-in, visibility 0s 0.4s;
-	    
+
 	}
 
 	.oa-col h4 {
@@ -183,6 +184,7 @@ button:active
 	}
 	.mobile-btns {
 		display: flex;
+		margin-top: 5em;
 	}
 	.mobile-btns button {
 		flex: 0%;

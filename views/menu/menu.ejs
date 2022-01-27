@@ -19,7 +19,7 @@
             <img src="/images/chapters/chapter-1.png" alt="">
           </div>
             <div class="menu-title chapter"><p>Chapter 1:</p>“When it rains, the roads become like a swamp!”</div>
-          <!-- <img class="ch-complete" src="/images/menu/group-110.svg" alt=""> -->
+          <img class="<%= currScore.clue[9] == true && currScore.clue[11] == true && currScore.clue[2] == true ? 'show ch-complete' : 'dim ch-complete' %>" src="/images/menu/group-110.svg" alt="">
         <!-- </div> -->
         </div>
       </a>
@@ -32,7 +32,7 @@
               <img src="/images/Chapter2-ENG/Schools-We-Attend-fullcolor-eng.jpg" alt="">
             </div>
               <div class="menu-title chapter"><p>Chapter 2:</p>The schools we attend</div>
-            <img class="ch-complete" src="/images/menu/group-110.svg" alt="">
+            <img class="<%= currScore.clue[8] == true && currScore.clue[7] == true ? 'show ch-complete' : 'dim ch-complete' %>" src="/images/menu/group-110.svg" alt="">
           <!-- </div> -->
         </div>
        </a>
@@ -45,7 +45,7 @@
               <img src="/images/chapters/chapter-3.png" alt="">
             </div>
               <div class="menu-title chapter"><p>Chapter 3:</p>“If you teach us in the right way, everyone can learn”</div>
-            <img class="ch-complete" src="/images/menu/group-110.svg" alt="">
+            <img class="<%= currScore.clue[3] == true && currScore.clue[6] == true && currScore.clue[9] == true && currScore.clue[4] == true && currScore.clue[5] == true && currScore.clue[0] == true ? 'show ch-complete' : 'dim ch-complete' %>" src="/images/menu/group-110.svg" alt="">
           <!-- </div> -->
         </div>
        </a>
@@ -58,7 +58,7 @@
               <img src="/images/chapters/chapter-4.PNG" alt="">
             </div>
               <div class="menu-title chapter"><p>Chapter 4:</p>“I want a school that’s in the forest, just a simple building”</div>
-            <img class="ch-complete" src="/images/menu/group-110.svg" alt="">
+            <img class="<%= currScore.clue[1] == true ? 'show ch-complete' : 'dim ch-complete' %>" src="/images/menu/group-110.svg" alt="">
           <!-- </div> -->
         </div>
        </a>
@@ -71,7 +71,7 @@
               <img src="/images/chapters/chapter-5.PNG" alt="">
             </div>
               <div class="menu-title chapter"><p>Chapter 5:</p>“I will show them what I can do”</div>
-           <img class="ch-complete" src="/images/menu/group-110.svg" alt="">
+           <img class="<%= currScore.clue[10] == true ? 'show ch-complete' : 'dim ch-complete' %>" src="/images/menu/group-110.svg" alt="">
           <!-- </div> -->
         </div>
        </a>
@@ -89,7 +89,7 @@
       </a>
 
 
-      <% if (currScore == 12) {%>
+      <% if (currScore.cluesFound == 12) {%>
       <a href="/en/take-action">
         <div class="menu-outer">
             <div class="menu-inner take-action-menu">

@@ -27,8 +27,12 @@
       </div>
 
       <div class="ch-finished">
-        <img src="images/menu/group-110.svg" alt="">
-        <!-- <span>You have completed this chapter</span> -->
+        <span><img class="<%= currScore.clue[8] == true && currScore.clue[7] == true ? 'show' : 'dim' %>" src="/images/menu/group-110.svg" alt="">
+        <% if (currScore.clue[8] == true && currScore.clue[7] == true ){ %>
+        You have completed this chapter
+        <% } else { %>
+        You haven't completed the hunt on this chapter
+        <% } %></span>
             <button class="ch-prev"><a href="/en/chapter1">< PREVIOUS</a></button>
             <button class="ch-next"><a href="/en/chapter3">NEXT ></a></button>
       </div>
