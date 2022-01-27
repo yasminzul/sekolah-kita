@@ -1,8 +1,19 @@
 body
 {
-  background-color: #49463f;
+  background-color: #49463f !important;
 }
 
+.ch-2
+{
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+#school-start, #start-again {
+  position: absolute;
+}
 
 .ch-2 #school-prev, .ch-2 #school-next {
 	position: absolute;
@@ -11,6 +22,7 @@ body
 	font-family:'Archer Bold', serif;
 	border: none;
 	background-color: #e6e2dd;
+  display: none;
 }
 .ch-2 #school-prev img, .ch-2 #school-next img {
 	width: 45%;
@@ -37,7 +49,7 @@ body
   position: absolute;
   top: 20%;
   right: 5%;
-  display: block;
+  display: none;
   font-size:14px;
 }
 
@@ -104,14 +116,14 @@ body
 
 @media (max-width: 800px) {
   .info-box {
-    width: 100%;
+    width: 92%;
     height: 40%;
     background-color: #E6E2DD;
     padding: 4%;
     position: absolute;
     bottom: 0;
     right: inherit;
-    top: inherit; 
+    top: inherit;
     display: block;
     font-size: 12px;
   }
@@ -155,4 +167,3 @@ body
   }
 
 }
-
