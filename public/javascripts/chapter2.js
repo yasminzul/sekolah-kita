@@ -21,7 +21,7 @@ let textArr = [
 <div class="chtitle">Prasekolah</div>
  Pre-school classes under the purview of the Ministry of Education. There are 6,185 Prasekolah institutions. Parents have noted that education at Prasekolah classes is usually of a higher quality compared to KEMAS classes, with better-trained teachers and better facilities. However, Orang Asli communities have limited access to Prasekolah, as they are usually located within Sekolah Kebangsaan schools in town centres.<br><br>
 
-Research by IDEAS has noted access to quality pre-school as key to keeping Orang Asli students in school, as they would start school on level footing with their peers.
+<a href='/en/chapter2/found-clue/clue-9' id="clue-9">Research by IDEAS has noted access to quality pre-school as key to keeping Orang Asli students in school, as they would start school on level footing with their peers.</a>
 <div class="chcounter">3/20</div>`,
 
 `(Age 7-12)
@@ -35,7 +35,7 @@ Research by IDEAS has noted access to quality pre-school as key to keeping Orang
 
 `(Age 7-12)
 <div class="chtitle">Sekolah Kebangsaan Orang Asli</div>
- Government primary schools located in or near significant Orang Asli populations. These schools will have an almost-exclusively Orang Asli student body. As of 2018, there are 94 such schools.
+ Government primary schools located in or near significant Orang Asli populations. These schools will have a majority Orang Asli student population. As of 2018, there are 94 such schools.
  <div class="chcounter">6/20</div>`,
 
 `(Age 7-15)
@@ -91,7 +91,7 @@ Research by IDEAS has noted access to quality pre-school as key to keeping Orang
  <div class="chcounter">17/20</div>`,
 
 `<div class="chtitle">Community-based learning</div>
- Some Orang Asli communities have started community-based classes, held within their village. These classes are usually less rigid and include indigenous culture and traditional knowledge as part of its syllabus. Parents and teachers have noted that these classes are an important form of supplementary education among Orang Asli communities, but require broader recognition and support from government agencies.
+ Some Orang Asli communities have started community-based classes, held within their village. These classes are usually less rigid and include indigenous culture and traditional knowledge as part of its syllabus. <a href='/en/chapter2/found-clue/clue-8' id="clue-8"> Parents and teachers have noted that these classes are an important form of supplementary education among Orang Asli communities, but require broader recognition and support from government agencies.</a>
  <div class="chcounter">18/20</div>`,
 
 `<div class="chtitle">Private schools</div>
