@@ -13,98 +13,96 @@ const textStyle = new PIXI.TextStyle({
 });
 
 let textArr = [
-`<div class="chtitle">The schools we attend</div>`,
-
 `(Age 2-4) 
 <div class="chtitle">Taska KEMAS</div>
  Early childhood education and daycare services for working parents of young children, catering to rural communities. Under the purview of the Ministry of Rural Development.
- <div class="chcounter">1/20</div>`,
+ <div class="chcounter">1/19</div>`,
 
 `(Age 4-6)
 <div class="chtitle">Tabika KEMASM</div>
  Pre-school classes that prepare children for primary school, catering to rural communities. There are 268 Tabikas in Orang Asli villages and interior areas. Under the purview of the Ministry of Rural Development.
- <div class="chcounter">2/20</div>`,
+ <div class="chcounter">2/19</div>`,
 
 `(Age 4-6) 
 <div class="chtitle">Prasekolah</div>
  Pre-school classes under the purview of the Ministry of Education. There are 6,185 Prasekolah institutions. Parents have noted that education at Prasekolah classes is usually of a higher quality compared to KEMAS classes, with better-trained teachers and better facilities. However, Orang Asli communities have limited access to Prasekolah, as they are usually located within Sekolah Kebangsaan schools in town centres.<br><br>
 
 <a href='/en/chapter2/found-clue/clue-9' id="clue-9">Research by IDEAS has noted access to quality pre-school as key to keeping Orang Asli students in school, as they would start school on level footing with their peers.</a>
-<div class="chcounter">3/20</div>`,
+<div class="chcounter">3/19</div>`,
 
 `(Age 7-12) 
 <div class="chtitle">Sekolah Kebangsaan</div>
-<div class="chcounter">4/20</div>`,
+<div class="chcounter">4/19</div>`,
 
 `(Age 7-12) 
 <div class="chtitle">Sekolah Jenis Kebangsaan</div>
  Vernacular primary schools, where the medium of instruction is either Mandarin or Tamil.
- <div class="chcounter">5/20</div>`,
+ <div class="chcounter">5/19</div>`,
 
 `(Age 7-12) 
 <div class="chtitle">Sekolah Kebangsaan Orang Asli</div>
  Government primary schools located in or near significant Orang Asli populations. These schools will have a majority Orang Asli student population. As of 2018, there are 94 such schools.
- <div class="chcounter">6/20</div>`,
+ <div class="chcounter">6/19</div>`,
 
 `(Age 7-15) 
 <div class="chtitle">Sekolah Model Khas Komprehensif K9</div>
  Schools located near large Orang Asli populations in interior areas, where students are required to complete nine years’ syllabus, from Standard 1 to Form 3. These schools were instituted to address the high dropout rate among Orang Asli students when transitioning from primary to secondary school, by having that transition take place within the same school. There are currently five K9 schools in Peninsular Malaysia, and a further 11 in Sabah and Sarawak which cater to indigenous populations there.
- <div class="chcounter">7/20</div>`,
+ <div class="chcounter">7/19</div>`,
 
 `(Age 7-17) 
 <div class="chtitle">Sekolah Pendidikan Khas</div>
  Primary and secondary schools for special needs children.
- <div class="chcounter">8/20</div>`,
+ <div class="chcounter">8/19</div>`,
 
 `(Age 13-17) 
 <div class="chtitle">Sekolah Menengah Kebangsaan</div>
-<div class="chcounter">9/20</div>`,
+<div class="chcounter">9/19</div>`,
 
 `(Age 13-17) 
 <div class="chtitle">Sekolah Menengah Jenis Kebangsaan</div>
  Vernacular secondary schools, where the medium of instruction is Mandarin. There are no Tamil-language secondary schools.
- <div class="chcounter">10/20</div>`,
+ <div class="chcounter">10/19</div>`,
 `(Age 13-17) 
 <div class="chtitle">Sekolah Berasrama Penuh</div>
  Residential schools for high-achieving Malaysian students, focusing on science and technology subjects. There are 69 such schools.
- <div class="chcounter">11/20</div>`,
+ <div class="chcounter">11/19</div>`,
 
 `(Age 13-17) 
 <div class="chtitle">Pusat Intelek Pelajar Orang Asli (PIPOA)</div>
  Special school for high-achieving Orang Asli students, for Form 1 to 3. There is only one PIPOA school, in Rompin, Pahang.
- <div class="chcounter">12/20</div>`,
+ <div class="chcounter">12/19</div>`,
 
 `(Age 13-17) 
 <div class="chtitle">Sekolah Agama</div>
  There are religious Islamic schools at both primary and secondary level.
- <div class="chcounter">13/20</div>`,
+ <div class="chcounter">13/19</div>`,
 
 `(Age 13-17) 
 <div class="chtitle">Sekolah Menengah Teknik</div>
  Vocational secondary schools with a strong focus on skills-based education and industry practices.
- <div class="chcounter">14/20</div>`,
+ <div class="chcounter">14/19</div>`,
 
 `(Age 13-17) 
 <div class="chtitle">Sekolah Seni / Sekolah Sukan</div>
  Schools catering to students who excel in arts or sports.
- <div class="chcounter">15/20</div>`,
+ <div class="chcounter">15/19</div>`,
 
 `(Age 18+) 
 <div class="chtitle">Tertiary education</div>
-<div class="chcounter">16/20</div>`,
+<div class="chcounter">16/19</div>`,
 
 `(Mature Age) 
 <div class="chtitle">Kelas Dewasa Ibu Bapa Orang Asli Dan Penan (KEDAP)</div>
  Adult literacy classes for Orang Asli, conducted in schools. Adults who sign up for KEDAP classes are given an allowance to attend.
- <div class="chcounter">17/20</div>`,
+ <div class="chcounter">17/19</div>`,
 
 `<div class="chtitle">Community-based learning</div>
  Some Orang Asli communities have started community-based classes, held within their village. These classes are usually less rigid and include indigenous culture and traditional knowledge as part of its syllabus. <a href='/en/chapter2/found-clue/clue-8' id="clue-8"> Parents and teachers have noted that these classes are an important form of supplementary education among Orang Asli communities, but require broader recognition and support from government agencies.</a>
- <div class="chcounter">18/20</div>`,
+ <div class="chcounter">18/19</div>`,
 
 `<div class="chtitle">Private schools</div>
  There are private education institutes for all levels of education. They range from expensive, paid schools, to not-for-profit institutions catering to marginalised communities, to homeschooling programmes.
- <div class="chcounter">19/20</div>`,
+ <div class="chcounter">19/19</div>`,
  
 `<div class="chtitle finished">You finished this chapter!</div>
   <button class="ch-startover">START AGAIN</button>`,
@@ -880,6 +878,15 @@ function setup(loader, resources)
 
     $(document).ready(function(){
 
+      $('.ch-startfirst').click( function (){
+        clickstate += 1;
+          sekolahAnimation[clickstate]();
+         $(".info-box").css('display', 'block');
+          $('#school-next').css('display', 'block');
+          $('#school-prev').css('display', 'block');
+         $(".ch-startfirst").css('display', 'none');
+      })
+
       document.getElementById("school-prev").disabled = true;
 
       $('#school-next').click( function (){
@@ -900,10 +907,10 @@ function setup(loader, resources)
           clickstate += 1;
           sekolahAnimation[clickstate]();
         }
-        else if (clickstate >= sekolahAnimation.length-1 && clickstate < 20) {
+        else if (clickstate >= sekolahAnimation.length-1 && clickstate < 19) {
           clickstate += 1;
         }
-        if (textCounter == 20) {
+        if (textCounter == 19) {
            document.getElementById("school-next").disabled = true;
            $('.ch-prev').addClass('final');
            $('.ch-next').addClass('final');

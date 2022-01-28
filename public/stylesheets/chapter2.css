@@ -11,6 +11,7 @@ body
 	font-family:'Archer Bold', serif;
 	border: none;
 	background-color: #e6e2dd;
+  display: none;
 }
 .ch-2 #school-prev img, .ch-2 #school-next img {
 	width: 45%;
@@ -37,7 +38,7 @@ body
   position: absolute;
   top: 20%;
   right: 5%;
-  display: block;
+  display: none;
   font-size:14px;
 }
 
@@ -46,6 +47,22 @@ body
   background-color: #e6e2dd00;
   right: 30%;
   height: 25%;
+}
+
+.ch-startfirst {
+  background-image: url(/images/Chapter2-ENG/group-438.svg);
+  border: none;
+  background-color: #ffffff00;
+  background-repeat: no-repeat;
+  font-size: 20px;
+  color: #4c140a;
+  font-family: 'Archer Bold';
+  cursor: pointer;
+  width: 17%;
+  height: 63px;
+  top: 54%;
+  right: 42%;
+  position: absolute;
 }
 
 .ch-startover {
