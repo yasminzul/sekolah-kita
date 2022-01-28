@@ -6,9 +6,9 @@
 .credits-wrapper {
 	display: flex;
 	flex-wrap: wrap;
-	background-image: url("/images/chapters/chapter-page.psd@2x.png");
+/*	background-image: url("/images/chapters/chapter-page.psd@2x.png");
 	background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
 	height: 100vh;
 }
 

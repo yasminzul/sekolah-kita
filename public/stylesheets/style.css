@@ -353,6 +353,7 @@ input:checked + .slider:before {
     padding: 3rem;
     border-radius: 7px;
     text-align: center;
+    border: 3px solid #4c140a;
 }
 
 .pop-container h5 {
@@ -388,9 +389,28 @@ input:checked + .slider:before {
   background-color: #fff;
 }
 
+#hl-text {
+  background-color:#FFB806;
+  width: 90%;
+  font-size: 12px;
+  display: inline-block;
+}
+
+#f-t {
+  font-family: 'Archer Bold';
+  font-size: 12px;
+}
+
+#f-t img {
+  width: 20px;
+  padding: 3% 0 0 1%;
+}
+
 @media (max-width: 800px) {
   .pop {
     width: 60%;
+    height: 65vh;
+    overflow-x: scroll;
   }
   .pop-container.left {
     margin-right: 0 !important;
@@ -664,6 +684,9 @@ input:checked + .slider:before {
 .hero-center .menu-outer {
   width: 145px;
   height: 175px;
+  display: inline-block;
+  float: left;
+  margin-right: 0.5em;
 }
 
 .hero-center .menu-outer:first {
@@ -692,11 +715,9 @@ input:checked + .slider:before {
 }
 
 .hero-content {
-  width: 70%;
+  width: 100%;
   float: right;
   position: relative;
-  height: 75vh;
-  overflow-x: scroll;
   margin-bottom: 2em;
   font-size: 16px;
 }
@@ -767,7 +788,13 @@ input:checked + .slider:before {
   }
 
   .menu-wrapper {
-    height: auto;
+    height: 100vh;
+    position: fixed;
+    overflow-x: scroll;
+    display: initial;
+  }
+  .close-btn {
+    z-index: 1;
   }
   .menu-container {
     padding: 5em 0 0 0;
@@ -899,9 +926,14 @@ input:checked + .slider:before {
     margin: 0 !important;
   }
 
-  .ch-next, .ch-prev {
+  .ch-next{
     margin-left: 0;
+    width: 118px;
   }
+
+  .ch-prev {
+    width: 140px;
+   }
 
   /*Meet the teachers*/
   .hero-center {
@@ -909,8 +941,6 @@ input:checked + .slider:before {
   }
   .hero-content {
     width: 100%;
-    margin-top: 21em;
-    height: 40vh;
   }
   .hero-img {
     width: 90%;

@@ -135,13 +135,20 @@ body
     width: 92%;
     height: 40%;
     background-color: #E6E2DD;
-    padding: 4%;
+    padding: 12% 4%;
+    overflow-x: scroll;
     position: absolute;
     bottom: 0;
     right: inherit;
     top: inherit;
-    display: block;
+    display: none;
     font-size: 12px;
+  }
+
+  .ch-startfirst {
+    width: 241px;
+    right: 16%;
+    top: 70%;
   }
 
   .ch-2 #school-prev {
@@ -162,12 +169,20 @@ body
   .info-box.finished {
     top: inherit;
     right: 0;
-    height: 25%;
+    height: 22%;
     bottom: 0;
   }
 
+  .chcounter {
+    bottom: 7%;
+  }
+
   .ch-startover {
-    width: 60%;
+    width: 241px;
+    height: 65px;
+    margin-left: 0;
+    position: absolute;
+    right: 20%;
   }
 
   .ch-next.final {
