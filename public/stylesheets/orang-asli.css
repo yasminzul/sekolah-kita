@@ -104,6 +104,28 @@
     height: 100%;
 }
 
+.ch-startfirst {
+  background-image: url(/images/Chapter2-ENG/group-438.svg);
+  border: none;
+  background-color: #ffffff00;
+  background-repeat: no-repeat;
+  font-size: 20px;
+  color: #4c140a;
+  font-family: 'Archer Bold';
+  cursor: pointer;
+  width: 50%;
+  height: 63px;
+  margin-top: 0.5em;
+  float: right;
+  text-decoration: none;
+
+}
+
+.ch-startfirst a {
+	color: #4c140a;
+	text-decoration: none;
+}
+
 @media (max-width: 800px) {
 	.oa-wrapper {
 		background-size: contain;
@@ -121,6 +143,13 @@
 	.credit-col {
 		width: 100%;
 		margin: 2em 2em;
+	}
+
+	.ch-startfirst {
+		width: 241px;
+	    display: block;
+	    margin: 0 auto;
+	    float: none;
 	}
 
 	#timeline {
