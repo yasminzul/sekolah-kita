@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
   clue: [false, false, false, false, false, false, false, false, false, false, false, false],
   chapterAccess:1,
   cluesFound:0 });
-  res.render('orang-asli-en', { title: 'Who Are The Orang Asli', currScore: scoreCard.cluesFound });
+  res.render('orang-asli-en', { title: 'Who Are The Orang Asli', currScore: scoreCard });
 });
 
 module.exports = router;
