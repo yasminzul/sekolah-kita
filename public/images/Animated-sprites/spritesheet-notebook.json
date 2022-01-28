@@ -1,9 +1,9 @@
 {
 	"frames": {
-		"NOTEBOOK_0.png": {
+		"NOTEBOOK_0000.png": {
 			"frame": {
-				"x": 1,
-				"y": 1,
+				"x": 3,
+				"y": 3,
 				"w": 1500,
 				"h": 1350
 			},
@@ -20,10 +20,10 @@
 				"h": 1350
 			}
 		},
-		"NOTEBOOK_1.png": {
+		"NOTEBOOK_0001.png": {
 			"frame": {
-				"x": 1503,
-				"y": 1,
+				"x": 1509,
+				"y": 3,
 				"w": 1500,
 				"h": 1350
 			},
@@ -40,10 +40,10 @@
 				"h": 1350
 			}
 		},
-		"NOTEBOOK_2.png": {
+		"NOTEBOOK_0002.png": {
 			"frame": {
-				"x": 3005,
-				"y": 1,
+				"x": 3015,
+				"y": 3,
 				"w": 1500,
 				"h": 1350
 			},
@@ -60,10 +60,10 @@
 				"h": 1350
 			}
 		},
-		"NOTEBOOK_3.png": {
+		"NOTEBOOK_0003.png": {
 			"frame": {
-				"x": 4507,
-				"y": 1,
+				"x": 4521,
+				"y": 3,
 				"w": 1500,
 				"h": 1350
 			},
@@ -80,10 +80,10 @@
 				"h": 1350
 			}
 		},
-		"NOTEBOOK_4.png": {
+		"NOTEBOOK_0004.png": {
 			"frame": {
-				"x": 1,
-				"y": 1353,
+				"x": 6027,
+				"y": 3,
 				"w": 1500,
 				"h": 1350
 			},
@@ -100,10 +100,10 @@
 				"h": 1350
 			}
 		},
-		"NOTEBOOK_5.png": {
+		"NOTEBOOK_0005.png": {
 			"frame": {
-				"x": 1503,
-				"y": 1353,
+				"x": 7533,
+				"y": 3,
 				"w": 1500,
 				"h": 1350
 			},
@@ -120,10 +120,10 @@
 				"h": 1350
 			}
 		},
-		"NOTEBOOK_6.png": {
+		"NOTEBOOK_0006.png": {
 			"frame": {
-				"x": 3005,
-				"y": 1353,
+				"x": 9039,
+				"y": 3,
 				"w": 1500,
 				"h": 1350
 			},
@@ -140,10 +140,10 @@
 				"h": 1350
 			}
 		},
-		"NOTEBOOK_7.png": {
+		"NOTEBOOK_0007.png": {
 			"frame": {
-				"x": 4507,
-				"y": 1353,
+				"x": 3,
+				"y": 1359,
 				"w": 1500,
 				"h": 1350
 			},
@@ -160,10 +160,10 @@
 				"h": 1350
 			}
 		},
-		"NOTEBOOK_8.png": {
+		"NOTEBOOK_0008.png": {
 			"frame": {
-				"x": 1,
-				"y": 2705,
+				"x": 1509,
+				"y": 1359,
 				"w": 1500,
 				"h": 1350
 			},
@@ -180,10 +180,10 @@
 				"h": 1350
 			}
 		},
-		"NOTEBOOK_9.png": {
+		"NOTEBOOK_0009.png": {
 			"frame": {
-				"x": 1503,
-				"y": 2705,
+				"x": 3015,
+				"y": 1359,
 				"w": 1500,
 				"h": 1350
 			},
@@ -200,10 +200,10 @@
 				"h": 1350
 			}
 		},
-		"NOTEBOOK_10.png": {
+		"NOTEBOOK_00010.png": {
 			"frame": {
-				"x": 3005,
-				"y": 2705,
+				"x": 4521,
+				"y": 1359,
 				"w": 1500,
 				"h": 1350
 			},
@@ -220,10 +220,10 @@
 				"h": 1350
 			}
 		},
-		"NOTEBOOK_11.png": {
+		"NOTEBOOK_00011.png": {
 			"frame": {
-				"x": 4507,
-				"y": 2705,
+				"x": 6027,
+				"y": 1359,
 				"w": 1500,
 				"h": 1350
 			},
@@ -240,10 +240,10 @@
 				"h": 1350
 			}
 		},
-		"NOTEBOOK_12.png": {
+		"NOTEBOOK_00012.png": {
 			"frame": {
-				"x": 1,
-				"y": 4057,
+				"x": 7533,
+				"y": 1359,
 				"w": 1500,
 				"h": 1350
 			},
@@ -260,10 +260,10 @@
 				"h": 1350
 			}
 		},
-		"NOTEBOOK_13.png": {
+		"NOTEBOOK_00013.png": {
 			"frame": {
-				"x": 1503,
-				"y": 4057,
+				"x": 9039,
+				"y": 1359,
 				"w": 1500,
 				"h": 1350
 			},
@@ -280,10 +280,10 @@
 				"h": 1350
 			}
 		},
-		"NOTEBOOK_14.png": {
+		"NOTEBOOK_00014.png": {
 			"frame": {
-				"x": 3005,
-				"y": 4057,
+				"x": 3,
+				"y": 2715,
 				"w": 1500,
 				"h": 1350
 			},
@@ -300,10 +300,10 @@
 				"h": 1350
 			}
 		},
-		"NOTEBOOK_15.png": {
+		"NOTEBOOK_00015.png": {
 			"frame": {
-				"x": 4507,
-				"y": 4057,
+				"x": 1509,
+				"y": 2715,
 				"w": 1500,
 				"h": 1350
 			},
@@ -320,10 +320,10 @@
 				"h": 1350
 			}
 		},
-		"NOTEBOOK_16.png": {
+		"NOTEBOOK_00016.png": {
 			"frame": {
-				"x": 6009,
-				"y": 1,
+				"x": 3015,
+				"y": 2715,
 				"w": 1500,
 				"h": 1350
 			},
@@ -340,10 +340,10 @@
 				"h": 1350
 			}
 		},
-		"NOTEBOOK_17.png": {
+		"NOTEBOOK_00017.png": {
 			"frame": {
-				"x": 6009,
-				"y": 1353,
+				"x": 4521,
+				"y": 2715,
 				"w": 1500,
 				"h": 1350
 			},
@@ -360,10 +360,750 @@
 				"h": 1350
 			}
 		},
-		"NOTEBOOK_18.png": {
+		"NOTEBOOK_00018.png": {
 			"frame": {
-				"x": 6009,
-				"y": 2705,
+				"x": 6027,
+				"y": 2715,
+				"w": 1500,
+				"h": 1350
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 1500,
+				"h": 1350
+			},
+			"sourceSize": {
+				"w": 1500,
+				"h": 1350
+			}
+		},
+		"NOTEBOOK_00019.png": {
+			"frame": {
+				"x": 7533,
+				"y": 2715,
+				"w": 1500,
+				"h": 1350
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 1500,
+				"h": 1350
+			},
+			"sourceSize": {
+				"w": 1500,
+				"h": 1350
+			}
+		},
+		"NOTEBOOK_00020.png": {
+			"frame": {
+				"x": 9039,
+				"y": 2715,
+				"w": 1500,
+				"h": 1350
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 1500,
+				"h": 1350
+			},
+			"sourceSize": {
+				"w": 1500,
+				"h": 1350
+			}
+		},
+		"NOTEBOOK_00021.png": {
+			"frame": {
+				"x": 3,
+				"y": 4071,
+				"w": 1500,
+				"h": 1350
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 1500,
+				"h": 1350
+			},
+			"sourceSize": {
+				"w": 1500,
+				"h": 1350
+			}
+		},
+		"NOTEBOOK_00022.png": {
+			"frame": {
+				"x": 1509,
+				"y": 4071,
+				"w": 1500,
+				"h": 1350
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 1500,
+				"h": 1350
+			},
+			"sourceSize": {
+				"w": 1500,
+				"h": 1350
+			}
+		},
+		"NOTEBOOK_00023.png": {
+			"frame": {
+				"x": 3015,
+				"y": 4071,
+				"w": 1500,
+				"h": 1350
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 1500,
+				"h": 1350
+			},
+			"sourceSize": {
+				"w": 1500,
+				"h": 1350
+			}
+		},
+		"NOTEBOOK_00024.png": {
+			"frame": {
+				"x": 4521,
+				"y": 4071,
+				"w": 1500,
+				"h": 1350
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 1500,
+				"h": 1350
+			},
+			"sourceSize": {
+				"w": 1500,
+				"h": 1350
+			}
+		},
+		"NOTEBOOK_00025.png": {
+			"frame": {
+				"x": 6027,
+				"y": 4071,
+				"w": 1500,
+				"h": 1350
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 1500,
+				"h": 1350
+			},
+			"sourceSize": {
+				"w": 1500,
+				"h": 1350
+			}
+		},
+		"NOTEBOOK_00026.png": {
+			"frame": {
+				"x": 7533,
+				"y": 4071,
+				"w": 1500,
+				"h": 1350
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 1500,
+				"h": 1350
+			},
+			"sourceSize": {
+				"w": 1500,
+				"h": 1350
+			}
+		},
+		"NOTEBOOK_00027.png": {
+			"frame": {
+				"x": 9039,
+				"y": 4071,
+				"w": 1500,
+				"h": 1350
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 1500,
+				"h": 1350
+			},
+			"sourceSize": {
+				"w": 1500,
+				"h": 1350
+			}
+		},
+		"NOTEBOOK_00028.png": {
+			"frame": {
+				"x": 3,
+				"y": 5427,
+				"w": 1500,
+				"h": 1350
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 1500,
+				"h": 1350
+			},
+			"sourceSize": {
+				"w": 1500,
+				"h": 1350
+			}
+		},
+		"NOTEBOOK_00029.png": {
+			"frame": {
+				"x": 1509,
+				"y": 5427,
+				"w": 1500,
+				"h": 1350
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 1500,
+				"h": 1350
+			},
+			"sourceSize": {
+				"w": 1500,
+				"h": 1350
+			}
+		},
+		"NOTEBOOK_00030.png": {
+			"frame": {
+				"x": 3015,
+				"y": 5427,
+				"w": 1500,
+				"h": 1350
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 1500,
+				"h": 1350
+			},
+			"sourceSize": {
+				"w": 1500,
+				"h": 1350
+			}
+		},
+		"NOTEBOOK_00031.png": {
+			"frame": {
+				"x": 4521,
+				"y": 5427,
+				"w": 1500,
+				"h": 1350
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 1500,
+				"h": 1350
+			},
+			"sourceSize": {
+				"w": 1500,
+				"h": 1350
+			}
+		},
+		"NOTEBOOK_00032.png": {
+			"frame": {
+				"x": 6027,
+				"y": 5427,
+				"w": 1500,
+				"h": 1350
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 1500,
+				"h": 1350
+			},
+			"sourceSize": {
+				"w": 1500,
+				"h": 1350
+			}
+		},
+		"NOTEBOOK_00033.png": {
+			"frame": {
+				"x": 7533,
+				"y": 5427,
+				"w": 1500,
+				"h": 1350
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 1500,
+				"h": 1350
+			},
+			"sourceSize": {
+				"w": 1500,
+				"h": 1350
+			}
+		},
+		"NOTEBOOK_00034.png": {
+			"frame": {
+				"x": 9039,
+				"y": 5427,
+				"w": 1500,
+				"h": 1350
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 1500,
+				"h": 1350
+			},
+			"sourceSize": {
+				"w": 1500,
+				"h": 1350
+			}
+		},
+		"NOTEBOOK_00035.png": {
+			"frame": {
+				"x": 3,
+				"y": 6783,
+				"w": 1500,
+				"h": 1350
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 1500,
+				"h": 1350
+			},
+			"sourceSize": {
+				"w": 1500,
+				"h": 1350
+			}
+		},
+		"NOTEBOOK_00036.png": {
+			"frame": {
+				"x": 1509,
+				"y": 6783,
+				"w": 1500,
+				"h": 1350
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 1500,
+				"h": 1350
+			},
+			"sourceSize": {
+				"w": 1500,
+				"h": 1350
+			}
+		},
+		"NOTEBOOK_00037.png": {
+			"frame": {
+				"x": 3015,
+				"y": 6783,
+				"w": 1500,
+				"h": 1350
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 1500,
+				"h": 1350
+			},
+			"sourceSize": {
+				"w": 1500,
+				"h": 1350
+			}
+		},
+		"NOTEBOOK_00038.png": {
+			"frame": {
+				"x": 4521,
+				"y": 6783,
+				"w": 1500,
+				"h": 1350
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 1500,
+				"h": 1350
+			},
+			"sourceSize": {
+				"w": 1500,
+				"h": 1350
+			}
+		},
+		"NOTEBOOK_00039.png": {
+			"frame": {
+				"x": 6027,
+				"y": 6783,
+				"w": 1500,
+				"h": 1350
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 1500,
+				"h": 1350
+			},
+			"sourceSize": {
+				"w": 1500,
+				"h": 1350
+			}
+		},
+		"NOTEBOOK_00040.png": {
+			"frame": {
+				"x": 7533,
+				"y": 6783,
+				"w": 1500,
+				"h": 1350
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 1500,
+				"h": 1350
+			},
+			"sourceSize": {
+				"w": 1500,
+				"h": 1350
+			}
+		},
+		"NOTEBOOK_00041.png": {
+			"frame": {
+				"x": 9039,
+				"y": 6783,
+				"w": 1500,
+				"h": 1350
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 1500,
+				"h": 1350
+			},
+			"sourceSize": {
+				"w": 1500,
+				"h": 1350
+			}
+		},
+		"NOTEBOOK_00042.png": {
+			"frame": {
+				"x": 3,
+				"y": 8139,
+				"w": 1500,
+				"h": 1350
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 1500,
+				"h": 1350
+			},
+			"sourceSize": {
+				"w": 1500,
+				"h": 1350
+			}
+		},
+		"NOTEBOOK_00043.png": {
+			"frame": {
+				"x": 1509,
+				"y": 8139,
+				"w": 1500,
+				"h": 1350
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 1500,
+				"h": 1350
+			},
+			"sourceSize": {
+				"w": 1500,
+				"h": 1350
+			}
+		},
+		"NOTEBOOK_00044.png": {
+			"frame": {
+				"x": 3015,
+				"y": 8139,
+				"w": 1500,
+				"h": 1350
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 1500,
+				"h": 1350
+			},
+			"sourceSize": {
+				"w": 1500,
+				"h": 1350
+			}
+		},
+		"NOTEBOOK_00045.png": {
+			"frame": {
+				"x": 4521,
+				"y": 8139,
+				"w": 1500,
+				"h": 1350
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 1500,
+				"h": 1350
+			},
+			"sourceSize": {
+				"w": 1500,
+				"h": 1350
+			}
+		},
+		"NOTEBOOK_00046.png": {
+			"frame": {
+				"x": 6027,
+				"y": 8139,
+				"w": 1500,
+				"h": 1350
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 1500,
+				"h": 1350
+			},
+			"sourceSize": {
+				"w": 1500,
+				"h": 1350
+			}
+		},
+		"NOTEBOOK_00047.png": {
+			"frame": {
+				"x": 7533,
+				"y": 8139,
+				"w": 1500,
+				"h": 1350
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 1500,
+				"h": 1350
+			},
+			"sourceSize": {
+				"w": 1500,
+				"h": 1350
+			}
+		},
+		"NOTEBOOK_00048.png": {
+			"frame": {
+				"x": 9039,
+				"y": 8139,
+				"w": 1500,
+				"h": 1350
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 1500,
+				"h": 1350
+			},
+			"sourceSize": {
+				"w": 1500,
+				"h": 1350
+			}
+		},
+		"NOTEBOOK_00049.png": {
+			"frame": {
+				"x": 10545,
+				"y": 3,
+				"w": 1500,
+				"h": 1350
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 1500,
+				"h": 1350
+			},
+			"sourceSize": {
+				"w": 1500,
+				"h": 1350
+			}
+		},
+		"NOTEBOOK_00050.png": {
+			"frame": {
+				"x": 10545,
+				"y": 1359,
+				"w": 1500,
+				"h": 1350
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 1500,
+				"h": 1350
+			},
+			"sourceSize": {
+				"w": 1500,
+				"h": 1350
+			}
+		},
+		"NOTEBOOK_00051.png": {
+			"frame": {
+				"x": 10545,
+				"y": 2715,
+				"w": 1500,
+				"h": 1350
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 1500,
+				"h": 1350
+			},
+			"sourceSize": {
+				"w": 1500,
+				"h": 1350
+			}
+		},
+		"NOTEBOOK_00052.png": {
+			"frame": {
+				"x": 10545,
+				"y": 4071,
+				"w": 1500,
+				"h": 1350
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 1500,
+				"h": 1350
+			},
+			"sourceSize": {
+				"w": 1500,
+				"h": 1350
+			}
+		},
+		"NOTEBOOK_00053.png": {
+			"frame": {
+				"x": 10545,
+				"y": 5427,
+				"w": 1500,
+				"h": 1350
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 1500,
+				"h": 1350
+			},
+			"sourceSize": {
+				"w": 1500,
+				"h": 1350
+			}
+		},
+		"NOTEBOOK_00054.png": {
+			"frame": {
+				"x": 10545,
+				"y": 6783,
+				"w": 1500,
+				"h": 1350
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 1500,
+				"h": 1350
+			},
+			"sourceSize": {
+				"w": 1500,
+				"h": 1350
+			}
+		},
+		"NOTEBOOK_00055.png": {
+			"frame": {
+				"x": 10545,
+				"y": 8139,
 				"w": 1500,
 				"h": 1350
 			},
@@ -387,8 +1127,8 @@
 		"image": "spritesheet-notebook.png",
 		"format": "RGBA8888",
 		"size": {
-			"w": 7510,
-			"h": 5408
+			"w": 12048,
+			"h": 9492
 		},
 		"scale": "1"
 	}

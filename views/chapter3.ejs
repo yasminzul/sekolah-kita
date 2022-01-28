@@ -65,8 +65,12 @@
                  </div>
 
                  <div class="ch-finished">
-                   <span><img src="/images/menu/group-110.svg" alt="">
-                   You have completed this chapter</span>
+                   <span><img class="<%= currScore.clue[3] == true && currScore.clue[6] == true && currScore.clue[9] == true && currScore.clue[4] == true && currScore.clue[5] == true && currScore.clue[0] == true ? 'show' : 'dim' %>" src="/images/menu/group-110.svg" alt="">
+                   <% if (currScore.clue[3] == true && currScore.clue[6] == true && currScore.clue[9] == true && currScore.clue[4] == true && currScore.clue[5] == true && currScore.clue[0] == true){ %>
+                   You have completed this chapter
+                   <% } else { %>
+                   You haven't completed the hunt on this chapter
+                   <% } %></span>
                    <div class="chapter-btns">
                      <button class="ch-prev"><a href="/en/chapter2">< PREVIOUS</a></button>
                      <button class="ch-next"><a href="/en/chapter4">NEXT ></a></button>

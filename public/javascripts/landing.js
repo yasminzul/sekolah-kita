@@ -114,49 +114,39 @@ loader.load(setup);
     notebookHSprite.buttonMode = true;
 
     const notebookTextures = [];
-    for (let i=0; i < 19; i++)
+    for (let i=0; i < 55; i++)
     {
-      const notebookTexture = PIXI.Texture.from(`NOTEBOOK_${i}.png`);
+      const notebookTexture = PIXI.Texture.from(`NOTEBOOK_000${i}.png`);
       notebookTextures.push(notebookTexture);
     }
 
     const notebookSprite = new PIXI.AnimatedSprite(notebookTextures);
-    notebookSprite.scale.set(1);
+    notebookSprite.scale.set(0.7);
     notebookSprite.anchor.set(0.5);
     notebookSprite.angle = 3.5;
-    notebookSprite.position.set(pixiapp.screen.width / 2, pixiapp.screen.height / 2);
+    notebookSprite.position.set((pixiapp.screen.width / 2) - 250, (pixiapp.screen.height / 2) + 110);
     notebookSprite.loop = false;
 
     notebookHSprite.on ('mousedown', function()
     {
-      pixiapp.stage.addChild(notebookHSprite);
-        const ease = new Ease.Ease();
-        const bookAnim = ease.add(
-            notebookHSprite,
-            { x: (pixiapp.screen.width /4)*3 , y: pixiapp.screen.height / 2, scale: 1},
-            { reverse: false, duration: 1000, ease: 'easeInOutQuad' }
-          );
-
-        bookAnim.once('complete', () =>
-        pixiapp.stage.addChild(notebookSprite),
-        notebookSprite.animationSpeed = 0.25,
-        notebookSprite.play()
-      );
-
-        notebookSprite.onComplete = function () {
-          window.open("en/chapter1","_self")
-        };
-
-    } );
-
-    notebookHSprite.on ('touchstart', function()
-    {
+        pixiapp.stage.removeChild(notebookHSprite);
         pixiapp.stage.addChild(notebookSprite);
-        notebookSprite.animationSpeed = 1;
+        notebookSprite.animationSpeed = 0.5;
         notebookSprite.play();
         notebookSprite.onComplete = function () {
           window.open("en/chapter1","_self")
         };
+    } );
+
+    notebookHSprite.on ('touchstart', function()
+    {
+      pixiapp.stage.removeChild(notebookHSprite);
+      pixiapp.stage.addChild(notebookSprite);
+      notebookSprite.animationSpeed = 0.5;
+      notebookSprite.play();
+      notebookSprite.onComplete = function () {
+        window.open("en/chapter1","_self")
+      };
     } );
 
     notebookHSprite.on ('pointerover', function()
@@ -272,12 +262,12 @@ loader.load(setup);
 
     elemFluteSprite.on ('mousedown', function()
     {
-        $('#coming-soon').toggleClass("menu-open");
+        $('#access-denied').toggleClass("menu-open");
     } );
 
     elemFluteSprite.on ('touchstart', function()
     {
-        $('#coming-soon').toggleClass("menu-open");
+        $('#access-denied').toggleClass("menu-open");
     } );
 
     elemFluteSprite.on ('pointerover', function()

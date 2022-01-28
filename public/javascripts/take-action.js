@@ -22,7 +22,7 @@ if (x.matches){
     transparentCorners: false
   });
 
-  // Mobile overlay 
+  // Mobile overlay
   $('.m-add-stk').click( function (){
     $('.add-stickers').addClass('overlay');
     $('.oa-wrapper .flex-item-left').css('background-color', '#0000005e');
@@ -56,18 +56,30 @@ else{
     height: 620
   });
 
-  var textbox = new fabric.Textbox('Pendidikan tanpa batasan!\nKetahui bagaimana dengan layari sekolahkita.my', {
-    left: 145,
-    top: 60,
-    width: 320,
-    fontSize: 26,
-    fontFamily: 'Archer Book',
-    fontWeight: 'bold',
-    borderColor: '#D1C7BA',
-    cornerColor: '#D1C7BA',
-    cornerSize: 10,
-    transparentCorners: false
-  });
+let textcopy = [
+  `This is my dream school, where all students are accepted and celebrated!
+Find out how we can reimagine our schools at sekolahkita.my`,
+  `This is my dream school, where students are prepared for a future they build together.
+Find out how we can reimagine our schools at sekolahkita.my`,
+  `This is my dream school, where our traditions and natural environment are our teachers.
+Find out how we can reimagine our schools at sekolahkita.my`]
+
+var textStyle = {
+  left: 130,
+  top: 40,
+  width: 380,
+  fontSize: 26,
+  fontFamily: 'Archer Book',
+  fontWeight: 'bold',
+  borderColor: '#D1C7BA',
+  cornerColor: '#D1C7BA',
+  cornerSize: 10,
+  transparentCorners: false
+}
+
+  var textbox0 = new fabric.Textbox(textcopy[0], textStyle);
+  var textbox1 = new fabric.Textbox(textcopy[1], textStyle);
+  var textbox2 = new fabric.Textbox(textcopy[2], textStyle);
 
 function canvasChange(filename)
 {
@@ -98,9 +110,9 @@ function canvasChange(filename)
 }
 //end desktop
 
-changeCanvasBG('/images/Science-assets/Science-classroom-background.png')
-canvasChange('/images/Science-assets/scienceClass.json');
-canvas.add(textbox);
+changeCanvasBG('/images/Bamboo-assets/Bamboo-class-background.PNG')
+canvasChange('/images/Bamboo-assets/bambooClass.json');
+canvas.add(textbox0);
 
 //END INITIAL LOAD
 
@@ -113,7 +125,7 @@ $(document).ready(function(){
     const scienceBG = '/images/Science-assets/Science-classroom-background.png';
     changeCanvasBG(scienceBG)
     canvasChange(scienceJSON);
-    canvas.add(textbox);
+    canvas.add(textbox1);
   });
 
   $('#preload-bamboo').click( function(){
@@ -122,7 +134,7 @@ $(document).ready(function(){
     const bambooBG = '/images/Bamboo-assets/Bamboo-class-background.PNG';
     changeCanvasBG(bambooBG)
     canvasChange(bambooJSON);
-    canvas.add(textbox);
+    canvas.add(textbox0);
   });
 
   $('#preload-nature').click( function(){
@@ -131,7 +143,7 @@ $(document).ready(function(){
     const natureBG = '/images/Nature-assets/Nature-classroom-background.PNG';
     changeCanvasBG(natureBG)
     canvasChange(natureJSON);
-    canvas.add(textbox);
+    canvas.add(textbox2);
   });
 
     $('.sticker-bg').click( function (){
@@ -145,16 +157,25 @@ $(document).ready(function(){
     });
 
     $('#delete-sticker').click( function (){
-        canvas.remove(canvas.getActiveObject());
+      var selected = canvas.getActiveObjects(),
+      selGroup = new fabric.ActiveSelection(selected, {
+        canvas: canvas
+      });
+        if (selGroup) {
+            selGroup.forEachObject(function(obj) {
+              canvas.remove(obj);
+            });
+          }
+        canvas.discardActiveObject().renderAll();
     });
 
     $('#no-bg').click( function (){
-      const image = new fabric.Image('');
-      canvas.setBackgroundImage(image, canvas.renderAll.bind(canvas));
+      changeCanvasBG('');
+      canvas.setBackgroundColor('#EAE8E3', canvas.renderAll.bind(canvas));
     });
 
     $('#add-text').click( function (){
-      var newTextbox = new fabric.Textbox('Pendidikan tanpa batasan!\nKetahui bagaimana dengan layari sekolahkita.my', {
+      var newTextbox = new fabric.Textbox('Lorem ipsum dolor sit amet,\nconsectetur adipiscing elit', {
         left: 65,
         top: 28,
         width: 200,
@@ -206,6 +227,3 @@ function changeCanvasBG(imageURL)
    canvas.requestRenderAll();
 });
 }
-
-
-

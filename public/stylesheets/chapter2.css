@@ -1,8 +1,19 @@
 body
 {
-  background-color: #49463f;
+  background-color: #49463f !important;
 }
 
+.ch-2
+{
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+#school-start, #start-again {
+  position: absolute;
+}
 
 .ch-2 #school-prev, .ch-2 #school-next {
 	position: absolute;
@@ -121,14 +132,14 @@ body
 
 @media (max-width: 800px) {
   .info-box {
-    width: 100%;
+    width: 92%;
     height: 40%;
     background-color: #E6E2DD;
     padding: 4%;
     position: absolute;
     bottom: 0;
     right: inherit;
-    top: inherit; 
+    top: inherit;
     display: block;
     font-size: 12px;
   }
@@ -172,4 +183,3 @@ body
   }
 
 }
-
