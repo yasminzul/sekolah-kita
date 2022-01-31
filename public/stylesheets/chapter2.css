@@ -181,6 +181,12 @@ body
     bottom: 0;
   }
 
+  #school-start {
+    width: 240px;
+    right: 18%;
+    top: 65%;
+  }
+
   .ch-startover {
     width: 60%;
   }
