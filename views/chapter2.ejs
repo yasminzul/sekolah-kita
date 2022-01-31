@@ -14,38 +14,34 @@
   <link rel='stylesheet' href='/stylesheets/chapter2.css' />
   <link rel='stylesheet' href='/stylesheets/resources.css' />
 </head>
-    <body>
-      <%- include menu/nav-btn.ejs %>
-      <%- include popups/popup.ejs %>
-      <%- include popups/treasure-hunt.ejs %>
+<body>
+  <%- include menu/nav-btn.ejs %>
+  <%- include popups/popup.ejs %>
+  <%- include popups/treasure-hunt.ejs %>
 <section class="ch-2">
-      <!-- <div id="view-chapter2">
-        <button id="school-start">START</button>
-        <button id="school-prev">PREVIOUS</button>
-        <button id="school-next">NEXT</button>
-      </div> -->
 
-      <div id="view-chapter2">
-        <button class="ch-startfirst">START</button>
-        <div class="info-box">
-          (Age 2-4) 
-          <div class="chtitle">Taska KEMAS</div>
-           Early childhood education and daycare services for working parents of young children, catering to rural communities. Under the purview of the Ministry of Rural Development.
-           <div class="chcounter">1/19</div>
-        </div>
-        <button id="school-prev"><img src="/images/Chapter2-ENG/group-431.svg" alt=""></button>
-        <button id="school-next"><img src="/images/Chapter2-ENG/group-430.svg" alt=""></button>
-      </div>
+  <div id="view-chapter2">
+    <button id="school-start">START</button>
+    <div class="info-box">
+      <div class="chtitle"></div>
+    </div>
+    <button id="school-prev"><img src="/images/Chapter2-ENG/group-431.svg" alt=""></button>
+    <button id="school-next"><img src="/images/Chapter2-ENG/group-430.svg" alt=""></button>
+  </div>
 
-      <div class="ch-finished">
-        <img src="images/menu/group-110.svg" alt="">
-        <!-- <span>You have completed this chapter</span> -->
-            <button class="ch-prev"><a href="/en/chapter1">< PREVIOUS</a></button>
-            <button class="ch-next"><a href="/en/chapter3">NEXT ></a></button>
-      </div>
+  <div class="ch-finished">
+    <span><img class="<%= currScore.clue[8] == true && currScore.clue[7] == true ? 'show' : 'dim' %>" src="/images/menu/group-110.svg" alt="">
+    <% if (currScore.clue[8] == true && currScore.clue[7] == true ){ %>
+    You have completed this chapter
+    <% } else { %>
+    You haven't completed the hunt on this chapter
+    <% } %></span>
+        <button class="ch-prev"><a href="/en/chapter1">< PREVIOUS</a></button>
+        <button class="ch-next"><a href="/en/chapter3">NEXT ></a></button>
+  </div>
 </section>
 
-    <script src="/javascripts/script.js"></script>
-    <script src="/javascripts/chapter2.js"></script>
-    </body>
+<script src="/javascripts/script.js"></script>
+<script src="/javascripts/chapter2.js"></script>
+</body>
 </html>
