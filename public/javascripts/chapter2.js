@@ -19,7 +19,7 @@ let textArr = [
  <div class="chcounter">1/19</div>`,
 
 `(Age 4-6)
-<div class="chtitle">Tabika KEMASM</div>
+<div class="chtitle">Tabika KEMAS</div>
  Pre-school classes that prepare children for primary school, catering to rural communities. There are 268 Tabikas in Orang Asli villages and interior areas. Under the purview of the Ministry of Rural Development.
  <div class="chcounter">2/19</div>`,
 
@@ -861,7 +861,7 @@ let basicText = new PIXI.Text(textArr[0], textStyle);
 
               document.getElementById("school-prev").disabled = true;
 
-              $('#school-start').click( function (){
+              $('.ch-startfirst').click( function (){
                   textCounter = (textCounter + 1) % textArr.length;
                   $(".info-box").html(textArr[textCounter]);
                   $(".info-box").css("display","block");
@@ -869,10 +869,10 @@ let basicText = new PIXI.Text(textArr[0], textStyle);
                   $('#school-prev').css('display', 'block');
                   clickstate += 1;
                   sekolahAnimation[clickstate]();
-                  $('#school-start').css('display', 'none');
+                  $('.ch-startfirst').css('display', 'none');
               });
 
-              $('#start-again').click( function (){
+              $('.ch-startover').click( function (){
                   textCounter = 1;
                   clickstate = 0;
                   pixiapp.stage.removeChild(elemSekolah20);
@@ -953,7 +953,7 @@ let basicText = new PIXI.Text(textArr[0], textStyle);
                 $(".info-box").html(textArr[textCounter]);
                 document.getElementById("school-prev").disabled = false;
                 document.getElementById("school-next").disabled = false;
-                $('#school-start').css('display', 'none');
+                $('.ch-startfirst').css('display', 'none');
             }
             else if (clueFound == 'clue-8'){
                 $('#rec-8').toggleClass("menu-open");
@@ -967,7 +967,7 @@ let basicText = new PIXI.Text(textArr[0], textStyle);
                 $(".info-box").html(textArr[textCounter]);
                 document.getElementById("school-prev").disabled = false;
                 document.getElementById("school-next").disabled = false;
-                $('#school-start').css('display', 'none');
+                $('.ch-startfirst').css('display', 'none');
             }
 
         }
