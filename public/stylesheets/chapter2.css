@@ -15,6 +15,22 @@ body
   position: absolute;
 }
 
+#school-start {
+  background-image: url(/images/Chapter2-ENG/group-438.svg);
+  border: none;
+  background-color: #ffffff00;
+  background-repeat: no-repeat;
+  font-size: 20px;
+  color: #4c140a;
+  font-family: 'Archer Bold';
+  cursor: pointer;
+  width: 17%;
+  height: 63px;
+  top: 54%;
+  right: 42%;
+  position: absolute;
+}
+
 .ch-2 #school-prev, .ch-2 #school-next {
 	position: absolute;
 	top: 70%;
