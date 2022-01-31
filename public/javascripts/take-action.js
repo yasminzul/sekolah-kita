@@ -1,6 +1,16 @@
 var x = window.matchMedia("(max-width: 500px)")
 
 //INITIAL LOAD
+
+let textcopy = [
+  `This is my dream school, where all students are accepted and celebrated!
+Find out how we can reimagine our schools at sekolahkita.my`,
+  `This is my dream school, where students are prepared for a future they build together.
+Find out how we can reimagine our schools at sekolahkita.my`,
+  `This is my dream school, where our traditions and natural environment are our teachers.
+Find out how we can reimagine our schools at sekolahkita.my`]
+
+
 //start mobile
 if (x.matches){
 
@@ -9,18 +19,18 @@ if (x.matches){
     height: 310
   });
 
-  var textbox = new fabric.Textbox('Pendidikan tanpa batasan!\nKetahui bagaimana dengan layari sekolahkita.my', {
+  var textStyle = {
     left: 65,
     top: 28,
-    width: 200,
-    fontSize: 16,
+    width: 215,
+    fontSize: 14,
     fontFamily: 'Archer Book',
     fontWeight: 'bold',
     borderColor: '#D1C7BA',
     cornerColor: '#D1C7BA',
     cornerSize: 10,
     transparentCorners: false
-  });
+  }
 
   // Mobile overlay
   $('.m-add-stk').click( function (){
@@ -45,6 +55,51 @@ if (x.matches){
     $('.oa-wrapper .flex-item-left').css('background-color', '#00000000');
   });
 
+  function canvasChange(filename)
+  {
+    //load science class
+      $.getJSON(filename, function(scienceClass){
+        //loop through scienceClass.json
+        for (let i = 0; i < scienceClass.length; i++) {
+
+        fabric.Image.fromURL(scienceClass[i].imgURL, function(oImg) {
+          oImg.scaleX = 0.15;
+          oImg.scaleY = 0.15;
+          oImg.set({
+            'top': scienceClass[i].top,
+            'left': scienceClass[i].left,
+            borderColor: '#D1C7BA',
+            cornerColor: '#D1C7BA',
+            cornerSize: 10,
+            transparentCorners: false
+        });
+          canvas.add(oImg);
+        });
+      }
+      //end loop
+              });
+    //end load science class
+  }
+
+  function addImageToCanvas(imageNameURL)
+  {
+      fabric.Image.fromURL(imageNameURL, function(oImg) {
+        // oImg.scaleToWidth(85);
+        oImg.scaleX = 0.15;
+        oImg.scaleY = 0.15;
+        oImg.set({
+          'top': canvas.height/2-40,
+          'left': canvas.width/2-40,
+          borderColor: '#D1C7BA',
+          cornerColor: '#D1C7BA',
+          cornerSize: 10,
+          transparentCorners: false
+      });
+        canvas.add(oImg);
+      });
+  }
+
+
 }
 //end mobile
 
@@ -55,14 +110,6 @@ else{
     width: 620,
     height: 620
   });
-
-let textcopy = [
-  `This is my dream school, where all students are accepted and celebrated!
-Find out how we can reimagine our schools at sekolahkita.my`,
-  `This is my dream school, where students are prepared for a future they build together.
-Find out how we can reimagine our schools at sekolahkita.my`,
-  `This is my dream school, where our traditions and natural environment are our teachers.
-Find out how we can reimagine our schools at sekolahkita.my`]
 
 var textStyle = {
   left: 130,
@@ -76,10 +123,6 @@ var textStyle = {
   cornerSize: 10,
   transparentCorners: false
 }
-
-  var textbox0 = new fabric.Textbox(textcopy[0], textStyle);
-  var textbox1 = new fabric.Textbox(textcopy[1], textStyle);
-  var textbox2 = new fabric.Textbox(textcopy[2], textStyle);
 
 function canvasChange(filename)
 {
@@ -107,8 +150,31 @@ function canvasChange(filename)
   //end load science class
 }
 
+function addImageToCanvas(imageNameURL)
+{
+    fabric.Image.fromURL(imageNameURL, function(oImg) {
+      // oImg.scaleToWidth(85);
+      oImg.scaleX = 0.3;
+      oImg.scaleY = 0.3;
+      oImg.set({
+        'top': canvas.height/2-40,
+        'left': canvas.width/2-40,
+        borderColor: '#D1C7BA',
+        cornerColor: '#D1C7BA',
+        cornerSize: 10,
+        transparentCorners: false
+    });
+      canvas.add(oImg);
+    });
+}
+
+
 }
 //end desktop
+
+var textbox0 = new fabric.Textbox(textcopy[0], textStyle);
+var textbox1 = new fabric.Textbox(textcopy[1], textStyle);
+var textbox2 = new fabric.Textbox(textcopy[2], textStyle);
 
 changeCanvasBG('/images/Bamboo-assets/Bamboo-class-background.PNG')
 canvasChange('/images/Bamboo-assets/bambooClass.json');
@@ -200,23 +266,7 @@ $(document).ready(function(){
 //END INTERACTIONS
 
 //FUNCTIONS FOR BOTH VIEWS
-function addImageToCanvas(imageNameURL)
-{
-    fabric.Image.fromURL(imageNameURL, function(oImg) {
-      // oImg.scaleToWidth(85);
-      oImg.scaleX = 0.3;
-      oImg.scaleY = 0.3;
-      oImg.set({
-        'top': canvas.height/2-40,
-        'left': canvas.width/2-40,
-        borderColor: '#D1C7BA',
-        cornerColor: '#D1C7BA',
-        cornerSize: 10,
-        transparentCorners: false
-    });
-      canvas.add(oImg);
-    });
-}
+
 
 function changeCanvasBG(imageURL)
 {

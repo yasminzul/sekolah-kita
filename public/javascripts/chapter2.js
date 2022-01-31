@@ -846,6 +846,7 @@ function setup(loader, resources)
           clickstate += 1;
           sekolahAnimation[clickstate]();
           $('#school-start').css('display', 'none');
+          $('.ch-2').css('background-color','#49463f');
       });
 
       $('#start-again').click( function (){
@@ -861,6 +862,7 @@ function setup(loader, resources)
           $(".info-box").html(textArr[textCounter]);
           document.getElementById("school-prev").disabled = true;
           document.getElementById("school-next").disabled = false;
+          $('.ch-2').css('background-color','#f9f2d5');
       });
 
       $('#school-next').click( function (){
@@ -930,6 +932,7 @@ function setup(loader, resources)
         document.getElementById("school-prev").disabled = false;
         document.getElementById("school-next").disabled = false;
         $('#school-start').css('display', 'none');
+        $('.ch-2').css('background-color','#49463f');
     }
     else if (clueFound == 'clue-8'){
         $('#rec-8').toggleClass("menu-open");
@@ -944,6 +947,7 @@ function setup(loader, resources)
         document.getElementById("school-prev").disabled = false;
         document.getElementById("school-next").disabled = false;
         $('#school-start').css('display', 'none');
+        $('.ch-2').css('background-color','#49463f');
     }
 
 }
