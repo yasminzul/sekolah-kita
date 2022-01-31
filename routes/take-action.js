@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
   clue: [false, false, false, false, false, false, false, false, false, false, false, false],
   chapterAccess:1,
   cluesFound:0 });
-  res.render('take-action', { title: 'Take Action', currScore: scoreCard.cluesFound });
+  res.render('take-action', { title: 'Take Action', currScore: scoreCard });
 });
 
 module.exports = router;
