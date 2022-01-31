@@ -15,6 +15,37 @@ body
   position: absolute;
 }
 
+#school-start {
+  background-image: url(/images/Chapter2-ENG/group-438.svg);
+  border: none;
+  background-color: #ffffff00;
+  background-repeat: no-repeat;
+  font-size: 20px;
+  color: #4c140a;
+  font-family: 'Archer Bold';
+  cursor: pointer;
+  width: 240px;
+  height: 63px;
+  top: 54%;
+  right: 42%;
+  position: absolute;
+}
+
+#start-again {
+  background-image: url(/images/Chapter2-ENG/group-438.svg);
+  border: none;
+  background-color: #ffffff00;
+  width: 240px;
+  margin-left: 17%;
+  height: 63px;
+  transform: scale(0.8);
+  background-repeat: no-repeat;
+  font-size: 20px;
+  color: #4c140a;
+  font-family: 'Archer Bold';
+  cursor: pointer;
+}
+
 .ch-2 #school-prev, .ch-2 #school-next {
 	position: absolute;
 	top: 70%;
@@ -60,23 +91,7 @@ body
   height: 25%;
 }
 
-.ch-startfirst {
-  background-image: url(/images/Chapter2-ENG/group-438.svg);
-  border: none;
-  background-color: #ffffff00;
-  background-repeat: no-repeat;
-  font-size: 20px;
-  color: #4c140a;
-  font-family: 'Archer Bold';
-  cursor: pointer;
-  width: 17%;
-  height: 63px;
-  top: 54%;
-  right: 42%;
-  position: absolute;
-}
-
-.ch-startover {
+/*.ch-startover {
   background-image: url(/images/Chapter2-ENG/group-438.svg);
   border: none;
   background-color: #ffffff00;
@@ -89,7 +104,7 @@ body
   color: #4c140a;
   font-family: 'Archer Bold';
   cursor: pointer;
-}
+}*/
 
 
 .chtitle.finished {
@@ -130,19 +145,37 @@ body
   transform: scale(0.7);
 }
 
+@media (max-width: 1200px) and (min-width: 801px) {
+  #school-start, #start-again {
+    right: 34%;
+  }
+
+  .ch-2 #school-prev, .ch-2 #school-next {
+    top: 67%;
+  }
+
+  .ch-2 #school-next {
+    right: 5%;
+  }
+  .ch-2 #school-prev {
+    right: 31%;
+  }
+}
+
+
 @media (max-width: 800px) {
   .info-box {
     width: 92%;
-    height: 40%;
-    background-color: #E6E2DD;
-    padding: 12% 4%;
-    overflow-x: scroll;
-    position: absolute;
-    bottom: 0;
-    right: inherit;
-    top: inherit;
-    display: none;
-    font-size: 12px;
+  height: 40%;
+  background-color: #E6E2DD;
+  padding: 12% 4%;
+  overflow-x: scroll;
+  position: absolute;
+  bottom: 0;
+  right: inherit;
+  top: inherit;
+  display: none;
+  font-size: 12px;
   }
 
   .ch-startfirst {
@@ -166,6 +199,18 @@ body
     left: inherit;
   }
 
+  .chcounter {
+    bottom: 7%;
+  }
+
+  #start-again {
+    width: 241px;
+    height: 65px;
+    margin-left: 0;
+    position: absolute;
+    right: 20%;
+  }
+
   .info-box.finished {
     top: inherit;
     right: 0;
@@ -173,8 +218,10 @@ body
     bottom: 0;
   }
 
-  .chcounter {
-    bottom: 7%;
+  #school-start {
+    width: 240px;
+    right: 18%;
+    top: 65%;
   }
 
   .ch-startover {
