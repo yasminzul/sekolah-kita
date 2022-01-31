@@ -148,15 +148,16 @@ body
 @media (max-width: 800px) {
   .info-box {
     width: 92%;
-    height: 40%;
-    background-color: #E6E2DD;
-    padding: 4%;
-    position: absolute;
-    bottom: 0;
-    right: inherit;
-    top: inherit;
-    display: none;
-    font-size: 12px;
+  height: 40%;
+  background-color: #E6E2DD;
+  padding: 12% 4%;
+  overflow-x: scroll;
+  position: absolute;
+  bottom: 0;
+  right: inherit;
+  top: inherit;
+  display: none;
+  font-size: 12px;
   }
 
   .ch-2 #school-prev {
@@ -172,6 +173,18 @@ body
     top: inherit;
     bottom: 2%;
     left: inherit;
+  }
+
+  .chcounter {
+    bottom: 7%;
+  }
+
+  #start-again {
+    width: 241px;
+    height: 65px;
+    margin-left: 0;
+    position: absolute;
+    right: 20%;
   }
 
   .info-box.finished {
