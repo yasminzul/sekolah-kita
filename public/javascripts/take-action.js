@@ -37,24 +37,24 @@ if (x.matches){
 
   $('.m-add-stk').click( function (){
     $('.add-stickers').addClass('overlay');
-    $('.oa-wrapper .flex-item-left').css('background-color', '#0000005e');
+    $('.ta-wrapper .flex-item-left').css('background-color', '#0000005e');
   });
 
   $('.add-stickers').click( function (){
     $('.add-stickers').removeClass('overlay');
-    $('.oa-wrapper .flex-item-left').css('background-color', '#00000000');
+    $('.ta-wrapper .flex-item-left').css('background-color', '#00000000');
   });
 
   $('.m-choose-bg').click( function (){
       $('.choose-badge').addClass('overlay');
       $('body').css('overflow-y', 'hidden');
-      $('.oa-wrapper .flex-item-left').css('background-color', '#0000005e');
+      $('.ta-wrapper .flex-item-left').css('background-color', '#0000005e');
   });
 
   $('.choose-badge').click( function (){
     $('.choose-badge').removeClass('overlay');
     $('body').css('overflow-y', 'scroll');
-    $('.oa-wrapper .flex-item-left').css('background-color', '#00000000');
+    $('.ta-wrapper .flex-item-left').css('background-color', '#00000000');
   });
 
   function canvasChange(filename)

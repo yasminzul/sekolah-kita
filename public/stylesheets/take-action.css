@@ -130,10 +130,10 @@ button:active
 	}
 	.oa-col {
 		width: 100%;
-		margin: 2em 2em;
+		margin: 7em 2em;
 	}
 	.add-stickers, .choose-badge {
-		visibility: 0;
+		display: none;
 	}
 
 	.choose-badge {
@@ -141,17 +141,17 @@ button:active
 	}
 
 	.choose-badge button {
-		height: 82px;
-	    width: 82px;
-	    padding: 5px;
-	   	margin: 4px;
+		height: 100px;
+		width: 100px;
+		padding: 5px;
+		margin: 2% 0 2% 5%;
 	}
 
 	.add-stickers.overlay {
 		display: block;
 		position: absolute;
 		background-color: #E6E2DD;
-	    top: 14%;
+	    top: 11%;
 	    width: 100%;
 	    left: 0;
 	    transform: translateY(-1%);
@@ -163,7 +163,7 @@ button:active
 		display: block;
 		position: absolute;
 		background-color: #E6E2DD;
-	    top: 14%;
+	    top: 8%;
 	    width: 100%;
 	    height: 90vh;
 	    left: 0;
