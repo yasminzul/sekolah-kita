@@ -1,4 +1,8 @@
 $(document).ready(function() {
+  $('#back-btn').click(function() {
+    history.back();
+  });
+
   $('button.menu-btn, button.close-btn').click(function() {
     $('.menu-nav').toggleClass("menu-open");
   });

@@ -33,6 +33,8 @@ if (x.matches){
   }
 
   // Mobile overlay
+  $('.choose-badge').css('display','hidden');
+
   $('.m-add-stk').click( function (){
     $('.add-stickers').addClass('overlay');
     $('.oa-wrapper .flex-item-left').css('background-color', '#0000005e');
