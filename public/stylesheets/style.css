@@ -695,7 +695,7 @@ input:checked + .slider:before {
 
 .hero-center .menu-inner {
   height: 118px;
-  width: 129px;
+  width: 120px;
   margin-bottom: 0.2em;
 }
 
@@ -959,7 +959,7 @@ input:checked + .slider:before {
 
   .hero-center .menu-inner {
     height: 118px;
-    width: 124px;
+    width: 120px;
     margin-top: 6%;
     margin-left: 6%;
     margin-bottom: 0.2em;
