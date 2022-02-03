@@ -10,6 +10,43 @@ Find out how we can reimagine our schools at sekolahkita.my`,
   `This is my dream school, where our traditions and natural environment are our teachers.
 Find out how we can reimagine our schools at sekolahkita.my`]
 
+if (x.matches){
+
+    var textStyle = {
+      left: 58,
+      top: 20,
+      width: 215,
+      fontSize: 13,
+      fontFamily: 'Archer Book',
+      fontWeight: 'bold',
+      borderColor: '#D1C7BA',
+      cornerColor: '#D1C7BA',
+      cornerSize: 10,
+      transparentCorners: false
+    }
+
+}
+else {
+
+  var textStyle = {
+    left: 130,
+    top: 40,
+    width: 380,
+    fontSize: 26,
+    fontFamily: 'Archer Book',
+    fontWeight: 'bold',
+    borderColor: '#D1C7BA',
+    cornerColor: '#D1C7BA',
+    cornerSize: 10,
+    transparentCorners: false
+  }
+}
+
+
+var textbox0 = new fabric.Textbox(textcopy[0], textStyle);
+var textbox1 = new fabric.Textbox(textcopy[1], textStyle);
+var textbox2 = new fabric.Textbox(textcopy[2], textStyle);
+
 
 //start mobile
 if (x.matches){
@@ -18,19 +55,6 @@ if (x.matches){
     width: 310,
     height: 310
   });
-
-  var textStyle = {
-    left: 65,
-    top: 28,
-    width: 215,
-    fontSize: 14,
-    fontFamily: 'Archer Book',
-    fontWeight: 'bold',
-    borderColor: '#D1C7BA',
-    cornerColor: '#D1C7BA',
-    cornerSize: 10,
-    transparentCorners: false
-  }
 
   // Mobile overlay
   $('.choose-badge').css('display','hidden');
@@ -101,7 +125,9 @@ if (x.matches){
       });
   }
 
-
+  changeCanvasBG('/images/Bamboo-assets/Bamboo-class-background.PNG')
+  canvasChange('/images/Bamboo-assets/bambooClass_mobile.json');
+  canvas.add(textbox0);
 }
 //end mobile
 
@@ -113,18 +139,6 @@ else{
     height: 620
   });
 
-var textStyle = {
-  left: 130,
-  top: 40,
-  width: 380,
-  fontSize: 26,
-  fontFamily: 'Archer Book',
-  fontWeight: 'bold',
-  borderColor: '#D1C7BA',
-  cornerColor: '#D1C7BA',
-  cornerSize: 10,
-  transparentCorners: false
-}
 
 function canvasChange(filename)
 {
@@ -170,17 +184,13 @@ function addImageToCanvas(imageNameURL)
     });
 }
 
+changeCanvasBG('/images/Bamboo-assets/Bamboo-class-background.PNG')
+canvasChange('/images/Bamboo-assets/bambooClass.json');
+canvas.add(textbox0);
 
 }
 //end desktop
 
-var textbox0 = new fabric.Textbox(textcopy[0], textStyle);
-var textbox1 = new fabric.Textbox(textcopy[1], textStyle);
-var textbox2 = new fabric.Textbox(textcopy[2], textStyle);
-
-changeCanvasBG('/images/Bamboo-assets/Bamboo-class-background.PNG')
-canvasChange('/images/Bamboo-assets/bambooClass.json');
-canvas.add(textbox0);
 
 //END INITIAL LOAD
 
@@ -189,28 +199,49 @@ $(document).ready(function(){
 
   $('#preload-science').click( function(){
     canvas.clear();
-    const scienceJSON = '/images/Science-assets/scienceClass.json';
     const scienceBG = '/images/Science-assets/Science-classroom-background.png';
     changeCanvasBG(scienceBG)
-    canvasChange(scienceJSON);
+    if (x.matches)
+    {
+      const scienceJSON = '/images/Science-assets/scienceClass_mobile.json';
+      canvasChange(scienceJSON);
+    }
+    else {
+      const scienceJSON = '/images/Science-assets/scienceClass.json';
+      canvasChange(scienceJSON);
+    }
     canvas.add(textbox1);
   });
 
   $('#preload-bamboo').click( function(){
     canvas.clear();
-    const bambooJSON = '/images/Bamboo-assets/bambooClass.json';
     const bambooBG = '/images/Bamboo-assets/Bamboo-class-background.PNG';
-    changeCanvasBG(bambooBG)
-    canvasChange(bambooJSON);
+    changeCanvasBG(bambooBG);
+    if (x.matches)
+    {
+      const bambooJSON = '/images/Bamboo-assets/bambooClass_mobile.json';
+      canvasChange(bambooJSON);
+    }
+    else {
+      const bambooJSON = '/images/Bamboo-assets/bambooClass.json';
+      canvasChange(bambooJSON);
+    }
     canvas.add(textbox0);
   });
 
   $('#preload-nature').click( function(){
     canvas.clear();
-    const natureJSON = '/images/Nature-assets/natureClass.json';
     const natureBG = '/images/Nature-assets/Nature-classroom-background.PNG';
-    changeCanvasBG(natureBG)
-    canvasChange(natureJSON);
+    changeCanvasBG(natureBG);
+    if (x.matches)
+    {
+      const natureJSON = '/images/Nature-assets/natureClass_mobile.json';
+      canvasChange(natureJSON);
+    }
+    else {
+      const natureJSON = '/images/Nature-assets/natureClass.json';
+      canvasChange(natureJSON);
+    }
     canvas.add(textbox2);
   });
 
@@ -224,7 +255,7 @@ $(document).ready(function(){
         addImageToCanvas(imageSource);
     });
 
-    $('#delete-sticker').click( function (){
+    $('.delete-sticker').click( function (){
       var selected = canvas.getActiveObjects(),
       selGroup = new fabric.ActiveSelection(selected, {
         canvas: canvas
@@ -242,7 +273,7 @@ $(document).ready(function(){
       canvas.setBackgroundColor('#EAE8E3', canvas.renderAll.bind(canvas));
     });
 
-    $('#add-text').click( function (){
+    $('.add-text').click( function (){
       var newTextbox = new fabric.Textbox('Lorem ipsum dolor sit amet,\nconsectetur adipiscing elit', {
         left: 65,
         top: 28,
@@ -258,7 +289,7 @@ $(document).ready(function(){
       canvas.add(newTextbox);
     });
 
-    $('#download-badge').click( function (){
+    $('.download-badge').click( function (){
         $("#customize-area").get(0).toBlob(function(blob){
 		        saveAs(blob, "sekolahkita-badge.png");
 	         });
