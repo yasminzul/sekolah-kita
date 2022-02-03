@@ -106,15 +106,17 @@
 
 .ch-startfirst {
   background-image: url(/images/Chapter2-ENG/group-438.svg);
+	background-size: cover;
   border: none;
   background-color: #ffffff00;
   background-repeat: no-repeat;
-  font-size: 20px;
+  font-size: 15px;
   color: #4c140a;
   font-family: 'Archer Bold';
   cursor: pointer;
   width: 50%;
-  height: 63px;
+  height: 58px;
+	padding-top: 8px;
   margin-top: 0.5em;
   float: right;
   text-decoration: none;
@@ -146,7 +148,7 @@
 	}
 
 	.ch-startfirst {
-		width: 241px;
+		width: 230px;
 	    display: block;
 	    margin: 0 auto;
 	    float: none;
