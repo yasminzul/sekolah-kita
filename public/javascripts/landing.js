@@ -114,14 +114,14 @@ loader.load(setup);
     notebookHSprite.buttonMode = true;
 
     const notebookTextures = [];
-    for (let i=0; i < 55; i++)
+    for (let i=0; i < 40; i++)
     {
       const notebookTexture = PIXI.Texture.from(`NOTEBOOK_000${i}.png`);
       notebookTextures.push(notebookTexture);
     }
 
     const notebookSprite = new PIXI.AnimatedSprite(notebookTextures);
-    notebookSprite.scale.set(0.7);
+    notebookSprite.scale.set(1.05);
     notebookSprite.anchor.set(0.5);
     notebookSprite.angle = 3.5;
     notebookSprite.position.set((pixiapp.screen.width / 2) - 250, (pixiapp.screen.height / 2) + 110);

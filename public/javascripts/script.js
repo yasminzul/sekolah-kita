@@ -31,7 +31,7 @@ $(document).ready(function() {
     $('#score-total').toggleClass("menu-open");
   });
 
-  $('#share-close, #share-open').click(function() {
+  $('#share-close, .share-open').click(function() {
     $('#share').toggleClass("menu-open");
   });
 

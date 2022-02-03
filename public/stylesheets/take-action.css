@@ -115,7 +115,7 @@ button:active
 	background-color: #FFB806;
 }
 
-#download-badge img, #share-item img {
+.download-badge img, #share-item img {
 	margin-right: 11px;
 }
 
