@@ -26,6 +26,7 @@ let textArr = [
 
 `(Age 7-12)
 <div class="chtitle">Sekolah Kebangsaan</div>
+Public primary schools where the medium of instruction is usually Bahasa Malaysia.
 <div class="chcounter">4/19</div>`,
 
 `(Age 7-12)
@@ -50,6 +51,7 @@ let textArr = [
 
 `(Age 13-17)
 <div class="chtitle">Sekolah Menengah Kebangsaan</div>
+Public secondary schools where the medium of instruction is usually Bahasa Malaysia.
 <div class="chcounter">9/19</div>`,
 
 `(Age 13-17)
@@ -83,6 +85,7 @@ let textArr = [
 
 `(Age 18+)
 <div class="chtitle">Tertiary education</div>
+Many Orang Asli students dream of higher education, but often have to rely on scholarships or assistance programmes, even to enrol in subsidised government universities.
 <div class="chcounter">16/19</div>`,
 
 `(Mature Age)
