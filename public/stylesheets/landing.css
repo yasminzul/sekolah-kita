@@ -46,7 +46,9 @@ span#loading
 
 @media (max-width: 800px) {
   span#loading {
-    top: 40%;
+    top: 37%;
     font-size: 35px;
+    left: 65%;
+    width: 26%;
   }
 }

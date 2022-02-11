@@ -61,11 +61,15 @@
                    <% if (currScore.clue[10] == true){ %>
                    You have completed this chapter
                    <% } else { %>
-                   You haven't completed the hunt on this chapter
+                   You have not found all the solutions in this chapter
                    <% } %></span>
                    <div class="chapter-btns">
                      <button class="ch-prev"><a href="/en/chapter4">< PREVIOUS</a></button>
-                     <button class="ch-next"><a href="/en/resources">NEXT ></a></button>
+                     <% if (currScore.cluesFound == 12) {%>
+                     <button class="ch-next"><a href="/en/take-action">NEXT ></a></button>
+                     <%} else { %>
+                      <button class="ch-next access-denied">NEXT ></button>
+                    <%} %>
                    </div>
                  </div>
 

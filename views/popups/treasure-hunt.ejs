@@ -3,6 +3,7 @@
       <div class="pop">
         <p> You've found <%= currScore.cluesFound %> solution(s)! <%= currScore.cluesFound %> more to go! Keep track of your progress with this scorecard here.</p>
         <p>Find all the solutions to unlock your reward</p>
+        <p>Read the 12 recommended solutions in <a href="">this research paper.</a></p>
         <div class="scorecard-display">
           <p>YOUR SCORECARD:</p>
           <div>
@@ -21,8 +22,8 @@
             <img class="<%= currScore.cluesFound > 10 ? 'score-coin show' : 'score-coin dim' %>" src="/images/menu/group-369.svg" alt="">
             <img class="<%= currScore.cluesFound > 11 ? 'score-coin show' : 'score-coin dim' %>" src="/images/menu/group-369.svg" alt="">
           </div>
-          
-          
+
+
       </div>
         <button class="pop-btn hunt-incomplete-close">Understood!</button>
       </div>
@@ -47,7 +48,7 @@
               <img class="score-coin" src="/images/menu/group-369.svg" alt="">
               <img class="score-coin" src="/images/menu/group-369.svg" alt="">
             </div>
-            
+
           </div>
           <p> You’ve done it! You’ve learned the 12 key ways we can improve education access for Orang Asli children! Your reward is now unlocked.</p>
 
@@ -63,17 +64,19 @@
 <div class="pop-container pop-up" id="class-session">
     <div class="pop">
       <h3>Class is in session!</h3>
-      
-      <p>According to experts, there are X key ways we can improve education access for Orang Asli children. Prove you’ve learned about all six by tapping on them in the text, like this:</p>
+
+      <p>According to research, there are 12 key ways we can improve education access for Orang Asli children. You can learn about them by reading all five chapters of this interactive lesson. Prove you’ve learned about all 12 by tapping on them in the text, like this:</p>
 
       <div class="scorecard-display" id="session-score">
         <span id="hl-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim error perspiciatis amet fugiat quis natus quam aliquam corporis deleniti magnam officiis, quo accusamus id rem aut culpa voluptate iusto tempore! </span>
         <img class="score-coin" src="/images/menu/group-369.svg" alt="">
-        
+
         <div id="f-t">Find and tap! <img src="/images/chapters/group-235.svg" alt=""></div>
       </div>
 
       <p>When you’ve found all six, you’ll <strong>unlock a reward</strong> that you can share with your friends! Happy studying!</p>
+
+      <p>Estimated lesson duration: 25 minutes</p>
 
       <button class="pop-btn hunt-incomplete-close">Got it!</button>
     </div>
@@ -87,8 +90,12 @@
       <p><strong>Recommendation 1: There must be a greater focus on learning and addressing underlying challenges instead of symptomatic issues.</strong></p>
       <p>The general school culture must prioritise learning instead of examinations or rote memorisation. High-quality education that can motivate and nurture students is needed to produce Orang Asli students who are independent learners. Policies and programmes need to address underlying issues instead of only dealing with symptomatic problems at a surface level which do not resolve or eradicate these issues.</p>
 
+        <% if(currScore.cluesFound != 12){ %>
       <button class="pop-btn grey">Continue Reading</button>
       <button class="pop-btn hunt-incomplete-close">Check my scorecard</button>
+        <% } else { %>
+          <button class="pop-btn hunt-incomplete-close">Check my scorecard</button>
+          <% } %>
     </div>
 </div>
 
@@ -98,8 +105,12 @@
       <p>It is very important that indigenous cultures and history be included in the mainstream curriculum, and that Orang Asli should not be represented as an exotic “other”, but celebrated as part of the diversity of peoples in Malaysia. Schoolchildren should be taught about different Orang Asli sub-ethnic groups, where they live, their contribution to nation-making, their arts, and their cultures that are closely linked to the natural environment.</p>
       <p>The Orang Asli's rights to self-determination as indigenous peoples should also be included in mainstream education.</p>
 
-      <button class="pop-btn grey">Continue Reading</button>
-      <button class="pop-btn hunt-incomplete-close">Check my scorecard</button>
+      <% if(currScore.cluesFound != 12){ %>
+    <button class="pop-btn grey">Continue Reading</button>
+    <button class="pop-btn hunt-incomplete-close">Check my scorecard</button>
+      <% } else { %>
+        <button class="pop-btn hunt-incomplete-close">Check my scorecard</button>
+        <% } %>
     </div>
 </div>
 
@@ -108,8 +119,12 @@
       <p><strong>Recommendation 3: Existing programmes must be monitored and evaluated to ensure their efficient and effective delivery and implementation.</strong></p>
       <p>Regular monitoring, and mid- and post-programme evaluations are needed to ensure that programmes remain on track and are adjusted for new issues that may arise. This monitoring and evaluation needs to be considered at the beginning of the original programme design.</p>
 
-      <button class="pop-btn grey">Continue Reading</button>
-      <button class="pop-btn hunt-incomplete-close">Check my scorecard</button>
+      <% if(currScore.cluesFound != 12){ %>
+    <button class="pop-btn grey">Continue Reading</button>
+    <button class="pop-btn hunt-incomplete-close">Check my scorecard</button>
+      <% } else { %>
+        <button class="pop-btn hunt-incomplete-close">Check my scorecard</button>
+        <% } %>
     </div>
 </div>
 
@@ -118,8 +133,12 @@
       <p><strong>Recommendation 4: Teachers and school leaders who are equipped and capable of delivering quality education for Orang Asli students need to be entrusted with greater autonomy and balanced accountability.</strong></p>
       <p>Teachers and school leaders who are able to enhance the quality of education for Orang Asli students should be given the freedom to do so, as they could be role models that drive change. However, this autonomy needs to be balanced with accountability. These teachers and school leaders also need to be further trained and equipped to fully leverage this autonomy to deliver effective teaching and learning along with the efficient allocation of resources.</p>
 
-      <button class="pop-btn grey">Continue Reading</button>
-      <button class="pop-btn hunt-incomplete-close">Check my scorecard</button>
+      <% if(currScore.cluesFound != 12){ %>
+    <button class="pop-btn grey">Continue Reading</button>
+    <button class="pop-btn hunt-incomplete-close">Check my scorecard</button>
+      <% } else { %>
+        <button class="pop-btn hunt-incomplete-close">Check my scorecard</button>
+        <% } %>
     </div>
 </div>
 
@@ -129,8 +148,12 @@
       <p>Teachers who are posted to schools with Orang Asli students should be provided with training to introduce them to the history and culture of the particular Orang Asli sub-ethnic group they will be teaching. This preparation module could also include implicit bias training to create self- awareness of learned racial biases against Orang Asli.</p>
       <p>Teachers who are posted in Orang Asli schools often take up many different responsibilities outside the classroom, such as taking care of students after school and maintaining the school’s infrastructure. These teachers should be given more support and increased allowances for these added responsibilities. Their living conditions and teaching infrastructure could also be improved.</p>
 
-      <button class="pop-btn grey">Continue Reading</button>
-      <button class="pop-btn hunt-incomplete-close">Check my scorecard</button>
+      <% if(currScore.cluesFound != 12){ %>
+    <button class="pop-btn grey">Continue Reading</button>
+    <button class="pop-btn hunt-incomplete-close">Check my scorecard</button>
+      <% } else { %>
+        <button class="pop-btn hunt-incomplete-close">Check my scorecard</button>
+        <% } %>
     </div>
 </div>
 
@@ -141,8 +164,12 @@
       <p>Other knowledge sharing initiatives could include annual teaching conferences, to foster networking and support among teachers; and user-friendly online knowledge sharing platforms as a resource for teachers.</p>
       <p>Teachers often use their private funds to create innovative teaching tools. They should be supported, and a teaching and learning fund be made available to teachers. Recognition should also be given to teachers and schools for their best practices.</p>
 
-      <button class="pop-btn grey">Continue Reading</button>
-      <button class="pop-btn hunt-incomplete-close">Check my scorecard</button>
+      <% if(currScore.cluesFound != 12){ %>
+    <button class="pop-btn grey">Continue Reading</button>
+    <button class="pop-btn hunt-incomplete-close">Check my scorecard</button>
+      <% } else { %>
+        <button class="pop-btn hunt-incomplete-close">Check my scorecard</button>
+        <% } %>
     </div>
 </div>
 
@@ -151,8 +178,12 @@
       <p><strong>Recommendation 7: Trust and collaboration between schools and Orang Asli communities needs to be built as Orang Asli parents and their communities are important partners in education.</strong></p>
       <p>This is critical in creating a supportive environment for Orang Asli children. Schools and communities should have open communication and work collaboratively. Schools can also draw upon the community’s expertise and local knowledge as part of the learning experience for their students.</p>
 
-      <button class="pop-btn grey">Continue Reading</button>
-      <button class="pop-btn hunt-incomplete-close">Check my scorecard</button>
+      <% if(currScore.cluesFound != 12){ %>
+    <button class="pop-btn grey">Continue Reading</button>
+    <button class="pop-btn hunt-incomplete-close">Check my scorecard</button>
+      <% } else { %>
+        <button class="pop-btn hunt-incomplete-close">Check my scorecard</button>
+        <% } %>
     </div>
 </div>
 
@@ -162,8 +193,12 @@
       <p>Support and recognition should be given to PDKs for their important role in community education. PDKs provide preschool education, after-school programmes and in some cases alternative schooling for children without access to public schools or those who have dropped out. Some PDKs also provide learning opportunities for adults in the community.</p>
       <p>Support can be in the form of funding and resource assistance to PDKs, including infrastructure such as libraries, computers and reliable internet connection. However, their autonomy should remain an important feature of their governance structure.</p>
 
-      <button class="pop-btn grey">Continue Reading</button>
-      <button class="pop-btn hunt-incomplete-close">Check my scorecard</button>
+      <% if(currScore.cluesFound != 12){ %>
+    <button class="pop-btn grey">Continue Reading</button>
+    <button class="pop-btn hunt-incomplete-close">Check my scorecard</button>
+      <% } else { %>
+        <button class="pop-btn hunt-incomplete-close">Check my scorecard</button>
+        <% } %>
     </div>
 </div>
 
@@ -172,8 +207,12 @@
       <p><strong>Recommendation 9: Good quality preschool education needs to be provided based on learning through play, social interaction, and their environment.</strong></p>
       <p>Orang Asli students without access to preschools are at a disadvantage when they enter Standard 1, as the curriculum assumes that students can already read, write, and count. Teachers have to pay special attention to teach them these basic skills, but this may not be possible given large class sizes. Students who attend preschool may also be more confident in their abilities and are able to transition to schooling life better. There are many villages without access to preschools and the founding of more community-based learning centres (PDK) could play an important role in providing preschool education for Orang Asli children.</p>
 
-      <button class="pop-btn grey">Continue Reading</button>
-      <button class="pop-btn hunt-incomplete-close">Check my scorecard</button>
+      <% if(currScore.cluesFound != 12){ %>
+    <button class="pop-btn grey">Continue Reading</button>
+    <button class="pop-btn hunt-incomplete-close">Check my scorecard</button>
+      <% } else { %>
+        <button class="pop-btn hunt-incomplete-close">Check my scorecard</button>
+        <% } %>
     </div>
 </div>
 
@@ -183,8 +222,12 @@
       <p>This ensures that their cultures and views are incorporated in policymaking. Education issues and challenges should be addressed with Orang Asli parents and communities at the school, state, and national levels.</p>
       <p>The creation of an Orang Asli education council comprising Orang Asli leaders, education policymakers, principals, teachers, and other relevant stakeholders to govern and monitor the progress of policy and programmes for children would help to ensure voices of the Orang Asli are fully taken into account and are involved in the close monitoring of any programmes.</p>
 
-      <button class="pop-btn grey">Continue Reading</button>
-      <button class="pop-btn hunt-incomplete-close">Check my scorecard</button>
+      <% if(currScore.cluesFound != 12){ %>
+    <button class="pop-btn grey">Continue Reading</button>
+    <button class="pop-btn hunt-incomplete-close">Check my scorecard</button>
+      <% } else { %>
+        <button class="pop-btn hunt-incomplete-close">Check my scorecard</button>
+        <% } %>
     </div>
 </div>
 
@@ -193,8 +236,12 @@
       <p><strong>Recommendation 11: Create a strength-based discourse to shift away from the current deficit discourse on Orang Asli.</strong></p>
       <p>Orang Asli students’ high dropout rate and gap in educational achievement are often attributed to their culture and way of life. All stakeholders need to move away from this 'deficit discourse', and instead adopt a strength-based framing that values Orang Asli culture as an asset. This includes shifting to culturally responsive teaching methods that draw on the students' cultural context to make learning relevant and effective.</p>
 
-      <button class="pop-btn grey">Continue Reading</button>
-      <button class="pop-btn hunt-incomplete-close">Check my scorecard</button>
+      <% if(currScore.cluesFound != 12){ %>
+    <button class="pop-btn grey">Continue Reading</button>
+    <button class="pop-btn hunt-incomplete-close">Check my scorecard</button>
+      <% } else { %>
+        <button class="pop-btn hunt-incomplete-close">Check my scorecard</button>
+        <% } %>
     </div>
 </div>
 
@@ -206,7 +253,11 @@
       <p>At the village level, basic amenities like electricity and clean water are vital.</p>
       <p>The cooperation of NGOs and other charitable foundations are also needed in this effort. Information flow and transparency on the availability of assistance also need to be addressed so that parents and students are aware of and have access to the assistance and resources available to them.</p>
 
-      <button class="pop-btn grey">Continue Reading</button>
-      <button class="pop-btn hunt-incomplete-close">Check my scorecard</button>
+      <% if(currScore.cluesFound != 12){ %>
+    <button class="pop-btn grey">Continue Reading</button>
+    <button class="pop-btn hunt-incomplete-close">Check my scorecard</button>
+      <% } else { %>
+        <button class="pop-btn hunt-incomplete-close">Check my scorecard</button>
+        <% } %>
     </div>
 </div>
