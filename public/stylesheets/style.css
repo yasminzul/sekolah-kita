@@ -332,13 +332,13 @@ input:checked + .slider:before {
     margin-top: 0em;
 }
 
-.pop-container.left:before {
+/*.pop-container.left:before {
     content: '\25b2';
     position: absolute;
     top: -2%;
     right: 6%;
     color: #E6E2DD;
-}
+}*/
 
 .pop-container {
     height: 100%;
@@ -873,7 +873,7 @@ input:checked + .slider:before {
   }
   .menu-btns {
     display: flex;
-    margin-bottom: 2em;
+    margin-bottom: 8em;
     align-items: center;
   }
   .ch-complete {
@@ -976,6 +976,11 @@ input:checked + .slider:before {
   .hero-center h3 {
     font-size: 35px;
     width: 70%;
+  }
+
+  .scorecard-display {
+    width: 75%;
+    margin: 0 auto;
   }
 
 }
