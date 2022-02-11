@@ -51,7 +51,7 @@ var textbox2 = new fabric.Textbox(textcopy[2], textStyle);
 //start mobile
 if (x.matches){
 
-  var canvas = new fabric.Canvas('customize-area', {
+  var canvasM = new fabric.Canvas('customize-area', {
     width: 310,
     height: 310
   });
@@ -99,7 +99,7 @@ if (x.matches){
             cornerSize: 10,
             transparentCorners: false
         });
-          canvas.add(oImg);
+          canvasM.add(oImg);
         });
       }
       //end loop
@@ -114,27 +114,27 @@ if (x.matches){
         oImg.scaleX = 0.15;
         oImg.scaleY = 0.15;
         oImg.set({
-          'top': canvas.height/2-40,
-          'left': canvas.width/2-40,
+          'top': canvasM.height/2-40,
+          'left': canvasM.width/2-40,
           borderColor: '#D1C7BA',
           cornerColor: '#D1C7BA',
           cornerSize: 10,
           transparentCorners: false
       });
-        canvas.add(oImg);
+        canvasM.add(oImg);
       });
   }
 
   changeCanvasBG('/images/Bamboo-assets/Bamboo-class-background.PNG')
   canvasChange('/images/Bamboo-assets/bambooClass_mobile.json');
-  canvas.add(textbox0);
+  canvasM.add(textbox0);
 }
 //end mobile
 
 //start desktop
 else{
 
-  var canvas = new fabric.Canvas('customize-area', {
+  var canvasD = new fabric.Canvas('customize-area', {
     width: 620,
     height: 620
   });
@@ -158,7 +158,7 @@ function canvasChange(filename)
           cornerSize: 10,
           transparentCorners: false
       });
-        canvas.add(oImg);
+        canvasD.add(oImg);
       });
     }
     //end loop
@@ -173,20 +173,20 @@ function addImageToCanvas(imageNameURL)
       oImg.scaleX = 0.3;
       oImg.scaleY = 0.3;
       oImg.set({
-        'top': canvas.height/2-40,
-        'left': canvas.width/2-40,
+        'top': canvasD.height/2-40,
+        'left': canvasD.width/2-40,
         borderColor: '#D1C7BA',
         cornerColor: '#D1C7BA',
         cornerSize: 10,
         transparentCorners: false
     });
-      canvas.add(oImg);
+      canvasD.add(oImg);
     });
 }
 
 changeCanvasBG('/images/Bamboo-assets/Bamboo-class-background.PNG')
 canvasChange('/images/Bamboo-assets/bambooClass.json');
-canvas.add(textbox0);
+canvasD.add(textbox0);
 
 }
 //end desktop
@@ -197,52 +197,34 @@ canvas.add(textbox0);
 //WAITING FOR INTERACTIONS
 $(document).ready(function(){
 
+  if (x.matches)
+  {
+
   $('#preload-science').click( function(){
-    canvas.clear();
+    canvasM.clear();
     const scienceBG = '/images/Science-assets/Science-classroom-background.png';
     changeCanvasBG(scienceBG)
-    if (x.matches)
-    {
       const scienceJSON = '/images/Science-assets/scienceClass_mobile.json';
       canvasChange(scienceJSON);
-    }
-    else {
-      const scienceJSON = '/images/Science-assets/scienceClass.json';
-      canvasChange(scienceJSON);
-    }
-    canvas.add(textbox1);
+    canvasM.add(textbox1);
   });
 
   $('#preload-bamboo').click( function(){
-    canvas.clear();
+    canvasM.clear();
     const bambooBG = '/images/Bamboo-assets/Bamboo-class-background.PNG';
     changeCanvasBG(bambooBG);
-    if (x.matches)
-    {
       const bambooJSON = '/images/Bamboo-assets/bambooClass_mobile.json';
       canvasChange(bambooJSON);
-    }
-    else {
-      const bambooJSON = '/images/Bamboo-assets/bambooClass.json';
-      canvasChange(bambooJSON);
-    }
-    canvas.add(textbox0);
+    canvasM.add(textbox0);
   });
 
   $('#preload-nature').click( function(){
-    canvas.clear();
+    canvasM.clear();
     const natureBG = '/images/Nature-assets/Nature-classroom-background.PNG';
     changeCanvasBG(natureBG);
-    if (x.matches)
-    {
       const natureJSON = '/images/Nature-assets/natureClass_mobile.json';
       canvasChange(natureJSON);
-    }
-    else {
-      const natureJSON = '/images/Nature-assets/natureClass.json';
-      canvasChange(natureJSON);
-    }
-    canvas.add(textbox2);
+    canvasM.add(textbox2);
   });
 
     $('.sticker-bg').click( function (){
@@ -256,21 +238,21 @@ $(document).ready(function(){
     });
 
     $('.delete-sticker').click( function (){
-      var selected = canvas.getActiveObjects(),
+      var selected = canvasM.getActiveObjects(),
       selGroup = new fabric.ActiveSelection(selected, {
-        canvas: canvas
+        canvas: canvasM
       });
         if (selGroup) {
             selGroup.forEachObject(function(obj) {
-              canvas.remove(obj);
+              canvasM.remove(obj);
             });
           }
-        canvas.discardActiveObject().renderAll();
+        canvasM.discardActiveObject().renderAll();
     });
 
     $('#no-bg').click( function (){
       changeCanvasBG('');
-      canvas.setBackgroundColor('#EAE8E3', canvas.renderAll.bind(canvas));
+      canvasM.setBackgroundColor('#EAE8E3', canvasM.renderAll.bind(canvas));
     });
 
     $('.add-text').click( function (){
@@ -286,8 +268,87 @@ $(document).ready(function(){
         cornerSize: 10,
         transparentCorners: false
       });
-      canvas.add(newTextbox);
+      canvasM.add(newTextbox);
     });
+
+  }
+
+  //end mobile
+
+  //start desktop
+
+  else {
+    $('#preload-science').click( function(){
+      canvasD.clear();
+      const scienceBG = '/images/Science-assets/Science-classroom-background.png';
+      changeCanvasBG(scienceBG)
+        const scienceJSON = '/images/Science-assets/scienceClass.json';
+        canvasChange(scienceJSON);
+      canvasD.add(textbox1);
+    });
+
+    $('#preload-bamboo').click( function(){
+      canvasD.clear();
+      const bambooBG = '/images/Bamboo-assets/Bamboo-class-background.PNG';
+      changeCanvasBG(bambooBG);
+        const bambooJSON = '/images/Bamboo-assets/bambooClass.json';
+        canvasChange(bambooJSON);
+      canvasD.add(textbox0);
+    });
+
+    $('#preload-nature').click( function(){
+      canvasD.clear();
+      const natureBG = '/images/Nature-assets/Nature-classroom-background.PNG';
+      changeCanvasBG(natureBG);
+        const natureJSON = '/images/Nature-assets/natureClass.json';
+        canvasChange(natureJSON);
+      canvasD.add(textbox2);
+    });
+
+      $('.sticker-bg').click( function (){
+          var imageSource = $('img', $(this)).attr('src');
+          changeCanvasBG(imageSource);
+      });
+
+      $('.sticker').click( function (){
+          var imageSource = $('img', $(this)).attr('src');
+          addImageToCanvas(imageSource);
+      });
+
+      $('.delete-sticker').click( function (){
+        var selected = canvasD.getActiveObjects(),
+        selGroup = new fabric.ActiveSelection(selected, {
+          canvas: canvasD
+        });
+          if (selGroup) {
+              selGroup.forEachObject(function(obj) {
+                canvasD.remove(obj);
+              });
+            }
+          canvasD.discardActiveObject().renderAll();
+      });
+
+      $('#no-bg').click( function (){
+        changeCanvasBG('');
+        canvasD.setBackgroundColor('#EAE8E3', canvasD.renderAll.bind(canvas));
+      });
+
+      $('.add-text').click( function (){
+        var newTextbox = new fabric.Textbox('Lorem ipsum dolor sit amet,\nconsectetur adipiscing elit', {
+          left: 65,
+          top: 28,
+          width: 200,
+          fontSize: 16,
+          fontFamily: 'Archer Book',
+          fontWeight: 'bold',
+          borderColor: '#D1C7BA',
+          cornerColor: '#D1C7BA',
+          cornerSize: 10,
+          transparentCorners: false
+        });
+        canvasD.add(newTextbox);
+      });
+  }
 
     $('.download-badge').click( function (){
         $("#customize-area").get(0).toBlob(function(blob){
@@ -303,10 +364,22 @@ $(document).ready(function(){
 
 function changeCanvasBG(imageURL)
 {
-  fabric.Image.fromURL(imageURL, function(img){
-   img.scaleToWidth(canvas.width);
-   img.scaleToHeight(canvas.height);
-   canvas.setBackgroundImage(img);
-   canvas.requestRenderAll();
-});
+  if (x.matches){
+    fabric.Image.fromURL(imageURL, function(img){
+     img.scaleToWidth(canvasM.width);
+     img.scaleToHeight(canvasM.height);
+     canvasM.setBackgroundImage(img);
+     canvasM.requestRenderAll();
+     });
+  }
+
+  else {
+    fabric.Image.fromURL(imageURL, function(img){
+     img.scaleToWidth(canvasD.width);
+     img.scaleToHeight(canvasD.height);
+     canvasD.setBackgroundImage(img);
+     canvasD.requestRenderAll();
+   });
+  }
+
 }

@@ -19,7 +19,7 @@ $(document).ready(function() {
     $('#hunt-incomplete').toggleClass("menu-open");
   });
 
-  $('#access-denied-close, .not-available').click(function() {
+  $('#access-denied-close, .not-available, .access-denied').click(function() {
     $('#access-denied').toggleClass("menu-open");
   });
 

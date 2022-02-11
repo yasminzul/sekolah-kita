@@ -171,10 +171,10 @@ function setup(loader, resources)
   if (x.matches)
   {
 
-    elemSekolah0.anchor.set(0.5);
-    elemSekolah0.scale.set(0.9);
-    elemSekolah0.position.set(pixiapp.screen.width / 2.05, pixiapp.screen.height / 2);
-    pixiapp.stage.addChild(elemSekolah0);
+    elemSekolah20.anchor.set(0.5);
+    elemSekolah20.scale.set(0.9);
+    elemSekolah20.position.set(pixiapp.screen.width / 2.05, pixiapp.screen.height / 2);
+    pixiapp.stage.addChild(elemSekolah20);
 
 
     var currentX = pixiapp.screen.width / 2.05;
@@ -184,7 +184,7 @@ function setup(loader, resources)
 
     sekolahAnimation = [
     function(){
-      pixiapp.stage.removeChild(elemSekolah0);
+      pixiapp.stage.removeChild(elemSekolah20);
       pixiapp.stage.removeChild(elemSekolah1);
       elemSekolah2.anchor.set(0.5);
       elemSekolah2.scale.set(currentScale);
@@ -516,10 +516,10 @@ function setup(loader, resources)
   //mobile
   else {
 
-    elemSekolah0.anchor.set(0.5);
-    elemSekolah0.scale.set(0.7);
-    elemSekolah0.position.set(pixiapp.screen.width / 2.15, pixiapp.screen.height / 2);
-    pixiapp.stage.addChild(elemSekolah0);
+    elemSekolah20.anchor.set(0.5);
+    elemSekolah20.scale.set(0.7);
+    elemSekolah20.position.set(pixiapp.screen.width / 2.15, pixiapp.screen.height / 2);
+    pixiapp.stage.addChild(elemSekolah20);
 
     var currentX = pixiapp.screen.width / 2.05;
     var currentY = pixiapp.screen.height / 2;
@@ -527,7 +527,7 @@ function setup(loader, resources)
 
     sekolahAnimation = [
     function(){
-      pixiapp.stage.removeChild(elemSekolah0);
+      pixiapp.stage.removeChild(elemSekolah20);
       pixiapp.stage.removeChild(elemSekolah1);
       elemSekolah2.anchor.set(0.5);
       elemSekolah2.scale.set(currentScale);
@@ -807,7 +807,7 @@ function setup(loader, resources)
       pixiapp.stage.addChild(elemSekolah19);
       ease.add(
         elemSekolah19,
-        { x: (pixiapp.screen.width/100)*60, y: pixiapp.screen.height/100, scale: 0.9},
+        { x: (pixiapp.screen.width/100)*60, y: -(pixiapp.screen.height/100)*10, scale: 0.9},
         { reverse: false, duration: 1500, ease: 'easeInOutQuad' }
       );
       currentX = (pixiapp.screen.width/100)*60;
@@ -865,7 +865,7 @@ function setup(loader, resources)
           $(".info-box").html(textArr[textCounter]);
           document.getElementById("school-prev").disabled = true;
           document.getElementById("school-next").disabled = false;
-          $('.ch-2').css('background-color','#f9f2d5');
+          $('.ch-2').css('background-color','#49463f');
       });
 
       $('#school-next').click( function (){
@@ -924,7 +924,7 @@ function setup(loader, resources)
     var clueFound = window.location.hash.substr(1);
     if (clueFound == 'clue-9'){
         $('#rec-9').toggleClass("menu-open");
-        pixiapp.stage.removeChild(elemSekolah0);
+        pixiapp.stage.removeChild(elemSekolah20);
         textCounter = 3;
         clickstate = 2;
         $('.info-box').css('display', 'block');
@@ -939,7 +939,7 @@ function setup(loader, resources)
     }
     else if (clueFound == 'clue-8'){
         $('#rec-8').toggleClass("menu-open");
-        pixiapp.stage.removeChild(elemSekolah0);
+        pixiapp.stage.removeChild(elemSekolah20);
         textCounter = 18;
         clickstate = 17;
         $('.info-box').css('display', 'block');
