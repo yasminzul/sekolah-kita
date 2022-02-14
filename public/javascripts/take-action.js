@@ -81,7 +81,7 @@ if (x.matches){
     $('.ta-wrapper .flex-item-left').css('background-color', '#00000000');
   });
 
-  function canvasChange(filename)
+  function canvasChangeM(filename)
   {
     //load science class
       $.getJSON(filename, function(scienceClass){
@@ -107,7 +107,7 @@ if (x.matches){
     //end load science class
   }
 
-  function addImageToCanvas(imageNameURL)
+  function addImageToCanvasM(imageNameURL)
   {
       fabric.Image.fromURL(imageNameURL, function(oImg) {
         // oImg.scaleToWidth(85);
@@ -126,7 +126,7 @@ if (x.matches){
   }
 
   changeCanvasBG('/images/Bamboo-assets/Bamboo-class-background.PNG')
-  canvasChange('/images/Bamboo-assets/bambooClass_mobile.json');
+  canvasChangeM('/images/Bamboo-assets/bambooClass_mobile.json');
   canvasM.add(textbox0);
 }
 //end mobile
@@ -140,7 +140,7 @@ else{
   });
 
 
-function canvasChange(filename)
+function canvasChangeD(filename)
 {
   //load science class
     $.getJSON(filename, function(scienceClass){
@@ -166,7 +166,7 @@ function canvasChange(filename)
   //end load science class
 }
 
-function addImageToCanvas(imageNameURL)
+function addImageToCanvasD(imageNameURL)
 {
     fabric.Image.fromURL(imageNameURL, function(oImg) {
       // oImg.scaleToWidth(85);
@@ -185,7 +185,7 @@ function addImageToCanvas(imageNameURL)
 }
 
 changeCanvasBG('/images/Bamboo-assets/Bamboo-class-background.PNG')
-canvasChange('/images/Bamboo-assets/bambooClass.json');
+canvasChangeD('/images/Bamboo-assets/bambooClass.json');
 canvasD.add(textbox0);
 
 }
@@ -205,7 +205,7 @@ $(document).ready(function(){
     const scienceBG = '/images/Science-assets/Science-classroom-background.png';
     changeCanvasBG(scienceBG)
       const scienceJSON = '/images/Science-assets/scienceClass_mobile.json';
-      canvasChange(scienceJSON);
+      canvasChangeM(scienceJSON);
     canvasM.add(textbox1);
   });
 
@@ -214,7 +214,7 @@ $(document).ready(function(){
     const bambooBG = '/images/Bamboo-assets/Bamboo-class-background.PNG';
     changeCanvasBG(bambooBG);
       const bambooJSON = '/images/Bamboo-assets/bambooClass_mobile.json';
-      canvasChange(bambooJSON);
+      canvasChangeM(bambooJSON);
     canvasM.add(textbox0);
   });
 
@@ -223,7 +223,7 @@ $(document).ready(function(){
     const natureBG = '/images/Nature-assets/Nature-classroom-background.PNG';
     changeCanvasBG(natureBG);
       const natureJSON = '/images/Nature-assets/natureClass_mobile.json';
-      canvasChange(natureJSON);
+      canvasChangeM(natureJSON);
     canvasM.add(textbox2);
   });
 
@@ -234,7 +234,7 @@ $(document).ready(function(){
 
     $('.sticker').click( function (){
         var imageSource = $('img', $(this)).attr('src');
-        addImageToCanvas(imageSource);
+        addImageToCanvasM(imageSource);
     });
 
     $('.delete-sticker').click( function (){
@@ -283,7 +283,7 @@ $(document).ready(function(){
       const scienceBG = '/images/Science-assets/Science-classroom-background.png';
       changeCanvasBG(scienceBG)
         const scienceJSON = '/images/Science-assets/scienceClass.json';
-        canvasChange(scienceJSON);
+        canvasChangeD(scienceJSON);
       canvasD.add(textbox1);
     });
 
@@ -292,7 +292,7 @@ $(document).ready(function(){
       const bambooBG = '/images/Bamboo-assets/Bamboo-class-background.PNG';
       changeCanvasBG(bambooBG);
         const bambooJSON = '/images/Bamboo-assets/bambooClass.json';
-        canvasChange(bambooJSON);
+        canvasChangeD(bambooJSON);
       canvasD.add(textbox0);
     });
 
@@ -301,7 +301,7 @@ $(document).ready(function(){
       const natureBG = '/images/Nature-assets/Nature-classroom-background.PNG';
       changeCanvasBG(natureBG);
         const natureJSON = '/images/Nature-assets/natureClass.json';
-        canvasChange(natureJSON);
+        canvasChangeD(natureJSON);
       canvasD.add(textbox2);
     });
 
@@ -312,7 +312,7 @@ $(document).ready(function(){
 
       $('.sticker').click( function (){
           var imageSource = $('img', $(this)).attr('src');
-          addImageToCanvas(imageSource);
+          addImageToCanvasD(imageSource);
       });
 
       $('.delete-sticker').click( function (){
