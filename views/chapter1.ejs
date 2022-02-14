@@ -13,20 +13,34 @@
   <link rel='stylesheet' href='/stylesheets/resources.css' />
 </head>
     <body>
+    <!-- overlay -->
+    
       <%- include menu/nav-btn.ejs %>
       <%- include popups/popup.ejs %>
       <%- include popups/treasure-hunt.ejs %>
 
       <% if(currScore.cluesFound == 0){ %>
-      <div class="pop-container pop-up menu-open" id="class-start">
-      	    <div class="pop">
-      	    	<h5>Class is in session!</h5>
-      	    	<p> According to experts, there are 12 key ways we can improve education access for Orang Asli children. Prove you’ve learned about all 12 by tapping on them in the text, like this:</p>
+      <div class="pop-container pop-up" id="class-session">
+        <div class="blk-overlay"></div>
+          <div class="pop">
+            <h3>Class is in session!</h3>
+            
+            <p>According to research, there are 12 key ways we can improve education access for Orang Asli children. You can learn about them by reading all five chapters of this interactive lesson. Prove you’ve learned about all 12 by tapping on them in the text, like this:</p>console.log();
 
-      	    	<p>When you’ve found all 12, you’ll unlock a reward that you can share with your friends! Happy studying!</p>
-      	    	<button class="pop-btn" id="class-start-close">Got it!</button>
-      	    </div>
-      	</div>
+            <div class="scorecard-display" id="session-score">
+              <span id="hl-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim error perspiciatis amet fugiat quis natus quam aliquam corporis deleniti magnam officiis, quo accusamus id rem aut culpa voluptate iusto tempore! </span>
+              <img class="score-coin" src="/images/menu/group-369.svg" alt="">
+              
+              <div id="f-t">Find and tap! <img src="/images/chapters/group-235.svg" alt=""></div>
+            </div>
+
+            <p>When you’ve found all six, you’ll <strong>unlock a reward</strong> that you can share with your friends! Happy studying!</p>
+
+            <p>Estimated lesson duration: 25 minutes</p>
+
+            <button class="pop-btn hunt-incomplete-close">Got it!</button>
+          </div>
+      </div>
         <% } %>
         <section class="chapter-wrapper">
             <section class="flex-item-left">
