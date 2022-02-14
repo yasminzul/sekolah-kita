@@ -27,6 +27,16 @@ h3 {
 	font-weight: 300;
 }
 
+.blk-overlay {
+    height: 101vh;
+    width: 108vw;
+    background-color: #55555585;
+    position: absolute;
+    top: -14%;
+    right: -6%;
+    z-index: -1;
+}
+
 /* chapter layout */
 
 .chapter-wrapper {

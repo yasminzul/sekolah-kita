@@ -13,12 +13,15 @@
   <link rel='stylesheet' href='/stylesheets/resources.css' />
 </head>
     <body>
+    <!-- overlay -->
+
       <%- include menu/nav-btn.ejs %>
       <%- include popups/popup.ejs %>
       <%- include popups/treasure-hunt.ejs %>
 
       <% if(currScore.cluesFound == 0){ %>
         <div class="pop-container pop-up" id="class-start">
+          <div class="blk-overlay"></div>
             <div class="pop">
               <h3>Class is in session!</h3>
 
