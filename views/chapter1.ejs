@@ -13,14 +13,13 @@
   <link rel='stylesheet' href='/stylesheets/resources.css' />
 </head>
     <body>
-    <!-- overlay -->
 
       <%- include menu/nav-btn.ejs %>
       <%- include popups/popup.ejs %>
       <%- include popups/treasure-hunt.ejs %>
 
       <% if(currScore.cluesFound == 0){ %>
-        <div class="pop-container pop-up" id="class-start">
+        <div class="pop-container pop-up menu-open" id="class-start">
           <div class="blk-overlay"></div>
             <div class="pop">
               <h3>Class is in session!</h3>
@@ -42,6 +41,7 @@
             </div>
         </div>
         <% } %>
+
         <section class="chapter-wrapper">
             <section class="flex-item-left">
                 <img src="/images/chapters/chapter-1.png" alt="">
@@ -84,7 +84,7 @@
                    <img src="/images/chapters/upsr-rate-eng.png" style="width:100%;" alt="">
 
 
-                   <p>“The availability of transport assistance shows there is an understanding of the needs of Orang Asli communities,” says Wan Ya Shin, the author of the IDEAS report. <a href="/en/chapter1/found-clue/clue-3" id="clue-3" class="<%= currScore.clue[2] == true ? 'clue found' : 'clue' %>">“But there is a need to continue improving the efficiency and effectiveness of these assistance programmes through better monitoring and evaluation – for all the programmes, not just for transport.”</a></p>
+                   <p>“The availability of transport assistance shows there is an understanding of the needs of Orang Asli communities,” says Wan Ya Shin, the author of the IDEAS report. <a href='/en/chapter1/found-clue/clue-3' id="clue-3" class="<%= currScore.clue[2] == true ? 'clue found' : 'clue' %>">“But there is a need to continue improving the efficiency and effectiveness of these assistance programmes through better monitoring and evaluation – for all the programmes, not just for transport.”</a></p>
                    <p>IDEAS’ surveys revealed many instances where assistance programmes underwhelmed due to poor implementation. One example is the disbursement of student allowances, which is disbursed at the end of the month, meaning some students go hungry while waiting for the disbursement, and some even end up dropping out.</p>
                    <p><a href='/en/chapter1/found-clue/clue-10' id="clue-10" class="<%= currScore.clue[9] == true ? 'clue found' : 'clue' %>">“The best way to improve is to empower the local communities themselves to be involved in the whole process,”</a> continues Ya Shin. “The creation of an Orang Asli education council comprising Orang Asli leaders, education policymakers, principals, teachers, and other relevant stakeholders to govern and monitor the progress of policy and programmes for children would help to ensure voices of the Orang Asli are fully taken into account and are involved in the close monitoring of any programmes.”</p>
                    <p>“There should then be a proper channel through which this council can make complaints and suggestions to all the relevant ministries, to facilitate collaboration between ministries.”</p>

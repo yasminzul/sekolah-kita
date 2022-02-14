@@ -6,7 +6,7 @@ var Scorecard = require ('../models/treasure-hunt');
 router.get('/', function(req, res, next) {
   var scoreCard = new Scorecard(req.session.scoreCard ? req.session.scoreCard : {
   clue: [false, false, false, false, false, false, false, false, false, false, false, false],
-  chapterAccess:1,
+  chapterAccess:3,
   cluesFound:0 });
   res.render('chapter3', { title: 'Chapter 3', currScore: scoreCard });
 });
@@ -15,7 +15,7 @@ router.get('/found-clue/:id', function(req, res, next) {
   var whichClue = req.params.id;
   var scoreCard = new Scorecard(req.session.scoreCard ? req.session.scoreCard : {
   clue: [false, false, false, false, false, false, false, false, false, false, false, false],
-  chapterAccess:1,
+  chapterAccess:3,
   cluesFound:0 });
 
   scoreCard.found(whichClue);

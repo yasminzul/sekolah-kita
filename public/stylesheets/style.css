@@ -28,7 +28,7 @@ h3 {
 }
 
 .blk-overlay {
-    height: 101vh;
+    height: 120vh;
     width: 108vw;
     background-color: #55555585;
     position: absolute;
@@ -358,7 +358,7 @@ input:checked + .slider:before {
     justify-content: center;
 }
 .pop {
-    width: 35%;
+    width: 45%;
     background-color: #E6E2DD;
     padding: 3rem;
     border-radius: 7px;
