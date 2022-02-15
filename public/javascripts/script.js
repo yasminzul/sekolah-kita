@@ -35,6 +35,10 @@ $(document).ready(function() {
     $('#share').toggleClass("menu-open");
   });
 
+  $('#share-item, #share-img-close').click(function() {
+    $('#share-img').toggleClass("menu-open");
+  });
+
   $('#rec-1 .pop-btn').click(function() {
     $('#rec-1').toggleClass("menu-open");
   });
