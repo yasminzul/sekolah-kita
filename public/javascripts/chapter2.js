@@ -936,6 +936,7 @@ function setup(loader, resources)
         document.getElementById("school-next").disabled = false;
         $('#school-start').css('display', 'none');
         $('.ch-2').css('background-color','#49463f');
+        $('#clue-9').addClass("found");
     }
     else if (clueFound == 'clue-8'){
         $('#rec-8').toggleClass("menu-open");
@@ -951,6 +952,7 @@ function setup(loader, resources)
         document.getElementById("school-next").disabled = false;
         $('#school-start').css('display', 'none');
         $('.ch-2').css('background-color','#49463f');
+        $('#clue-8').addClass("found");
     }
 
 }
