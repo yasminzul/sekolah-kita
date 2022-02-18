@@ -360,8 +360,14 @@ $(document).ready(function(){
 
     $('.download-badge').click( function (){
       $('#share-img').toggleClass("menu-open");
-      var destCtx = destinationCanvas.getContext('2d');
-      destCtx.drawImage(sourceCanvas, 0, 0, 200, 100);
+      function convertCanvasToImage() {
+        let image = new Image();
+        image.src = sourceCanvas.toDataURL();
+        return image;
+      }
+
+      let pnGImage = convertCanvasToImage();
+      destinationCanvas.appendChild(pnGImage);
     });
 
     $('a#dwld').click( function (){
