@@ -350,11 +350,34 @@ $(document).ready(function(){
       });
   }
 
+
+    var destinationCanvas =  document.getElementById("dwld-img");
+    var sourceCanvas = document.querySelector("#customize-area");
+
+      $('#share-img-close').click(function() {
+        $('#share-img').toggleClass("menu-open");
+      });
+
     $('.download-badge').click( function (){
-        $("#customize-area").get(0).toBlob(function(blob){
-		        saveAs(blob, "sekolahkita-badge.png");
-	         });
+      $('#share-img').toggleClass("menu-open");
+      var destCtx = destinationCanvas.getContext('2d');
+      destCtx.drawImage(sourceCanvas, 0, 0, 200, 100);
     });
+
+    $('a#dwld').click( function (){
+      var dataURL = sourceCanvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+      var button = document.querySelector("a#dwld");
+      button.href = dataURL;
+    });
+
+    $('#copy').click( function (){
+      sourceCanvas.toBlob((blob) => {
+      navigator.clipboard.write([
+          new ClipboardItem({ "image/png": blob })
+      ]);
+      }, "image/png");
+    });
+
 
 });
 //END INTERACTIONS

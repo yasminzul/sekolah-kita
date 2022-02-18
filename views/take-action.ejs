@@ -43,8 +43,7 @@
                 <button class="delete-sticker"><img src="/images/take-action/Group-368.svg"></button>
             </div>
             <div class="bottom-mobile-btn">
-                <button class="download-badge"><img src="/images/take-action/ic_file_download_24px.svg">Download</button>
-                <button style="background-color: #FFB806;"><img src="/images/take-action/ic_share_24px.svg">Share</button>
+                <button style="background-color: #FFB806;" class="download-badge"><img src="/images/take-action/ic_file_download_24px.svg">Download<span style="margin: 0 5px;">&</span> <img style="margin-left: 3px;" src="/images/take-action/ic_share_24px.svg">Share</button>
             </div>
 
             <div class="choose-badge">
@@ -114,9 +113,9 @@
             <div class="bottom-btn">
                 <button class="add-text">Add text</button>
                 <button class="delete-sticker">Remove selected item</button>
-                <button class="download-badge"><img src="/images/take-action/ic_file_download_24px.svg">Download</button>
-                <button id="share-item"><img src="/images/take-action/ic_share_24px.svg">Share</button>
+                <button class="download-badge"><img src="/images/take-action/ic_file_download_24px.svg">Download <span style="margin: 0 5px;">&</span> <img style="margin-left: 3px;" src="/images/take-action/ic_share_24px.svg">Share</button>
             </div>
+
 
            </div>
         </section>
@@ -126,19 +125,22 @@
       <div class="blk-overlay"></div>
           <div class="pop">
             <h5>Share</h5>
+            <canvas id="dwld-img"></canvas>
+            <a href="#" id="dwld"><button>DOWNLOAD</button></a>
+            <button id="copy">COPY IMAGE</button>
             <p>Don't forget to upload the picture you have created!</p>
             <div class="share-options">
-            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//sekolahkita.my" target="_blank" class="share-icon"><img src="/images/menu/Group-318.svg" alt="Facebook share"></a>
+            <a href="https://www.facebook.com/" target="_blank" class="share-icon"><img src="/images/menu/Group-318.svg" alt="Facebook share"></a>
             <a href="https://www.instagram.com/" target="_blank" class="share-icon"><img src="/images/menu/group-439.svg" alt="Instagram share"></a>
-            <a href="https://twitter.com/intent/tweet?text=Empower%20education%20for%20all%20at%20https%3A//sekolahkita.my" target="_blank" class="share-icon"><img src="/images/menu/Group-317.svg" alt="Twitter share"></a>
+            <a href="https://twitter.com/" target="_blank" class="share-icon"><img src="/images/menu/Group-317.svg" alt="Twitter share"></a>
             <a href="https://api.whatsapp.com/send?text=Empower%20education%20for%20all%20at%20https%3A//sekolahkita.my" target="_blank" class="share-icon"><img src="/images/menu/Group-316.svg" alt="Whatsapp share"></a>
             </div>
             <button class="pop-btn" id="share-img-close">Done!</button>
           </div>
     </div>
 
-    <script src="/javascripts/canvas-toBlob.js"></script>
-    <script src="/javascripts/FileSaver.js"></script>
+    <!-- <script src="/javascripts/canvas-toBlob.js"></script>
+    <script src="/javascripts/FileSaver.js"></script> -->
     <script src="/javascripts/take-action.js"></script>
     <script src="/javascripts/script.js"></script>
   </body>

@@ -114,12 +114,18 @@ button:active
 	cursor: pointer;
 }
 
-.bottom-btn #share-item {
+.bottom-btn .download-badge{
 	background-color: #FFB806;
 }
 
 .download-badge img, #share-item img {
 	margin-right: 11px;
+}
+
+#dwld-img
+{
+	width: 100px;
+	height: 100px;
 }
 
 
@@ -204,7 +210,7 @@ button:active
 	}
 	.bottom-mobile-btn button {
 		padding: 1em;
-	    width: 50%;
+	    width: 100%;
 	    font-family:'Archer Bold', serif;
 	    font-size: 16px;
 	}
