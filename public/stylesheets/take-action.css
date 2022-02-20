@@ -114,6 +114,8 @@ button:active
 	cursor: pointer;
 }
 
+/*Download popup*/
+
 .bottom-btn .download-badge{
 	background-color: #FFB806;
 }
@@ -126,6 +128,7 @@ button:active
 {
 	width: 400px;
 	height: 400px;
+	margin-left: 19%;
 }
 
 #dwld-img img
@@ -134,6 +137,36 @@ button:active
 	height: 100%;
 }
 
+.pop #share-img-close {
+	background-color: #e6e2dd;
+	float: right;
+    width: 10%;
+}
+
+.click-dwnd {
+	position: absolute;
+    top: 30%;
+    right: 28%;
+    width: 4%;
+    text-align: left;
+    font-size: 14px;
+}
+
+#share-img .pop {
+	padding-bottom: 0;
+}
+
+#share-img {
+	top: 55px;
+}
+
+#desk-dwnd {
+	display: block;
+}
+
+#mobile-dwnd {
+	display: none;
+}
 
 @media (max-width: 800px) {
 	.ta-wrapper {
@@ -227,6 +260,47 @@ button:active
 
 	.bottom-btn {
 		display: none;
+	}
+
+	#dwld-img {
+		width: 200px;
+		height: 200px;
+		margin: 0 auto;
+	}
+
+	#desk-dwnd {
+		display: none;
+	}
+
+	#mobile-dwnd {
+		display: flex;
+	}
+
+	#share-img .share-options{
+		margin-top: 22%;
+	}
+
+	#share-img .share-options .share-icon img {
+		width: 42px;
+	}
+
+	#share-img p {
+		margin-top: 15%;
+	}
+
+	.click-dwnd {
+		margin: 0 auto;
+   		margin-top: 10%;
+    	width: 62%;
+    	position: inherit;
+    	display: flex;
+	}
+
+	.pop #share-img-close {
+		width: 10%;
+	    position: absolute;
+	    right: 14%;
+	    top: 13%;
 	}
 
 }
