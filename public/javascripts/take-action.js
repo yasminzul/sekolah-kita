@@ -367,21 +367,15 @@ $(document).ready(function(){
       }
 
       let pnGImage = convertCanvasToImage();
-      destinationCanvas.appendChild(pnGImage);
-    });
-
-    $('a#dwld').click( function (){
-      var dataURL = sourceCanvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
-      var button = document.querySelector("a#dwld");
-      button.href = dataURL;
-    });
-
-    $('#copy').click( function (){
-      sourceCanvas.toBlob((blob) => {
-      navigator.clipboard.write([
-          new ClipboardItem({ "image/png": blob })
-      ]);
-      }, "image/png");
+      if (destinationCanvas.innerHTML == "")
+      {
+        destinationCanvas.appendChild(pnGImage);
+      }
+      else {
+        var olddata = destinationCanvas.lastChild;
+        destinationCanvas.removeChild(olddata);
+        destinationCanvas.appendChild(pnGImage);
+      }
     });
 
 
