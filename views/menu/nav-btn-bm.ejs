@@ -1,19 +1,22 @@
 <nav>
-<!--  <div class="score-wrapper">
-  	<img src="/images/menu/group-369.svg" alt="">
-  	<span class="score-number">0</span>
-  	<span class="score-total">/ 16</span>
-  </div>	-->
+  <% if(title == 'Bab 1' || title == 'Bab 2' || title == 'Bab 3' || title == 'Bab 4' || title == 'Bab 5'){ %>
+ <div class="<%= currScore.cluesFound == 12 ? 'score-wrapper pulse' : 'score-wrapper' %>">
+    <img src="/images/menu/group-188.svg" alt="">
+    <span class="score-number"><%= currScore.cluesFound %></span>
+    <span class="score-total">/ 12</span>
+  </div>
+  <%} %>
+
   <label class="switch switch-nav">
-      <input type="checkbox" id="switch" checked>
+      <input type="checkbox" id="switch">
       <span class="slider"></span>
       <span class="on">ENG</span>
       <span class="off">BM</span>
   </label>
-  <a class="home-btn" href="/"><button><img src="/images/icon-home.svg" alt="Home"></button></a>
+  <a class="home-btn" href="/en"><button><img src="/images/icon-home.svg" alt="Home"></button></a>
   <button class="menu-btn"><img src="/images/icon-menu.svg" alt="Menu"></button>
 </nav>
 
 <nav class="menu-nav menu-close">
-  <%- include menu-bm.ejs %>
+  <%- include menu.ejs %>
 </nav>

@@ -2,11 +2,11 @@
     <% if(currScore.cluesFound != 12){ %>
     <div class="blk-overlay"></div>
       <div class="pop">
-        <p> You've found <%= currScore.cluesFound %> solution(s)! <%= currScore.cluesFound %> more to go! Keep track of your progress with this scorecard here.</p>
-        <p>Find all the solutions to unlock your reward</p>
-        <p>Read the 12 recommended solutions in <a href="https://drive.google.com/file/d/1n80SI2Jo0i40A-C3gVRJkEpvbOaSA0OF/view#page=57">this research paper.</a></p>
+        <p> Anda telah menemui kunci <%= currScore.cluesFound %>! Tinggal lagi <%= currScore.cluesFound %>! Semak progress anda dengan menggunakan paparan skor ini!</p>
+        <p>Cari semua penyelesaian untuk membuka kunci ganjaran anda</p>
+        <p>Baca 12 penyelesaian yang disyorkan dalam <a href="https://drive.google.com/file/d/1n80SI2Jo0i40A-C3gVRJkEpvbOaSA0OF/view#page=57">kertas penyelidikan ini.</a></p>
         <div class="scorecard-display">
-          <p>YOUR SCORECARD:</p>
+          <p>Kad skor anda:</p>
           <div>
             <img class="<%= currScore.cluesFound > 0 ? 'score-coin show' : 'score-coin dim' %>" src="/images/menu/group-369.svg" alt="">
             <img class="<%= currScore.cluesFound > 1 ? 'score-coin show' : 'score-coin dim' %>" src="/images/menu/group-369.svg" alt="">
@@ -26,14 +26,14 @@
 
 
       </div>
-        <button class="pop-btn hunt-incomplete-close">Understood!</button>
+        <button class="pop-btn hunt-incomplete-close">Saya faham!</button>
       </div>
       <% } else { %>
       <div class="blk-overlay"></div>
         <div class="pop">
           <img src="/images/party-popper_1f389@2x.png" style="width:10%;" alt="">
           <div class="scorecard-display">
-            <p>YOUR SCORECARD:</p>
+            <p>Kad skor anda:</p>
             <div>
               <img class="score-coin" src="/images/menu/group-369.svg" alt="">
               <img class="score-coin" src="/images/menu/group-369.svg" alt="">
@@ -52,10 +52,10 @@
             </div>
 
           </div>
-          <p> You’ve done it! You’ve learned the 12 key ways we can improve education access for Orang Asli children! Your reward is now unlocked.</p>
+          <p>Anda berjaya! Anda telah mempelajari semua 12 kunci utama yang boleh memperbaik capaian pendidikan kepada kanak-kanak Orang Asli!</p>
 
-          <button  class="pop-btn grey hunt-incomplete-close">Continue Reading</button>
-          <a href="/en/take-action"><button class="pop-btn">Take me to my reward</button></a>
+          <button  class="pop-btn grey hunt-incomplete-close">Teruskan membaca</button>
+          <a href="/en/take-action"><button class="pop-btn">Bawakan saya kepada ganjaran saya!</button></a>
 
         </div>
         <% } %>
@@ -67,11 +67,11 @@
 <div class="pop-container pop-up" class="recommendation" id="rec-1">
   <div class="blk-overlay"></div>
     <div class="pop">
-      <p><strong>Recommendation 1: There must be a greater focus on learning and addressing underlying challenges instead of symptomatic issues.</strong></p>
-      <p>The general school culture must prioritise learning instead of examinations or rote memorisation. High-quality education that can motivate and nurture students is needed to produce Orang Asli students who are independent learners. Policies and programmes need to address underlying issues instead of only dealing with symptomatic problems at a surface level which do not resolve or eradicate these issues.</p>
+      <p><strong>Cadangan 1: Perlu ada tumpuan yang lebih besar terhadap pembelajaran dan menangani cabaran-cabaran asas berbanding memberi tumpuan pada permasalahan gejala</strong></p>
+      <p>Budaya persekolahan umum mesti mengutamakan pembelajaran berbanding peperiksaan atau ulang-hafalan. Pendidikan berkualiti tinggi yang boleh memotivasikan dan mendidik pelajar amat diperlukan bagi melahirkan pelajar Orang Asli yang berdikari. Dasar dan program perlu menangani isu asas dan bukannya hanya menangani masalah gejala secara am yang tidak menyelesaikan atau membasmi isu ini.</p>
 
         <% if(currScore.cluesFound != 12){ %>
-      <button class="pop-btn grey">Continue Reading</button>
+      <button class="pop-btn grey">Teruskan membaca</button>
       <button class="pop-btn hunt-incomplete-close">Check my scorecard</button>
         <% } else { %>
           <button class="pop-btn hunt-incomplete-close">Check my scorecard</button>
@@ -82,9 +82,9 @@
 <div class="pop-container pop-up" class="recommendation" id="rec-2">
   <div class="blk-overlay"></div>
     <div class="pop">
-      <p><strong>Recommendation 2: Indigenous cultures and history must be integrated into the mainstream curriculum.</strong></p>
-      <p>It is very important that indigenous cultures and history be included in the mainstream curriculum, and that Orang Asli should not be represented as an exotic “other”, but celebrated as part of the diversity of peoples in Malaysia. Schoolchildren should be taught about different Orang Asli sub-ethnic groups, where they live, their contribution to nation-making, their arts, and their cultures that are closely linked to the natural environment.</p>
-      <p>The Orang Asli's rights to self-determination as indigenous peoples should also be included in mainstream education.</p>
+      <p><strong>Cadangan 2: Budaya dan sejarah orang asal haruslah disepadukan ke dalam kurikulum arus perdana.</strong></p>
+      <p>Sangat penting untuk budaya dan sejarah Orang Asal dimasukkan dalam kurikulum arus perdana, dan Orang Asli tidak seharusnya digambarkan sebagai kaum asing eksotik, sebaliknya diraikan sebagai sebahagian daripada kepelbagaian masyarakat di Malaysia. Murid-murid sekolah harus diajar tentang kumpulan sub-etnik Orang Asli yang berbeza, tempat tinggal, sumbangan kepada pembentukan negara, kesenian, dan budaya mereka yang berkait rapat dengan persekitaran semula jadi.</p>
+      <p>Hak Orang Asli untuk menentukan nasib mereka sendiri sebagai Orang Asal juga harus dimasukkan dalam pendidikan arus perdana.</p>
 
       <% if(currScore.cluesFound != 12){ %>
     <button class="pop-btn grey">Continue Reading</button>
@@ -98,14 +98,14 @@
 <div class="pop-container pop-up" class="recommendation" id="rec-3">
   <div class="blk-overlay"></div>
     <div class="pop">
-      <p><strong>Recommendation 3: Existing programmes must be monitored and evaluated to ensure their efficient and effective delivery and implementation.</strong></p>
-      <p>Regular monitoring, and mid- and post-programme evaluations are needed to ensure that programmes remain on track and are adjusted for new issues that may arise. This monitoring and evaluation needs to be considered at the beginning of the original programme design.</p>
+      <p><strong>Cadangan 3: Program sedia ada haruslah dipantau dan dinilai untuk memastikan penyampaian dan pelaksanaan yang cekap dan berkesan</strong></p>
+      <p>Pemantauan berkala, serta penilaian semasa dan pasca program diperlukan untuk memastikan program berjalan mengikut perancangan dan dapat dilaraskan sekiranya terdapat isu baharu yang timbul. Pemantauan dan penilaian ini perlu dipertimbangkan pada permulaan reka bentuk program asal.</p>
 
       <% if(currScore.cluesFound != 12){ %>
-    <button class="pop-btn grey">Continue Reading</button>
-    <button class="pop-btn hunt-incomplete-close">Check my scorecard</button>
+    <button class="pop-btn grey">Teruskan membaca</button>
+    <button class="pop-btn hunt-incomplete-close">Semak kad skor saya</button>
       <% } else { %>
-        <button class="pop-btn hunt-incomplete-close">Check my scorecard</button>
+        <button class="pop-btn hunt-incomplete-close">Semak kad skor saya</button>
         <% } %>
     </div>
 </div>
@@ -113,14 +113,14 @@
 <div class="pop-container pop-up" class="recommendation" id="rec-4">
   <div class="blk-overlay"></div>
     <div class="pop">
-      <p><strong>Recommendation 4: Teachers and school leaders who are equipped and capable of delivering quality education for Orang Asli students need to be entrusted with greater autonomy and balanced accountability.</strong></p>
-      <p>Teachers and school leaders who are able to enhance the quality of education for Orang Asli students should be given the freedom to do so, as they could be role models that drive change. However, this autonomy needs to be balanced with accountability. These teachers and school leaders also need to be further trained and equipped to fully leverage this autonomy to deliver effective teaching and learning along with the efficient allocation of resources.</p>
+      <p><strong>Cadangan 4: Para guru dan pemimpin sekolah yang mempunyai kelengkapan dan berkemampuan menyampaikan pendidikan berkualiti kepada murid Orang Asli perlu diberikan autonomi yang lebih luas dan kebertanggungjawaban yang seimbang. of delivering quality education for Orang Asli students need to be entrusted with greater autonomy and balanced accountability.</strong></p>
+      <p>Guru dan pemimpin sekolah yang mampu meningkatkan kualiti pendidikan murid Orang Asli harus diberi kebebasan untuk berbuat demikian, kerana mereka boleh menjadi teladan yang memacu perubahan. Walau bagaimanapun, autonomi ini perlu diimbangi dengan kebertanggungjawaban. Guru-guru dan pemimpin sekolah ini juga perlu diberi latihan lanjut dan kelengkapan untuk memanfaatkan sepenuhnya autonomi ini supaya dapat menyampaikan pengajaran dan pembelajaran yang berkesan berserta peruntukan sumber yang cekap.</p>
 
       <% if(currScore.cluesFound != 12){ %>
-    <button class="pop-btn grey">Continue Reading</button>
-    <button class="pop-btn hunt-incomplete-close">Check my scorecard</button>
+    <button class="pop-btn grey">Teruskan membaca</button>
+    <button class="pop-btn hunt-incomplete-close">Semak kad skor saya</button>
       <% } else { %>
-        <button class="pop-btn hunt-incomplete-close">Check my scorecard</button>
+        <button class="pop-btn hunt-incomplete-close">Semak kad skor saya</button>
         <% } %>
     </div>
 </div>
@@ -128,15 +128,15 @@
 <div class="pop-container pop-up" class="recommendation" id="rec-5">
   <div class="blk-overlay"></div>
     <div class="pop">
-      <p><strong>Recommendation 5: Pre-posting training on Orang Asli cultures could be provided to teachers, and infrastructure and resources for teachers in Orang Asli schools should be improved.</strong></p>
-      <p>Teachers who are posted to schools with Orang Asli students should be provided with training to introduce them to the history and culture of the particular Orang Asli sub-ethnic group they will be teaching. This preparation module could also include implicit bias training to create self- awareness of learned racial biases against Orang Asli.</p>
-      <p>Teachers who are posted in Orang Asli schools often take up many different responsibilities outside the classroom, such as taking care of students after school and maintaining the school’s infrastructure. These teachers should be given more support and increased allowances for these added responsibilities. Their living conditions and teaching infrastructure could also be improved.</p>
+      <p><strong>Cadangan 5: Latihan pra-penempatan mengenai budaya Orang Asli boleh diberikan kepada guru, dan infrastruktur serta sumber untuk guru di sekolah Orang Asli harus ditambah baik.</strong></p>
+      <p>Guru-guru yang ditempatkan di sekolah yang mempunyai murid Orang Asli harus diberi latihan untuk memperkenalkan mereka kepada sejarah dan budaya kumpulan sub-etnik Orang Asli yang akan mereka ajar. Modul persediaan ini juga boleh merangkumi latihan prasangka tersirat untuk mewujudkan kesedaran diri tentang prasangka perkauman yang dialami oleh Orang Asli.</p>
+      <p>Guru yang ditempatkan di sekolah Orang Asli sering memikul pelbagai tanggungjawab di luar bilik darjah, seperti menjaga pelajar selepas waktu sekolah dan menyelenggara infrastruktur sekolah. Guru-guru ini harus diberi lebih sokongan dan dinaikkan elaun untuk tanggungjawab tambahan ini. Keadaan kehidupan dan infrastruktur pengajaran mereka juga boleh dipertingkatkan.</p>
 
       <% if(currScore.cluesFound != 12){ %>
-    <button class="pop-btn grey">Continue Reading</button>
-    <button class="pop-btn hunt-incomplete-close">Check my scorecard</button>
+    <button class="pop-btn grey">Teruskan membaca</button>
+    <button class="pop-btn hunt-incomplete-close">Semak kad skor saya</button>
       <% } else { %>
-        <button class="pop-btn hunt-incomplete-close">Check my scorecard</button>
+        <button class="pop-btn hunt-incomplete-close">Semak kad skor saya</button>
         <% } %>
     </div>
 </div>
@@ -144,16 +144,16 @@
 <div class="pop-container pop-up" class="recommendation" id="rec-6">
   <div class="blk-overlay"></div>
     <div class="pop">
-      <p><strong>Recommendation 6: Teachers should be trained in innovative and adaptive pedagogies, and platforms for knowledge sharing could be established.</strong></p>
-      <p>Teachers should be introduced to different teaching tools such as culturally responsive and adaptive pedagogies, both before and during their postings, with experienced teachers encouraged to share their best practices and offer advice to new teachers.</p>
-      <p>Other knowledge sharing initiatives could include annual teaching conferences, to foster networking and support among teachers; and user-friendly online knowledge sharing platforms as a resource for teachers.</p>
-      <p>Teachers often use their private funds to create innovative teaching tools. They should be supported, and a teaching and learning fund be made available to teachers. Recognition should also be given to teachers and schools for their best practices.</p>
+      <p><strong>Cadangan 6: Guru harus dilatih dalam pedagogi yang inovatif dan adaptif, manakala wadah/sarana/medan/saluran untuk perkongsian pengetahuan boleh diwujudkan.</strong></p>
+      <p>Guru harus diperkenalkan kepada cara pengajaran yang berbeza seperti pedagogi responsif dan adaptif terhadap budaya, sebelum dan semasa penempatan mereka. Guru-guru berpengalaman digalakkan berkongsi amalan terbaik mereka dan memberikan nasihat kepada guru baharu.</p>
+      <p>Inisiatif perkongsian pengetahuan lain boleh merangkumi persidangan pengajaran tahunan untuk memupuk rangkaian dan sokongan dalam kalangan guru; dan saluran perkongsian pengetahuan dalam talian yang mesra pengguna sebagai sumber untuk guru.</p>
+      <p>Guru sering menggunakan dana persendirian untuk membina alat pengajaran yang inovatif. Mereka harus disokong, dan dana pengajaran serta pembelajaran harus disediakan untuk guru. Pengiktirafan juga harus diberikan kepada guru dan sekolah atas amalan terbaik mereka.</p>
 
       <% if(currScore.cluesFound != 12){ %>
-    <button class="pop-btn grey">Continue Reading</button>
-    <button class="pop-btn hunt-incomplete-close">Check my scorecard</button>
+    <button class="pop-btn grey">Teruskan membaca</button>
+    <button class="pop-btn hunt-incomplete-close">Semak kad skor saya</button>
       <% } else { %>
-        <button class="pop-btn hunt-incomplete-close">Check my scorecard</button>
+        <button class="pop-btn hunt-incomplete-close">Semak kad skor saya</button>
         <% } %>
     </div>
 </div>
@@ -161,14 +161,14 @@
 <div class="pop-container pop-up" class="recommendation" id="rec-7">
   <div class="blk-overlay"></div>
     <div class="pop">
-      <p><strong>Recommendation 7: Trust and collaboration between schools and Orang Asli communities needs to be built as Orang Asli parents and their communities are important partners in education.</strong></p>
-      <p>This is critical in creating a supportive environment for Orang Asli children. Schools and communities should have open communication and work collaboratively. Schools can also draw upon the community’s expertise and local knowledge as part of the learning experience for their students.</p>
+      <p><strong>Cadangan 7: Kepercayaan dan kerjasama antara sekolah dan masyarakat Orang Asli perlu dibina kerana ibu bapa Orang Asli serta komuniti mereka adalah rakan kongsi yang penting dalam pendidikan.</strong></p>
+      <p>Hal ini penting dalam mewujudkan persekitaran yang menyokong kanak-kanak Orang Asli. Sekolah dan komuniti harus mempunyai komunikasi terbuka dan bekerja secara kolaboratif. Sekolah juga boleh menggunakan kepakaran komuniti dan pengetahuan tempatan sebagai sebahagian daripada pengalaman pembelajaran untuk pelajar mereka.</p>
 
       <% if(currScore.cluesFound != 12){ %>
-    <button class="pop-btn grey">Continue Reading</button>
-    <button class="pop-btn hunt-incomplete-close">Check my scorecard</button>
+    <button class="pop-btn grey">Teruskan membaca</button>
+    <button class="pop-btn hunt-incomplete-close">Semak kad skor saya</button>
       <% } else { %>
-        <button class="pop-btn hunt-incomplete-close">Check my scorecard</button>
+        <button class="pop-btn hunt-incomplete-close">Semak kad skor saya</button>
         <% } %>
     </div>
 </div>
@@ -176,15 +176,15 @@
 <div class="pop-container pop-up" class="recommendation" id="rec-8">
   <div class="blk-overlay"></div>
     <div class="pop">
-      <p><strong>Recommendation 8: Community-based schools (PDK) need to be recognised as part of the support system for schools and adequate essential resources should be provided to PDKs.</strong></p>
-      <p>Support and recognition should be given to PDKs for their important role in community education. PDKs provide preschool education, after-school programmes and in some cases alternative schooling for children without access to public schools or those who have dropped out. Some PDKs also provide learning opportunities for adults in the community.</p>
-      <p>Support can be in the form of funding and resource assistance to PDKs, including infrastructure such as libraries, computers and reliable internet connection. However, their autonomy should remain an important feature of their governance structure.</p>
+      <p><strong>Cadangan 8: Sekolah berasaskan komuniti (PDK) perlu diiktiraf sebagai sebahagian daripada sistem sokongan untuk sekolah dan sumber yang mencukupi perlu disediakan kepada PDK.</strong></p>
+      <p>Sokongan dan pengiktirafan harus diberikan kepada PDK oleh kerana peranan penting mereka dalam pendidikan masyarakat. PDK menyediakan pendidikan prasekolah, program selepas waktu sekolah dan dalam beberapa kes persekolahan alternatif untuk kanak-kanak tanpa akses kepada sekolah awam atau mereka yang tercicir. Beberapa PDK juga menyediakan peluang pembelajaran untuk orang dewasa dalam komuniti.</p>
+      <p>Sokongan boleh diberi dalam bentuk pembiayaan dan bantuan sumber kepada PDK, termasuk infrastruktur seperti perpustakaan, komputer dan sambungan internet yang kukuh. Walau bagaimanapun, autonomi mereka harus kekal sebagai ciri penting dalam struktur tadbir urus mereka.</p>
 
       <% if(currScore.cluesFound != 12){ %>
-    <button class="pop-btn grey">Continue Reading</button>
-    <button class="pop-btn hunt-incomplete-close">Check my scorecard</button>
+    <button class="pop-btn grey">Teruskan membaca</button>
+    <button class="pop-btn hunt-incomplete-close">Semak kad skor saya</button>
       <% } else { %>
-        <button class="pop-btn hunt-incomplete-close">Check my scorecard</button>
+        <button class="pop-btn hunt-incomplete-close">Semak kad skor saya</button>
         <% } %>
     </div>
 </div>
@@ -192,14 +192,14 @@
 <div class="pop-container pop-up" class="recommendation" id="rec-9">
   <div class="blk-overlay"></div>
     <div class="pop">
-      <p><strong>Recommendation 9: Good quality preschool education needs to be provided based on learning through play, social interaction, and their environment.</strong></p>
-      <p>Orang Asli students without access to preschools are at a disadvantage when they enter Standard 1, as the curriculum assumes that students can already read, write, and count. Teachers have to pay special attention to teach them these basic skills, but this may not be possible given large class sizes. Students who attend preschool may also be more confident in their abilities and are able to transition to schooling life better. There are many villages without access to preschools and the founding of more community-based learning centres (PDK) could play an important role in providing preschool education for Orang Asli children.</p>
+      <p><strong>Cadangan 9: Pendidikan prasekolah yang berkualiti perlu disediakan berdasarkan pembelajaran melalui permainan, interaksi sosial dan persekitaran mereka.</strong></p>
+      <p>Murid Orang Asli tanpa akses kepada prasekolah serba kekurangan apabila mereka memasuki Darjah 1, kerana kurikulum menganggap bahawa mereka sudah boleh membaca, menulis dan mengira. Guru perlu memberi perhatian khusus untuk mengajar kemahiran asas ini kepada mereka, tetapi hal ini mungkin tidak dapat dilakukan memandangkan saiz kelas yang besar. Murid yang menghadiri prasekolah juga mungkin lebih yakin dengan kebolehan mereka dan dapat beralih ke kehidupan persekolahan dengan lebih baik. Terdapat banyak kampung yang tidak mempunyai akses kepada prasekolah dan penubuhan lebih banyak pusat didikan komuniti (PDK) boleh memainkan peranan penting dalam menyediakan pendidikan prasekolah untuk kanak-kanak Orang Asli.</p>
 
       <% if(currScore.cluesFound != 12){ %>
-    <button class="pop-btn grey">Continue Reading</button>
-    <button class="pop-btn hunt-incomplete-close">Check my scorecard</button>
+    <button class="pop-btn grey">Teruskan membaca</button>
+    <button class="pop-btn hunt-incomplete-close">Semak kad skor saya</button>
       <% } else { %>
-        <button class="pop-btn hunt-incomplete-close">Check my scorecard</button>
+        <button class="pop-btn hunt-incomplete-close">Semak kad skor saya</button>
         <% } %>
     </div>
 </div>
@@ -207,15 +207,15 @@
 <div class="pop-container pop-up" class="recommendation" id="rec-10">
   <div class="blk-overlay"></div>
     <div class="pop">
-      <p><strong>Recommendation 10: Orang Asli communities should be empowered to be their own agents of change and participate in the process of Orang Asli-related policies.</strong></p>
-      <p>This ensures that their cultures and views are incorporated in policymaking. Education issues and challenges should be addressed with Orang Asli parents and communities at the school, state, and national levels.</p>
-      <p>The creation of an Orang Asli education council comprising Orang Asli leaders, education policymakers, principals, teachers, and other relevant stakeholders to govern and monitor the progress of policy and programmes for children would help to ensure voices of the Orang Asli are fully taken into account and are involved in the close monitoring of any programmes.</p>
+      <p><strong>Cadangan 10: Masyarakat Orang Asli harus diperkasa untuk menjadi agen perubahan mereka sendiri dan mengambil bahagian dalam proses penggubalan dasar berkaitan Orang Asli.</strong></p>
+      <p>Ini memastikan bahawa budaya dan pandangan mereka diterapkan dalam penggubalan dasar. Isu dan cabaran pendidikan harus ditangani bersama dengan ibu bapa dan komuniti Orange Asli di peringkat sekolah, negeri dan kebangsaan.</p>
+      <p>Salah satu langkah yang penting adalah penubuhan Majlis pendidikan Orang Asli, yang terdiri daripada pemimpin, penggubal dasar pendidikan, pengetua, dan guru Orang Asli, bersama dengan pihak berkepentingan lain yang berkaitan. Majlis ini boleh mentadbir dan memantau kemajuan dasar dan program untuk kanak-kanak, lantas memastikan suara Orang Asli diambil kira dan terlibat sepenuhnya dalam pemantauan rapi mana-mana program.</p>
 
       <% if(currScore.cluesFound != 12){ %>
-    <button class="pop-btn grey">Continue Reading</button>
-    <button class="pop-btn hunt-incomplete-close">Check my scorecard</button>
+    <button class="pop-btn grey">Teruskan membaca</button>
+    <button class="pop-btn hunt-incomplete-close">Semak kad skor saya</button>
       <% } else { %>
-        <button class="pop-btn hunt-incomplete-close">Check my scorecard</button>
+        <button class="pop-btn hunt-incomplete-close">Semak kad skor saya</button>
         <% } %>
     </div>
 </div>
@@ -223,14 +223,14 @@
 <div class="pop-container pop-up" class="recommendation" id="rec-11">
   <div class="blk-overlay"></div>
     <div class="pop">
-      <p><strong>Recommendation 11: Create a strength-based discourse to shift away from the current deficit discourse on Orang Asli.</strong></p>
-      <p>Orang Asli students’ high dropout rate and gap in educational achievement are often attributed to their culture and way of life. All stakeholders need to move away from this 'deficit discourse', and instead adopt a strength-based framing that values Orang Asli culture as an asset. This includes shifting to culturally responsive teaching methods that draw on the students' cultural context to make learning relevant and effective.</p>
+      <p><strong>Cadangan 11: Mewujudkan wacana berasaskan kekuatan untuk beralih daripada wacana defisit semasa Orang Asli.</strong></p>
+      <p>Kadar keciciran pelajar Orang Asli yang tinggi dan jurang dalam pencapaian pendidikan sering dikaitkan dengan budaya dan cara hidup mereka. Semua pihak berkepentingan perlu beralih daripada 'wacana defisit' ini, dan menerima pakai satu rangka berasaskan kekuatan yang menghargai budaya Orang Asli sebagai aset. Hal ini termasuk peralihan kepada kaedah pengajaran responsif terhadap budaya yang menggunakan konteks budaya pelajar untuk menjadikan pembelajaran berkaitan dan berkesan.</p>
 
       <% if(currScore.cluesFound != 12){ %>
-    <button class="pop-btn grey">Continue Reading</button>
-    <button class="pop-btn hunt-incomplete-close">Check my scorecard</button>
+    <button class="pop-btn grey">Teruskan membaca</button>
+    <button class="pop-btn hunt-incomplete-close">Semak kad skor saya</button>
       <% } else { %>
-        <button class="pop-btn hunt-incomplete-close">Check my scorecard</button>
+        <button class="pop-btn hunt-incomplete-close">Semak kad skor saya</button>
         <% } %>
     </div>
 </div>
@@ -238,17 +238,17 @@
 <div class="pop-container pop-up" class="recommendation" id="rec-12">
   <div class="blk-overlay"></div>
     <div class="pop">
-      <p><strong>Recommendation 12: The collaboration of relevant ministries must be strengthened to address the multidimensional challenges that Orang Asli children and communities face.</strong></p>
-      <p>Multiple agencies need to coordinate in order to provide access to high-quality education. This includes building schools that are close to the villages, providing safe and reliable transportation and roads, and financial and resource assistance to families and schools.</p>
-      <p>Infrastructure such as hostels, libraries, computer centres, and internet connectivity are also desperately needed.</p>
-      <p>At the village level, basic amenities like electricity and clean water are vital.</p>
-      <p>The cooperation of NGOs and other charitable foundations are also needed in this effort. Information flow and transparency on the availability of assistance also need to be addressed so that parents and students are aware of and have access to the assistance and resources available to them.</p>
+      <p><strong>Cadangan 12: Kerjasama kementerian yang berkaitan mesti diperkukuh untuk menangani cabaran pelbagai dimensi yang dihadapi oleh kanak-kanak dan masyarakat Orang Asli.</strong></p>
+      <p>Pelbagai agensi perlu bekerjasama untuk menyediakan akses kepada pendidikan berkualiti tinggi. Hal ini termasuk membina sekolah yang berhampiran dengan kampung, menyediakan pengangkutan dan jalan raya yang selamat dan kukuh, serta bantuan kewangan dan sumber kepada keluarga dan sekolah.</p>
+      <p>Infrastruktur seperti asrama, perpustakaan, pusat komputer, dan sambungan internet juga amat diperlukan.</p>
+      <p>Di peringkat kampung, kemudahan asas seperti elektrik dan air bersih adalah penting.</p>
+      <p>Kerjasama NGO dan yayasan kebajikan lain juga diperlukan dalam usaha ini. Aliran maklumat dan ketelusan mengenai ketersediaan bantuan juga perlu ditangani supaya ibu bapa dan pelajar menyedarinya dan mempunyai akses kepada bantuan dan sumber yang tersedia untuk mereka.</p>
 
       <% if(currScore.cluesFound != 12){ %>
-    <button class="pop-btn grey">Continue Reading</button>
-    <button class="pop-btn hunt-incomplete-close">Check my scorecard</button>
+    <button class="pop-btn grey">Teruskan membaca</button>
+    <button class="pop-btn hunt-incomplete-close">Semak kad skor saya</button>
       <% } else { %>
-        <button class="pop-btn hunt-incomplete-close">Check my scorecard</button>
+        <button class="pop-btn hunt-incomplete-close">Semak kad skor saya</button>
         <% } %>
     </div>
 </div>
