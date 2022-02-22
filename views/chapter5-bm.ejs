@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ms">
+  <head>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <meta name="title" content="“I will show them what I can do”">
+   <meta name="description" content="Meng’s dream school has parking lots for the disabled, and there’s a surprising reason why.">
+   <meta name="image" content="/images/chapters/chapter-5.PNG">
+  <title><%= title %></title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!--     <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/6.2.0/browser/pixi.min.js"></script> -->
+   <link rel="icon" type="image/jpg" href="/images/favicon.png"/>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link rel='stylesheet' href='/stylesheets/resources.css' />
+</head>
+    <body>
+      <!-- overlay -->
+      <%- include menu/nav-btn-bm.ejs %>
+      <%- include popups/popup-bm.ejs %>
+      <%- include popups/treasure-hunt-bm.ejs %>
+        <section class="chapter-wrapper">
+            <section class="flex-item-left">
+                <img src="/images/chapters/chapter-5.PNG" alt="">
+            </section>
+
+            <section class="flex-item-right">
+              <div class="ch-label"><div>CHAPTER 5</div></div>
+                 <h3>“I will show them what I can do”</h3>
+                 <div class="ch-content">
+                   <p>Meng’s family doesn’t have a car, but she would like her dream school to have disabled parking lots. She was quite intentional about it too – when sketching out her dream school on paper, she made sure to mark a number of parking lots with the disabled symbol.</p>
+                   <p>“It’s because I have a family member who’s OKU,” she explains using the Malay acronym for ‘person with disability’. “It would be easier for them to park, and sometimes I see how it’s hard for them to get out of the car.”</p>
+                    <div id="ch-doodle">
+                      <img src="/images/chapters/ch5-doodle.png" alt="">
+                    </div>
+                   <p>Then, after an awkward pause, she adds: “And I am also having OKU status.”</p>
+                   <p>We are taken aback. There is nothing to suggest that this confident, expressive young lady speaking to us via video call is anything but whole and healthy, so we probe further.</p>
+                   <p>“In the beginning, I was slow to understand,” she explains of her time in primary school. “For spelling and writing, I was OK. It was only reading that I just couldn’t pass.”</p>
+                   <p>One of her teachers noticed something amiss, and brought her for a checkup, where a doctor diagnosed Meng with learning disabilities. Within weeks, she was issued an OKU card, and she started attending different classes and took separate exams from her peers. Her family also received monthly cash assistance.</p>
+                   <p>Some parents have lamented how teachers readily allow Orang Asli students to be categorised as OKU, instead of attempting to understand the students’ needs and adapting their teaching methods accordingly.</p>
+                   <p>For Meng and her family, they were not told of the matter until she received the card. Nevertheless, she took it in stride: “At that time, I accepted it, because I knew myself that I couldn’t read.”</p>
+                   <p>But then the insults started.</p>
+                   <p>May we ask what they would say? we broach the topic gently. “They would call me OKU, that I’m not smart, retarded, stupid.”</p>
+                   <p>She laughs that awkward laugh one uses to hide shame, then quickly apologises for repeating those words to us. We don’t know how to refuse her apology.</p>
+                   <p>“I just kept quiet,” she continues. “Sometimes it hurt me to hear them, but when I fought back, after a while, I just became quiet again. I became afraid to fight back.”</p>
+                   <p>The name-calling persisted from primary school to secondary school. An authority had assigned Meng a lower status, and it seems everyone saw it as licence to treat her as such.</p>
+                   <p>“I just told myself, be patient, be patient,” she says mimicking a calm voice. “Even though sometimes I felt like punching them.”</p>
+                   <p>“Just be patient, and someday, I will show them what I can do.”</p>
+                   <p>There is an edge to Meng’s voice as she declares this, the voice of someone – a child, no less – determined to take back her life’s narrative.</p>
+                   <p>Her results did improve. She says she no longer has trouble reading, and that she now scores better than some of the students who teased her.</p>
+                   <p>“Stories of success, of overcoming barriers, really help change the public discourse of Orang Asli as backwards or inferior,” says Ya Shin when reflecting on Meng’s story. “That discourse is completely untrue, but prevails at school level, and continues to the highest levels of public policymaking.”</p>
+                   <p>“These ‘deficit narratives’ put the blame on the Orang Asli culture and way of life as the source of the problems,” says Dr Rusaslina. “So the blame is placed at their feet and little attention is paid to more fundamental problems like structural inequality and accessibility.”</p>
+                   <p>IDEAS’ research observed several instances where the Orang Asli way of life was spoken of as a challenge to education, a handicap that needed to be overcome, and noted such perceptions among teachers, policymakers, academicians and in the media.</p>
+                   <p>Somewhere in time, the Orang Asli had been assigned a deficient status, and now it seems everyone sees fit to treat them as such.</p>
+                   <p><a href="/en/chapter5/found-clue/clue-11" id="clue-11" class="<%= currScore.clue[10] == true ? 'clue found' : 'clue' %>">“We need to shift to a strength-based discourse, where we recognise Orang Asli culture and traditions as important resources that we can all learn from,”</a> stresses Dr Rusaslina. "Once we recognise that, we recognise them as equals in society, instead of people who need to be told what to do and what kind of development they need.”</p>
+                   <p>“Perhaps the one thing we really need to do is to respect their autonomy, their right to decide for themselves what they want for their communities.” </p>
+                   <p>That would return to them the right to their own narrative. The right to imagine their environment, their economy, their families, their schools, as they see it. Only when everyone has that right, can we imagine a just and equitable society, together.</p>
+                   <p>Do you think you are disabled? we ask Meng. “In the past, yes. But now, not anymore,” she says, and we imagine her already building the society of her dreams. “But I will still respect those who are disabled, because I was once disabled too.”</p><br>
+                   <p><em>*Names of children changed to protect their identities. This interview with Niza was conducted independent of IDEAS’ research interviews.</em></p>
+                 </div>
+
+                 <div class="ch-finished">
+                   <span><img class="<%= currScore.clue[10] == true ? 'show' : 'dim' %>" src="/images/menu/group-110.svg" alt="">
+                   <% if (currScore.clue[10] == true){ %>
+                   You have completed this chapter
+                   <% } else { %>
+                   You have not found all the solutions in this chapter
+                   <% } %></span>
+                   <div class="chapter-btns">
+                     <button class="ch-prev"><a href="/en/chapter4">< PREVIOUS</a></button>
+                     <% if (currScore.cluesFound == 12) {%>
+                     <button class="ch-next"><a href="/en/take-action">NEXT ></a></button>
+                     <%} else { %>
+                      <button class="ch-next access-denied">NEXT ></button>
+                    <%} %>
+                   </div>
+                 </div>
+
+
+            </section>
+        </section>
+
+    <script src="/javascripts/script.js"></script>
+    </body>
+</html>

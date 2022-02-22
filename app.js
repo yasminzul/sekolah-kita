@@ -21,6 +21,15 @@ var actionRouter = require('./routes/take-action');
 var resourcesRouter = require('./routes/resources');
 var aboutRouter = require('./routes/about');
 
+var b1Router = require('./routes/chapter1-bm');
+var b2Router = require('./routes/chapter2-bm');
+var b3Router = require('./routes/chapter3-bm');
+var b4Router = require('./routes/chapter4-bm');
+var b5Router = require('./routes/chapter5-bm');
+var actionBMRouter = require('./routes/take-action-bm');
+var resourcesBMRouter = require('./routes/resources-bm');
+var aboutBMRouter = require('./routes/about-bm');
+
 var app = express();
 
 //database
@@ -66,6 +75,15 @@ app.use(function(req, res, next) {
 
 app.use('/', indexBMRouter);
 app.use('/orang-asli', oaBMRouter);
+app.use('/bab1', b1Router);
+app.use('/bab2', b2Router);
+app.use('/bab3', b3Router);
+app.use('/bab4', b4Router);
+app.use('/bab5', b5Router);
+app.use('/take-action', actionBMRouter);
+app.use('/pusat-sumber', resourcesBMRouter);
+app.use('/projek', aboutBMRouter);
+
 app.use('/en', indexENRouter);
 app.use('/en/orang-asli', oaENRouter);
 app.use('/en/chapter1', c1Router);
@@ -81,17 +99,6 @@ app.get('/en/hero-teachers', function (req, res) {
   res.render('hero-teachers', { title: 'Meet Our Hero Teachers'});
 })
 
-app.get('/projek', function (req, res) {
-  res.render('credits-bm')
-})
-
-app.get('/pusat-sumber', function (req, res) {
-  res.render('resources-bm')
-})
-
-app.get('/pusat-sumber', function (req, res) {
-  res.render('resources-bm')
-})
 
 app.use(function(req, res, next) {
   next(createError(404));

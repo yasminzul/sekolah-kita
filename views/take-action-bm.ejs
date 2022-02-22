@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ms">
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <meta name="og:title" content=" What does the school of your dreams look like?">
+   <meta name="og:description" content="Can we reimagine our schools together? Use our interactive classroom builder to create the school of your dreams, then share it with your friends!">
+   <meta name="og:image" content="/images/Bamboo-assets/Bamboo-class-background.PNG">
+   <meta name="twitter:title" content=" What does the school of your dreams look like?">
+   <meta name="twitter:description" content="Can we reimagine our schools together? Use our interactive classroom builder to create the school of your dreams, then share it with your friends!">
+   <meta name="twitter:image" content="/images/Bamboo-assets/Bamboo-class-background.PNG">
+    <meta name="twitter:card" content="summary_large_image">
+    <title><%= title %></title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/javascripts/fabric.min.js"></script>
+    <link rel="icon" type="image/jpg" href="/images/favicon.png"/>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/take-action.css' />
+  </head>
+  <body>
+     <!-- overlay -->
+
+    <%- include menu/nav-btn-bm.ejs %>
+    <%- include popups/popup-bm.ejs %>
+
+    <div class="pop-container pop-up menu-open" id="class-start">
+      <div class="blk-overlay"></div>
+          <div class="pop">
+            <h5>Take Action!</h5>
+            <p> <b>Well done! You’ve passed the test!</b></p>
+
+            <p>You’ve learned about the 12 key ways we can reimagine our schools to be more inclusive for Orang Asli students. Now you can do your part by spreading the word! Use our interactive classroom builder to design the classroom of your dreams – a classroom that’s more inclusive for all students.
+</p>
+            <button class="pop-btn" id="class-start-close">Got it!</button>
+          </div>
+      </div>
+    <section class="ta-wrapper">
+        <section class="flex-item-left">
+             <canvas id="customize-area"></canvas>
+        </section>
+
+        <section class="flex-item-right">
+          <div class="oa-col">
+            <div class="mobile-btns">
+                <button class="m-choose-bg"><img src="/images/take-action/Group-365.svg"></button>
+                <button class="m-add-stk"><img src="/images/take-action/Group-366.svg"></button>
+                <button class="add-text"><img src="/images/take-action/Group-367.svg"></button>
+                <button class="delete-sticker"><img src="/images/take-action/Group-368.svg"></button>
+            </div>
+            <div class="bottom-mobile-btn">
+                <button style="background-color: #FFB806;" class="download-badge"><img src="/images/take-action/ic_file_download_24px.svg">Download<span style="margin: 0 5px;">&</span> <img style="margin-left: 3px;" src="/images/take-action/ic_share_24px.svg">Share</button>
+            </div>
+
+            <div class="choose-badge">
+              <h4>Choose a classroom to start</h4>
+                <button id="no-bg">No Background</button>
+                <button class="sticker-bg"><img src="/images/Science-assets/Science-classroom-background.png"></button>
+                <button class="sticker-bg"><img src="/images/Bamboo-assets/Bamboo-class-background.PNG"></button>
+                <button class="sticker-bg"><img src="/images/Nature-assets/Nature-classroom-background.PNG"></button>
+                <button id="preload-science"><img src="/images/Science-classroom.PNG"></button>
+                <button id="preload-bamboo"><img src="/images/Bamboo-classroom.PNG"></button>
+                <button id="preload-nature"><img src="/images/Nature-classroom.PNG"></button>
+            </div>
+
+            <div class="add-stickers">
+              <h4>Add Stickers</h4>
+                <button class="sticker"><img src="/images/Nature-assets/Bamboo-percussions.png"></button>
+                <button class="sticker"><img src="/images/Nature-assets/Erhu.png"></button>
+                <button class="sticker"><img src="/images/Nature-assets/Indian-drums.png"></button>
+                <button class="sticker"><img src="/images/Nature-assets/Kompang.png"></button>
+                <button class="sticker"><img src="/images/Nature-assets/Lotong-monkey.png"></button>
+                <button class="sticker"><img src="/images/Nature-assets/speech.png"></button>
+                <button class="sticker"><img src="/images/Nature-assets/Orang-asli-blowpipe.png"></button>
+                <button class="sticker"><img src="/images/Nature-assets/Orang-asli-elder.png"></button>
+                <button class="sticker"><img src="/images/Nature-assets/Sang-kancil-dlm-kelas.png"></button>
+                <button class="sticker"><img src="/images/Nature-assets/Woven-basket-half-done.png"></button>
+                <button class="sticker"><img src="/images/Nature-assets/Woven-basket.png"></button>
+                <button class="sticker"><img src="/images/Nature-assets/river-doodle.png"></button>
+                <button class="sticker"><img src="/images/Nature-assets/Gunung-ledang.png"></button>
+
+                <button class="sticker"><img src="/images/Bamboo-assets/Cangkul-spade.png"></button>
+                <button class="sticker"><img src="/images/Bamboo-assets/Encyclopaedias-books.png"></button>
+                <button class="sticker"><img src="/images/Bamboo-assets/Female-teacher.png"></button>
+                <button class="sticker"><img src="/images/Bamboo-assets/Festive-items.png"></button>
+                <button class="sticker"><img src="/images/Bamboo-assets/Hanging-plant.png"></button>
+                <button class="sticker"><img src="/images/Bamboo-assets/Kolam-drawing.png"></button>
+                <button class="sticker"><img src="/images/Bamboo-assets/Mannequin.png"></button>
+                <!-- <button class="sticker"><img src="/images/Bamboo-assets/Notebook-page.png"></button> -->
+                <button class="sticker"><img src="/images/Bamboo-assets/Potted-plants.png"></button>
+                <button class="sticker"><img src="/images/Bamboo-assets/Sports.png"></button>
+                <button class="sticker"><img src="/images/Bamboo-assets/Straw-hat.png"></button>
+                <button class="sticker"><img src="/images/Bamboo-assets/Wau-traditional-toys.png"></button>
+                <button class="sticker"><img src="/images/Bamboo-assets/White-board-doodle-map.png"></button>
+                <button class="sticker"><img src="/images/Bamboo-assets/Whiteboard.png"></button>
+                <button class="sticker"><img src="/images/Bamboo-assets/Woven-basket.png"></button>
+                <button class="sticker"><img src="/images/Bamboo-assets/Woven-mat.png"></button>
+
+                <button class="sticker"><img src="/images/Science-assets/Algebra-formula.png"></button>
+                <button class="sticker"><img src="/images/Science-assets/butterfly-taxidermy-cocoon.png"></button>
+                <button class="sticker"><img src="/images/Science-assets/Clothes-rack.png"></button>
+                <button class="sticker"><img src="/images/Science-assets/Desk.png"></button>
+                <button class="sticker"><img src="/images/Science-assets/Diagram.png"></button>
+                <button class="sticker"><img src="/images/Science-assets/Doctor-tool.png"></button>
+                <button class="sticker"><img src="/images/Science-assets/Doodles-notebook.png"></button>
+                <button class="sticker"><img src="/images/Science-assets/Globe.png"></button>
+                <!-- <button class="sticker"><img src="/images/Science-assets/Grid-paper-notebook.png"></button> -->
+                <button class="sticker"><img src="/images/Science-assets/Laptop-QR-code.png"></button>
+                <button class="sticker"><img src="/images/Science-assets/Male-teacher.png"></button>
+                <button class="sticker"><img src="/images/Science-assets/Mechanical-engineering.png"></button>
+                <button class="sticker"><img src="/images/Science-assets/Parts-plant.png"></button>
+                <button class="sticker"><img src="/images/Science-assets/Potted-plant-germination.png"></button>
+                <button class="sticker"><img src="/images/Science-assets/Robotic-hand.png"></button>
+                <button class="sticker"><img src="/images/Science-assets/Science-anatomy-sculpture.png"></button>
+                <button class="sticker"><img src="/images/Science-assets/Test-tube.png"></button>
+                <button class="sticker"><img src="/images/Science-assets/Tools.png"></button>
+                <button class="sticker"><img src="/images/Science-assets/Whiteboard-science-classroom.png"></button>
+            </div>
+            <div class="bottom-btn">
+                <button class="add-text">Add text</button>
+                <button class="delete-sticker">Remove selected item</button>
+                <button class="download-badge"><img src="/images/take-action/ic_file_download_24px.svg">Download <span style="margin: 0 5px;">&</span> <img style="margin-left: 3px;" src="/images/take-action/ic_share_24px.svg">Share</button>
+            </div>
+
+
+           </div>
+        </section>
+    </section>
+
+    <div class="pop-container pop-up" id="share-img">
+      <div class="blk-overlay"></div>
+          <div class="pop">
+            <!-- <h5>Share</h5> -->
+             <button id="share-img-close"><img src="/images/icon-close.svg" alt="close"></button>
+            <div id="dwld-img"></div>
+<!--             <a href="#" id="dwld"><button>DOWNLOAD</button></a>
+            <button id="copy">COPY IMAGE</button> -->
+             <div class="click-dwnd" id="mobile-dwnd"><img src="/images/take-action/click-dwnld-m.svg" alt="">Long press to download!</div>
+            <p>Downloaded your dream classroom? Now head to social media to share it with your friends!</p>
+            <div class="share-options">
+            <a href="https://www.facebook.com/" target="_blank" class="share-icon"><img src="/images/menu/Group-318.svg" alt="Facebook share"></a>
+            <a href="https://twitter.com/" target="_blank" class="share-icon"><img src="/images/menu/Group-317.svg" alt="Twitter share"></a>
+            <a href="https://api.whatsapp.com/send?text=Empower%20education%20for%20all%20at%20https%3A//sekolahkita.my" target="_blank" class="share-icon"><img src="/images/menu/Group-316.svg" alt="Whatsapp share"></a>
+            <a href="https://www.instagram.com/" target="_blank" class="share-icon"><img src="/images/menu/group-439.svg" alt="Instagram share"></a>
+            </div>
+            <div class="click-dwnd" id="desk-dwnd"><img src="/images/take-action/click-dwnld.svg" alt="">Right click to download!</div>
+          </div>
+    </div>
+
+
+    <script src="/javascripts/take-action.js"></script>
+    <script src="/javascripts/script.js"></script>
+  </body>
+</html>
