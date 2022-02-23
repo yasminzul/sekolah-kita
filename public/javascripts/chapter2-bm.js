@@ -21,7 +21,7 @@ let textArr = [
 <div class="chtitle">Prasekolah</div>
  Kelas prasekolah di bawah bidang kuasa Kementerian Pendidikan. Terdapat 6,185 institusi Prasekolah. Para Ibu bapa maklum bahawa pendidikan di kelas Prasekolah biasanya lebih berkualiti berbanding kelas KEMAS, dengan guru yang lebih terlatih dan kemudahan yang lebih baik. Walau bagaimanapun, komuniti Orang Asli mempunyai akses terhad kepada Prasekolah, kerana ia biasanya terletak di dalam sekolah kebangsaan di pusat bandar.<br><br>
 
-<a href='/en/chapter2/found-clue/clue-9' class='clue' id="clue-9">Kajian oleh IDEAS memaklumkan bahawa akses kepada prasekolah berkualiti adalah penting untuk mengekalkan pelajar Orang Asli di sekolah, kerana mereka akan memulakan persekolahan setaraf dengan rakan sebaya mereka.</a>
+<a href='/bab2/jumpa/clue-9' class='clue' id="clue-9">Kajian oleh IDEAS memaklumkan bahawa akses kepada prasekolah berkualiti adalah penting untuk mengekalkan pelajar Orang Asli di sekolah, kerana mereka akan memulakan persekolahan setaraf dengan rakan sebaya mereka.</a>
 <div class="chcounter">3/19</div>`,
 
 `(Umur 7-12)
@@ -94,7 +94,7 @@ Ramai murid Orang Asli mengimpikan pendidikan yang lebih tinggi, tetapi sering t
  <div class="chcounter">17/19</div>`,
 
 `<div class="chtitle">Pusat didikan komuniti</div>
- Sesetengah masyarakat Orang Asli telah menubuhkan pusat didikan komuniti, yang diadakan di kampung mereka. Kelas-kelas ini biasanya lebih bebas, dan merangkumi budaya Orang Asli dan pengetahuan tradisional sebagai sebahagian daripada sukatan pelajaran. <a href='/en/chapter2/found-clue/clue-8' class='clue' id="clue-8"> Terdapat ibu bapa dan guru maklum bahawa kelas ini merupakan satu bentuk pendidikan tambahan yang penting dalam kalangan komuniti Orang Asli, tetapi memerlukan pengiktirafan dan sokongan yang lebih luas daripada agensi kerajaan.</a>
+ Sesetengah masyarakat Orang Asli telah menubuhkan pusat didikan komuniti, yang diadakan di kampung mereka. Kelas-kelas ini biasanya lebih bebas, dan merangkumi budaya Orang Asli dan pengetahuan tradisional sebagai sebahagian daripada sukatan pelajaran. <a href='/bab2/jumpa/clue-8' class='clue' id="clue-8"> Terdapat ibu bapa dan guru maklum bahawa kelas ini merupakan satu bentuk pendidikan tambahan yang penting dalam kalangan komuniti Orang Asli, tetapi memerlukan pengiktirafan dan sokongan yang lebih luas daripada agensi kerajaan.</a>
  <div class="chcounter">18/19</div>`,
 
 `<div class="chtitle">Sekolah swasta</div>
@@ -113,27 +113,27 @@ textCounter = 0;
 const ease = new Ease.Ease();
 
 const loader = PIXI.Loader.shared;
-loader.add('sekolahTitle','/images/Chapter2-ENG/Schools-We-Attend-fullcolor-eng.jpg');
-loader.add('sekolah1','/images/Chapter2-ENG/tabika-kemas-eng.jpg');
-loader.add('sekolah2','/images/Chapter2-ENG/taska-kemas-eng.jpg');
-loader.add('sekolah3','/images/Chapter2-ENG/pra-sekolah-eng.jpg');
-loader.add('sekolah4','/images/Chapter2-ENG/sek-keb-eng.jpg');
-loader.add('sekolah5','/images/Chapter2-ENG/sek-jeniskeb-eng.jpg');
-loader.add('sekolah6','/images/Chapter2-ENG/sk-orangasli-eng.jpg');
-loader.add('sekolah7','/images/Chapter2-ENG/sk9-eng.jpg');
-loader.add('sekolah8','/images/Chapter2-ENG/sek-khas-eng.jpg');
-loader.add('sekolah9','/images/Chapter2-ENG/smk-eng.jpg');
-loader.add('sekolah10','/images/Chapter2-ENG/sm-jeniskeb-eng.jpg');
-loader.add('sekolah11','/images/Chapter2-ENG/sek-asrama-eng.jpg');
-loader.add('sekolah12','/images/Chapter2-ENG/pipoa-eng.jpg');
-loader.add('sekolah13','/images/Chapter2-ENG/sek-agama-eng.jpg');
-loader.add('sekolah14','/images/Chapter2-ENG/sm-teknik-eng.jpg');
-loader.add('sekolah15','/images/Chapter2-ENG/sek-sukan-eng.jpg');
-loader.add('sekolah16','/images/Chapter2-ENG/pengajian-tinggi-eng.jpg');
-loader.add('sekolah17','/images/Chapter2-ENG/kedap-eng.jpg');
-loader.add('sekolah18','/images/Chapter2-ENG/pusat-didikan-eng.jpg');
-loader.add('sekolah19','/images/Chapter2-ENG/sek-swasta-eng.jpg');
-loader.add('sekolahALL','/images/Chapter2-ENG/Schools-We-Attend-fullgrey-eng.jpg');
+loader.add('sekolahTitle','/images/Chapter2-BM/Schools-We-Attend-fullcolor-bm.jpg');
+loader.add('sekolah1','/images/Chapter2-BM/tabika-kemas.jpg');
+loader.add('sekolah2','/images/Chapter2-BM/taska-kemas.jpg');
+loader.add('sekolah3','/images/Chapter2-BM/pra-sekolah.jpg');
+loader.add('sekolah4','/images/Chapter2-BM/sek-keb.jpg');
+loader.add('sekolah5','/images/Chapter2-BM/sek-jeniskeb.jpg');
+loader.add('sekolah6','/images/Chapter2-BM/sk-orangasli.jpg');
+loader.add('sekolah7','/images/Chapter2-BM/sk9.jpg');
+loader.add('sekolah8','/images/Chapter2-BM/sek-khas.jpg');
+loader.add('sekolah9','/images/Chapter2-BM/smk.jpg');
+loader.add('sekolah10','/images/Chapter2-BM/sm-jeniskeb.jpg');
+loader.add('sekolah11','/images/Chapter2-BM/sek-asrama.jpg');
+loader.add('sekolah12','/images/Chapter2-BM/pipoa.jpg');
+loader.add('sekolah13','/images/Chapter2-BM/sek-agama.jpg');
+loader.add('sekolah14','/images/Chapter2-BM/sm-teknik.jpg');
+loader.add('sekolah15','/images/Chapter2-BM/sek-sukan.jpg');
+loader.add('sekolah16','/images/Chapter2-BM/pengajian-tinggi.jpg');
+loader.add('sekolah17','/images/Chapter2-BM/kedap.jpg');
+loader.add('sekolah18','/images/Chapter2-BM/pusat-didikan.jpg');
+loader.add('sekolah19','/images/Chapter2-BM/sek-swasta.jpg');
+loader.add('sekolahALL','/images/Chapter2-BM/Schools-We-Attend-fullgrey-bm.jpg');
 
 loader.load(setup);
 
