@@ -98,7 +98,7 @@ loader.load(setup);
     const notebookHTextures = [];
     for (let i=0; i < 7; i++)
     {
-      const notebookHTexture = PIXI.Texture.from(`NOTEBOOK_0000${i}.png`);
+      const notebookHTexture = PIXI.Texture.from(`NOTEBOOK-BM_000${i}.png`);
       notebookHTextures.push(notebookHTexture);
     }
 
@@ -116,7 +116,7 @@ loader.load(setup);
     const notebookTextures = [];
     for (let i=0; i < 40; i++)
     {
-      const notebookTexture = PIXI.Texture.from(`NOTEBOOK_000${i}.png`);
+      const notebookTexture = PIXI.Texture.from(`notebookBM_000${i}.png`);
       notebookTextures.push(notebookTexture);
     }
 
@@ -165,7 +165,7 @@ loader.load(setup);
     const elemHeadpieceTextures = [];
     for (let i=0; i < 74; i++)
     {
-      const headpieceTexture = PIXI.Texture.from(`HEADDRESS_000${i}.png`);
+      const headpieceTexture = PIXI.Texture.from(`HEADDRESS-BM_000${i}.png`);
       elemHeadpieceTextures.push(headpieceTexture);
     }
 
@@ -205,7 +205,7 @@ loader.load(setup);
     const elemPhoneTextures = [];
     for (let i=0; i < 74; i++)
     {
-      const phoneTexture = PIXI.Texture.from(`SMARTPHONE-NEW_000${i}.png`);
+      const phoneTexture = PIXI.Texture.from(`SMARTPHONE-BM_000${i}.png`);
       elemPhoneTextures.push(phoneTexture);
     }
 
@@ -246,7 +246,7 @@ loader.load(setup);
     const elemFluteTextures = [];
     for (let i=0; i < 74; i++)
     {
-      const fluteTexture = PIXI.Texture.from(`NOSEFLUTE_000${i}.png`);
+      const fluteTexture = PIXI.Texture.from(`NOSEFLUTE-BM_000${i}.png`);
       elemFluteTextures.push(fluteTexture);
     }
 

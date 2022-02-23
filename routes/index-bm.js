@@ -1,9 +1,14 @@
 var express = require('express');
 var router = express.Router();
+var Scorecard = require ('../models/treasure-hunt');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index-bm', { title: 'Sekolah Kita' });
+  var scoreCard = new Scorecard(req.session.scoreCard ? req.session.scoreCard : {
+  clue: [false, false, false, false, false, false, false, false, false, false, false, false],
+  chapterAccess:1,
+  cluesFound:0 });
+  res.render('index-bm', { title: 'Sekolah Kita', currScore: scoreCard });
 });
 
 module.exports = router;
