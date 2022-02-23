@@ -22,7 +22,8 @@ else {
   loader.add('stationery','images/stationery/stationery@2x.png');
   loader.add('weaving','images/weaving/weaving@2x.png');
   loader.add('phone','images/Animated-sprites/spritesheet-PhoneBM.json');
-  loader.add('notebook','images/Animated-sprites/spritesheet-bookHoverBM.json')
+  loader.add('notebookHover','images/Animated-sprites/spritesheet-bookHoverBM.json');
+  loader.add('notebook','images/Animated-sprites/spritesheet-notebookBM.json');
   loader.add('headpiece','images/Animated-sprites/spritesheet-headBM.json');
   loader.add('flute','images/Animated-sprites/spritesheet-FluteBM.json')
 }
@@ -50,8 +51,7 @@ loader.load(setup);
     const elemPhone = PIXI.Sprite.from(resources.phone.texture);
 
     pixiapp.stage.addChild(elemNotebook);
-    elemNotebook.scale.set(0.5);
-    elemNotebook.angle = 3.5;
+    elemNotebook.scale.set(0.45);
     elemNotebook.position.set(-50, pixiapp.screen.height/5);
 
     pixiapp.stage.addChild(elemHeadpiece);
@@ -79,7 +79,7 @@ loader.load(setup);
     elemNotebook.buttonMode = true;
     elemNotebook.on ('touchstart', function()
     {
-        $('#coming-soon').toggleClass("menu-open");
+        window.open("bab1","_self")
     } );
 
     elemPhone.interactive = true;
@@ -98,7 +98,7 @@ loader.load(setup);
     const notebookHTextures = [];
     for (let i=0; i < 7; i++)
     {
-      const notebookHTexture = PIXI.Texture.from(`NOTEBOOK-BM_000${i}.png`);
+      const notebookHTexture = PIXI.Texture.from(`NOTEBOOK_0000${i}.png`);
       notebookHTextures.push(notebookHTexture);
     }
 
@@ -113,14 +113,40 @@ loader.load(setup);
     notebookHSprite.interactive = true;
     notebookHSprite.buttonMode = true;
 
+    const notebookTextures = [];
+    for (let i=0; i < 40; i++)
+    {
+      const notebookTexture = PIXI.Texture.from(`NOTEBOOK_000${i}.png`);
+      notebookTextures.push(notebookTexture);
+    }
+
+    const notebookSprite = new PIXI.AnimatedSprite(notebookTextures);
+    notebookSprite.scale.set(1.05);
+    notebookSprite.anchor.set(0.5);
+    notebookSprite.angle = 3.5;
+    notebookSprite.position.set((pixiapp.screen.width / 2) - 250, (pixiapp.screen.height / 2) + 110);
+    notebookSprite.loop = false;
+
     notebookHSprite.on ('mousedown', function()
     {
-        $('#coming-soon').toggleClass("menu-open");
+        pixiapp.stage.removeChild(notebookHSprite);
+        pixiapp.stage.addChild(notebookSprite);
+        notebookSprite.animationSpeed = 0.5;
+        notebookSprite.play();
+        notebookSprite.onComplete = function () {
+          window.open("bab1","_self")
+        };
     } );
 
     notebookHSprite.on ('touchstart', function()
     {
-        $('#coming-soon').toggleClass("menu-open");
+      pixiapp.stage.removeChild(notebookHSprite);
+      pixiapp.stage.addChild(notebookSprite);
+      notebookSprite.animationSpeed = 0.5;
+      notebookSprite.play();
+      notebookSprite.onComplete = function () {
+        window.open("bab1","_self")
+      };
     } );
 
     notebookHSprite.on ('pointerover', function()
@@ -139,7 +165,7 @@ loader.load(setup);
     const elemHeadpieceTextures = [];
     for (let i=0; i < 74; i++)
     {
-      const headpieceTexture = PIXI.Texture.from(`HEADDRESS-BM_000${i}.png`);
+      const headpieceTexture = PIXI.Texture.from(`HEADDRESS_000${i}.png`);
       elemHeadpieceTextures.push(headpieceTexture);
     }
 
@@ -155,12 +181,12 @@ loader.load(setup);
 
     elemHeadpieceSprite.on ('mousedown', function()
     {
-        window.open("orang-asli","_self")
+        window.open("en/orang-asli","_self")
     } );
 
     elemHeadpieceSprite.on ('touchstart', function()
     {
-        window.open("orang-asli","_self")
+        window.open("en/orang-asli","_self")
     } );
 
     elemHeadpieceSprite.on ('pointerover', function()
@@ -179,7 +205,7 @@ loader.load(setup);
     const elemPhoneTextures = [];
     for (let i=0; i < 74; i++)
     {
-      const phoneTexture = PIXI.Texture.from(`SMARTPHONE-BM_000${i}.png`);
+      const phoneTexture = PIXI.Texture.from(`SMARTPHONE-NEW_000${i}.png`);
       elemPhoneTextures.push(phoneTexture);
     }
 
@@ -220,7 +246,7 @@ loader.load(setup);
     const elemFluteTextures = [];
     for (let i=0; i < 74; i++)
     {
-      const fluteTexture = PIXI.Texture.from(`NOSEFLUTE-BM_000${i}.png`);
+      const fluteTexture = PIXI.Texture.from(`NOSEFLUTE_000${i}.png`);
       elemFluteTextures.push(fluteTexture);
     }
 
@@ -236,12 +262,12 @@ loader.load(setup);
 
     elemFluteSprite.on ('mousedown', function()
     {
-        $('#coming-soon').toggleClass("menu-open");
+        $('#access-denied').toggleClass("menu-open");
     } );
 
     elemFluteSprite.on ('touchstart', function()
     {
-        $('#coming-soon').toggleClass("menu-open");
+        $('#access-denied').toggleClass("menu-open");
     } );
 
     elemFluteSprite.on ('pointerover', function()
@@ -282,10 +308,11 @@ loader.onComplete.add(stopProgress);
 function showProgress(e)
 {
   var num = parseInt(e.progress);
-  $('#loading').html(num);
+  $('#loading').html(num+"%");
 
 }
 
 function stopProgress() {
   $('#loading').css("display", "none");
+  $('#loading-bar').css("display", "none");
 }
