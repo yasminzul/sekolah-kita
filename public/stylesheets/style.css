@@ -27,6 +27,12 @@ h3 {
 	font-weight: 300;
 }
 
+
+.gif-mobile
+{
+  display: none;
+}
+
 .blk-overlay {
     height: 120vh;
     width: 108vw;
@@ -775,6 +781,14 @@ input:checked + .slider:before {
 }
 
 
+.gif-desktop
+{
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+}
+
+
 @media (max-width: 1200px) and (min-width: 801px) {
   .menu-container {
       padding: 2em 9em 0;
@@ -988,9 +1002,22 @@ input:checked + .slider:before {
     width: 70%;
   }
 
-  .scorecard-display {
+
+    .gif-mobile
+    {
+      width: 100%;
+      margin: 0 auto;
+      display: block;
+    }
+
+    .gif-desktop
+    {
+      display: none;
+    }
+
+  /* .scorecard-display {
     width: 75%;
     margin: 0 auto;
-  }
+  } */
 
 }
