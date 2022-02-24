@@ -120,11 +120,113 @@ $(document).ready(function() {
     if ($(this).is(':checked')) {
       $('.off').css("color", "#000");
       $('.on').css("color", "#D1C7BA");
-      window.open("/","_self");
+
+      //long logic for switching malay-eng
+      if ($("html").attr("id") == 'c01')
+      {
+        window.open("/bab1","_self");
+      }
+
+      else if ($("html").attr("id") == 'c02')
+      {
+        window.open("/bab2","_self");
+      }
+
+      else if ($("html").attr("id") == 'c03')
+      {
+        window.open("/bab3","_self");
+      }
+
+      else if ($("html").attr("id") == 'c04')
+      {
+        window.open("/bab4","_self");
+      }
+
+      else if ($("html").attr("id") == 'c05')
+      {
+        window.open("/bab5","_self");
+      }
+
+      else if ($("html").attr("id") == 'oa')
+      {
+        window.open("/orang-asli","_self");
+      }
+
+      else if ($("html").attr("id") == 'cred')
+      {
+        window.open("/projek","_self");
+      }
+
+      else if ($("html").attr("id") == 'res')
+      {
+        window.open("/pusat-sumber","_self");
+      }
+
+      else if ($("html").attr("id") == 'ta')
+      {
+        window.open("/ambil-tindakan","_self");
+      }
+
+      else
+      {
+          window.open("/","_self");
+      }
+
+
     } else {
       $('.off').css("color", "#D1C7BA");
       $('.on').css("color", "#000");
-        window.open("en","_self")
+
+      if ($("html").attr("id") == 'c01')
+      {
+        window.open("/en/chapter1","_self");
+      }
+
+      else if ($("html").attr("id") == 'c02')
+      {
+        window.open("/en/chapter2","_self");
+      }
+
+      else if ($("html").attr("id") == 'c03')
+      {
+        window.open("/en/chapter3","_self");
+      }
+
+      else if ($("html").attr("id") == 'c04')
+      {
+        window.open("/en/chapter4","_self");
+      }
+
+      else if ($("html").attr("id") == 'c05')
+      {
+        window.open("/en/chapter5","_self");
+      }
+
+      else if ($("html").attr("id") == 'oa')
+      {
+        window.open("/en/orang-asli","_self");
+      }
+
+      else if ($("html").attr("id") == 'cred')
+      {
+        window.open("/en/about","_self");
+      }
+
+      else if ($("html").attr("id") == 'res')
+      {
+        window.open("/en/resources","_self");
+      }
+
+      else if ($("html").attr("id") == 'ta')
+      {
+        window.open("/en/take-action","_self");
+      }
+
+      else
+      {
+          window.open("/en","_self");
+      }
+
     }
   });
 
