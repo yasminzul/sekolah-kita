@@ -10,6 +10,15 @@ Find out how we can reimagine our schools at sekolahkita.my`,
   `This is my dream school, where our traditions and natural environment are our teachers.
 Find out how we can reimagine our schools at sekolahkita.my`]
 
+let textcopyBM = [
+  `Inilah sekolah idaman saya, di mana semua murid diterima dan diraikan!
+  Ketahui bagaimana kita boleh membayangkan semula sekolah kita di sekolahkita.my`,
+  `Inilah sekolah idaman saya, di mana murid-murid akan dipersiapkan untuk masa hadapan yang akan dibina bersama.
+  Ketahui bagaimana kita boleh membayangkan semula sekolah kita di sekolahkita.my`,
+  `Inilah sekolah idaman saya, di mana tradisi dan persekitaran semulajadi adalah guru-guru kita.
+  Ketahui bagaimana kita boleh membayangkan semula sekolah kita di sekolahkita.my`
+]
+
 if (x.matches){
 
     var textStyle = {

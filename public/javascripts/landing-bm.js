@@ -51,7 +51,7 @@ loader.load(setup);
     const elemPhone = PIXI.Sprite.from(resources.phone.texture);
 
     pixiapp.stage.addChild(elemNotebook);
-    elemNotebook.scale.set(0.45);
+    elemNotebook.scale.set(0.25);
     elemNotebook.position.set(-50, pixiapp.screen.height/5);
 
     pixiapp.stage.addChild(elemHeadpiece);
@@ -181,12 +181,12 @@ loader.load(setup);
 
     elemHeadpieceSprite.on ('mousedown', function()
     {
-        window.open("en/orang-asli","_self")
+        window.open("orang-asli","_self")
     } );
 
     elemHeadpieceSprite.on ('touchstart', function()
     {
-        window.open("en/orang-asli","_self")
+        window.open("orang-asli","_self")
     } );
 
     elemHeadpieceSprite.on ('pointerover', function()
