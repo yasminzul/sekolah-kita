@@ -2,7 +2,7 @@
     <% if(currScore.cluesFound != 12){ %>
     <div class="blk-overlay"></div>
       <div class="pop">
-        <p> Anda telah menemui kunci <%= currScore.cluesFound %>! Tinggal lagi <%= currScore.cluesFound %>! Semak progress anda dengan menggunakan paparan skor ini!</p>
+        <p> Anda telah menemui kunci <%= currScore.cluesFound %>! Tinggal lagi <%= 12 - currScore.cluesFound %>! Semak progress anda dengan menggunakan paparan skor ini!</p>
         <p>Cari semua penyelesaian untuk membuka kunci ganjaran anda</p>
         <p>Baca 12 penyelesaian yang disyorkan dalam <a href="https://drive.google.com/file/d/1n80SI2Jo0i40A-C3gVRJkEpvbOaSA0OF/view#page=57">kertas penyelidikan ini.</a></p>
         <div class="scorecard-display">
@@ -72,9 +72,9 @@
 
         <% if(currScore.cluesFound != 12){ %>
       <button class="pop-btn grey">Teruskan membaca</button>
-      <button class="pop-btn hunt-incomplete-close">Check my scorecard</button>
+      <button class="pop-btn hunt-incomplete-close">Semak kad skor saya</button>
         <% } else { %>
-          <button class="pop-btn hunt-incomplete-close">Check my scorecard</button>
+          <button class="pop-btn hunt-incomplete-close">Semak kad skor saya</button>
           <% } %>
     </div>
 </div>
@@ -87,10 +87,10 @@
       <p>Hak Orang Asli untuk menentukan nasib mereka sendiri sebagai Orang Asal juga harus dimasukkan dalam pendidikan arus perdana.</p>
 
       <% if(currScore.cluesFound != 12){ %>
-    <button class="pop-btn grey">Continue Reading</button>
-    <button class="pop-btn hunt-incomplete-close">Check my scorecard</button>
+    <button class="pop-btn grey">Teruskan membaca</button>
+    <button class="pop-btn hunt-incomplete-close">Semak kad skor saya</button>
       <% } else { %>
-        <button class="pop-btn hunt-incomplete-close">Check my scorecard</button>
+        <button class="pop-btn hunt-incomplete-close">Semak kad skor saya</button>
         <% } %>
     </div>
 </div>

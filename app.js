@@ -80,7 +80,7 @@ app.use('/bab2', b2Router);
 app.use('/bab3', b3Router);
 app.use('/bab4', b4Router);
 app.use('/bab5', b5Router);
-app.use('/take-action', actionBMRouter);
+app.use('/ambil-tindakan', actionBMRouter);
 app.use('/pusat-sumber', resourcesBMRouter);
 app.use('/projek', aboutBMRouter);
 
