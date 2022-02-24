@@ -99,6 +99,10 @@ app.get('/en/hero-teachers', function (req, res) {
   res.render('hero-teachers', { title: 'Meet Our Hero Teachers'});
 })
 
+app.get('/guru-wira', function (req, res) {
+  res.render('hero-teachers-bm', { title: 'Kenali Guru-Guru Wira Kita'});
+})
+
 
 app.use(function(req, res, next) {
   next(createError(404));
