@@ -56,6 +56,10 @@ var textbox0 = new fabric.Textbox(textcopy[0], textStyle);
 var textbox1 = new fabric.Textbox(textcopy[1], textStyle);
 var textbox2 = new fabric.Textbox(textcopy[2], textStyle);
 
+var teksbox0 = new fabric.Textbox(textcopyBM[0], textStyle);
+var teksbox1 = new fabric.Textbox(textcopyBM[1], textStyle);
+var teksbox2 = new fabric.Textbox(textcopyBM[2], textStyle);
+
 
 //start mobile
 if (x.matches){
@@ -136,7 +140,15 @@ if (x.matches){
 
   changeCanvasBG('/images/Bamboo-assets/Bamboo-class-background.PNG')
   canvasChangeM('/images/Bamboo-assets/bambooClass_mobile.json');
-  canvasM.add(textbox0);
+  if ($("html").attr("lang") == 'ms')
+  {
+    canvasM.add(teksbox0);
+  }
+  else if ($("html").attr("lang") == 'en')
+  {
+    canvasM.add(textbox0);
+  }
+
 }
 //end mobile
 
@@ -195,7 +207,14 @@ function addImageToCanvasD(imageNameURL)
 
 changeCanvasBG('/images/Bamboo-assets/Bamboo-class-background.PNG')
 canvasChangeD('/images/Bamboo-assets/bambooClass.json');
-canvasD.add(textbox0);
+if ($("html").attr("lang") == 'ms')
+{
+  canvasD.add(teksbox0);
+}
+else if ($("html").attr("lang") == 'en')
+{
+  canvasD.add(textbox0);
+}
 
 }
 //end desktop
@@ -215,7 +234,14 @@ $(document).ready(function(){
     changeCanvasBG(scienceBG)
       const scienceJSON = '/images/Science-assets/scienceClass_mobile.json';
       canvasChangeM(scienceJSON);
-    canvasM.add(textbox1);
+      if ($("html").attr("lang") == 'ms')
+      {
+        canvasM.add(teksbox1);
+      }
+      else if ($("html").attr("lang") == 'en')
+      {
+        canvasM.add(textbox1);
+      }
   });
 
   $('#preload-bamboo').click( function(){
@@ -224,7 +250,14 @@ $(document).ready(function(){
     changeCanvasBG(bambooBG);
       const bambooJSON = '/images/Bamboo-assets/bambooClass_mobile.json';
       canvasChangeM(bambooJSON);
-    canvasM.add(textbox0);
+      if ($("html").attr("lang") == 'ms')
+      {
+        canvasM.add(teksbox0);
+      }
+      else if ($("html").attr("lang") == 'en')
+      {
+        canvasM.add(textbox0);
+      }
   });
 
   $('#preload-nature').click( function(){
@@ -233,7 +266,14 @@ $(document).ready(function(){
     changeCanvasBG(natureBG);
       const natureJSON = '/images/Nature-assets/natureClass_mobile.json';
       canvasChangeM(natureJSON);
-    canvasM.add(textbox2);
+      if ($("html").attr("lang") == 'ms')
+      {
+        canvasM.add(teksbox2);
+      }
+      else if ($("html").attr("lang") == 'en')
+      {
+        canvasM.add(textbox2);
+      }
   });
 
     $('.sticker-bg').click( function (){
@@ -293,7 +333,14 @@ $(document).ready(function(){
       changeCanvasBG(scienceBG)
         const scienceJSON = '/images/Science-assets/scienceClass.json';
         canvasChangeD(scienceJSON);
-      canvasD.add(textbox1);
+        if ($("html").attr("lang") == 'ms')
+        {
+          canvasD.add(teksbox1);
+        }
+        else if ($("html").attr("lang") == 'en')
+        {
+          canvasD.add(textbox1);
+        }
     });
 
     $('#preload-bamboo').click( function(){
@@ -302,7 +349,14 @@ $(document).ready(function(){
       changeCanvasBG(bambooBG);
         const bambooJSON = '/images/Bamboo-assets/bambooClass.json';
         canvasChangeD(bambooJSON);
-      canvasD.add(textbox0);
+        if ($("html").attr("lang") == 'ms')
+        {
+          canvasD.add(teksbox0);
+        }
+        else if ($("html").attr("lang") == 'en')
+        {
+          canvasD.add(textbox0);
+        }
     });
 
     $('#preload-nature').click( function(){
@@ -311,7 +365,14 @@ $(document).ready(function(){
       changeCanvasBG(natureBG);
         const natureJSON = '/images/Nature-assets/natureClass.json';
         canvasChangeD(natureJSON);
-      canvasD.add(textbox2);
+        if ($("html").attr("lang") == 'ms')
+        {
+          canvasD.add(teksbox2);
+        }
+        else if ($("html").attr("lang") == 'en')
+        {
+          canvasD.add(textbox2);
+        }
     });
 
       $('.sticker-bg').click( function (){
