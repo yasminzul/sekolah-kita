@@ -230,13 +230,13 @@
     right: 20%;
   }
 
-  .ch-next.final {
+  .ch-next.final:lang(ms), .ch-next.final:lang(en) {
     right: 23%;
     top: 88%;
-    width: 29%
+    width: 29%;
   }
 
-  .ch-prev.final {
+  .ch-prev.final:lang(ms), .ch-prev.final:lang(en) {
     right: 46%;
     top: 88%;
     width: 33%;

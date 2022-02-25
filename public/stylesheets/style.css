@@ -961,12 +961,12 @@ input:checked + .slider:before {
     margin: 0 !important;
   }
 
-  .ch-next{
+  .ch-next:lang(ms), .ch-next:lang(en){
     margin-left: 0;
-    width: 118px;
+    width: 120px;
   }
 
-  .ch-prev {
+  .ch-prev:lang(ms), .ch-prev:lang(en){
     width: 140px;
    }
 
