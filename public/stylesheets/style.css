@@ -136,9 +136,18 @@ h3 {
   border: none;
   height: 45px;
   margin: 0 0.5em;
-  font-size: 15px;
   cursor: pointer;
   padding: 8px;
+}
+
+.ch-next:lang(en)
+{
+    width: 18%;
+}
+
+.ch-next:lang(ms), .ch-prev:lang(ms)
+{
+    width: 22%;
 }
 
 .ch-next {
@@ -157,6 +166,8 @@ h3 {
   width: 28%;
   margin-left: 2em;
   margin-right: 0.1em !important;
+
+  font-size: 15px;
 }
 
 .ch-prev a, .ch-next a {
