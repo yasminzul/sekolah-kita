@@ -124,23 +124,24 @@
     right: 45%;
 }
 
-.ch-prev.final {
+.ch-prev.final:lang(ms) {
   display: block;
-  right: 46%;
+  right: 48%;
   top: 82%;
   position: absolute;
   width: 11%;
   transform: scale(0.7);
 }
 
-.ch-next.final {
-  right: 40.8%;
+.ch-next.final:lang(ms) {
+  right: 37.3%;
   display: block;
   top: 82%;
   position: absolute;
-  width: 7%;
+  width: 13%;
   transform: scale(0.7);
 }
+
 
 @media (max-width: 1200px) and (min-width: 801px) {
   #school-start, #start-again {
