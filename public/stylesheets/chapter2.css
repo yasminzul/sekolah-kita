@@ -124,6 +124,27 @@
     right: 45%;
 }
 
+.ch-finished .ch-prev.final {
+  display: block;
+  right: 48%;
+  top: 82%;
+  position: absolute;
+  width: 11%;
+  transform: scale(0.7);
+  background-color: #ffffff00;
+}
+
+.ch-finished .ch-next.final {
+  right: 37.3%;
+  display: block;
+  top: 82%;
+  position: absolute;
+  width: 13%;
+  transform: scale(0.7);
+  background-color: #ffffff00;
+}
+
+
 .ch-prev.final:lang(ms) {
   display: block;
   right: 48%;
@@ -131,6 +152,7 @@
   position: absolute;
   width: 11%;
   transform: scale(0.7);
+  background-color: #ffffff00;
 }
 
 .ch-next.final:lang(ms) {
@@ -140,6 +162,7 @@
   position: absolute;
   width: 13%;
   transform: scale(0.7);
+  background-color: #ffffff00;
 }
 
 

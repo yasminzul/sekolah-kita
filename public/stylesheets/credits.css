@@ -39,17 +39,16 @@
 }
 
 .img-bottom {
-	display: flex;
-    justify-content: center;
+	text-align:  center;
 }
 
 .img-bottom img {
 	width: 12%;
-  padding: 2em;
+  padding: 1em;
 }
 
 .img-bottom img:first-child {
-	transform: scale(1.5);
+	transform: scale(1.2);
 }
 
 .img-bottom img:last-child {
