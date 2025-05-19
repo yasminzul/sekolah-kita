@@ -50,6 +50,12 @@
     margin-top: 10vh;
 }
 
+.resource-video
+{
+	margin-bottom: 10%;
+	text-decoration: underline;
+}
+
 @media (max-width: 800px) {
 	.resources-wrapper {
 		background-size: contain;
@@ -67,5 +73,10 @@
 	}
 	.resource-link #download {
 		transform: scale(0.7);
+	}
+
+	.resource-video
+	{
+		margin-bottom: 18%;
 	}
 }
